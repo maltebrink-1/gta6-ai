@@ -1,0 +1,74 @@
+# Daily content run: news leads → fact re-check → scripts → videos → QA → review issues.
+# It NEVER publishes. Scheduled runs only happen once you set the repository
+# variable AUTOMATION_ENABLED=true (Settings → Secrets and variables → Actions → Variables).
+name: Produce videos
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # 06:17 UTC daily
+  workflow_dispatch:
+    inputs:
+      count:
+        description: How many videos to make
+        default: "2"
+      open_reviews:
+        description: Open a review issue for each video
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pipeline-state
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    if: github.event_name == 'workflow_dispatch' || vars.AUTOMATION_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_MODEL: ${{ secrets.LLM_MODEL }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Collect news leads (topic ideas only)
+        continue-on-error: true
+        run: python -m gta6shorts research
+      - name: Re-verify facts against their sources
+        continue-on-error: true
+        run: python -m gta6shorts facts-verify
+      - name: Write, render and QA videos
+        run: |
+          flags=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.open_reviews }}" = "false" ]; then flags="--no-review"; fi
+          python -m gta6shorts produce --count "${{ inputs.count || '2' }}" $flags
+      - name: Save results (registry, new scripts, research) to the repository
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data content/scripts
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "produce: $(date -u +%F) videos and pipeline state"
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && exit 0; sleep $((i * 5)); done
+          exit 1
+      - name: Keep rendered files for 7 days
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            out/*/video.mp4
+            out/*/contact_sheet.jpg
+            out/*/qa.json
+            out/*/metadata.json

@@ -1,0 +1,33 @@
+id: 2026-11-19-meet-lucia-and-jason
+status: ready
+created: '2026-11-19'
+author: claude
+format: spotlight
+title: 'Meet Lucia & Jason: GTA 6''s Criminal Duo'
+hook_text: MEET LUCIA & JASON
+theme: ocean_breeze
+lines:
+- text: GTA 6 gives you two protagonists, and their backstories go hard.
+  kind: hook
+  facts: [gta6_protagonists]
+- text: You play as two protagonists, Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+  card: {type: text, big: LUCIA & JASON, small: THE PROTAGONISTS}
+- text: Rockstar says Lucia's dad taught her to fight, and defending her family landed her in the Leonida Penitentiary.
+  kind: claim
+  facts: [lucia_backstory]
+- text: And Rockstar describes Jason as an Army veteran who ended up working for drug runners in the Keys.
+  kind: claim
+  facts: [jason_backstory]
+- text: The game takes place in Leonida, a fictional state that's home to Vice City.
+  kind: claim
+  facts: [gta6_setting]
+  card: {type: text, big: LEONIDA, small: HOME OF VICE CITY}
+- text: A criminal duo, loose in Rockstar's version of Florida? That's a recipe for chaos.
+  kind: opinion
+  facts: [leonida_is_florida]
+- text: Team Lucia or team Jason? Comment below and follow for daily GTA 6 content.
+  kind: cta
+description: Who are GTA 6's protagonists? Lucia and Jason's official backstories in under a minute.
+tags: [GTA 6, GTA 6 Lucia, GTA 6 Jason, GTA VI characters, Leonida, Vice City, Rockstar Games]

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gta6shorts"
+version = "0.1.0"
+description = "Automated, fact-checked GTA 6 YouTube Shorts / TikTok production pipeline (zero-cost stack)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.26",
+  "pillow>=10.0",
+  "pyyaml>=6.0",
+  "requests>=2.31",
+  "soundfile>=0.12",
+]
+
+[project.optional-dependencies]
+voice = ["kokoro-onnx>=0.6.1"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+gta6shorts = "gta6shorts.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "slow: renders real video with FFmpeg (deselect with -m 'not slow')",
+]
+
+[tool.setuptools.package-data]
+gta6shorts = ["*.html"]

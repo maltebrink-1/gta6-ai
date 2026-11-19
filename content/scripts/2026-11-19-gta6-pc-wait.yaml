@@ -1,0 +1,32 @@
+id: 2026-11-19-gta6-pc-wait
+status: ready
+created: '2026-11-19'
+author: claude
+format: explainer
+title: Why GTA 6 Isn't on PC (Yet)
+hook_text: NO GTA 6 ON PC?
+theme: neon_night
+lines:
+- text: PC players, I have some bad news about GTA 6.
+  kind: hook
+- text: Right now, GTA 6 is on PlayStation 5 and Xbox Series X and S.
+  kind: claim
+  facts: [gta6_platforms]
+- text: And Rockstar still hasn't announced a PC release date.
+  kind: claim
+  facts: [gta6_no_pc_date]
+  card: {type: text, big: PC DATE, small: NOT ANNOUNCED}
+- text: But history gives us a clue. GTA 5 hit consoles in September 2013, but PC players waited until April 2015.
+  kind: claim
+  facts: [gta5_pc_gap]
+  card: {type: date, big: 2013 → 2015, small: GTA 5 · CONSOLE TO PC}
+- text: Red Dead Redemption 2 came out in October 2018, and the PC version followed in November 2019.
+  kind: claim
+  facts: [rdr2_pc_gap]
+  card: {type: date, big: 2018 → 2019, small: RDR 2 · CONSOLE TO PC}
+- text: So if Rockstar sticks to its own pattern, PC players could be waiting a while. That's my guess though, not an announcement.
+  kind: opinion
+- text: Would you wait for PC, or grab it on console now? Let me know, and follow for updates.
+  kind: cta
+description: Rockstar hasn't announced a PC date for GTA 6. Here's what Rockstar's past releases suggest — clearly labelled as a guess.
+tags: [GTA 6, GTA 6 PC, GTA VI PC, Rockstar Games, GTA 5, Red Dead Redemption 2, gaming news]

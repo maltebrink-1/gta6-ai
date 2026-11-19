@@ -1,0 +1,128 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  GTA 6 Shorts Automation — main control panel
+#  Every switch that can publish something is OFF by default (Stage 1/2).
+#  Secrets (API keys, tokens) NEVER go in this file: they live in GitHub
+#  repository secrets and are read from environment variables.
+# ─────────────────────────────────────────────────────────────────────────────
+
+channel:
+  name: "YOUR CHANNEL NAME"      # placeholder until you create the channel
+  handle: ""                     # e.g. "@leonidabrief" — shown on videos only if visuals.watermark is true
+  language: en
+  # The narrator is an original AI persona. It must never claim to be a real
+  # person, and must never imitate a real streamer's catchphrases or voice.
+  persona: >-
+    An energetic, witty GTA fan who talks fast, reacts big and stays honest:
+    clearly separates confirmed facts from opinions and never presents rumors as facts.
+
+production:
+  videos_per_day: 2              # how many videos the daily "produce" run renders
+  min_seconds: 20
+  max_seconds: 60
+  width: 1080
+  height: 1920
+  fps: 30
+  tail_seconds: 0.7              # breathing room after the last word
+  words_per_second: 2.5          # used to estimate length before rendering
+
+voice:
+  engine: auto                   # auto | kokoro | espeak   (auto = kokoro if model files exist)
+  preset: hype_female            # one of the presets below (keep one for channel identity)
+  presets:
+    hype_female:                 # Kokoro voices blended into an original channel voice
+      blend: { af_bella: 0.7, af_heart: 0.3 }
+      speed: 1.12
+    hype_male:
+      blend: { am_puck: 0.5, am_michael: 0.5 }
+      speed: 1.12
+    calm_british:
+      blend: { bm_george: 0.6, bm_fable: 0.4 }
+      speed: 1.05
+  sentence_pause: 0.16           # seconds of silence between sentences
+  line_gap: 0.10                 # extra gap between script lines
+  kokoro_model: kokoro-v1.0.onnx # downloaded automatically from the kokoro-onnx GitHub release
+  kokoro_voices: voices-v1.0.bin
+  model_dir: ~/.cache/gta6shorts/models
+  allow_espeak_for_publishing: false   # robotic fallback voice is for tests only
+
+captions:
+  max_words_per_chunk: 3
+  max_chars_per_chunk: 16
+  uppercase: true
+  y: 1185                        # vertical centre of captions (safe zone: clear of top/bottom app UI)
+  cap_height: 98                 # caption letter height in pixels (1080x1920 frame)
+  show_sources: true             # small "Source: …" credit on screen for factual lines
+
+visuals:
+  stock_footage: auto            # auto | off   (auto = use Pexels when PEXELS_API_KEY is set)
+  watermark: false
+  transition_seconds: 0.30
+  background_render_scale: 0.5   # procedural backgrounds render at half size, FFmpeg upscales
+
+music:
+  source: generated              # generated (original, made by code) | library (licensed files) | none
+  volume_db: -17                 # music level under the voice before ducking
+  library_manifest: assets/music/licenses.yaml   # every library track MUST have a license entry
+  sfx: true                      # generated whooshes / impacts (original)
+
+writer:
+  # Order of preference for NEW scripts when the queue is empty.
+  #  queue    = scripts already written & committed (by Claude, by you, or earlier runs)
+  #  gemini   = Google Gemini free tier (needs GEMINI_API_KEY secret)
+  #  openai   = any OpenAI-compatible free endpoint (needs LLM_BASE_URL, LLM_MODEL, LLM_API_KEY)
+  #  template = offline fallback built only from the fact base (always works)
+  backends: [queue, gemini, openai, template]
+  allow_template_for_publishing: false # template scripts are more repetitive → review-only
+  temperature: 0.9
+  gemini_model: auto             # auto = pick the newest available "flash" model
+  max_repair_rounds: 1
+
+facts:
+  allow_rumors: false            # rumor facts can never be used while this is false
+  default_recheck_days: 14       # facts older than this must be re-verified before publishing
+
+research:
+  feeds:
+    - name: Google News — GTA 6
+      url: "https://news.google.com/rss/search?q=%22GTA+6%22+OR+%22Grand+Theft+Auto+VI%22&hl=en-US&gl=US&ceid=US:en"
+  max_items: 40
+
+quality:
+  loudness_target: -14.0         # LUFS (YouTube/TikTok normalise around here)
+  loudness_tolerance: 1.5
+  true_peak_max: -1.0
+  max_silence_seconds: 1.2
+  hook_max_start_seconds: 0.6    # narration must start within this time (hook in first 2 s)
+  similarity_error: 0.45         # reject scripts this similar to an earlier one (0–1)
+  similarity_warning: 0.30
+
+review:
+  github_issues: true            # open a review issue (with video link) for every rendered video
+  release_tag: review-queue      # rendered videos are attached to this pre-release for viewing
+
+publishing:
+  enabled: false                 # MASTER SWITCH — keep false until Stage 3 is approved
+  mode: review                   # review = needs the "approved" label on its issue | auto (Stage 4)
+  max_per_day: 3
+  youtube:
+    enabled: false
+    privacy: private             # private | unlisted | public
+    category_id: "20"            # Gaming
+    contains_synthetic_media: true   # honest AI disclosure (AI narration)
+    made_for_kids: false
+  tiktok:
+    enabled: false               # needs an approved TikTok developer app
+    mode: inbox                  # inbox = lands in your TikTok drafts (you tap Post) | direct (needs audit)
+    privacy_level: SELF_ONLY
+    is_aigc: true                # label as AI-generated content
+
+analytics:
+  timezone: Europe/Copenhagen
+  best_videos: 5
+
+limits:                          # free-tier guard rails (warn at 80 %)
+  youtube_uploads_per_day: 100   # videos.insert bucket (Google revision history, Jun 2026)
+  youtube_units_per_day: 10000   # all other YouTube Data API methods
+  gemini_requests_per_day: 20    # conservative; free tier varies by model
+  pexels_requests_per_hour: 200
+  actions_minutes_per_month: 0   # 0 = unlimited (public repo on standard runners)

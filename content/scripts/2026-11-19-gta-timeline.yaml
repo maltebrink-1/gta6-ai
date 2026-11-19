@@ -1,0 +1,35 @@
+id: 2026-11-19-gta-timeline
+status: ready
+created: '2026-11-19'
+author: claude
+format: timeline
+title: The Whole GTA Story in Under a Minute
+hook_text: 1997 → 2026
+theme: swamp_glow
+lines:
+- text: Here's the whole GTA story, from 1997 to today, in under a minute.
+  kind: hook
+  facts: [gta_series_start, gta6_release_date]
+- text: The very first Grand Theft Auto came out in 1997.
+  kind: claim
+  facts: [gta_series_start]
+  card: {type: date, big: '1997', small: THE FIRST GTA}
+- text: Vice City first showed up in 2002, in a game set in the 1980s.
+  kind: claim
+  facts: [vice_city_2002]
+  card: {type: date, big: '2002', small: VICE CITY ARRIVES}
+- text: GTA 5 hit consoles in September 2013, and Take-Two says it has sold more than 230 million copies.
+  kind: claim
+  facts: [gta5_pc_gap, gta5_sales]
+  card: {type: stat, big: 230M+, small: GTA 5 SALES · PER TAKE-TWO}
+- text: GTA 6 was originally aimed at 2025, got delayed twice, and finally launched on November 19th, 2026.
+  kind: claim
+  facts: [gta6_delays, gta6_release_date]
+  card: {type: date, big: NOV 19 2026, small: GTA 6 LAUNCH}
+- text: And it launched with a 99 on Metacritic, tying the highest score the site has ever given.
+  kind: claim
+  facts: [gta6_metacritic_99]
+- text: Which GTA was your first? Tell me in the comments and follow for more.
+  kind: cta
+description: From the first Grand Theft Auto in 1997 to GTA 6's launch — the series timeline, fact-checked.
+tags: [GTA 6, GTA history, Grand Theft Auto, GTA Vice City, GTA 5, Rockstar Games, gaming history]

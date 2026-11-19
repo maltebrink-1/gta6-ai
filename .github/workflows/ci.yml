@@ -1,0 +1,55 @@
+# Runs on every push / pull request: tests, fact checks, and a real cloud render.
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests & fact check
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with:
+          voice-model: "false"
+      - name: Fact-check every script
+        run: python -m gta6shorts validate
+      - name: Unit + end-to-end tests (espeak voice)
+        run: python -m pytest -q
+
+  cloud-render:
+    name: Cloud render test (real voice)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Environment check
+        run: python -m gta6shorts doctor
+      - name: Render one sample video with the Kokoro voice + QA
+        run: |
+          latest=$(ls content/scripts/*.yaml | sort | tail -1 | xargs -n1 basename | sed 's/\.yaml$//')
+          python -m gta6shorts render "$latest" --engine kokoro
+      - name: Keep the result for 14 days
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-render-test
+          retention-days: 14
+          path: |
+            out/*/video.mp4
+            out/*/contact_sheet.jpg
+            out/*/qa.json
+            out/*/metadata.json

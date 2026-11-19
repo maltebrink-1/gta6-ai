@@ -1,0 +1,31 @@
+name: Setup pipeline
+description: Python, FFmpeg, espeak-ng, Python packages and the cached Kokoro voice model
+inputs:
+  voice-model:
+    description: Download/cache the Kokoro voice model (≈340 MB, cached after the first run)
+    default: "true"
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: pip
+    - name: Install FFmpeg and espeak-ng
+      shell: bash
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq ffmpeg espeak-ng > /dev/null
+        ffmpeg -hide_banner -version | head -1
+    - name: Install Python packages
+      shell: bash
+      run: |
+        python -m pip install --quiet --upgrade pip
+        python -m pip install --quiet -r requirements.txt
+        python -m pip install --quiet -e .
+    - name: Cache voice model
+      if: inputs.voice-model == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/gta6shorts/models
+        key: kokoro-model-files-v1.0

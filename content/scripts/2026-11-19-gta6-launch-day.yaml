@@ -1,0 +1,39 @@
+id: 2026-11-19-gta6-launch-day
+status: ready
+created: '2026-11-19'
+author: claude
+format: news
+title: GTA 6 Is Finally Out, and It Just Tied an All-Time Record
+hook_text: GTA 6 IS FINALLY OUT
+theme: sunset_drive
+lines:
+- text: GTA 6 is finally out, and the reviews just tied an all-time record.
+  kind: hook
+  facts: [gta6_release_date, gta6_metacritic_99]
+- text: It launched with a 99 on Metacritic. That ties the highest score the site has ever given.
+  kind: claim
+  facts: [gta6_metacritic_99]
+  card: {type: stat, big: '99', small: METASCORE}
+- text: That even beats GTA 4's 98, so it's now Rockstar's highest-rated game ever on Metacritic.
+  kind: claim
+  facts: [gta6_beats_gta4]
+- text: Right now it's on PlayStation 5 and Xbox Series X and S.
+  kind: claim
+  facts: [gta6_platforms]
+  card: {type: text, big: PS5 + XBOX, small: AVAILABLE NOW}
+- text: And no, Rockstar still hasn't announced a PC release date.
+  kind: claim
+  facts: [gta6_no_pc_date]
+  card: {type: text, big: 'PC?', small: NO DATE YET}
+- text: The standard edition costs $79.99 in the US.
+  kind: claim
+  facts: [gta6_price_standard]
+  card: {type: stat, big: $79.99, small: STANDARD EDITION · US}
+- text: Honestly? After two delays, a 99 is the best possible answer to the wait.
+  kind: opinion
+  facts: [gta6_delays, gta6_metacritic_99]
+- text: Are you starting as Lucia or Jason? Tell me below, and follow for daily GTA 6 news.
+  kind: cta
+  facts: [gta6_protagonists]
+description: GTA 6 launched on November 19, 2026 — here's the launch-day rundown in under a minute.
+tags: [GTA 6, GTA VI, Grand Theft Auto VI, GTA 6 release, GTA 6 reviews, Metacritic, Rockstar Games, gaming news]

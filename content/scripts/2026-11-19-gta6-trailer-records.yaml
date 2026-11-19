@@ -1,0 +1,31 @@
+id: 2026-11-19-gta6-trailer-records
+status: ready
+created: '2026-11-19'
+author: claude
+format: list
+title: GTA 6's Trailers Broke the Internet. Here Are the Numbers
+hook_text: 90 MILLION VIEWS IN A DAY
+theme: wanted_level
+lines:
+- text: Before GTA 6 even launched, its trailers were already breaking world records.
+  kind: hook
+  facts: [trailer1_record]
+- text: The first trailer, back in December 2023, got over 90 million YouTube views in 24 hours. That's an actual Guinness World Record.
+  kind: claim
+  facts: [trailer1_record]
+  card: {type: stat, big: 90M+, small: YOUTUBE VIEWS IN 24 HOURS}
+- text: Then Trailer 2 dropped, and Rockstar says it hit around 475 million views across all platforms in 24 hours.
+  kind: claim
+  facts: [trailer2_views]
+  card: {type: stat, big: 475M, small: VIEWS IN 24 HOURS · PER ROCKSTAR}
+- text: For context, Take-Two says GTA 5 has sold more than 230 million copies.
+  kind: claim
+  facts: [gta5_sales]
+  card: {type: stat, big: 230M+, small: GTA 5 SALES · PER TAKE-TWO}
+- text: Hype like that is almost impossible to live up to. And then the reviews came in with a 99.
+  kind: opinion
+  facts: [gta6_metacritic_99]
+- text: Which trailer moment hyped you up the most? Drop it in the comments and follow for more.
+  kind: cta
+description: The record-breaking numbers behind GTA 6's trailers, with sources.
+tags: [GTA 6, GTA 6 trailer, GTA VI trailer, Guinness World Record, Rockstar Games, GTA 5, gaming news]

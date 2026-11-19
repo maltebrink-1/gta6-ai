@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Pipeline outputs (rendered videos are large; they live in CI artifacts / releases)
+out/
+.cache/
+*.part
+
+# Local secrets — never commit credentials
+.env
+*.secret
+client_secret*.json
+token*.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+site/

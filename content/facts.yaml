@@ -1,0 +1,364 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  VERIFIED FACT BASE — the only place factual claims may come from.
+#
+#  status:
+#    official  – stated by Rockstar Games / Take-Two themselves
+#    confirmed – reported consistently by several reputable outlets / data sites
+#    reported  – single or secondary source → script lines MUST attribute it
+#                ("according to …", "reportedly", or the `attribution` name)
+#    rumor     – unverified → blocked entirely while facts.allow_rumors is false
+#
+#  attribution: if set, every script line using the fact must name it
+#               (e.g. "Rockstar says …").
+#  recheck_days: after this many days since `as_of`, the fact must be
+#               re-verified before a video using it can be published.
+#  verify:      optional automatic re-check (GitHub Actions fetches the URL and
+#               checks that all `contains` strings are still on the page).
+#
+#  Initial research: 2026-11-19 (launch day). Sources were checked via web
+#  search on that date; see docs/COMPLIANCE.md for the verification policy.
+# ─────────────────────────────────────────────────────────────────────────────
+
+facts:
+  # ── Release & platforms ────────────────────────────────────────────────────
+  - id: gta6_release_date
+    claim: "Grand Theft Auto VI launched on November 19, 2026."
+    say:
+      - "GTA 6 officially launched on November 19th, 2026."
+      - "November 19th, 2026. GTA 6 is finally out."
+    status: official
+    category: release
+    as_of: 2026-11-19
+    recheck_days: 60
+    sources:
+      - url: https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026
+        publisher: Rockstar Games Newswire
+        date: 2025-11-06
+        official: true
+      - url: https://x.com/RockstarGames/status/1986540361011880167
+        publisher: Rockstar Games on X
+        official: true
+      - url: https://variety.com/2025/gaming/news/gta-6-release-delayed-november-2026-1236571679/
+        publisher: Variety
+    verify:
+      url: https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026
+      contains: ["November 19, 2026"]
+
+  - id: gta6_platforms
+    claim: "At launch, GTA VI is available on PlayStation 5 and Xbox Series X|S."
+    say:
+      - "Right now it's on PlayStation 5 and Xbox Series X and S."
+    status: official
+    category: release
+    as_of: 2026-11-19
+    recheck_days: 30
+    sources:
+      - url: https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026
+        publisher: Rockstar Games Newswire
+        official: true
+      - url: https://maketecheasier.com/gta-6-release-date-price-preload/
+        publisher: Make Tech Easier
+      - url: https://www.g2a.com/news/gta-6-news/what-time-does-gta-6-release/
+        publisher: G2A News
+
+  - id: gta6_no_pc_date
+    claim: "As of launch day, Rockstar has not announced a PC release date for GTA VI."
+    say:
+      - "And no, Rockstar still hasn't announced a PC release date."
+    status: confirmed
+    category: release
+    as_of: 2026-11-19
+    recheck_days: 7          # changes fast — must be re-verified weekly
+    sources:
+      - url: https://allthings.how/gta-6-release-date/
+        publisher: AllThings.How
+      - url: https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html
+        publisher: Yahoo Tech
+
+  - id: gta6_price_standard
+    claim: "In the US, the GTA VI Standard Edition costs $79.99."
+    say:
+      - "The standard edition costs $79.99 in the US."
+    status: confirmed
+    category: release
+    as_of: 2026-11-19
+    recheck_days: 30
+    sources:
+      - url: https://maketecheasier.com/gta-6-release-date-price-preload/
+        publisher: Make Tech Easier
+      - url: https://tech.yahoo.com/gaming/articles/gta-6-almost-important-details-161923020.html
+        publisher: Yahoo Tech
+      - url: https://www.gamestop.com/video-games/products/grand-theft-auto-vi/20036131.html
+        publisher: GameStop listing
+
+  - id: gta6_midnight_unlock
+    claim: "Rockstar's support page says GTA VI unlocks at midnight local time in each region."
+    status: reported
+    attribution: Rockstar
+    category: release
+    as_of: 2026-11-19
+    recheck_days: 5
+    sources:
+      - url: https://allthings.how/gta-6-release-date/
+        publisher: AllThings.How (quoting Rockstar Support)
+      - url: https://www.g2a.com/news/gta-6-news/what-time-does-gta-6-release/
+        publisher: G2A News
+
+  - id: gta6_delays
+    claim: "GTA VI was first aimed at 2025, then delayed twice: to May 26, 2026, and then to November 19, 2026."
+    say:
+      - "This game was originally aimed at 2025. Then it got delayed to May 26th, 2026. Then delayed again to November 19th."
+    status: official
+    category: history
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://variety.com/2025/gaming/news/gta-6-release-delayed-november-2026-1236571679/
+        publisher: Variety
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6-trailer-2-drops-out-of-nowhere-putting-lucia-and-jason-in-the-spotlight-once-again
+        publisher: GamesRadar+
+      - url: https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026
+        publisher: Rockstar Games Newswire
+        official: true
+
+  # ── Reviews ────────────────────────────────────────────────────────────────
+  - id: gta6_metacritic_99
+    claim: "At launch, GTA VI holds a 99 Metascore on Metacritic, tying the site's all-time highest score alongside The Legend of Zelda: Ocarina of Time."
+    say:
+      - "It launched with a 99 on Metacritic. That ties the highest score the site has ever given."
+    status: confirmed
+    category: reviews
+    as_of: 2026-11-19
+    recheck_days: 7          # scores can move as more reviews arrive
+    sources:
+      - url: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html
+        publisher: Notebookcheck
+      - url: https://thenextweb.com/news/gta-vi-metacritic-99-reviews-30fps-launch
+        publisher: The Next Web
+      - url: https://www.macobserver.com/news/gta-6-review-scores-roundup-every-rating-as-metacritic-hits-99/
+        publisher: The Mac Observer
+
+  - id: gta6_beats_gta4
+    claim: "With 99, GTA VI tops GTA IV's 98 to become Rockstar's highest-rated game on Metacritic."
+    say:
+      - "That even beats GTA 4's 98, so it's now Rockstar's highest-rated game ever on Metacritic."
+    status: confirmed
+    category: reviews
+    as_of: 2026-11-19
+    recheck_days: 7
+    sources:
+      - url: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html
+        publisher: Notebookcheck
+
+  - id: gta6_opencritic_99
+    claim: "On OpenCritic, GTA VI launched with a 99 Top Critic Average and 100% of critics recommending it."
+    status: reported
+    attribution: OpenCritic
+    category: reviews
+    as_of: 2026-11-19
+    recheck_days: 7
+    sources:
+      - url: https://thetechhacker.com/news/gta-6-review-scores-metacritic-opencritic/
+        publisher: The Tech Hacker
+      - url: https://endgametools.com/en/gta-6/news/gta-6-reviews
+        publisher: Endgame Tools
+
+  - id: gta6_review_criticism
+    claim: "Some reviewers criticized clunky controls and occasional performance problems."
+    say:
+      - "It's not perfect though. Some reviewers called out clunky controls and occasional performance problems."
+    status: reported
+    attribution: reviewers
+    category: reviews
+    as_of: 2026-11-19
+    recheck_days: 30
+    sources:
+      - url: https://thepcenthusiast.com/gta-6-reviews-metascore-critic-reactions/
+        publisher: The PC Enthusiast
+      - url: https://www.g2a.com/news/gta-6-news/gta-vi-reviews-are-in-99-on-metacritic-and-what-critics-agree-on/
+        publisher: G2A News
+
+  # ── World & characters ─────────────────────────────────────────────────────
+  - id: gta6_setting
+    claim: "GTA VI is set in the fictional state of Leonida, home to Vice City."
+    say:
+      - "The game takes place in Leonida, a fictional state that's home to Vice City."
+    status: official
+    category: world
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-lucia-and-jason-get-full-names-and-backstories-as-trailer-2-drops-and-rockstar-shares-loads-more-details-about-its-protagonists
+        publisher: GamesRadar+
+      - url: https://www.cbsnews.com/news/gta-6-trailer-2-release-grand-theft-auto-rockstar-vice-city
+        publisher: CBS News
+
+  - id: leonida_is_florida
+    claim: "Leonida and Vice City are widely described as Rockstar's versions of Florida and Miami."
+    say:
+      - "Think of Leonida as Rockstar's version of Florida, and Vice City as its Miami."
+    status: confirmed
+    category: world
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6-trailer-2-drops-out-of-nowhere-putting-lucia-and-jason-in-the-spotlight-once-again
+        publisher: GamesRadar+
+      - url: https://www.cbsnews.com/news/gta-6-trailer-2-release-grand-theft-auto-rockstar-vice-city
+        publisher: CBS News
+
+  - id: gta6_protagonists
+    claim: "GTA VI has two playable protagonists: Lucia Caminos and Jason Duval."
+    say:
+      - "You play as two protagonists: Lucia Caminos and Jason Duval."
+    status: official
+    category: characters
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-lucia-and-jason-get-full-names-and-backstories-as-trailer-2-drops-and-rockstar-shares-loads-more-details-about-its-protagonists
+        publisher: GamesRadar+
+      - url: https://pcgamer.com/games/grand-theft-auto/im-already-totally-enamored-with-grand-theft-auto-6s-jason-and-lucia-and-ive-had-them-for-less-than-5-minutes
+        publisher: PC Gamer
+
+  - id: lucia_backstory
+    claim: "Rockstar's character bio says Lucia's father taught her to fight, and defending her family landed her in the Leonida Penitentiary."
+    say:
+      - "Rockstar says Lucia's dad taught her to fight, and defending her family landed her in the Leonida Penitentiary."
+    status: official
+    attribution: Rockstar
+    category: characters
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-lucia-and-jason-get-full-names-and-backstories-as-trailer-2-drops-and-rockstar-shares-loads-more-details-about-its-protagonists
+        publisher: GamesRadar+ (quoting Rockstar's official bio)
+    verify:
+      url: https://www.gamesradar.com/games/grand-theft-auto/gta-6s-lucia-and-jason-get-full-names-and-backstories-as-trailer-2-drops-and-rockstar-shares-loads-more-details-about-its-protagonists
+      contains: ["Leonida Penitentiary"]
+
+  - id: jason_backstory
+    claim: "Rockstar's character bio describes Jason as an Army veteran who ended up working for drug runners in the Keys."
+    say:
+      - "And Rockstar describes Jason as an Army veteran who ended up working for drug runners in the Keys."
+    status: official
+    attribution: Rockstar
+    category: characters
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6-characters
+        publisher: GamesRadar+ (quoting Rockstar's official bio)
+    verify:
+      url: https://www.gamesradar.com/games/grand-theft-auto/gta-6-characters
+      contains: ["Army"]
+
+  # ── Trailers & records ─────────────────────────────────────────────────────
+  - id: trailer1_record
+    claim: "GTA VI's first trailer, released in December 2023, set a Guinness World Record for the most-viewed video game reveal on YouTube in 24 hours, with 90,421,491 views."
+    say:
+      - "The first trailer, back in December 2023, got over 90 million YouTube views in 24 hours. That's an actual Guinness World Record."
+    status: confirmed
+    category: trailers
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://pushsquare.com/news/2023/12/gta-6-trailer-pulls-90-million-views-in-24-hours-sets-new-world-records
+        publisher: Push Square
+      - url: https://techraptor.net/gaming/news/grand-theft-auto-6-trailer-achieved-crazy-90-million-views-in-24-hours
+        publisher: TechRaptor
+      - url: https://www.gosugamers.net/entertainment/news/70205-gta-6-breaks-youtube-record-for-most-viewed-game-reveal-in-24-hours
+        publisher: GosuGamers
+
+  - id: trailer2_views
+    claim: "Rockstar says Trailer 2, released May 6, 2025, reached about 475 million views across all platforms in its first 24 hours."
+    say:
+      - "Then Trailer 2 dropped, and Rockstar says it hit around 475 million views across all platforms in 24 hours."
+    status: official
+    attribution: Rockstar
+    category: trailers
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://www.techradar.com/gaming/the-latest-grand-theft-auto-6-trailer-has-set-a-major-record-by-racking-up-475-million-views-in-just-24-hours
+        publisher: TechRadar
+      - url: https://www.kitguru.net/gaming/matthew-wilson/rockstar-says-new-grand-theft-auto-6-trailer-amassed-475m-views-in-24-hours/
+        publisher: KitGuru
+      - url: https://www.tweaktown.com/news/105135/grand-theft-auto-6-trailer-2-hits-475-million-views-blowing-away-deadpool-wolverines-record/index.html
+        publisher: TweakTown
+
+  # ── Series history (stable facts) ──────────────────────────────────────────
+  - id: gta5_sales
+    claim: "Take-Two says Grand Theft Auto V has sold-in more than 230 million units worldwide (August 2026 report)."
+    say:
+      - "Take-Two says GTA 5 has sold more than 230 million copies."
+    status: official
+    attribution: Take-Two
+    category: history
+    as_of: 2026-11-19
+    recheck_days: 120
+    sources:
+      - url: https://gamesbeat.com/take-two-reports-1-39b-in-bookings-down-3-for-june-quarter/
+        publisher: GamesBeat
+      - url: https://respawn.outlookindia.com/gaming/gaming-news/gta-v-crosses-230m-sales-as-gta-vi-nears-release
+        publisher: Outlook Respawn
+
+  - id: gta5_pc_gap
+    claim: "Grand Theft Auto V launched on consoles in September 2013 and came to PC in April 2015."
+    say:
+      - "GTA 5 hit consoles in September 2013, but PC players waited until April 2015."
+    status: confirmed
+    category: history
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://en.wikipedia.org/wiki/Grand_Theft_Auto_V
+        publisher: Wikipedia
+    verify:
+      url: https://en.wikipedia.org/wiki/Grand_Theft_Auto_V
+      contains: ["April 2015"]
+
+  - id: rdr2_pc_gap
+    claim: "Red Dead Redemption 2 launched on consoles in October 2018 and came to PC in November 2019."
+    say:
+      - "Red Dead Redemption 2 came out in October 2018, and the PC version followed in November 2019."
+    status: confirmed
+    category: history
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
+        publisher: Wikipedia
+    verify:
+      url: https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
+      contains: ["November 2019"]
+
+  - id: gta_series_start
+    claim: "The first Grand Theft Auto game was released in 1997."
+    say:
+      - "The very first Grand Theft Auto came out in 1997."
+    status: confirmed
+    category: history
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://en.wikipedia.org/wiki/Grand_Theft_Auto
+        publisher: Wikipedia
+    verify:
+      url: https://en.wikipedia.org/wiki/Grand_Theft_Auto
+      contains: ["1997"]
+
+  - id: vice_city_2002
+    claim: "Vice City first appeared in Grand Theft Auto: Vice City, released in 2002 and set in the 1980s."
+    say:
+      - "Vice City isn't new. It first showed up in GTA Vice City back in 2002, a game set in the 1980s."
+    status: confirmed
+    category: history
+    as_of: 2026-11-19
+    recheck_days: 365
+    sources:
+      - url: https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
+        publisher: Wikipedia
+    verify:
+      url: https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
+      contains: ["2002"]

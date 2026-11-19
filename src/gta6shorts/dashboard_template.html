@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shorts Dashboard</title>
+<meta name="description" content="Performance of the GTA 6 Shorts channel: videos, views, likes, comments, followers.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10); --wash: rgba(11,11,11,0.04);
+  --s1: #2a78d6; --s2: #eb6834; --track: #cde2fb; --meter: #2a78d6;
+  --good: #0ca30c; --good-text: #006300; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
+  --neutral: #c3c2b7; --bad-text: #b42323; --banner: #fff4d6; --banner-ink: #5a4300;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --wash: rgba(255,255,255,0.05);
+    --s1: #3987e5; --s2: #d95926; --track: #184f95; --meter: #3987e5;
+    --good-text: #0ca30c; --neutral: #52514e; --bad-text: #e66767; --banner: #3a2f0b; --banner-ink: #ffe3a0;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10); --wash: rgba(255,255,255,0.05);
+  --s1: #3987e5; --s2: #d95926; --track: #184f95; --meter: #3987e5;
+  --good-text: #0ca30c; --neutral: #52514e; --bad-text: #e66767; --banner: #3a2f0b; --banner-ink: #ffe3a0;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--page); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 16px 16px 48px; }
+header.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 8px 0 4px; }
+h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 15px; margin: 0 0 12px; font-weight: 600; }
+.sub { color: var(--ink-2); margin: 2px 0 0; font-size: 13px; }
+button { font: inherit; color: inherit; }
+.theme { border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+.banner { background: var(--banner); color: var(--banner-ink); border-radius: 12px; padding: 10px 14px; margin: 12px 0; font-size: 14px; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: var(--surface);
+  border-radius: 999px; padding: 4px 10px; font-size: 13px; color: var(--ink-2); }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.filters { display: flex; gap: 6px; margin: 16px 0 12px; flex-wrap: wrap; }
+.filters button { border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 6px 12px; cursor: pointer; color: var(--ink-2); }
+.filters button[aria-pressed="true"] { color: var(--ink); font-weight: 600; box-shadow: inset 0 0 0 1.5px var(--ink); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; margin: 12px 0; min-width: 0; }
+.hero { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px 24px; }
+.hero .value { font-size: 52px; font-weight: 650; line-height: 1; letter-spacing: -0.02em; }
+.hero .label { color: var(--ink-2); font-size: 14px; margin-bottom: 6px; }
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 720px) { .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .tiles { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px; min-width: 0; }
+.tile .label { color: var(--ink-2); font-size: 13px; }
+.tile .value { font-size: 26px; font-weight: 600; margin: 2px 0; }
+.tile .total { color: var(--muted); font-size: 12px; }
+.delta { font-size: 12px; font-weight: 600; }
+.delta.up { color: var(--good-text); } .delta.down { color: var(--bad-text); } .delta.flat { color: var(--muted); }
+.spark { display: block; width: 100%; height: 28px; margin-top: 6px; }
+.grid2 { display: grid; grid-template-columns: 1fr; gap: 0 12px; }
+@media (min-width: 860px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; overflow: visible; }
+.chart svg:focus { outline: 2px solid var(--s1); outline-offset: 4px; border-radius: 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 8px; font-size: 13px; color: var(--ink-2); }
+.legend .key { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 6px; border-radius: 2px; }
+.legend .key.box { width: 10px; height: 10px; border-radius: 3px; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 8px 10px; font-size: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.14); min-width: 130px; z-index: 5; }
+.tip .row { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.tip .row strong { font-size: 13px; }
+.tip .k { width: 12px; height: 2px; border-radius: 2px; }
+.tip .when { color: var(--muted); margin-bottom: 4px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 12px; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+a { color: var(--s1); }
+.seg { display: flex; gap: 2px; height: 28px; margin: 4px 0 10px; }
+.seg div { border-radius: 4px; display: flex; align-items: center; padding: 0 8px; font-size: 12px; font-weight: 600; color: #fff; min-width: 0; overflow: hidden; white-space: nowrap; }
+.seg div.dark-ink { color: #0b0b0b; }
+.meter { margin: 10px 0 14px; }
+.meter .top { display: flex; justify-content: space-between; font-size: 13px; color: var(--ink-2); gap: 8px; }
+.meter .bar { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; margin-top: 6px; }
+.meter .fill { height: 100%; border-radius: 999px; }
+.status { font-size: 12px; font-weight: 600; white-space: nowrap; }
+.muted { color: var(--muted); }
+details summary { cursor: pointer; font-weight: 600; }
+footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
+.empty { color: var(--muted); padding: 16px 0; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1 id="title">GTA 6 Shorts</h1>
+      <p class="sub" id="updated"></p>
+    </div>
+    <button class="theme" id="theme" type="button" aria-label="Switch light/dark mode">◐ Theme</button>
+  </header>
+  <div id="demo" class="banner" hidden>⚠️ <strong>Demo data.</strong> These numbers are synthetic so you can see the layout. Real numbers appear once YouTube is connected and the daily stats job has run.</div>
+  <div class="pills" id="pills"></div>
+  <nav class="filters" id="filters" aria-label="Date range">
+    <button type="button" data-range="7">Last 7 days</button>
+    <button type="button" data-range="30">Last 30 days</button>
+    <button type="button" data-range="90">Last 90 days</button>
+    <button type="button" data-range="0">All time</button>
+  </nav>
+
+  <section class="card hero" aria-live="polite">
+    <div>
+      <div class="label" id="hero-label">Views</div>
+      <div class="value" id="hero-value">—</div>
+    </div>
+    <div class="delta" id="hero-delta"></div>
+  </section>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="card">
+    <h2>Views per day</h2>
+    <div class="legend" id="legend-views"></div>
+    <div class="chart" id="chart-views"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Audience growth</h2>
+      <div class="legend" id="legend-aud"></div>
+      <div class="chart" id="chart-aud"></div>
+    </section>
+    <section class="card">
+      <h2>This period vs the one before</h2>
+      <div class="table-wrap"><table id="weekly"></table></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Best-performing videos</h2>
+    <div class="table-wrap"><table id="best"></table></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Video pipeline</h2>
+      <div id="pipeline"></div>
+    </section>
+    <section class="card">
+      <h2>Free-tier usage today</h2>
+      <div id="usage"></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Recent videos</h2>
+    <div class="table-wrap"><table id="recent"></table></div>
+  </section>
+
+  <section class="card">
+    <details>
+      <summary>Daily numbers (table view)</summary>
+      <div class="table-wrap"><table id="daily"></table></div>
+    </details>
+  </section>
+  <footer>Fan channel — not affiliated with Rockstar Games or Take-Two Interactive. Built from <code>data/</code> in the repository by the daily stats workflow.</footer>
+</div>
+
+<script id="metrics" type="application/json">/*__METRICS__*/</script>
+<script>
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("metrics").textContent);
+  var RANGE = 30;
+  try { var saved = localStorage.getItem("dash-range"); if (saved !== null) RANGE = +saved; } catch (e) {}
+  try { var th = localStorage.getItem("dash-theme"); if (th) document.documentElement.setAttribute("data-theme", th); } catch (e) {}
+
+  function $(id) { return document.getElementById(id); }
+  function el(tag, attrs, text) {
+    var n = document.createElement(tag);
+    if (attrs) for (var k in attrs) { if (k === "class") n.className = attrs[k]; else n.setAttribute(k, attrs[k]); }
+    if (text !== undefined && text !== null) n.textContent = String(text);
+    return n;
+  }
+  function svgEl(tag, attrs) {
+    var n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  function compact(n) {
+    if (n === null || n === undefined || isNaN(n)) return "—";
+    var a = Math.abs(n);
+    if (a >= 1e6) return (n / 1e6).toFixed(a >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M";
+    if (a >= 1e3) return (n / 1e3).toFixed(a >= 1e4 ? 0 : 1).replace(/\.0$/, "") + "K";
+    return Math.round(n).toLocaleString("en-US");
+  }
+  function css(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  function shortDate(d) {
+    var p = d.split("-"); var m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+p[1] - 1];
+    return m + " " + (+p[2]);
+  }
+  function days() { return RANGE === 0 ? DATA.days : DATA.days.slice(-RANGE); }
+  function prevDays() { return RANGE === 0 ? [] : DATA.days.slice(Math.max(0, DATA.days.length - 2 * RANGE), Math.max(0, DATA.days.length - RANGE)); }
+  function sum(arr, key) { var s = 0; arr.forEach(function (d) { s += +(d[key] || 0); }); return s; }
+  function views(d) { return (+d.yt_views_gained || 0) + (+d.tt_views_gained || 0); }
+  function rangeName() { return RANGE === 0 ? "all time" : "the last " + RANGE + " days"; }
+
+  function deltaNode(cur, prev, hasPrev) {
+    var n = el("span", { "class": "delta flat" });
+    if (!hasPrev) { n.textContent = "no earlier period yet"; return n; }
+    var diff = cur - prev;
+    var pct = prev ? Math.round(diff / prev * 100) : null;
+    n.className = "delta " + (diff > 0 ? "up" : diff < 0 ? "down" : "flat");
+    n.textContent = (diff > 0 ? "▲ " : diff < 0 ? "▼ " : "■ ") + compact(Math.abs(diff)) + (pct !== null ? " (" + (diff >= 0 ? "+" : "−") + Math.abs(pct) + "%)" : "") + " vs previous";
+    return n;
+  }
+
+  function sparkline(values) {
+    var w = 120, h = 28, n = values.length;
+    var s = svgEl("svg", { "class": "spark", viewBox: "0 0 " + w + " " + h, preserveAspectRatio: "none", "aria-hidden": "true" });
+    if (n < 2) return s;
+    var max = Math.max.apply(null, values.concat([1]));
+    var pts = values.map(function (v, i) { return [i / (n - 1) * (w - 4) + 2, h - 3 - v / max * (h - 6)]; });
+    s.appendChild(svgEl("polyline", { points: pts.map(function (p) { return p.join(","); }).join(" "), fill: "none",
+      stroke: css("--muted"), "stroke-width": 1.5, "stroke-linejoin": "round", "stroke-linecap": "round", "vector-effect": "non-scaling-stroke" }));
+    var last = pts[n - 1];
+    s.appendChild(svgEl("circle", { cx: last[0], cy: last[1], r: 2.5, fill: css("--s1") }));
+    return s;
+  }
+
+  function niceMax(v) {
+    if (v <= 0) return 1;
+    var p = Math.pow(10, Math.floor(Math.log10(v))), f = v / p;
+    var nice = f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10;
+    return nice * p;
+  }
+
+  // ── line chart with crosshair tooltip ─────────────────────────────────────
+  function lineChart(host, rows, series, opts) {
+    host.textContent = "";
+    if (!rows.length) { host.appendChild(el("div", { "class": "empty" }, "No data yet")); return; }
+    var W = Math.max(280, host.clientWidth), H = opts.height || 220;
+    var m = { l: 46, r: 56, t: 10, b: 26 };
+    var n = rows.length;
+    var maxV = 0;
+    series.forEach(function (s) { rows.forEach(function (r) { maxV = Math.max(maxV, s.value(r)); }); });
+    var top = niceMax(maxV * 1.05);
+    function x(i) { return m.l + (n === 1 ? (W - m.l - m.r) / 2 : i / (n - 1) * (W - m.l - m.r)); }
+    function y(v) { return m.t + (1 - v / top) * (H - m.t - m.b); }
+    var svg = svgEl("svg", { width: W, height: H, viewBox: "0 0 " + W + " " + H, tabindex: "0", role: "img",
+      "aria-label": opts.label + ". Use arrow keys to read values." });
+    [0, 0.5, 1].forEach(function (f) {
+      var v = top * f, yy = y(v);
+      svg.appendChild(svgEl("line", { x1: m.l, x2: W - m.r, y1: yy, y2: yy, stroke: f === 0 ? css("--axis") : css("--grid"), "stroke-width": 1 }));
+      var t = svgEl("text", { x: m.l - 8, y: yy + 4, "text-anchor": "end", "font-size": 11, fill: css("--muted") });
+      t.textContent = compact(v); svg.appendChild(t);
+    });
+    var ticks = n === 1 ? [0] : [0, Math.floor((n - 1) / 2), n - 1];
+    ticks.forEach(function (i) {
+      var t = svgEl("text", { x: x(i), y: H - 6, "text-anchor": i === 0 ? "start" : i === n - 1 ? "end" : "middle", "font-size": 11, fill: css("--muted") });
+      t.textContent = shortDate(rows[i].date); svg.appendChild(t);
+    });
+    series.forEach(function (s) {
+      var d = rows.map(function (r, i) { return (i ? "L" : "M") + x(i).toFixed(1) + "," + y(s.value(r)).toFixed(1); }).join(" ");
+      if (series.length === 1) {
+        svg.appendChild(svgEl("path", { d: d + " L" + x(n - 1) + "," + y(0) + " L" + x(0) + "," + y(0) + " Z", fill: s.color, "fill-opacity": 0.1, stroke: "none" }));
+      }
+      svg.appendChild(svgEl("path", { d: d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+      var lv = s.value(rows[n - 1]);
+      svg.appendChild(svgEl("circle", { cx: x(n - 1), cy: y(lv), r: 4, fill: s.color, stroke: css("--surface"), "stroke-width": 2 }));
+    });
+    // direct end labels (≤ 4 series), nudged apart if they collide
+    var ends = series.map(function (s) { return { s: s, y: y(s.value(rows[n - 1])) }; }).sort(function (a, b) { return a.y - b.y; });
+    for (var i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+    ends.forEach(function (e) {
+      var t = svgEl("text", { x: x(n - 1) + 8, y: e.y + 4, "font-size": 11, fill: css("--ink-2") });
+      t.textContent = e.s.short || e.s.name; svg.appendChild(t);
+    });
+    var cross = svgEl("line", { y1: m.t, y2: H - m.b, stroke: css("--axis"), "stroke-width": 1, visibility: "hidden" });
+    svg.appendChild(cross);
+    var dots = series.map(function (s) { var c = svgEl("circle", { r: 4, fill: s.color, stroke: css("--surface"), "stroke-width": 2, visibility: "hidden" }); svg.appendChild(c); return c; });
+    var hit = svgEl("rect", { x: m.l - 12, y: 0, width: W - m.l - m.r + 24, height: H, fill: "transparent" });
+    svg.appendChild(hit);
+    host.appendChild(svg);
+    var tip = el("div", { "class": "tip", hidden: "" });
+    host.appendChild(tip);
+    var current = n - 1;
+    function show(i) {
+      current = Math.max(0, Math.min(n - 1, i));
+      var r = rows[current], xx = x(current);
+      cross.setAttribute("x1", xx); cross.setAttribute("x2", xx); cross.setAttribute("visibility", "visible");
+      series.forEach(function (s, k) { dots[k].setAttribute("cx", xx); dots[k].setAttribute("cy", y(s.value(r))); dots[k].setAttribute("visibility", "visible"); });
+      tip.textContent = "";
+      tip.appendChild(el("div", { "class": "when" }, shortDate(r.date)));
+      series.forEach(function (s) {
+        var row = el("div", { "class": "row" });
+        var key = el("span", { "class": "k" }); key.style.background = s.color; row.appendChild(key);
+        row.appendChild(el("strong", null, compact(s.value(r))));
+        row.appendChild(el("span", { "class": "muted" }, s.name));
+        tip.appendChild(row);
+      });
+      tip.hidden = false;
+      var left = xx + 14; if (left + 170 > W) left = xx - 180;
+      tip.style.left = Math.max(0, left) + "px"; tip.style.top = "8px";
+    }
+    function hide() { cross.setAttribute("visibility", "hidden"); dots.forEach(function (d) { d.setAttribute("visibility", "hidden"); }); tip.hidden = true; }
+    function fromEvent(ev) {
+      var rect = svg.getBoundingClientRect();
+      var px = (ev.clientX - rect.left) * (W / rect.width);
+      return n === 1 ? 0 : Math.round((px - m.l) / ((W - m.l - m.r) / (n - 1)));
+    }
+    hit.addEventListener("pointermove", function (ev) { show(fromEvent(ev)); });
+    hit.addEventListener("pointerdown", function (ev) { show(fromEvent(ev)); });
+    hit.addEventListener("pointerleave", hide);
+    svg.addEventListener("focus", function () { show(current); });
+    svg.addEventListener("blur", hide);
+    svg.addEventListener("keydown", function (ev) {
+      if (ev.key === "ArrowLeft") { show(current - 1); ev.preventDefault(); }
+      if (ev.key === "ArrowRight") { show(current + 1); ev.preventDefault(); }
+    });
+  }
+
+  function legend(host, series) {
+    host.textContent = "";
+    series.forEach(function (s) {
+      var item = el("span");
+      var key = el("span", { "class": "key" }); key.style.background = s.color;
+      item.appendChild(key); item.appendChild(document.createTextNode(s.name));
+      host.appendChild(item);
+    });
+  }
+
+  function table(host, head, rows, numeric) {
+    host.textContent = "";
+    var thead = el("thead"), tr = el("tr");
+    head.forEach(function (h, i) { tr.appendChild(el("th", numeric[i] ? { "class": "num" } : null, h)); });
+    thead.appendChild(tr); host.appendChild(thead);
+    var tb = el("tbody");
+    if (!rows.length) { var r0 = el("tr"); var c0 = el("td", { colspan: head.length, "class": "empty" }, "Nothing yet"); r0.appendChild(c0); tb.appendChild(r0); }
+    rows.forEach(function (cells) {
+      var r = el("tr");
+      cells.forEach(function (c, i) {
+        var td = el("td", numeric[i] ? { "class": "num" } : null);
+        if (c && c.nodeType) td.appendChild(c); else td.textContent = c === undefined || c === null ? "—" : String(c);
+        r.appendChild(td);
+      });
+      tb.appendChild(r);
+    });
+    host.appendChild(tb);
+  }
+
+  function statusLabel(status) {
+    var map = {
+      published: ["✔ Published", "--good-text"], awaiting_review: ["● Awaiting review", "--ink-2"],
+      approved: ["✔ Approved", "--good-text"], rejected: ["✕ Rejected", "--muted"],
+      qa_failed: ["✕ QA failed", "--bad-text"], publish_failed: ["! Upload failed", "--bad-text"]
+    };
+    var v = map[status] || [status || "—", "--muted"];
+    var s = el("span", { "class": "status" }, v[0]); s.style.color = css(v[1]);
+    return s;
+  }
+
+  function render() {
+    var D = days(), P = prevDays(), hasPrev = P.length > 0;
+    document.querySelectorAll("#filters button").forEach(function (b) { b.setAttribute("aria-pressed", String(+b.dataset.range === RANGE)); });
+    var ch = DATA.channel || {};
+    $("title").textContent = (ch.name && ch.name.indexOf("YOUR") !== 0 ? ch.name : "GTA 6 Shorts") + " — dashboard";
+    $("updated").textContent = "Updated " + new Date(DATA.generated_at).toLocaleString() + " · showing " + rangeName();
+    $("demo").hidden = !DATA.demo;
+
+    var pills = $("pills"); pills.textContent = "";
+    var st = DATA.stage || {};
+    [["Publishing " + (st.publishing_enabled ? "ON (" + st.mode + ")" : "OFF"), st.publishing_enabled ? "--good" : "--warning"],
+     ["YouTube " + (st.youtube_stats ? "connected" : "not connected"), st.youtube_stats ? "--good" : "--neutral"],
+     ["TikTok " + (st.tiktok ? "connected" : "not connected"), st.tiktok ? "--good" : "--neutral"]].forEach(function (p) {
+      var pill = el("span", { "class": "pill" }); var d = el("span", { "class": "dot" }); d.style.background = css(p[1]);
+      pill.appendChild(d); pill.appendChild(document.createTextNode(p[0])); pills.appendChild(pill);
+    });
+
+    var vNow = D.reduce(function (s, d) { return s + views(d); }, 0), vPrev = P.reduce(function (s, d) { return s + views(d); }, 0);
+    $("hero-label").textContent = "Views in " + rangeName() + " (YouTube + TikTok)";
+    $("hero-value").textContent = compact(vNow);
+    var hd = $("hero-delta"); hd.textContent = ""; hd.appendChild(deltaNode(vNow, vPrev, hasPrev));
+
+    var last = DATA.days.length ? DATA.days[DATA.days.length - 1] : {};
+    var tiles = [
+      ["Videos created", "rendered", null], ["Videos published", "published", null],
+      ["Likes", "likes_gained", null], ["Comments", "comments_gained", null],
+      ["Subscribers gained", "subs_gained", "Total " + compact(last.yt_subs)], ["Followers gained", "followers_gained", "Total " + compact(last.tt_followers)]
+    ];
+    var host = $("tiles"); host.textContent = "";
+    tiles.forEach(function (t) {
+      var cur = sum(D, t[1]), prev = sum(P, t[1]);
+      var tile = el("div", { "class": "tile" });
+      tile.appendChild(el("div", { "class": "label" }, t[0]));
+      tile.appendChild(el("div", { "class": "value" }, compact(cur)));
+      tile.appendChild(deltaNode(cur, prev, hasPrev));
+      if (t[2]) tile.appendChild(el("div", { "class": "total" }, t[2]));
+      tile.appendChild(sparkline(DATA.days.slice(-12).map(function (d) { return +d[t[1]] || 0; })));
+      host.appendChild(tile);
+    });
+
+    var vs = [{ name: "YouTube", short: "YouTube", color: css("--s1"), value: function (r) { return +r.yt_views_gained || 0; } },
+              { name: "TikTok", short: "TikTok", color: css("--s2"), value: function (r) { return +r.tt_views_gained || 0; } }];
+    legend($("legend-views"), vs);
+    lineChart($("chart-views"), D, vs, { label: "Views per day for YouTube and TikTok" });
+    var as = [{ name: "YouTube subscribers", short: "YouTube", color: css("--s1"), value: function (r) { return +r.yt_subs || 0; } },
+              { name: "TikTok followers", short: "TikTok", color: css("--s2"), value: function (r) { return +r.tt_followers || 0; } }];
+    legend($("legend-aud"), as);
+    lineChart($("chart-aud"), D, as, { label: "Total subscribers and followers", height: 200 });
+
+    var metricsRows = [["Views — YouTube", "yt_views_gained"], ["Views — TikTok", "tt_views_gained"], ["Likes", "likes_gained"],
+      ["Comments", "comments_gained"], ["Subscribers gained", "subs_gained"], ["Followers gained", "followers_gained"],
+      ["Videos created", "rendered"], ["Videos published", "published"]];
+    table($("weekly"), ["Metric", "This period", "Previous", "Change"], metricsRows.map(function (r) {
+      var a = sum(D, r[1]), b = sum(P, r[1]);
+      return [r[0], compact(a), hasPrev ? compact(b) : "—", hasPrev ? deltaNode(a, b, true) : "—"];
+    }), [false, true, true, true]);
+
+    var best = DATA.videos.filter(function (v) { return v.views > 0; }).sort(function (a, b) { return b.views - a.views; }).slice(0, 8);
+    table($("best"), ["Video", "Views", "Likes", "Comments", "Engagement"], best.map(function (v) {
+      var name = v.youtube_url ? el("a", { href: v.youtube_url, target: "_blank", rel: "noopener" }, v.title) : el("span", null, v.title);
+      return [name, compact(v.views), compact(v.likes), compact(v.comments), (v.engagement * 100).toFixed(1) + "%"];
+    }), [false, true, true, true, true]);
+
+    var p = DATA.pipeline || {};
+    var pipe = $("pipeline"); pipe.textContent = "";
+    var parts = [["Published", p.published || 0, "--good", false], ["Awaiting review", p.awaiting_review || 0, "--warning", true],
+                 ["Approved", p.approved || 0, "--s1", false], ["Rejected", p.rejected || 0, "--neutral", true],
+                 ["QA failed", p.qa_failed || 0, "--critical", false]];
+    var total = parts.reduce(function (s, x) { return s + x[1]; }, 0);
+    var seg = el("div", { "class": "seg", role: "img", "aria-label": parts.map(function (x) { return x[0] + " " + x[1]; }).join(", ") });
+    parts.forEach(function (x) {
+      if (!x[1]) return;
+      var b = el("div", x[3] ? { "class": "dark-ink" } : null); b.style.flex = String(x[1]); b.style.background = css(x[2]);
+      b.title = x[0] + ": " + x[1]; if (x[1] / Math.max(total, 1) > 0.12) b.textContent = String(x[1]);
+      seg.appendChild(b);
+    });
+    if (total) pipe.appendChild(seg); else pipe.appendChild(el("div", { "class": "empty" }, "No videos yet"));
+    var lg = el("div", { "class": "legend" });
+    parts.forEach(function (x) { var it = el("span"); var k = el("span", { "class": "key box" }); k.style.background = css(x[2]); it.appendChild(k); it.appendChild(document.createTextNode(x[0] + " " + x[1])); lg.appendChild(it); });
+    pipe.appendChild(lg);
+    pipe.appendChild(el("p", { "class": "muted" }, "Created in total: " + (p.created || 0) + (p.qa_pass_rate !== null && p.qa_pass_rate !== undefined ? " · QA pass rate " + Math.round(p.qa_pass_rate * 100) + "%" : "")));
+
+    var u = DATA.usage || {}, uh = $("usage"); uh.textContent = "";
+    [["YouTube uploads", u.youtube_uploads], ["YouTube API units", u.youtube_units], ["Gemini requests", u.gemini_requests]].forEach(function (x) {
+      if (!x[1]) return;
+      var used = x[1].used || 0, lim = x[1].limit || 1, f = Math.min(1, used / lim);
+      var sev = f >= 0.85 ? ["--critical", "✕ near limit"] : f >= 0.6 ? ["--warning", "! watch"] : ["--meter", "✓ fine"];
+      var m = el("div", { "class": "meter" });
+      var topRow = el("div", { "class": "top" });
+      topRow.appendChild(el("span", null, x[0]));
+      var right = el("span", null, used.toLocaleString("en-US") + " / " + lim.toLocaleString("en-US") + "  ");
+      var sv = el("span", { "class": "status" }, sev[1]); sv.style.color = css(sev[0] === "--meter" ? "--good-text" : sev[0] === "--warning" ? "--ink-2" : "--bad-text");
+      right.appendChild(sv); topRow.appendChild(right); m.appendChild(topRow);
+      var bar = el("div", { "class": "bar" }); var fill = el("div", { "class": "fill" });
+      fill.style.width = Math.max(f * 100, used ? 2 : 0) + "%"; fill.style.background = css(sev[0]);
+      bar.appendChild(fill); m.appendChild(bar); uh.appendChild(m);
+    });
+    uh.appendChild(el("p", { "class": "muted" }, "GitHub Actions: " + (u.actions || "—")));
+
+    table($("recent"), ["Video", "Status", "Length", "QA", "Review"], DATA.videos.slice(0, 12).map(function (v) {
+      var link = v.review_issue && DATA.repo ? el("a", { href: "https://github.com/" + DATA.repo + "/issues/" + v.review_issue, target: "_blank", rel: "noopener" }, "#" + v.review_issue) : (v.review_issue ? "#" + v.review_issue : "—");
+      return [v.title, statusLabel(v.status), v.duration ? Math.round(v.duration) + " s" : "—", v.qa_passed ? "✓ passed" : "✕ failed", link];
+    }), [false, false, true, false, false]);
+
+    table($("daily"), ["Date", "YouTube views", "TikTok views", "Likes", "Comments", "Subs", "Followers", "Created", "Published"],
+      D.slice().reverse().map(function (d) {
+        return [d.date, compact(d.yt_views_gained), compact(d.tt_views_gained), compact(d.likes_gained), compact(d.comments_gained),
+                compact(d.subs_gained), compact(d.followers_gained), d.rendered, d.published];
+      }), [false, true, true, true, true, true, true, true, true]);
+  }
+
+  document.querySelectorAll("#filters button").forEach(function (b) {
+    b.addEventListener("click", function () { RANGE = +b.dataset.range; try { localStorage.setItem("dash-range", String(RANGE)); } catch (e) {} render(); });
+  });
+  $("theme").addEventListener("click", function () {
+    var cur = document.documentElement.getAttribute("data-theme");
+    var dark = cur ? cur === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var next = dark ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("dash-theme", next); } catch (e) {}
+    render();
+  });
+  var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(render, 150); });
+  render();
+})();
+</script>
+</body>
+</html>
