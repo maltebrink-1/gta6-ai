@@ -13,12 +13,12 @@ Legend: ✅ done and tested · 🧪 built, tested with mocks only (needs your ac
 - ✅ Original music + SFX, ducking, −14 LUFS mastering
 - ✅ FFmpeg render 1080×1920 / 30 fps / H.264 + AAC
 - ✅ Automatic QA (16 checks)
-- ✅ Review queue (GitHub issues + release) · 🧪 runs in Actions only
+- 🧪 Review queue (GitHub issues + release) — mocked tests only; first real run when you enable Stage 2
 - ✅ Publishing gate (everything OFF by default)
 - 🧪 YouTube upload + statistics client
 - 🧪 TikTok inbox/direct client
 - ✅ Statistics model, daily report, mobile-friendly dashboard (demo data)
-- ✅ GitHub Actions: CI (+ real cloud render), produce, publish, stats
+- ✅ GitHub Actions CI incl. a real cloud render (verified) · 🧪 produce / publish / stats workflows written, not run yet (they open issues and commit data, so they wait for your go)
 - ✅ 87 automated tests
 
 ## Stage 2 — Testing ⏸️
