@@ -3,7 +3,8 @@ name: Stats & dashboard
 
 on:
   schedule:
-    - cron: "43 21 * * *"   # 21:43 UTC daily
+    - cron: "0 16 * * *"   # 18:00 Copenhagen in summer (UTC+2)
+    - cron: "0 17 * * *"   # 18:00 Copenhagen in winter (UTC+1)
   workflow_dispatch:
     inputs:
       demo:
@@ -21,8 +22,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  timecheck:
+    # GitHub schedules run in UTC; Denmark is UTC+1 in winter and UTC+2 in summer.
+    # Both UTC slots are scheduled and only the one that is 18:00 in Copenhagen runs.
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.t.outputs.go }}
+    steps:
+      - id: t
+        run: |
+          # pick the UTC slot that equals 18:00 in Copenhagen today (+01 winter, +02 summer)
+          if [ "$(TZ=Europe/Copenhagen date +%z)" = "+0200" ]; then want="0 16 * * *"; else want="0 17 * * *"; fi
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "${{ github.event.schedule }}" = "$want" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=false" >> "$GITHUB_OUTPUT"; echo "Other daylight-saving slot — skipping."
+          fi
+
   stats:
-    if: github.event_name == 'workflow_dispatch' || vars.AUTOMATION_ENABLED == 'true'
+    needs: timecheck
+    if: needs.timecheck.outputs.go == 'true' && (github.event_name == 'workflow_dispatch' || vars.AUTOMATION_ENABLED == 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:

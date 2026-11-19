@@ -112,9 +112,9 @@ script (ready) ─► rendered ─► qa_failed                (never publishabl
 | Workflow | When | What |
 |---|---|---|
 | `ci.yml` | every push / PR | tests, fact check, **real cloud render with the Kokoro voice** |
-| `produce.yml` | daily 06:17 UTC* or manual | leads → fact re-check → scripts → videos → QA → review issues |
+| `produce.yml` | daily 12:00 Danish time* or manual | leads → fact re-check → scripts → videos → QA → review issues |
 | `publish.yml` | when *you* label a review issue; daily 17:23 UTC* | applies your decision; uploads if the gate allows |
-| `stats.yml` | daily 21:43 UTC* or manual | statistics → report → dashboard on GitHub Pages |
+| `stats.yml` | daily 18:00 Danish time* or manual | statistics → report → dashboard on GitHub Pages |
 
 \* Scheduled runs only happen when the repository variable `AUTOMATION_ENABLED`
 is `true`. Manual runs always work.
