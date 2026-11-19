@@ -80,3 +80,4 @@ python -m gta6shorts report --demo --site /tmp/site
 | Dashboard 404 | Enable *Settings → Pages → Source: GitHub Actions*, then run *Stats & dashboard* |
 | Scheduled runs don't happen | `AUTOMATION_ENABLED` variable missing, or GitHub paused the schedule — re-enable on the workflow page |
 | "TikTok issued a new refresh token" | Update the `TIKTOK_REFRESH_TOKEN` secret with the new value from the run log |
+| "Could not install FFmpeg from the Ubuntu mirrors" | Ubuntu's package mirrors were unreachable from GitHub's runner. Downloaded packages are cached (refreshed weekly), so this only bites on a cache miss — just re-run the workflow later. Publishing and stats never need FFmpeg |
