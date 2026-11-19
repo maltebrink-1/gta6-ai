@@ -29,7 +29,7 @@ def hashtags(script: Script, limit: int = 3) -> list[str]:
     tags = ["#GTA6", "#GTAVI"]
     for t in script.tags:
         h = "#" + "".join(ch for ch in t.title() if ch.isalnum())
-        if h not in tags and len(h) > 3:
+        if h.lower() not in {x.lower() for x in tags} and len(h) > 3:
             tags.append(h)
     return tags[:limit]
 
