@@ -23,4 +23,11 @@ def write_dashboard(metrics: dict, site_dir: Path) -> Path:
     index = site_dir / "index.html"
     index.write_text(render_dashboard(metrics), encoding="utf-8")
     (site_dir / ".nojekyll").write_text("", encoding="utf-8")
+    static = Path(__file__).resolve().parents[2] / "site_static"
+    if static.is_dir():  # legal pages, TikTok connect/callback pages, verification files
+        for f in static.rglob("*"):
+            if f.is_file():
+                dest = site_dir / f.relative_to(static)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(f.read_bytes())
     return index

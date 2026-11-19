@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect TikTok — Shorts uploader</title><style>body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;color:#111;background:#fafaf8}h1{font-size:26px}h2{font-size:18px;margin-top:28px}code{background:#eee;padding:2px 6px;border-radius:4px;word-break:break-all}a{color:#2a78d6}.box{background:#fff;border:1px solid #ddd;border-radius:12px;padding:16px;margin:16px 0}button{font:inherit;padding:10px 16px;border-radius:10px;border:0;background:#111;color:#fff;cursor:pointer}@media (prefers-color-scheme:dark){body{background:#111;color:#eee}.box{background:#1b1b1b;border-color:#333}code{background:#2a2a2a}button{background:#eee;color:#111}}</style></head><body>
+<h1>Shorts uploader</h1>
+<p>This tool sends the short videos I make to my TikTok account <strong>@viceclips</strong> as <strong>drafts</strong>. I then review and post them myself in the TikTok app.</p>
+<div class="box"><h2 style="margin-top:0">Step 1 — Connect TikTok</h2>
+<p>Log in with TikTok and allow: your basic profile, uploading videos to your drafts, and reading your account and video statistics.</p>
+<p><button id="connect">Continue with TikTok</button></p><p id="msg"></p></div>
+<div class="box"><h2 style="margin-top:0">Step 2 — Videos arrive in your TikTok drafts</h2>
+<p>After you approve a video in the review queue, it is uploaded to your TikTok inbox. Open TikTok → notifications/drafts → edit → <strong>Post</strong>.</p></div>
+<p><a href="../">Performance dashboard</a> · <a href="../privacy.html">Privacy Policy</a> · <a href="../terms.html">Terms of Service</a></p>
+<script>
+(function(){
+  var CLIENT_KEY = "__TIKTOK_CLIENT_KEY__";
+  var redirect = location.origin + location.pathname.replace(/index\.html$/, "") + "callback.html";
+  document.getElementById("connect").onclick = function(){
+    if (CLIENT_KEY.indexOf("__") === 0) { document.getElementById("msg").textContent = "Client key not set yet."; return; }
+    var state = Math.random().toString(36).slice(2);
+    try { sessionStorage.setItem("tt_state", state); } catch(e) {}
+    var scope = "user.info.basic,user.info.stats,video.list,video.upload";
+    location.href = "https://www.tiktok.com/v2/auth/authorize/?client_key=" + encodeURIComponent(CLIENT_KEY) +
+      "&scope=" + encodeURIComponent(scope) + "&response_type=code&redirect_uri=" + encodeURIComponent(redirect) +
+      "&state=" + state;
+  };
+})();
+</script></body></html>
