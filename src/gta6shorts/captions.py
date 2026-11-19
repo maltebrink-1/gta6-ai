@@ -77,7 +77,7 @@ class CaptionBuilder:
         self.size_big = ass_size_for_cap(fonts_dir, self.font, 205)
         self.size_card_text = ass_size_for_cap(fonts_dir, self.font, 118)
         self.size_small = ass_size_for_cap(fonts_dir, self.font, 44)
-        self.size_source = ass_size_for_cap(fonts_dir, SMALL_TEXT_FONT, 22)
+        self.size_source = ass_size_for_cap(fonts_dir, SMALL_TEXT_FONT, 26)
         self.events: list[Event] = []
 
     # ── helpers ──────────────────────────────────────────────────────────────
@@ -234,13 +234,15 @@ class CaptionBuilder:
             if cur:
                 trial = " ".join(caption_word(x.text, self.upper) for x in cur + [w])
                 prev = cur[-1]
+                # keep a short number with the word before it ("REDEMPTION 2", "GTA 6")
+                glue = text.isdigit() and len(text) <= 2 and not prev.text.endswith((".", ",", "!", "?", ";", ":"))
                 breaks = (
-                    len(cur) >= self.max_words
-                    or len(trial) > self.max_chars
+                    (len(cur) >= self.max_words and not glue)
+                    or (len(trial) > self.max_chars and not glue)
                     or prev.line != w.line
                     or prev.text.rstrip("\"'”’").endswith((".", ",", "!", "?", ";", ":"))
                     or w.start - prev.end > 0.35
-                    or self.width(trial, self.size_caption) > CAPTION_MAX_W
+                    or self.width(trial, self.size_caption) > CAPTION_MAX_W * (1.25 if glue else 1.0)
                 )
                 if breaks:
                     chunks.append(cur)

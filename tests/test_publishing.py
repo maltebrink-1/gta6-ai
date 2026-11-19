@@ -246,3 +246,43 @@ def test_tiktok_direct_post_labels_ai_content(tmp_path):
     assert tt.direct_post(video, "caption") == "P2"
     body = json.loads(session.calls[2][2]["data"])
     assert body["post_info"]["is_aigc"] is True and body["post_info"]["privacy_level"] == "SELF_ONLY"
+
+
+# ── GitHub review queue (mocked HTTP) ────────────────────────────────────────
+class GHSession:
+    def __init__(self, responses):
+        self.responses = list(responses)
+        self.calls = []
+
+    def request(self, method, url, **kw):
+        self.calls.append((method, url, kw))
+        return self.responses.pop(0)
+
+    def get(self, url, **kw):
+        return self.request("GET", url, **kw)
+
+
+def test_review_queue_upload_and_issue(tmp_path):
+    from gta6shorts.review import GitHub
+
+    video = tmp_path / "v.mp4"
+    video.write_bytes(b"data")
+    session = GHSession([
+        Resp(404, {}),                                             # release lookup
+        Resp(201, {"id": 7, "tag_name": "review-queue"}),          # create release
+        Resp(200, [{"id": 99, "name": "x.mp4"}]),                  # list assets (old copy exists)
+        Resp(204, {}),                                             # delete old asset
+        Resp(201, {"browser_download_url": "https://dl/x.mp4"}),   # upload
+        Resp(201, {"number": 12}),                                 # create issue
+    ])
+    gh = GitHub("TOKEN", "owner/repo", session=session)
+    release = gh.ensure_release("review-queue")
+    assert json.loads(json.dumps(session.calls[1][2]["json"]))["prerelease"] is True
+    assert gh.upload_asset(release, video, "x.mp4", "video/mp4") == "https://dl/x.mp4"
+    method, url, kw = session.calls[4]
+    assert method == "POST" and url.startswith("https://uploads.github.com/repos/owner/repo/releases/7/assets")
+    assert kw["params"] == {"name": "x.mp4"} and kw["headers"]["Content-Type"] == "video/mp4"
+    assert session.calls[3][0] == "DELETE"
+    assert gh.create_issue("t", "b", ["review"]) == 12
+    assert session.calls[5][2]["json"]["labels"] == ["review"]
+    assert all(c[2]["headers"]["Authorization"] == "Bearer TOKEN" for c in session.calls if "headers" in c[2])

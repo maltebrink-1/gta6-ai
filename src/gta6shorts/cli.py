@@ -163,7 +163,7 @@ def cmd_render(cfg, args) -> int:
     from .pipeline import produce
 
     summary = produce(cfg, count=len(args.ids), today=today_for(cfg), engine_name=args.engine, only=args.ids,
-                      open_reviews=False, allow_write=False, strict_facts=args.strict)
+                      open_reviews=False, allow_write=False, strict_facts=args.strict, record=False)
     print(summary.markdown())
     step_summary(summary.markdown())
     return 0 if all(r.get("qa_passed") for r in summary.rendered) and summary.rendered else 1

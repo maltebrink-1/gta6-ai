@@ -14,8 +14,9 @@ runs:
     - name: Install FFmpeg and espeak-ng
       shell: bash
       run: |
+        sudo rm -f /var/lib/man-db/auto-update   # skip slow man-page indexing
         sudo apt-get update -qq
-        sudo apt-get install -y -qq ffmpeg espeak-ng > /dev/null
+        sudo apt-get install -y -qq --no-install-recommends ffmpeg espeak-ng > /dev/null
         ffmpeg -hide_banner -version | head -1
     - name: Install Python packages
       shell: bash

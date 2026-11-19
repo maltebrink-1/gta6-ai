@@ -55,7 +55,8 @@ class ProduceSummary:
 
 
 def produce(cfg, *, count: int, today: date, engine_name: str | None = None, only: list[str] | None = None,
-            open_reviews: bool = True, allow_write: bool = True, strict_facts: bool = True, log=print) -> ProduceSummary:
+            open_reviews: bool = True, allow_write: bool = True, strict_facts: bool = True, record: bool = True,
+            log=print) -> ProduceSummary:
     summary = ProduceSummary()
 
     def say(msg: str) -> None:
@@ -129,7 +130,9 @@ def produce(cfg, *, count: int, today: date, engine_name: str | None = None, onl
             qa = run_qa(result.video, s, fb, cfg, today=today, history=history, strict_facts=strict_facts)
             (result.out_dir / "qa.json").write_text(json.dumps(qa.to_dict(), indent=1), encoding="utf-8")
             meta = load_meta(result.out_dir)
-            rec = reg.record_render(s, result, qa, meta)
+            rec = reg.record_render(s, result, qa, meta) if record else {"id": s.id, **meta}
+            if record and s.path:
+                rec["script"] = str(Path(s.path).resolve().relative_to(cfg.root.resolve()))
             entry.update(duration=result.duration, engine=result.engine, qa_passed=qa.passed,
                          failures=[f"{c.name}: {c.detail}" for c in qa.failures])
             say(qa.summary().splitlines()[0])
@@ -145,7 +148,8 @@ def produce(cfg, *, count: int, today: date, engine_name: str | None = None, onl
             entry.update(qa_passed=False, failures=[f"render error: {exc}"[:300]])
             say(f"ERROR {s.id}: {exc}")
         summary.rendered.append(entry)
-        reg.save()
+        if record:
+            reg.save()
     if stock:
         usage = Usage(cfg.data_dir / "usage.json")
         usage.add("pexels_requests", stock.requests_made, today)
