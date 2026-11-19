@@ -29,6 +29,45 @@ def step_summary(markdown: str) -> None:
             fh.write(markdown + "\n")
 
 
+def credential_shape() -> list[tuple[str, bool, str]]:
+    """Describe the FORMAT of the YouTube secrets without revealing them."""
+    import os
+    import re
+
+    rows = []
+
+    def raw(name):
+        return os.environ.get(name)
+
+    cid = raw("YT_CLIENT_ID")
+    if cid is None or not cid.strip():
+        rows.append(("YT_CLIENT_ID format", False, "missing or empty"))
+    else:
+        ws = cid != cid.strip()
+        ok = bool(re.fullmatch(r"\d{6,}-[a-z0-9]+\.apps\.googleusercontent\.com", cid.strip()))
+        rows.append(("YT_CLIENT_ID format", ok and not ws,
+                     f"starts {cid.strip()[:12]!r}, length {len(cid.strip())}, "
+                     f"ends with .apps.googleusercontent.com: {cid.strip().endswith('.apps.googleusercontent.com')}, "
+                     f"extra spaces/newlines: {ws}"))
+    sec = raw("YT_CLIENT_SECRET")
+    if sec is None or not sec.strip():
+        rows.append(("YT_CLIENT_SECRET format", False, "missing or empty"))
+    else:
+        ws = sec != sec.strip()
+        rows.append(("YT_CLIENT_SECRET format", sec.strip().startswith("GOCSPX-") and not ws,
+                     f"starts with GOCSPX-: {sec.strip().startswith('GOCSPX-')}, length {len(sec.strip())}, "
+                     f"extra spaces/newlines: {ws}"))
+    tok = raw("YT_REFRESH_TOKEN")
+    if tok is None or not tok.strip():
+        rows.append(("YT_REFRESH_TOKEN format", False, "missing or empty"))
+    else:
+        ws = tok != tok.strip()
+        rows.append(("YT_REFRESH_TOKEN format", tok.strip().startswith("1//") and not ws,
+                     f"starts with 1//: {tok.strip().startswith('1//')}, length {len(tok.strip())}, "
+                     f"extra spaces/newlines: {ws}"))
+    return rows
+
+
 # ── commands ─────────────────────────────────────────────────────────────────
 def cmd_doctor(cfg, args) -> int:
     from .facts import validate_factbase
@@ -55,6 +94,9 @@ def cmd_doctor(cfg, args) -> int:
     row("scripts", True, f"{len(load_scripts(cfg.scripts_dir))} in content/scripts")
     row("publishing master switch", True, "ON" if cfg.get("publishing.enabled") else "OFF (safe — Stage 1/2)")
     row("YouTube secrets", has_env("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"), "YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN")
+    if has_env("YT_CLIENT_ID") or has_env("YT_CLIENT_SECRET") or has_env("YT_REFRESH_TOKEN"):
+        for name, ok, detail in credential_shape():
+            row(name, ok, detail)
     row("TikTok secrets", has_env("TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN"), "needs an approved TikTok developer app")
     row("Gemini (optional writer)", has_env("GEMINI_API_KEY"), "GEMINI_API_KEY")
     row("OpenAI-compatible (optional writer)", has_env("LLM_BASE_URL", "LLM_API_KEY", "LLM_MODEL"), "LLM_BASE_URL / LLM_API_KEY / LLM_MODEL")

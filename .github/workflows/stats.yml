@@ -38,6 +38,8 @@ jobs:
         with:
           voice-model: "false"
           media-tools: "false"
+      - name: Check secrets format (values stay hidden)
+        run: python -m gta6shorts doctor
       - name: Collect statistics
         run: python -m gta6shorts stats
       - name: Build daily report and dashboard
