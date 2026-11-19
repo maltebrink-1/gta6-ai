@@ -24,7 +24,7 @@ Legend: ✅ done and tested · 🧪 built, tested with mocks only (needs your ac
 ## Stage 2 — Testing ⏸️
 
 - ✅ First 5 test videos rendered (launch day, PC wait, trailer records, Lucia & Jason, GTA timeline)
-- ⬜ Cloud render verified in GitHub Actions (CI job "Cloud render test")
+- ✅ Cloud render verified in GitHub Actions (Kokoro voice, QA 16/16, ~2 min per video on the free runner)
 - ⏸️ You review the test videos and pick the narrator voice / look
 - ⏸️ Set `AUTOMATION_ENABLED=true` → daily produce + stats in the cloud, review issues on your phone
 - ⏸️ Enable GitHub Pages for the dashboard

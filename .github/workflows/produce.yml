@@ -37,7 +37,7 @@ jobs:
       LLM_MODEL: ${{ secrets.LLM_MODEL }}
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
       - name: Collect news leads (topic ideas only)
         continue-on-error: true
