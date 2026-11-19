@@ -1,9 +1,9 @@
 {
  "date": "2026-11-19",
- "collected_at": "2026-11-19T13:55:05+00:00",
+ "collected_at": "2026-11-19T14:08:42+00:00",
  "youtube": null,
  "tiktok": null,
  "errors": [
-  "youtube: token refresh failed (HTTP 401): {\n  \"error\": \"invalid_client\",\n  \"error_description\": \"The OAuth client was not found.\"\n} — is the OAuth app 'In production' and the refresh token still valid?"
+  "youtube: token refresh failed (HTTP 401): {\n  \"error\": \"invalid_client\",\n  \"error_description\": \"The provided client secret is invalid.\"\n} — is the OAuth app 'In production' and the refresh token still valid?"
  ]
 }
