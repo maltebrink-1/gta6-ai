@@ -14,9 +14,24 @@ runs:
     - name: Install FFmpeg and espeak-ng
       shell: bash
       run: |
-        sudo rm -f /var/lib/man-db/auto-update   # skip slow man-page indexing
-        sudo apt-get update -qq
-        sudo apt-get install -y -qq --no-install-recommends ffmpeg espeak-ng > /dev/null
+        # Ubuntu's needrestart runs after every apt install and can restart the
+        # runner's own services (or wait for input); that intermittently froze this
+        # step. Keep it out of the way, never prompt, and never wait forever.
+        sudo rm -f /etc/apt/apt.conf.d/99needrestart /var/lib/man-db/auto-update
+        APT="sudo env DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1 NEEDRESTART_MODE=l apt-get \
+          -o DPkg::Lock::Timeout=120 -o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o Dpkg::Use-Pty=0"
+        for attempt in 1 2 3; do
+          echo "[$(date -u +%T)] apt attempt $attempt: update"
+          if timeout 300 $APT update -qq && echo "[$(date -u +%T)] install" \
+             && timeout 600 $APT install -y -q --no-install-recommends ffmpeg espeak-ng; then
+            break
+          fi
+          echo "::warning::apt attempt $attempt failed or timed out"
+          ps -eo pid,etime,cmd | grep -E "apt|dpkg|needrestart|unattended" | grep -v grep || true
+          if [ "$attempt" = 3 ]; then exit 1; fi
+          sleep 20
+        done
+        echo "[$(date -u +%T)] done"
         ffmpeg -hide_banner -version | head -1
     - name: Install Python packages
       shell: bash
