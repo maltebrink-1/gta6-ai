@@ -4,6 +4,9 @@ inputs:
   voice-model:
     description: Download/cache the Kokoro voice model (≈340 MB, cached after the first run)
     default: "true"
+  media-tools:
+    description: Install FFmpeg + espeak-ng (publish/stats jobs don't need them)
+    default: "true"
 runs:
   using: composite
   steps:
@@ -11,26 +14,45 @@ runs:
       with:
         python-version: "3.12"
         cache: pip
-    - name: Install FFmpeg and espeak-ng
+    - name: Package cache key
+      if: inputs.media-tools == 'true'
+      id: aptkey
       shell: bash
       run: |
-        # Ubuntu's needrestart runs after every apt install and can restart the
-        # runner's own services (or wait for input); that intermittently froze this
-        # step. Keep it out of the way, never prompt, and never wait forever.
+        echo "prefix=apt-debs-${ImageOS:-ubuntu}-" >> "$GITHUB_OUTPUT"
+        echo "key=apt-debs-${ImageOS:-ubuntu}-$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
+    - name: Restore downloaded Ubuntu packages
+      if: inputs.media-tools == 'true'
+      uses: actions/cache@v4
+      with:
+        path: ~/apt-cache
+        key: ${{ steps.aptkey.outputs.key }}
+        restore-keys: ${{ steps.aptkey.outputs.prefix }}
+    - name: Install FFmpeg and espeak-ng
+      if: inputs.media-tools == 'true'
+      shell: bash
+      run: |
+        # Ubuntu's mirrors are sometimes unreachable from GitHub's runners: apt then
+        # crawls through every package with ~15 s connection timeouts. Downloaded
+        # .debs are cached between runs (refreshed weekly) so a bad mirror only
+        # matters on a cache miss, and every wait below is bounded.
+        mkdir -p ~/apt-cache/partial
         sudo rm -f /etc/apt/apt.conf.d/99needrestart /var/lib/man-db/auto-update
-        APT="sudo env DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1 NEEDRESTART_MODE=l apt-get \
-          -o DPkg::Lock::Timeout=120 -o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o Dpkg::Use-Pty=0"
+        APT="sudo env DEBIAN_FRONTEND=noninteractive NEEDRESTART_SUSPEND=1 apt-get \
+          -o Dir::Cache::Archives=$HOME/apt-cache -o APT::Keep-Downloaded-Packages=true \
+          -o DPkg::Lock::Timeout=120 -o Acquire::Retries=2 -o Acquire::http::Timeout=20 \
+          -o Acquire::https::Timeout=20 -o Dpkg::Use-Pty=0"
         for attempt in 1 2 3; do
-          echo "[$(date -u +%T)] apt attempt $attempt: update"
-          if timeout 300 $APT update -qq && echo "[$(date -u +%T)] install" \
+          echo "[$(date -u +%T)] apt attempt $attempt ($(ls ~/apt-cache/*.deb 2>/dev/null | wc -l) packages cached)"
+          if timeout 240 $APT update -qq \
              && timeout 600 $APT install -y -q --no-install-recommends ffmpeg espeak-ng; then
             break
           fi
-          echo "::warning::apt attempt $attempt failed or timed out"
-          ps -eo pid,etime,cmd | grep -E "apt|dpkg|needrestart|unattended" | grep -v grep || true
-          if [ "$attempt" = 3 ]; then exit 1; fi
-          sleep 20
+          echo "::warning::apt attempt $attempt failed or timed out (Ubuntu mirror trouble?)"
+          if [ "$attempt" = 3 ]; then echo "::error::Could not install FFmpeg from the Ubuntu mirrors"; exit 1; fi
+          sleep 30
         done
+        sudo chown -R "$(id -u):$(id -g)" ~/apt-cache   # so the cache step can save it
         echo "[$(date -u +%T)] done"
         ffmpeg -hide_banner -version | head -1
     - name: Install Python packages

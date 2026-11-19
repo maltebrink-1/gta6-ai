@@ -37,6 +37,7 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           voice-model: "false"
+          media-tools: "false"
       - name: Collect statistics
         run: python -m gta6shorts stats
       - name: Build daily report and dashboard

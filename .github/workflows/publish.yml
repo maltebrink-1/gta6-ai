@@ -41,6 +41,7 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           voice-model: "false"
+          media-tools: "false"
       - name: Apply decision (and publish if allowed)
         run: python -m gta6shorts review-label --issue "${{ github.event.issue.number }}" --label "${{ github.event.label.name }}"
       - name: Save state
@@ -71,6 +72,7 @@ jobs:
       - uses: ./.github/actions/setup
         with:
           voice-model: "false"
+          media-tools: "false"
       - name: Publish approved videos (all QA-passed videos in auto mode)
         run: python -m gta6shorts publish-pending
       - name: Save state
