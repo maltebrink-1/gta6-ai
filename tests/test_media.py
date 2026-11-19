@@ -143,3 +143,29 @@ def test_music_library_requires_licence(tmp_path):
         "  - {file: missing.mp3, title: Gone, artist: C, license: CC0, source_url: 'https://y'}\n")
     tracks = load_library(tmp_path / "licenses.yaml")
     assert [t["title"] for t in tracks] == ["Song"]
+
+
+@pytest.mark.skipif(not __import__("shutil").which("ffmpeg"), reason="ffmpeg not installed")
+@pytest.mark.parametrize("family", ["Anton", "Archivo Black", "Bebas Neue", "Luckiest Guy", "Bangers"])
+def test_libass_renders_requested_cap_height(cfg, tmp_path, family):
+    """Every font must render capitals at the size we ask for (libass uses OS/2 win metrics)."""
+    import subprocess
+
+    from PIL import Image
+
+    from gta6shorts.styles import ass_size_for_cap
+
+    size = ass_size_for_cap(cfg.fonts_dir, family, 98)
+    (tmp_path / "t.ass").write_text(
+        "[Script Info]\nPlayResX: 1080\nPlayResY: 1920\n[V4+ Styles]\n"
+        "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, "
+        "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, "
+        "MarginR, MarginV, Encoding\n"
+        f"Style: T,{family},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1\n"
+        "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n"
+        "Dialogue: 0,0:00:00.00,0:00:01.00,T,,0,0,0,,{\\pos(540,960)}HHHH\n")
+    png = tmp_path / "f.png"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "color=c=black:s=1080x1920:d=1",
+                    "-vf", f"ass={tmp_path / 't.ass'}:fontsdir={cfg.fonts_dir}", "-frames:v", "1", str(png)], check=True)
+    ys = np.nonzero(np.asarray(Image.open(png).convert("L")) > 128)[0]
+    assert abs((ys.max() - ys.min() + 1) - 98) <= 3

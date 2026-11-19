@@ -69,25 +69,49 @@ def _pil_font(path: str, size: int = 100):
     return ImageFont.truetype(path, size)
 
 
-def text_width(fonts_dir: Path, family: str, text: str, ass_size: float) -> float:
-    """Approximate rendered width in pixels of ``text`` at ASS font size ``ass_size``.
+@lru_cache(maxsize=32)
+def font_units(path: str) -> tuple[int, int]:
+    """(unitsPerEm, libass line height in font units).
 
-    libass scales fonts so that (ascent + descent) equals the ASS size, so we
-    measure with PIL at 100 px and rescale by the font's line height.
+    libass sizes text so that usWinAscent + usWinDescent (OS/2 table) equals the
+    ASS font size, which can differ a lot from the metrics PIL reports. We read
+    those values straight from the TrueType tables.
     """
-    font = _pil_font(str(font_path(fonts_dir, family)))
-    ascent, descent = font.getmetrics()
-    return font.getlength(text) * ass_size / max(1, ascent + descent)
+    import struct
+
+    data = Path(path).read_bytes()
+    count = struct.unpack(">H", data[4:6])[0]
+    tables = {}
+    for i in range(count):
+        tag, _checksum, offset, _length = struct.unpack(">4sIII", data[12 + 16 * i: 28 + 16 * i])
+        tables[tag.decode("latin-1")] = offset
+    head = tables["head"]
+    upm = struct.unpack(">H", data[head + 18: head + 20])[0]
+    if "OS/2" in tables:
+        os2 = tables["OS/2"]
+        win_ascent, win_descent = struct.unpack(">HH", data[os2 + 74: os2 + 78])
+        if win_ascent + win_descent:
+            return upm, win_ascent + win_descent
+    ascent, descent = _pil_font(path, upm).getmetrics()
+    return upm, ascent + descent
+
+
+def text_width(fonts_dir: Path, family: str, text: str, ass_size: float) -> float:
+    """Rendered width in pixels of ``text`` at ASS font size ``ass_size`` (libass scaling)."""
+    path = str(font_path(fonts_dir, family))
+    upm, line_units = font_units(path)
+    width_units = _pil_font(path, upm).getlength(text)  # at size=upm, 1 px == 1 font unit
+    return width_units * ass_size / max(1, line_units)
 
 
 @lru_cache(maxsize=64)
 def ass_size_for_cap(fonts_dir: Path, family: str, cap_px: float) -> int:
     """ASS font size that gives capital letters a height of ``cap_px`` pixels."""
-    font = _pil_font(str(font_path(fonts_dir, family)))
-    ascent, descent = font.getmetrics()
-    left, top, right, bottom = font.getbbox("H")
-    cap100 = max(1, bottom - top)  # cap height at em=100 px
-    return int(round(cap_px * (ascent + descent) / cap100))
+    path = str(font_path(fonts_dir, family))
+    upm, line_units = font_units(path)
+    left, top, right, bottom = _pil_font(path, upm).getbbox("H")
+    cap_units = max(1, bottom - top)
+    return int(round(cap_px * line_units / cap_units))
 
 
 @lru_cache(maxsize=256)

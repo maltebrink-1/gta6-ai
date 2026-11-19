@@ -19,7 +19,7 @@ Legend: ✅ done and tested · 🧪 built, tested with mocks only (needs your ac
 - 🧪 TikTok inbox/direct client
 - ✅ Statistics model, daily report, mobile-friendly dashboard (demo data)
 - ✅ GitHub Actions: CI (+ real cloud render), produce, publish, stats
-- ✅ 82 automated tests
+- ✅ 87 automated tests
 
 ## Stage 2 — Testing ⏸️
 

@@ -61,7 +61,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 | `content/facts.yaml` | verified facts with sources — the only source of claims |
 | `content/scripts/` | one YAML script per video |
 | `src/gta6shorts/` | the pipeline (Python) |
-| `tests/` | 82 automated tests |
+| `tests/` | 87 automated tests |
 | `.github/workflows/` | CI, produce, publish, stats & dashboard |
 | `data/` | video registry, statistics, usage counters (written by the workflows) |
 | `reports/daily/` | daily reports |
