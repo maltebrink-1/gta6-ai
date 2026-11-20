@@ -11,7 +11,7 @@ on:
     inputs:
       count:
         description: How many videos to make
-        default: "2"
+        default: "4"
       open_reviews:
         description: Open a review issue for each video
         type: boolean
@@ -68,7 +68,7 @@ jobs:
         run: |
           flags=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.open_reviews }}" = "false" ]; then flags="--no-review"; fi
-          python -m gta6shorts produce --count "${{ inputs.count || '2' }}" $flags
+          python -m gta6shorts produce --count "${{ inputs.count || '4' }}" $flags
       - name: Save results (registry, new scripts, research) to the repository
         if: always()
         run: |

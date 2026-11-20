@@ -16,7 +16,7 @@ channel:
     clearly separates confirmed facts from opinions and never presents rumors as facts.
 
 production:
-  videos_per_day: 2              # how many videos the daily "produce" run renders
+  videos_per_day: 4              # how many videos the daily "produce" run renders
   min_seconds: 20
   max_seconds: 60
   width: 1080
@@ -105,7 +105,7 @@ publishing:
   mode: review                   # review = needs the "approved" label on its issue | auto (Stage 4)
   daily_time: "13:00"            # approved videos are uploaded by the daily publish run (Danish time)
   publish_on_approval: false     # true = upload the moment you add "approved" instead of waiting
-  max_per_day: 3
+  max_per_day: 4
   youtube:
     enabled: true
     privacy: public              # private | unlisted | public
