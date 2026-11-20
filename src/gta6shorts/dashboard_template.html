@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shorts Dashboard</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#0d0d0d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Shorts">
 <meta name="description" content="Performance of the GTA 6 Shorts channel: videos, views, likes, comments, followers.">
 <style>
 :root {
@@ -94,6 +100,7 @@ a { color: var(--s1); }
 details summary { cursor: pointer; font-weight: 600; }
 footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
 .empty { color: var(--muted); padding: 16px 0; text-align: center; }
+.md h3 { font-size: 16px; margin: 14px 0 6px; } .md h4 { font-size: 14px; margin: 12px 0 4px; } .md ul { margin: 4px 0; padding-left: 20px; } .md p { margin: 6px 0; }
 </style>
 </head>
 <body>
@@ -157,6 +164,24 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
       <div id="usage"></div>
     </section>
   </div>
+
+  <section class="card" id="learn-card">
+    <h2>What's working</h2>
+    <p id="learn-advice" class="muted"></p>
+    <div class="table-wrap"><table id="learn"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Today's report</h2>
+    <div id="report-daily" class="md"></div>
+  </section>
+
+  <section class="card" id="weekly-card" hidden>
+    <details>
+      <summary>Latest weekly report</summary>
+      <div id="report-weekly" class="md"></div>
+    </details>
+  </section>
 
   <section class="card">
     <h2>Recent videos</h2>
@@ -366,6 +391,51 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
     return s;
   }
 
+
+  function mdInto(host, md) {
+    host.textContent = "";
+    if (!md) { host.appendChild(el("p", { "class": "muted" }, "No report yet — it appears after the daily stats run.")); return; }
+    function inline(parent, text) {
+      text.split("**").forEach(function (part, i) { parent.appendChild(i % 2 ? el("strong", null, part) : document.createTextNode(part.replace(/`/g, ""))); });
+    }
+    var list = null, rows = [];
+    function flushTable() {
+      if (!rows.length) return;
+      var t = el("table"), first = true; rows.forEach(function (r) {
+        if (/^\|?[\s\-|:]+\|?$/.test(r)) return;          // markdown separator row
+        var i = first ? 0 : 1; first = false;
+        var tr = el("tr"); r.replace(/^\||\|$/g, "").split("|").forEach(function (c) { var td = el(i === 0 ? "th" : "td"); inline(td, c.trim()); tr.appendChild(td); }); t.appendChild(tr);
+      });
+      var w = el("div", { "class": "table-wrap" }); w.appendChild(t); host.appendChild(w); rows = [];
+    }
+    md.split("\n").forEach(function (line) {
+      if (/^\|/.test(line)) { list = null; rows.push(line); return; }
+      flushTable();
+      if (/^# /.test(line)) { list = null; var h = el("h3"); inline(h, line.slice(2)); host.appendChild(h); }
+      else if (/^## /.test(line)) { list = null; var h4 = el("h4"); inline(h4, line.slice(3)); host.appendChild(h4); }
+      else if (/^- /.test(line)) { if (!list) { list = el("ul"); host.appendChild(list); } var li = el("li"); inline(li, line.slice(2)); list.appendChild(li); }
+      else if (/^>\s?/.test(line)) { list = null; var q = el("p", { "class": "muted" }); inline(q, line.replace(/^>\s?/, "")); host.appendChild(q); }
+      else if (line.trim()) { list = null; var p = el("p"); inline(p, line); host.appendChild(p); }
+      else { list = null; }
+    });
+    flushTable();
+  }
+
+  function renderLearn() {
+    var ins = DATA.insights || {};
+    $("learn-advice").textContent = ins.advice || "Not enough published videos yet — the system learns once ~6 videos have views.";
+    var rows = [];
+    [["Topic", ins.topics], ["Format", ins.formats], ["Look", ins.themes], ["Length", ins.lengths]].forEach(function (g) {
+      (g[1] || []).slice(0, 3).forEach(function (x, i) {
+        rows.push([g[0], (i === 0 ? "🥇 " : "") + x.name, x.videos, x.median_views_per_day, x.vs_channel ? "×" + x.vs_channel : "—"]);
+      });
+    });
+    table($("learn"), ["Type", "Best", "Videos", "Views/day", "vs channel"], rows, [false, false, true, true, true]);
+    var R = DATA.reports || {};
+    mdInto($("report-daily"), R.daily);
+    if (R.weekly) { $("weekly-card").hidden = false; mdInto($("report-weekly"), R.weekly); }
+  }
+
   function render() {
     var D = days(), P = prevDays(), hasPrev = P.length > 0;
     document.querySelectorAll("#filters button").forEach(function (b) { b.setAttribute("aria-pressed", String(+b.dataset.range === RANGE)); });
@@ -470,6 +540,7 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
       return [v.title, statusLabel(v.status), v.duration ? Math.round(v.duration) + " s" : "—", v.qa_passed ? "✓ passed" : "✕ failed", link];
     }), [false, false, true, false, false]);
 
+    renderLearn();
     table($("daily"), ["Date", "YouTube views", "TikTok views", "Likes", "Comments", "Subs", "Followers", "Created", "Published"],
       D.slice().reverse().map(function (d) {
         return [d.date, compact(d.yt_views_gained), compact(d.tt_views_gained), compact(d.likes_gained), compact(d.comments_gained),
@@ -490,6 +561,7 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
   });
   var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(render, 150); });
   render();
+  if ("serviceWorker" in navigator) { try { navigator.serviceWorker.register("sw.js"); } catch (e) {} }
 })();
 </script>
 </body>

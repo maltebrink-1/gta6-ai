@@ -262,15 +262,24 @@ def cmd_report(cfg, args) -> int:
     reg = Registry(cfg.data_dir / "videos.json")
     metrics = demo_metrics(cfg, today) if args.demo else build_metrics(cfg, reg, load_snapshots(cfg.data_dir / "stats"), today)
     site = Path(args.site) if args.site else cfg.path("site")
-    index = write_dashboard(metrics, site)
-    print(f"dashboard → {index}")
+    reports = {}
     if not args.demo:
         md = daily_report(metrics, load_factbase(cfg), today)
         out = cfg.path("reports", "daily", f"{today.isoformat()}.md")
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(md, encoding="utf-8")
+        reports["daily"] = md
+        weekly = sorted(cfg.path("reports", "weekly").glob("*.md"))
+        if weekly:
+            reports["weekly"] = weekly[-1].read_text(encoding="utf-8")
         print(md)
         step_summary(md)
+    ins_path = cfg.data_dir / "insights.json"
+    if ins_path.exists() and not args.demo:
+        metrics["insights"] = json.loads(ins_path.read_text(encoding="utf-8"))
+    metrics["reports"] = reports
+    index = write_dashboard(metrics, site)
+    print(f"dashboard → {index}")
     return 0
 
 
