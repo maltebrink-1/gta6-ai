@@ -290,3 +290,19 @@ def test_review_queue_upload_and_issue(tmp_path):
     assert gh.create_issue("t", "b", ["review"]) == 12
     assert session.calls[5][2]["json"]["labels"] == ["review"]
     assert all(c[2]["headers"]["Authorization"] == "Bearer TOKEN" for c in session.calls if "headers" in c[2])
+
+
+def test_release_slots(cfg):
+    from datetime import datetime, timezone
+
+    from gta6shorts.pipeline import release_time
+
+    cfg.data["publishing"]["youtube"]["slots"] = ["13:00", "13:10", "17:00", "17:10"]
+    now = datetime(2026, 11, 21, 12, 2, tzinfo=timezone.utc)          # 13:02 in Copenhagen (UTC+1)
+    assert release_time(cfg, 0, now) is None                           # 13:00 already past → publish now
+    assert release_time(cfg, 1, now) == "2026-11-21T12:10:00Z"         # 13:10 Copenhagen
+    assert release_time(cfg, 2, now) == "2026-11-21T16:00:00Z"         # 17:00 Copenhagen
+    assert release_time(cfg, 3, now) == "2026-11-21T16:10:00Z"
+    assert release_time(cfg, 4, now) == "2026-11-21T16:20:00Z"         # extra videos: +10 min each
+    summer = datetime(2027, 6, 1, 11, 2, tzinfo=timezone.utc)           # 13:02 CEST (UTC+2)
+    assert release_time(cfg, 2, summer) == "2027-06-01T15:00:00Z"

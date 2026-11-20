@@ -109,6 +109,7 @@ publishing:
   youtube:
     enabled: true
     privacy: public              # private | unlisted | public
+    slots: ["13:00", "13:10", "17:00", "17:10"]   # when each day's videos go public (Danish time)
     category_id: "20"            # Gaming
     contains_synthetic_media: true   # honest AI disclosure (AI narration)
     made_for_kids: false

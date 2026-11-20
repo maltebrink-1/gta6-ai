@@ -166,6 +166,31 @@ def _facts_ok(cfg, record: dict, today: date) -> bool:
     return not errors(check_with_config(script, load_factbase(cfg), cfg, today=today, strict_freshness=True))
 
 
+def release_time(cfg, index: int, now=None):
+    """When the index-th YouTube video of the day should go public (UTC ISO), or None for 'now'.
+
+    Slots come from publishing.youtube.slots (Danish time, e.g. 13:00, 13:10, 17:00, 17:10);
+    extra videos follow the last slot at 10-minute steps. A slot that is (almost) past
+    means "publish immediately".
+    """
+    from datetime import datetime, timedelta, timezone
+    from zoneinfo import ZoneInfo
+
+    slots = cfg.get("publishing.youtube.slots") or []
+    if not slots:
+        return None
+    tz = ZoneInfo(cfg.get("analytics.timezone", "Europe/Copenhagen"))
+    now = now or datetime.now(timezone.utc)
+    local_now = now.astimezone(tz)
+    h, m = (int(x) for x in str(slots[min(index, len(slots) - 1)]).split(":"))
+    when = local_now.replace(hour=h, minute=m, second=0, microsecond=0)
+    if index >= len(slots):
+        when += timedelta(minutes=10 * (index - len(slots) + 1))
+    if when <= local_now + timedelta(minutes=5):
+        return None
+    return when.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def publish_one(cfg, reg: Registry, vid: str, platform: str, today: date, gh: GitHub | None, log=print) -> tuple[bool, str]:
     rec = reg.get(vid)
     if rec is None:
@@ -191,18 +216,24 @@ def publish_one(cfg, reg: Registry, vid: str, platform: str, today: date, gh: Gi
             from .youtube import YouTubeClient
 
             yt = YouTubeClient(env("YT_CLIENT_ID"), env("YT_CLIENT_SECRET"), env("YT_REFRESH_TOKEN"))
+            privacy_setting = cfg.get("publishing.youtube.privacy", "private")
+            publish_at = (release_time(cfg, reg.published_on(today.isoformat(), "youtube"))
+                          if privacy_setting == "public" else None)
             body = YouTubeClient.build_body(
                 meta.get("title", script.title), meta.get("description", script.description), script.tags,
                 category_id=str(cfg.get("publishing.youtube.category_id", "20")),
-                privacy=cfg.get("publishing.youtube.privacy", "private"),
+                privacy=privacy_setting,
                 made_for_kids=bool(cfg.get("publishing.youtube.made_for_kids", False)),
-                synthetic=bool(cfg.get("publishing.youtube.contains_synthetic_media", True)))
+                synthetic=bool(cfg.get("publishing.youtube.contains_synthetic_media", True)),
+                publish_at=publish_at)
             result = yt.upload(video, body)
             usage.add("youtube_uploads", 1, today)
             privacy = result.get("status", {}).get("privacyStatus")
+            extra = {"scheduled_for": publish_at} if publish_at else {}
             reg.mark_published(vid, "youtube", id=result["id"], url=f"https://youtube.com/shorts/{result['id']}",
-                               privacy=privacy)
-            msg = f"YouTube: https://youtube.com/shorts/{result['id']} (privacy: {privacy})"
+                               privacy="scheduled" if publish_at else privacy, **extra)
+            when = f"goes public at {publish_at} (UTC)" if publish_at else f"privacy: {privacy}"
+            msg = f"YouTube: https://youtube.com/shorts/{result['id']} ({when})"
         elif platform == "tiktok":
             from .tiktok import TikTokClient
 
