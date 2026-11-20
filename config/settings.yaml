@@ -101,14 +101,14 @@ review:
   release_tag: review-queue      # rendered videos are attached to this pre-release for viewing
 
 publishing:
-  enabled: false                 # MASTER SWITCH — keep false until Stage 3 is approved
+  enabled: true                  # MASTER SWITCH — switched on 2026-11-20 at the owner's request
   mode: review                   # review = needs the "approved" label on its issue | auto (Stage 4)
   daily_time: "13:00"            # approved videos are uploaded by the daily publish run (Danish time)
   publish_on_approval: false     # true = upload the moment you add "approved" instead of waiting
   max_per_day: 3
   youtube:
-    enabled: false
-    privacy: private             # private | unlisted | public
+    enabled: true
+    privacy: public              # private | unlisted | public
     category_id: "20"            # Gaming
     contains_synthetic_media: true   # honest AI disclosure (AI narration)
     made_for_kids: false
