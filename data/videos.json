@@ -16,7 +16,14 @@
       ],
       "format": "timeline",
       "id": "2026-11-19-gta-timeline",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "7y7ZfacJH0E",
+          "privacy": "public",
+          "published_at": "2026-11-20T11:46:23+00:00",
+          "url": "https://youtube.com/shorts/7y7ZfacJH0E"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -33,7 +40,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta-timeline.mp4"
       },
       "script": "content/scripts/2026-11-19-gta-timeline.yaml",
-      "status": "approved",
+      "status": "published",
       "theme": "swamp_glow",
       "title": "The Whole GTA Story in Under a Minute",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -55,7 +62,14 @@
       ],
       "format": "news",
       "id": "2026-11-19-gta6-launch-day",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "J0aYLJjAJgw",
+          "privacy": "public",
+          "published_at": "2026-11-20T11:46:27+00:00",
+          "url": "https://youtube.com/shorts/J0aYLJjAJgw"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -72,7 +86,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-launch-day.mp4"
       },
       "script": "content/scripts/2026-11-19-gta6-launch-day.yaml",
-      "status": "approved",
+      "status": "published",
       "theme": "sunset_drive",
       "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
       "voice": "af_bella:0.7+af_heart:0.3"
