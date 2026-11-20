@@ -64,13 +64,15 @@
       "render_seconds": 109.2,
       "rendered_at": "2026-11-20T11:02:39+00:00",
       "review": {
-        "decision": null,
+        "decided_at": "2026-11-20T11:45:17+00:00",
+        "decided_by": "",
+        "decision": "approved",
         "issue": 2,
         "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-launch-day-sheet.jpg",
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-launch-day.mp4"
       },
       "script": "content/scripts/2026-11-19-gta6-launch-day.yaml",
-      "status": "awaiting_review",
+      "status": "approved",
       "theme": "sunset_drive",
       "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
       "voice": "af_bella:0.7+af_heart:0.3"
