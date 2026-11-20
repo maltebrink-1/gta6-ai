@@ -1,0 +1,34 @@
+id: 2026-11-20-gta6-vs-gta5-day-one-money
+status: ready
+created: '2026-11-20'
+author: claude
+format: versus
+title: 'GTA 5 vs GTA 6: Day-One Money, Side by Side'
+hook_text: GTA 5 VS GTA 6 · DAY ONE
+theme: neon_night
+lines:
+- text: GTA 5 versus GTA 6. The day-one money, side by side.
+  kind: hook
+- text: Back in September 2013, Guinness World Records credited GTA 5 with $815.7 million in revenue on its first day.
+  kind: claim
+  facts: [gta5_24h_record]
+  card: {type: stat, big: $815.7M, small: GTA 5 · DAY ONE · GUINNESS}
+- text: It also sold 11.21 million copies in 24 hours, another Guinness record.
+  kind: claim
+  facts: [gta5_24h_record]
+- text: Now GTA 6. Take-Two says it hit an estimated $3.79 billion in day-one retail sales.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: stat, big: $3.79B, small: GTA 6 · DAY ONE · PER TAKE-TWO}
+- text: And according to Take-Two, it sold 32.5 million units before release.
+  kind: claim
+  facts: [gta6_prerelease_units]
+- text: Fair warning, these aren't measured the exact same way. Take-Two's number is retail sales through the end of launch day.
+  kind: claim
+  facts: [gta6_day_one_sales]
+- text: Even with that asterisk, the gap between these two launches is wild.
+  kind: opinion
+- text: Which launch did you play on day one? Comment below and follow for more.
+  kind: cta
+description: GTA 5's Guinness-recorded first day next to Take-Two's day-one figure for GTA 6, with the difference in how they're measured spelled out.
+tags: [GTA 6, GTA 5, GTA 6 sales, Guinness World Records, Take-Two, Rockstar Games, gaming news]

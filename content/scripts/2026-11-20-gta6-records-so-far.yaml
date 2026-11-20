@@ -1,0 +1,33 @@
+id: 2026-11-20-gta6-records-so-far
+status: ready
+created: '2026-11-20'
+author: claude
+format: list
+title: The Records GTA 6 Has Already Claimed
+hook_text: GTA 6 RECORD COUNT
+theme: swamp_glow
+lines:
+- text: GTA 6 is barely out, and it's already collecting records.
+  kind: hook
+- text: First, its debut trailer got over 90 million YouTube views in 24 hours. That's a Guinness World Record.
+  kind: claim
+  facts: [trailer1_record]
+  card: {type: stat, big: 90M+, small: FIRST TRAILER · YOUTUBE · 24 HOURS}
+- text: Next, Rockstar says Trailer 2 hit around 475 million views across all platforms in its first 24 hours.
+  kind: claim
+  facts: [trailer2_views]
+  card: {type: stat, big: 475M, small: TRAILER 2 · PER ROCKSTAR}
+- text: Then the reviews. It launched with a 99 on Metacritic, tying the highest score the site has ever given.
+  kind: claim
+  facts: [gta6_metacritic_99]
+  card: {type: stat, big: '99', small: METASCORE · TIES ALL-TIME HIGH}
+- text: And finally, Take-Two says it made an estimated $3.79 billion in day-one retail sales, calling it the biggest entertainment launch in history.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: stat, big: $3.79B, small: DAY ONE · PER TAKE-TWO}
+- text: Hype, reviews and money. It basically swept the board.
+  kind: opinion
+- text: Which record impresses you most? Comment below and follow for more GTA 6.
+  kind: cta
+description: Trailer views, review scores and launch sales — the records GTA 6 has claimed so far, each with its source.
+tags: [GTA 6, GTA 6 records, Guinness World Record, Metacritic, Take-Two, Rockstar Games, GTA VI]

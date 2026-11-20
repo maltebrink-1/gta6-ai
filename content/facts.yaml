@@ -426,7 +426,7 @@ facts:
     attribution: Sensor Tower
     category: sales
     as_of: 2026-11-20
-    recheck_days: 3          # will be superseded once Take-Two publishes numbers
+    recheck_days: 3          # outside estimate; Take-Two published official figures on 2026-11-20 (gta6_day_one_sales)
     sources:
       - url: https://www.notebookcheck.net/GTA-6-passes-2-36-billion-in-estimated-launch-day-sales.1455216.0.html
         publisher: Notebookcheck
@@ -434,9 +434,7 @@ facts:
         publisher: Yahoo Finance
 
   - id: gta6_no_official_sales
-    claim: "As of November 20, 2026, Take-Two had not released official GTA VI launch sales figures."
-    say:
-      - "Take-Two hasn't released its own sales numbers yet."
+    claim: "Before November 20, 2026, Take-Two had not released official GTA VI launch sales figures; the earlier launch-day numbers were outside estimates. (Superseded: Take-Two published official figures on November 20, 2026 — see gta6_day_one_sales.)"
     status: confirmed
     category: sales
     as_of: 2026-11-20
@@ -446,8 +444,54 @@ facts:
         publisher: Yahoo Finance
       - url: https://www.notebookcheck.net/GTA-6-passes-2-36-billion-in-estimated-launch-day-sales.1455216.0.html
         publisher: Notebookcheck
-      - url: https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/take-two-s-gta-vi-opens-to-near-perfect-scores-but-the-revenue-proof-comes-later/70539982
-        publisher: Ad-hoc News
+      - url: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm
+        publisher: Take-Two Interactive (Form 8-K press release, Nov 20, 2026)
+        official: true
+
+  - id: gta6_day_one_sales
+    claim: "Take-Two says Grand Theft Auto VI reached an estimated $3.79 billion in worldwide day-one retail sales, counting sales through the end of November 19, 2026, and calls it the biggest entertainment launch in history. This is retail sales, not Take-Two's own revenue."
+    say:
+      - "Take-Two says GTA 6 hit $3.79 billion in retail sales on day one."
+      - "Take-Two calls it the biggest entertainment launch in history."
+    status: official
+    attribution: Take-Two
+    category: sales
+    as_of: 2026-11-20
+    recheck_days: 90
+    sources:
+      - url: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm
+        publisher: Take-Two Interactive (Form 8-K press release, Nov 20, 2026)
+        date: 2026-11-20
+        official: true
+      - url: https://www.washingtonpost.com/entertainment/video-games/2026/11/20/grand-theft-auto-vi-makes-379b-day-biggest-media-launch-ever/
+        publisher: The Washington Post
+      - url: https://deadline.com/2026/11/gta6-first-day-sales-4-billion-1237230465/
+        publisher: Deadline
+      - url: https://www.forbes.com/sites/antoniopequenoiv/2026/11/20/gta-6-raked-in-38-billion-sales-on-first-day-the-largest-entertainment-launch-ever/
+        publisher: Forbes
+      - url: https://www.engadget.com/2323671/gta-6-made-dollar379-billion-in-its-first-day-but-rockstars-workers-still-lack-job-security/
+        publisher: Engadget
+
+  - id: gta6_prerelease_units
+    claim: "Take-Two says GTA VI sold 32.5 million units before release, across PlayStation 5 and Xbox Series X|S."
+    say:
+      - "Take-Two also says it sold 32.5 million units before it even released."
+    status: official
+    attribution: Take-Two
+    category: sales
+    as_of: 2026-11-20
+    recheck_days: 90
+    sources:
+      - url: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm
+        publisher: Take-Two Interactive (Form 8-K press release, Nov 20, 2026)
+        date: 2026-11-20
+        official: true
+      - url: https://www.tweaktown.com/news/114806/gta-6-makes-dollars3-79-billion-with-32-5-million-copies-sold/index.html
+        publisher: TweakTown
+      - url: https://www.neowin.net/news/gta-6-earns-379-billion-in-24-hours-becomes-biggest-entertainment-launch-in-history/
+        publisher: Neowin
+      - url: https://wccftech.com/grand-theft-auto-vi-pre-order-record-24-5-million-copies/
+        publisher: Wccftech
 
   - id: gta5_24h_record
     claim: "Guinness World Records lists Grand Theft Auto V as the best-selling video game in 24 hours, with 11.21 million units, and credits it with $815.7 million in revenue on its first day in September 2013."

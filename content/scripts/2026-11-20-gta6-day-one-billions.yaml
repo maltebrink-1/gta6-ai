@@ -1,0 +1,36 @@
+id: 2026-11-20-gta6-day-one-billions
+status: ready
+created: '2026-11-20'
+author: claude
+format: news
+title: GTA 6 Made $3.79 Billion on Day One, Says Take-Two
+hook_text: $3.79 BILLION IN ONE DAY
+theme: sunset_drive
+lines:
+- text: GTA 6's first real sales number from Take-Two just dropped.
+  kind: hook
+  facts: [gta6_day_one_sales]
+- text: Take-Two says GTA 6 hit an estimated $3.79 billion in worldwide retail sales on day one.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: stat, big: $3.79B, small: DAY-ONE RETAIL SALES · PER TAKE-TWO}
+- text: According to Take-Two, that counts sales through the end of November 19th, launch day.
+  kind: claim
+  facts: [gta6_day_one_sales]
+- text: Take-Two also says it sold 32.5 million units before it even released.
+  kind: claim
+  facts: [gta6_prerelease_units]
+  card: {type: stat, big: 32.5M, small: UNITS BEFORE RELEASE · PER TAKE-TWO}
+- text: Take-Two calls it the biggest entertainment launch in history. Not just games. Entertainment.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: text, big: BIGGEST LAUNCH EVER, small: PER TAKE-TWO}
+- text: Quick note, Take-Two's figure is retail sales, not the money Take-Two itself keeps.
+  kind: claim
+  facts: [gta6_day_one_sales]
+- text: All that waiting turned into one very expensive launch day.
+  kind: opinion
+- text: Did you grab it on day one? Tell me below and follow for more GTA 6 news.
+  kind: cta
+description: Take-Two's day-one sales figure for GTA 6, what it counts, and the pre-release units number. All figures are Take-Two's own.
+tags: [GTA 6, GTA 6 sales, GTA VI, Take-Two, Rockstar Games, biggest launch ever, gaming news]

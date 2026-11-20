@@ -1,0 +1,31 @@
+id: 2026-11-20-gta6-critic-verdict
+status: ready
+created: '2026-11-20'
+author: claude
+format: spotlight
+title: What Critics Actually Said About GTA 6
+hook_text: THE CRITICS' VERDICT
+theme: ocean_breeze
+lines:
+- text: Critics have spoken on GTA 6. Here's the honest verdict.
+  kind: hook
+- text: On Metacritic it launched with a 99, tying the highest score the site has ever given, alongside Zelda Ocarina of Time.
+  kind: claim
+  facts: [gta6_metacritic_99]
+  card: {type: stat, big: '99', small: METASCORE AT LAUNCH}
+- text: That even beats GTA 4's 98, so it's now Rockstar's highest-rated game ever on Metacritic.
+  kind: claim
+  facts: [gta6_beats_gta4]
+- text: According to OpenCritic, it launched with a 99 Top Critic Average, with 100 percent of critics recommending it.
+  kind: claim
+  facts: [gta6_opencritic_99]
+  card: {type: stat, big: 100%, small: RECOMMEND IT · PER OPENCRITIC}
+- text: But it's not flawless. Some reviewers called out clunky controls and occasional performance problems.
+  kind: claim
+  facts: [gta6_review_criticism]
+- text: Near-perfect scores with a couple of real complaints. Honestly, that sounds about right.
+  kind: opinion
+- text: Does it live up to that score for you? Tell me in the comments and follow for more.
+  kind: cta
+description: GTA 6's review scores on Metacritic and OpenCritic, plus the criticisms reviewers raised.
+tags: [GTA 6, GTA 6 review, Metacritic, OpenCritic, Rockstar Games, GTA VI, game reviews]
