@@ -23,7 +23,14 @@ scripts directly to the `main` branch once validation passes.
      outlets) or `reported` (single source → set `attribution`); never rumours;
    - re-verify facts whose `as_of + recheck_days` has passed and update `as_of`
      only after checking the source again; correct or remove anything outdated.
-4. **Write 4 new scripts** in `content/scripts/` named `YYYY-MM-DD-<slug>.yaml`
+4. **Read `data/insights.json`** (what has performed best on the channel).
+   If `enough_data` is true: write **3 of the 4 scripts** in the best-performing
+   `topics` and `formats` (and set `theme:` to a top theme), and use the **4th
+   for an experiment** (a topic/format that's rarely been tried). Also look at
+   `top_videos` and borrow what made them work (hook style, angle) without
+   copying them — every script must still be original. If `enough_data` is
+   false, keep the 4 scripts varied.
+5. **Write 4 new scripts** in `content/scripts/` named `YYYY-MM-DD-<slug>.yaml`
    (same structure as the existing files, `status: ready`, `author: claude`):
    90–125 words, hook ≤ 12 words, energetic but honest, every factual line cites
    fact ids, attributed facts name their source in the line, numbers only from
@@ -31,10 +38,10 @@ scripts directly to the `main` branch once validation passes.
    Pick 4 different angles that haven't been covered (check existing titles);
    vary the `format` (news, list, explainer, timeline, spotlight, versus, qna).
    Don't count existing unrendered scripts: always add 4 new ones.
-5. **Validate:** `python -m gta6shorts validate --strict` and
+6. **Validate:** `python -m gta6shorts validate --strict` and
    `python -m pytest -q -m "not slow"` must both pass. Fix and re-run until they do.
    If a script can't be made valid, delete it rather than push a broken one.
-6. **Deliver:** commit with message `editor: <date> — N facts, 4 scripts` and
+7. **Deliver:** commit with message `editor: <date> — N facts, 4 scripts` and
    `git pull --rebase origin main && git push origin HEAD:main` (retry on conflict).
    Never change `config/`, workflows, secrets or publishing settings.
-7. Finish with a short summary: facts added/updated (with sources) and the 4 titles.
+8. Finish with a short summary: facts added/updated (with sources), the 4 titles, and which one is the experiment.

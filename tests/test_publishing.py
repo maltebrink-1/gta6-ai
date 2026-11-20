@@ -113,7 +113,7 @@ def test_gate_blockers(cfg, secrets, patch, expected):
 
 def test_gate_daily_cap_and_facts(cfg, secrets):
     enable(cfg)
-    assert any("daily cap" in r for r in publish_blockers(GOOD_RECORD, "youtube", cfg, published_today=3, facts_ok=True))
+    assert any("daily cap" in r for r in publish_blockers(GOOD_RECORD, "youtube", cfg, published_today=int(cfg.get("publishing.max_per_day")), facts_ok=True))
     assert any("re-verification" in r for r in publish_blockers(GOOD_RECORD, "youtube", cfg, published_today=0, facts_ok=False))
 
 

@@ -274,6 +274,22 @@ def cmd_report(cfg, args) -> int:
     return 0
 
 
+def cmd_insights(cfg, args) -> int:
+    from .analytics import load_snapshots
+    from .insights import build_insights, weekly_report, write_insights
+    from .pipeline import load_factbase
+    from .registry import Registry
+
+    today = today_for(cfg)
+    snaps = load_snapshots(cfg.data_dir / "stats")
+    ins = build_insights(Registry(cfg.data_dir / "videos.json"), snaps[-1] if snaps else None, load_factbase(cfg), today)
+    for p in write_insights(ins, cfg.data_dir, cfg.path("reports"), today):
+        print(f"wrote {p}")
+    print(ins.get("advice", ""))
+    step_summary(weekly_report(ins, today))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="gta6shorts", description=__doc__)
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -301,6 +317,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--label", required=True)
     sub.add_parser("publish-pending", help="Stage 4: publish approved (or, in auto mode, all QA-passed) videos")
     sub.add_parser("stats", help="collect today's YouTube/TikTok statistics")
+    sub.add_parser("insights", help="learn which topics/formats perform best (data/insights.json)")
     p = sub.add_parser("report", help="build the dashboard and the daily report")
     p.add_argument("--demo", action="store_true", help="use clearly-labelled demo numbers")
     p.add_argument("--site", default=None, help="output folder for the dashboard (default: site/)")
@@ -309,7 +326,7 @@ def main(argv: list[str] | None = None) -> int:
     handler = {
         "doctor": cmd_doctor, "validate": cmd_validate, "facts-verify": cmd_facts_verify, "research": cmd_research,
         "write": cmd_write, "render": cmd_render, "produce": cmd_produce, "review-label": cmd_review_label,
-        "publish-pending": cmd_publish_pending, "stats": cmd_stats, "report": cmd_report,
+        "publish-pending": cmd_publish_pending, "stats": cmd_stats, "report": cmd_report, "insights": cmd_insights,
     }[args.cmd]
     return handler(cfg, args)
 

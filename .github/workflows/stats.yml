@@ -64,6 +64,9 @@ jobs:
       - name: Build daily report and dashboard
         run: |
           if [ "${{ inputs.demo }}" = "true" ]; then python -m gta6shorts report --demo; else python -m gta6shorts report; fi
+      - name: Learn what performs best (weekly report on Sundays)
+        if: ${{ inputs.demo != true }}
+        run: python -m gta6shorts insights
       - name: Save stats and report
         run: |
           git config user.name "github-actions[bot]"
