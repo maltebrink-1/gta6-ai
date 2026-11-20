@@ -103,6 +103,8 @@ review:
 publishing:
   enabled: false                 # MASTER SWITCH — keep false until Stage 3 is approved
   mode: review                   # review = needs the "approved" label on its issue | auto (Stage 4)
+  daily_time: "13:00"            # approved videos are uploaded by the daily publish run (Danish time)
+  publish_on_approval: false     # true = upload the moment you add "approved" instead of waiting
   max_per_day: 3
   youtube:
     enabled: false

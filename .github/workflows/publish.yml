@@ -1,5 +1,6 @@
 # Publishing. Triggered when YOU add the label "approved" or "rejected" to a
-# review issue. Uploads only happen if config/settings.yaml has
+# review issue (the decision is recorded; approved videos are uploaded at the
+# daily 13:00 publish run). Uploads only happen if config/settings.yaml has
 # publishing.enabled: true AND the platform is enabled AND its secrets exist.
 name: Publish
 
@@ -7,7 +8,8 @@ on:
   issues:
     types: [labeled]
   schedule:
-    - cron: "23 17 * * *"   # Stage 4 (publishing.mode: auto) — daily at 17:23 UTC
+    - cron: "0 11 * * *"   # 13:00 Copenhagen in summer (UTC+2)
+    - cron: "0 12 * * *"   # 13:00 Copenhagen in winter (UTC+1)
   workflow_dispatch:
 
 permissions:
@@ -55,8 +57,25 @@ jobs:
           for i in 1 2 3 4; do git pull --rebase -q && git push -q && exit 0; sleep $((i * 5)); done
           exit 1
 
+  timecheck:
+    # Only the UTC slot that is 13:00 in Copenhagen today runs (+01 winter, +02 summer).
+    if: github.event_name != 'issues'
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.t.outputs.go }}
+    steps:
+      - id: t
+        run: |
+          if [ "$(TZ=Europe/Copenhagen date +%z)" = "+0200" ]; then want="0 11 * * *"; else want="0 12 * * *"; fi
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "${{ github.event.schedule }}" = "$want" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=false" >> "$GITHUB_OUTPUT"; echo "Other daylight-saving slot — skipping."
+          fi
+
   publish-pending:
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && vars.AUTOMATION_ENABLED == 'true')
+    needs: timecheck
+    if: needs.timecheck.outputs.go == 'true' && (github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && vars.AUTOMATION_ENABLED == 'true'))
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:

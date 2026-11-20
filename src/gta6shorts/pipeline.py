@@ -249,6 +249,13 @@ def handle_review_label(cfg, issue_number: int, label: str, today: date, log=pri
     if label != "approved":
         return f"label {label!r} ignored"
     reg.decide(vid, "approved")
+    if not cfg.get("publishing.publish_on_approval", False):
+        reg.save()
+        when = cfg.get("publishing.daily_time", "13:00")
+        note = (f"will be uploaded at the next daily publish run ({when} Danish time)."
+                if cfg.get("publishing.enabled") else "publishing is still OFF, so nothing will be uploaded yet.")
+        gh.comment(issue_number, f"Approved 👍 — {note}")
+        return f"{vid} approved; {note}"
     results = []
     for platform in ("youtube", "tiktok"):
         ok, msg = publish_one(cfg, reg, vid, platform, today, gh, log)

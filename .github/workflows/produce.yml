@@ -5,8 +5,8 @@ name: Produce videos
 
 on:
   schedule:
-    - cron: "0 10 * * *"   # 12:00 Copenhagen in summer (UTC+2)
-    - cron: "0 11 * * *"   # 12:00 Copenhagen in winter (UTC+1)
+    - cron: "0 9 * * *"    # 11:00 Copenhagen in summer (UTC+2)
+    - cron: "0 10 * * *"   # 11:00 Copenhagen in winter (UTC+1)
   workflow_dispatch:
     inputs:
       count:
@@ -28,15 +28,15 @@ concurrency:
 jobs:
   timecheck:
     # GitHub schedules run in UTC; Denmark is UTC+1 in winter and UTC+2 in summer.
-    # Both UTC slots are scheduled and only the one that is 12:00 in Copenhagen runs.
+    # Both UTC slots are scheduled and only the one that is 11:00 in Copenhagen runs.
     runs-on: ubuntu-latest
     outputs:
       go: ${{ steps.t.outputs.go }}
     steps:
       - id: t
         run: |
-          # pick the UTC slot that equals 12:00 in Copenhagen today (+01 winter, +02 summer)
-          if [ "$(TZ=Europe/Copenhagen date +%z)" = "+0200" ]; then want="0 10 * * *"; else want="0 11 * * *"; fi
+          # pick the UTC slot that equals 11:00 in Copenhagen today (+01 winter, +02 summer)
+          if [ "$(TZ=Europe/Copenhagen date +%z)" = "+0200" ]; then want="0 9 * * *"; else want="0 10 * * *"; fi
           if [ "${{ github.event_name }}" != "schedule" ] || [ "${{ github.event.schedule }}" = "$want" ]; then
             echo "go=true" >> "$GITHUB_OUTPUT"
           else
