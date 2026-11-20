@@ -81,7 +81,11 @@ def enable(cfg):
     cfg.data["publishing"]["youtube"]["enabled"] = True
 
 
-def test_gate_blocks_everything_by_default(cfg):
+def test_gate_blocks_everything_by_default(cfg, monkeypatch):
+    cfg.data["publishing"]["enabled"] = False
+    cfg.data["publishing"]["youtube"]["enabled"] = False
+    for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"):
+        monkeypatch.delenv(k, raising=False)
     reasons = publish_blockers(GOOD_RECORD, "youtube", cfg, published_today=0, facts_ok=True)
     assert any("master switch" in r for r in reasons)
     assert any("missing secrets" in r for r in reasons)

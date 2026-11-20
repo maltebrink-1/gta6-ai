@@ -41,6 +41,7 @@ def test_metrics_daily_gains(cfg, tmp_path):
 
 
 def test_report_mentions_attention_items(cfg, tmp_path):
+    cfg.data["publishing"]["enabled"] = False
     reg = make_reg(tmp_path)
     m = build_metrics(cfg, reg, [snap("2026-11-18", 100, 10), snap("2026-11-19", 250, 14)], TODAY)
     md = daily_report(m, load_facts(cfg.facts_file), TODAY)
