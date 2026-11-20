@@ -1,0 +1,32 @@
+id: 2026-11-20-vice-city-returns
+status: ready
+created: '2026-11-20'
+author: claude
+format: explainer
+title: 'Vice City Is Back: Where GTA 6 Actually Takes Place'
+hook_text: WELCOME BACK TO VICE CITY
+theme: swamp_glow
+lines:
+- text: GTA 6 takes you back to one of the most famous cities in gaming.
+  kind: hook
+  facts: [gta6_setting]
+- text: The game is set in Leonida, a fictional state that's home to Vice City.
+  kind: claim
+  facts: [gta6_setting]
+  card: {type: text, big: LEONIDA, small: THE STATE}
+- text: Basically, Leonida is Rockstar's take on Florida, and Vice City is its Miami.
+  kind: claim
+  facts: [leonida_is_florida]
+- text: But Vice City isn't new. It first showed up in GTA Vice City back in 2002, a game set in the 1980s.
+  kind: claim
+  facts: [vice_city_2002]
+  card: {type: date, big: '2002', small: VICE CITY DEBUTS}
+- text: This time, the story follows Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+- text: Going from neon eighties nostalgia to a modern Leonida is a bold glow-up, and I'm here for it.
+  kind: opinion
+- text: Did you play the original Vice City? Let me know in the comments and follow for more.
+  kind: cta
+description: Where is GTA 6 set? Leonida and Vice City explained, plus how far back Vice City goes in the series.
+tags: [GTA 6, Vice City, Leonida, GTA 6 map, GTA Vice City, Rockstar Games, GTA VI]

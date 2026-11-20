@@ -1,0 +1,32 @@
+id: 2026-11-20-gta6-quick-answers
+status: ready
+created: '2026-11-20'
+author: claude
+format: qna
+title: 'GTA 6: Your Biggest Questions, Answered Fast'
+hook_text: GTA 6 QUESTIONS, ANSWERED
+theme: ocean_breeze
+lines:
+- text: Five quick GTA 6 questions people keep asking. Let's go.
+  kind: hook
+- text: When could you start playing? Rockstar's support page says it unlocks at midnight local time in each region.
+  kind: claim
+  facts: [gta6_midnight_unlock]
+- text: Which consoles? PlayStation 5 and Xbox Series X and S.
+  kind: claim
+  facts: [gta6_platforms]
+  card: {type: text, big: PS5 + XBOX, small: WHERE TO PLAY}
+- text: What about PC? Rockstar hasn't given PC players a release date.
+  kind: claim
+  facts: [gta6_no_pc_date]
+- text: How much is it? In the US, the standard edition is $79.99.
+  kind: claim
+  facts: [gta6_price_standard]
+  card: {type: stat, big: $79.99, small: US STANDARD EDITION}
+- text: And who do you play as? Two leads, Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+- text: Got another GTA 6 question? Drop it in the comments and I might answer it next.
+  kind: cta
+description: Quick, sourced answers to the most common GTA 6 questions — unlock time, platforms, PC, price and protagonists.
+tags: [GTA 6, GTA 6 FAQ, GTA 6 price, GTA 6 PC, GTA 6 release time, Rockstar Games, GTA VI]

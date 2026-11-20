@@ -1,0 +1,29 @@
+id: 2026-11-20-gta6-vs-gta5-launch
+status: ready
+created: '2026-11-20'
+author: claude
+format: versus
+title: 'GTA 6 vs GTA 5: The Launch Day Numbers'
+hook_text: GTA 6 VS GTA 5
+theme: wanted_level
+lines:
+- text: GTA 5 owned the biggest launch day ever. Did GTA 6 just beat it?
+  kind: hook
+- text: Guinness World Records says GTA 5 sold 11.21 million copies in its first 24 hours back in 2013.
+  kind: claim
+  facts: [gta5_24h_record]
+  card: {type: stat, big: 11.21M, small: GTA 5 · FIRST 24 HOURS}
+- text: Now for GTA 6. Sensor Tower estimates it sold nearly 25 million copies on launch day, worth about $2.36 billion.
+  kind: claim
+  facts: [gta6_launch_sales_estimate]
+  card: {type: stat, big: ~25M, small: ESTIMATE · PER SENSOR TOWER}
+- text: But here's the catch. That's an outside estimate, and Take-Two hasn't released its own sales numbers yet.
+  kind: claim
+  facts: [gta6_no_official_sales]
+  card: {type: text, big: NOT FINAL, small: AWAITING TAKE-TWO}
+- text: If the real numbers land anywhere close, GTA 5's crown is in serious trouble.
+  kind: opinion
+- text: Think GTA 6 takes the record? Tell me below and follow so you catch the real numbers.
+  kind: cta
+description: GTA 5's Guinness-record launch versus Sensor Tower's launch-day estimate for GTA 6. Estimates are labelled as estimates.
+tags: [GTA 6, GTA 6 sales, GTA 5, Guinness World Records, Sensor Tower, Take-Two, gaming news]

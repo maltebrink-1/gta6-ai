@@ -362,3 +362,106 @@ facts:
     verify:
       url: https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
       contains: ["2002"]
+
+  # ── Music (added 2026-11-20) ───────────────────────────────────────────────
+  - id: gta6_the_album
+    claim: "Rockstar and Atlantic Records made Grand Theft Auto VI: The Album, a collection of 34 original tracks released around the game's November 2026 launch."
+    say:
+      - "GTA 6 has its own album, with 34 original tracks, made with Atlantic Records."
+    status: official
+    category: music
+    as_of: 2026-11-20
+    recheck_days: 90
+    sources:
+      - url: https://www.shacknews.com/article/150746/gta-6-album-announcement
+        publisher: Shacknews (reporting Rockstar's Newswire announcement)
+      - url: https://www.videogameschronicle.com/news/grand-theft-auto-6-is-getting-a-vinyl-cd-and-streaming-soundtrack-with-34-original-tracks/
+        publisher: Video Games Chronicle
+      - url: https://www.musicbusinessworldwide.com/atlantic-records-to-release-grand-theft-auto-vi-the-album-featuring-travis-scott-pinkpantheress-morgan-wallen-and-keith-richards/
+        publisher: Music Business Worldwide
+      - url: https://www.gematsu.com/2026/09/grand-theft-auto-vi-the-album-announced
+        publisher: Gematsu
+
+  - id: gta6_album_artists
+    claim: "Artists on Grand Theft Auto VI: The Album include Travis Scott, Morgan Wallen, PinkPantheress, Keith Richards, Future and Metro Boomin."
+    say:
+      - "The lineup includes Travis Scott, Morgan Wallen, PinkPantheress and even Keith Richards."
+    status: confirmed
+    category: music
+    as_of: 2026-11-20
+    recheck_days: 90
+    sources:
+      - url: https://www.musicbusinessworldwide.com/atlantic-records-to-release-grand-theft-auto-vi-the-album-featuring-travis-scott-pinkpantheress-morgan-wallen-and-keith-richards/
+        publisher: Music Business Worldwide
+      - url: https://www.techradar.com/gaming/rockstar-announces-grand-theft-auto-vi-the-album-featuring-34-original-tracks-from-artists-like-pinkpantheress-and-travis-scott-but-the-limited-edition-vinyl-collection-has-already-sold-out
+        publisher: TechRadar
+      - url: https://www.complex.com/music/a/backwoodsaltar/grand-theft-auto-vi-album-travis-scott
+        publisher: Complex
+
+  - id: gta6_justice_score
+    claim: "Rockstar says Grand Theft Auto VI: Original Score, composed by the French duo Justice, releases on December 11, 2026 with 30 tracks plus digital bonus tracks."
+    say:
+      - "And Rockstar says the game's original score, by the French duo Justice, drops December 11th with 30 tracks."
+    status: official
+    attribution: Rockstar
+    category: music
+    as_of: 2026-11-20
+    recheck_days: 30
+    sources:
+      - url: https://www.gosugamers.net/entertainment/news/79441-rockstar-announces-grand-theft-auto-vi-original-score-by-justice-launching-in-december
+        publisher: GosuGamers (reporting Rockstar's announcement)
+      - url: https://gamingbolt.com/?p=655920
+        publisher: GamingBolt
+      - url: https://spinmagazine.com/2026/10/justice-grand-theft-auto-score/
+        publisher: SPIN
+      - url: https://www.invenglobal.com/articles/27899/justices-gta-vi-original-score-arrives-december-11th-with-new-gesaffelstein-single
+        publisher: Inven Global
+
+  # ── Sales (added 2026-11-20) ───────────────────────────────────────────────
+  - id: gta6_launch_sales_estimate
+    claim: "Market intelligence firm Sensor Tower estimates GTA VI sold nearly 25 million copies, worth about $2.36 billion, on launch day. This is an outside estimate, not a Take-Two figure."
+    say:
+      - "Sensor Tower estimates GTA 6 sold nearly 25 million copies on launch day, worth about $2.36 billion."
+    status: reported
+    attribution: Sensor Tower
+    category: sales
+    as_of: 2026-11-20
+    recheck_days: 3          # will be superseded once Take-Two publishes numbers
+    sources:
+      - url: https://www.notebookcheck.net/GTA-6-passes-2-36-billion-in-estimated-launch-day-sales.1455216.0.html
+        publisher: Notebookcheck
+      - url: https://finance.yahoo.com/markets/stocks/articles/gta-6-just-sold-estimated-150701356.html
+        publisher: Yahoo Finance
+
+  - id: gta6_no_official_sales
+    claim: "As of November 20, 2026, Take-Two had not released official GTA VI launch sales figures."
+    say:
+      - "Take-Two hasn't released its own sales numbers yet."
+    status: confirmed
+    category: sales
+    as_of: 2026-11-20
+    recheck_days: 3
+    sources:
+      - url: https://finance.yahoo.com/markets/stocks/articles/gta-6-just-sold-estimated-150701356.html
+        publisher: Yahoo Finance
+      - url: https://www.notebookcheck.net/GTA-6-passes-2-36-billion-in-estimated-launch-day-sales.1455216.0.html
+        publisher: Notebookcheck
+      - url: https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/take-two-s-gta-vi-opens-to-near-perfect-scores-but-the-revenue-proof-comes-later/70539982
+        publisher: Ad-hoc News
+
+  - id: gta5_24h_record
+    claim: "Guinness World Records lists Grand Theft Auto V as the best-selling video game in 24 hours, with 11.21 million units, and credits it with $815.7 million in revenue on its first day in September 2013."
+    say:
+      - "Guinness World Records says GTA 5 sold 11.21 million copies in its first 24 hours back in 2013."
+    status: confirmed
+    category: history
+    as_of: 2026-11-20
+    recheck_days: 365
+    sources:
+      - url: https://www.guinnessworldrecords.com/world-records/111709-best-selling-videogame-in-24-hours
+        publisher: Guinness World Records
+        official: true
+      - url: https://www.guinnessworldrecords.com/news/2013/10/confirmed-grand-theft--auto-breaks-six-sales-world-records-51900
+        publisher: Guinness World Records
+      - url: https://www.gamespot.com/news/guinness-claims-gtav-day-one-sales-total-112-million-copies-6415455
+        publisher: GameSpot

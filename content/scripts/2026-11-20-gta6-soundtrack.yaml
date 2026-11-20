@@ -1,0 +1,33 @@
+id: 2026-11-20-gta6-soundtrack
+status: ready
+created: '2026-11-20'
+author: claude
+format: news
+title: GTA 6 Has Its Own Album, and the Lineup Is Wild
+hook_text: GTA 6 HAS AN ALBUM
+theme: neon_night
+lines:
+- text: GTA 6 didn't just drop a game. It dropped a whole album.
+  kind: hook
+  facts: [gta6_the_album]
+- text: Rockstar teamed up with Atlantic Records on GTA 6 The Album, with 34 original tracks.
+  kind: claim
+  facts: [gta6_the_album]
+  card: {type: stat, big: '34', small: ORIGINAL TRACKS}
+- text: The lineup includes Travis Scott, Morgan Wallen, PinkPantheress, and even Keith Richards.
+  kind: claim
+  facts: [gta6_album_artists]
+  card: {type: text, big: TRAVIS SCOTT + MORE, small: ON THE ALBUM}
+- text: And that's not all. Rockstar says the game's original score, by the French duo Justice, drops December 11th with 30 tracks.
+  kind: claim
+  facts: [gta6_justice_score]
+  card: {type: date, big: DEC 11, small: JUSTICE SCORE · PER ROCKSTAR}
+- text: So per Rockstar, that's two separate releases, one full of songs, one full of score.
+  kind: claim
+  facts: [gta6_the_album, gta6_justice_score]
+- text: Honestly, Rockstar treating the music like its own event is a big flex.
+  kind: opinion
+- text: Which artist do you want to hear on the radio first? Comment below and follow for more.
+  kind: cta
+description: GTA 6 comes with its own 34-track album and a separate original score by Justice. Here's what's out and what's coming.
+tags: [GTA 6, GTA 6 soundtrack, GTA VI The Album, Travis Scott, Justice, Atlantic Records, Rockstar Games]
