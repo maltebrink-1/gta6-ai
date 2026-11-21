@@ -90,6 +90,138 @@
       "theme": "sunset_drive",
       "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-19-gta6-pc-wait": {
+      "author": "claude",
+      "created_at": "2026-11-21T10:48:59+00:00",
+      "duration": 39.15,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_platforms",
+        "gta6_no_pc_date",
+        "gta5_pc_gap",
+        "rdr2_pc_gap"
+      ],
+      "format": "explainer",
+      "id": "2026-11-19-gta6-pc-wait",
+      "platforms": {},
+      "qa": {
+        "failures": [
+          "true peak: 1.0 dBTP (max -1.0)"
+        ],
+        "passed": false,
+        "warnings": []
+      },
+      "render_seconds": 113.6,
+      "rendered_at": "2026-11-21T10:48:59+00:00",
+      "review": {
+        "decision": null
+      },
+      "script": "content/scripts/2026-11-19-gta6-pc-wait.yaml",
+      "status": "qa_failed",
+      "theme": "neon_night",
+      "title": "Why GTA 6 Isn't on PC (Yet)",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-19-gta6-trailer-records": {
+      "author": "claude",
+      "created_at": "2026-11-21T10:50:49+00:00",
+      "duration": 36.86,
+      "engine": "kokoro",
+      "fact_ids": [
+        "trailer1_record",
+        "trailer2_views",
+        "gta5_sales",
+        "gta6_metacritic_99"
+      ],
+      "format": "list",
+      "id": "2026-11-19-gta6-trailer-records",
+      "platforms": {},
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 106.9,
+      "rendered_at": "2026-11-21T10:50:49+00:00",
+      "review": {
+        "decision": null,
+        "issue": 3,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-trailer-records-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-trailer-records.mp4"
+      },
+      "script": "content/scripts/2026-11-19-gta6-trailer-records.yaml",
+      "status": "awaiting_review",
+      "theme": "wanted_level",
+      "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-19-meet-lucia-and-jason": {
+      "author": "claude",
+      "created_at": "2026-11-21T10:52:56+00:00",
+      "duration": 33.87,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_protagonists",
+        "lucia_backstory",
+        "jason_backstory",
+        "gta6_setting",
+        "leonida_is_florida"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-19-meet-lucia-and-jason",
+      "platforms": {},
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 122.0,
+      "rendered_at": "2026-11-21T10:52:56+00:00",
+      "review": {
+        "decision": null,
+        "issue": 4,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-meet-lucia-and-jason-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-meet-lucia-and-jason.mp4"
+      },
+      "script": "content/scripts/2026-11-19-meet-lucia-and-jason.yaml",
+      "status": "awaiting_review",
+      "theme": "ocean_breeze",
+      "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-critic-verdict": {
+      "author": "claude",
+      "created_at": "2026-11-21T10:55:12+00:00",
+      "duration": 37.49,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_metacritic_99",
+        "gta6_beats_gta4",
+        "gta6_opencritic_99",
+        "gta6_review_criticism"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-20-gta6-critic-verdict",
+      "platforms": {},
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 129.3,
+      "rendered_at": "2026-11-21T10:55:12+00:00",
+      "review": {
+        "decision": null,
+        "issue": 5,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-critic-verdict-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-critic-verdict.mp4"
+      },
+      "script": "content/scripts/2026-11-20-gta6-critic-verdict.yaml",
+      "status": "awaiting_review",
+      "theme": "ocean_breeze",
+      "title": "What Critics Actually Said About GTA 6",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
