@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "published_videos": 2,
  "enough_data": false,
- "channel_median_views_per_day": 614.5,
+ "channel_median_views_per_day": 634.3,
  "top_videos": [
   {
    "id": "2026-11-19-gta-timeline",
    "title": "The Whole GTA Story in Under a Minute",
-   "views": 752,
-   "likes": 6,
+   "views": 1118,
+   "likes": 11,
    "comments": 1,
-   "views_per_day": 752.0,
-   "engagement": 0.0093,
+   "views_per_day": 745.3,
+   "engagement": 0.0107,
    "format": "timeline",
    "theme": "swamp_glow",
    "length": "medium (35-45 s)",
@@ -24,11 +24,11 @@
   {
    "id": "2026-11-19-gta6-launch-day",
    "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
-   "views": 477,
-   "likes": 12,
+   "views": 785,
+   "likes": 16,
    "comments": 2,
-   "views_per_day": 477.0,
-   "engagement": 0.0294,
+   "views_per_day": 523.3,
+   "engagement": 0.0229,
    "format": "news",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -44,11 +44,11 @@
   {
    "id": "2026-11-19-gta6-launch-day",
    "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
-   "views": 477,
-   "likes": 12,
+   "views": 785,
+   "likes": 16,
    "comments": 2,
-   "views_per_day": 477.0,
-   "engagement": 0.0294,
+   "views_per_day": 523.3,
+   "engagement": 0.0229,
    "format": "news",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -62,11 +62,11 @@
   {
    "id": "2026-11-19-gta-timeline",
    "title": "The Whole GTA Story in Under a Minute",
-   "views": 752,
-   "likes": 6,
+   "views": 1118,
+   "likes": 11,
    "comments": 1,
-   "views_per_day": 752.0,
-   "engagement": 0.0093,
+   "views_per_day": 745.3,
+   "engagement": 0.0107,
    "format": "timeline",
    "theme": "swamp_glow",
    "length": "medium (35-45 s)",
@@ -81,23 +81,23 @@
   {
    "name": "history",
    "videos": 2,
-   "median_views_per_day": 614.5,
+   "median_views_per_day": 634.3,
    "vs_channel": 1.0,
-   "engagement": 0.0193
+   "engagement": 0.0168
   },
   {
    "name": "release",
    "videos": 2,
-   "median_views_per_day": 614.5,
+   "median_views_per_day": 634.3,
    "vs_channel": 1.0,
-   "engagement": 0.0193
+   "engagement": 0.0168
   },
   {
    "name": "reviews",
    "videos": 2,
-   "median_views_per_day": 614.5,
+   "median_views_per_day": 634.3,
    "vs_channel": 1.0,
-   "engagement": 0.0193
+   "engagement": 0.0168
   }
  ],
  "formats": [],
@@ -106,9 +106,9 @@
   {
    "name": "medium (35-45 s)",
    "videos": 2,
-   "median_views_per_day": 614.5,
+   "median_views_per_day": 634.3,
    "vs_channel": 1.0,
-   "engagement": 0.0193
+   "engagement": 0.0168
   }
  ],
  "advice": "Only 2 published videos — too early to trust patterns (need 6). Keep variety high."
