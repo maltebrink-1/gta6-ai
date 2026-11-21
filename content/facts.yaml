@@ -509,3 +509,92 @@ facts:
         publisher: Guinness World Records
       - url: https://www.gamespot.com/news/guinness-claims-gtav-day-one-sales-total-112-million-copies-6415455
         publisher: GameSpot
+
+  # ── Editions (added 2026-11-21) ────────────────────────────────────────────
+  - id: gta6_ultimate_edition
+    claim: "Rockstar announced in June 2026 that the GTA VI Ultimate Edition costs $99.99 in the US and adds exclusive premium vehicles, weapons and apparel for Jason and Lucia; Standard Edition owners can buy an Ultimate Edition Upgrade separately."
+    say:
+      - "The Ultimate Edition costs $99.99 in the US."
+      - "It adds exclusive premium vehicles, weapons and outfits for Jason and Lucia."
+    status: official
+    category: release
+    as_of: 2026-11-21
+    recheck_days: 30
+    sources:
+      - url: https://www.gematsu.com/2026/06/grand-theft-auto-vi-pricing-ultimate-edition-and-pre-order-bonuses-announced
+        publisher: Gematsu (reporting Rockstar's announcement)
+        date: 2026-06-24
+      - url: https://gameinformer.com/2026/06/24/grand-theft-auto-vi-price-and-ultimate-edition-revealed-physical-version-will-not
+        publisher: Game Informer
+        date: 2026-06-24
+      - url: https://neowin.net/news/grand-theft-auto-vi-pricing-revealed-alongside-ultimate-edition-and-pre-loading-details/
+        publisher: Neowin
+      - url: https://www.tomsguide.com/gaming/gta-6s-ultimate-edition-is-the-real-full-game-and-the-rumors-of-it-costing-usd100-were-true-after-all
+        publisher: Tom's Guide
+
+  - id: gta6_physical_no_disc
+    claim: "Rockstar confirmed that the physical boxed version of GTA VI contains a download code rather than a game disc."
+    say:
+      - "And the physical box? It has a download code inside, not a disc."
+    status: official
+    category: release
+    as_of: 2026-11-21
+    recheck_days: 60
+    sources:
+      - url: https://gameinformer.com/2026/06/24/grand-theft-auto-vi-price-and-ultimate-edition-revealed-physical-version-will-not
+        publisher: Game Informer
+        date: 2026-06-24
+      - url: https://www.digitaltrends.com/gaming/gta-vi-finally-gets-a-price-tag-and-a-no-disc-rule-for-physical-edition
+        publisher: Digital Trends
+      - url: https://www.shacknews.com/article/149778/grand-theft-auto-6-price-standard-ultimate-gta-6
+        publisher: Shacknews
+
+  - id: gta6_vintage_vice_pack
+    claim: "All GTA VI pre-orders included the Vintage Vice City Pack, and digital pre-orders on PlayStation Store or Microsoft Store also got one free month of GTA+."
+    status: official
+    category: release
+    as_of: 2026-11-21
+    recheck_days: 60
+    sources:
+      - url: https://www.gematsu.com/2026/06/grand-theft-auto-vi-pricing-ultimate-edition-and-pre-order-bonuses-announced
+        publisher: Gematsu (reporting Rockstar's announcement)
+      - url: https://mp1st.com/news/gta-6-pre-load-pre-order-bonuses-new-screenshots-revealed-standard-edition-costs-80
+        publisher: MP1st
+
+  # ── Wildlife (added 2026-11-21) ────────────────────────────────────────────
+  - id: gta6_wildlife_count
+    claim: "Rockstar told Game Informer that Leonida has more than 170 animal species, including more than 60 types of birds and over 30 land mammals, plus reptiles and fish."
+    say:
+      - "Rockstar says Leonida has more than 170 animal species."
+      - "Rockstar says that includes more than 60 types of birds and over 30 land mammals."
+    status: official
+    attribution: Rockstar
+    category: world
+    as_of: 2026-11-21
+    recheck_days: 365
+    sources:
+      - url: https://gamingbolt.com/gta-6-features-over-170-animal-species-including-never-before-seen-additions
+        publisher: GamingBolt (reporting Game Informer's cover story)
+      - url: https://www.dexerto.com/gta/gta-6-will-feature-over-170-different-animals-including-legendary-ones-3413584/
+        publisher: Dexerto
+      - url: https://tribune.com.pk/story/2632260/gta-6-will-feature-more-than-170-animal-species-including-rare-and-legendary-creatures
+        publisher: The Express Tribune
+      - url: https://www.gamesradar.com/games/grand-theft-auto/gta-6-animals/
+        publisher: GamesRadar+
+
+  - id: gta6_bird_logbook
+    claim: "Rockstar North co-head Rob Nelson told The Guardian that GTA VI has a wildlife logbook that includes 62 species of birds, which players can spot with binoculars."
+    say:
+      - "Rockstar's Rob Nelson told The Guardian there's a wildlife logbook with 62 species of birds."
+    status: reported
+    attribution: The Guardian
+    category: world
+    as_of: 2026-11-21
+    recheck_days: 90
+    sources:
+      - url: https://www.pcgamer.com/games/grand-theft-auto/twitchers-rejoice-gta-6-will-have-62-different-species-of-birds-though-that-falls-a-bit-short-of-the-over-500-native-species-found-in-florida/
+        publisher: PC Gamer (reporting The Guardian's preview)
+      - url: https://www.gfinityesports.com/article/gta-6-will-feature-62-bird-species-and-a-trackable-wildlife-logbook
+        publisher: Gfinity Esports
+      - url: https://www.dexerto.com/gta/birdwatchers-are-buying-gta-6-just-to-look-at-birds-3428480/
+        publisher: Dexerto

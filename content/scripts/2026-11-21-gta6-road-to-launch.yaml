@@ -1,0 +1,33 @@
+id: 2026-11-21-gta6-road-to-launch
+status: ready
+created: '2026-11-21'
+author: claude
+format: timeline
+title: 'GTA 6: From First Trailer to Record Launch'
+hook_text: GTA 6'S ROAD TO LAUNCH
+theme: sunset_drive
+lines:
+- text: Here's how GTA 6 got from first trailer to record launch.
+  kind: hook
+- text: December 2023. The first trailer got over 90 million YouTube views in 24 hours, a Guinness World Record.
+  kind: claim
+  facts: [trailer1_record]
+  card: {type: date, big: DEC 2023, small: FIRST TRAILER}
+- text: It was aimed at 2025, then delayed to May 26th, 2026, then again to November 19th.
+  kind: claim
+  facts: [gta6_delays]
+- text: May 2025. Rockstar says Trailer 2 hit around 475 million views across all platforms in 24 hours.
+  kind: claim
+  facts: [trailer2_views]
+- text: November 19th, 2026. GTA 6 is finally out.
+  kind: claim
+  facts: [gta6_release_date]
+  card: {type: date, big: NOV 19, small: LAUNCH DAY}
+- text: The next day, Take-Two said it hit $3.79 billion in retail sales on day one.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: stat, big: $3.79B, small: DAY-ONE RETAIL · PER TAKE-TWO}
+- text: Which moment hyped you up the most? Comment below and follow for more.
+  kind: cta
+description: GTA 6's journey from its record-breaking first trailer through two delays to a $3.79 billion launch day, per Take-Two.
+tags: [GTA 6, GTA 6 timeline, GTA 6 trailer, GTA 6 release date, GTA 6 sales, GTA VI, Rockstar Games]

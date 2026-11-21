@@ -1,0 +1,30 @@
+id: 2026-11-21-gta6-wildlife
+status: ready
+created: '2026-11-21'
+author: claude
+format: spotlight
+title: GTA 6 Has Over 170 Animal Species, and Birders Noticed
+hook_text: GTA 6'S WILD SIDE
+theme: swamp_glow
+lines:
+- text: The wildest thing in GTA 6 might not be the crime.
+  kind: hook
+- text: The game is set in Leonida, Rockstar's take on Florida, and Rockstar says it has more than 170 animal species.
+  kind: claim
+  facts: [gta6_setting, leonida_is_florida, gta6_wildlife_count]
+  card: {type: stat, big: 170+, small: ANIMAL SPECIES · PER ROCKSTAR}
+- text: Rockstar says that includes more than 60 types of birds and over 30 land mammals, plus reptiles and fish.
+  kind: claim
+  facts: [gta6_wildlife_count]
+- text: And Rockstar's Rob Nelson told The Guardian there's a wildlife logbook with 62 species of birds you can spot through binoculars.
+  kind: claim
+  facts: [gta6_bird_logbook]
+  card: {type: stat, big: '62', small: BIRD SPECIES · VIA THE GUARDIAN}
+- text: So yes, you can pause a car chase to go birdwatching.
+  kind: opinion
+- text: Honestly, a full nature logbook in a GTA game is not something I expected.
+  kind: opinion
+- text: Would you actually fill the logbook? Tell me in the comments and follow for more GTA 6.
+  kind: cta
+description: Rockstar says GTA 6's Leonida has more than 170 animal species, and there's a bird logbook too. Here's what we know.
+tags: [GTA 6, GTA 6 animals, GTA 6 wildlife, Leonida, GTA VI, Rockstar Games, birdwatching]

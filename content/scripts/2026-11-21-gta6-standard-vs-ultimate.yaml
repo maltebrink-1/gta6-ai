@@ -1,0 +1,31 @@
+id: 2026-11-21-gta6-standard-vs-ultimate
+status: ready
+created: '2026-11-21'
+author: claude
+format: versus
+title: 'GTA 6 Standard vs Ultimate: What You Actually Get'
+hook_text: STANDARD OR ULTIMATE?
+theme: wanted_level
+lines:
+- text: Standard or Ultimate? Here's the GTA 6 edition question, settled.
+  kind: hook
+- text: In the US, the standard edition costs $79.99.
+  kind: claim
+  facts: [gta6_price_standard]
+- text: The Ultimate Edition costs $99.99, and Rockstar says it adds exclusive premium vehicles, weapons and outfits for Jason and Lucia.
+  kind: claim
+  facts: [gta6_ultimate_edition, gta6_price_standard]
+  card: {type: versus, big: $79.99 VS $99.99, small: STANDARD VS ULTIMATE · US}
+- text: Already bought standard? Rockstar sells an Ultimate Edition Upgrade separately, so you don't have to decide today.
+  kind: claim
+  facts: [gta6_ultimate_edition]
+- text: And heads up, the physical box has a download code inside, not a disc.
+  kind: claim
+  facts: [gta6_physical_no_disc]
+  card: {type: text, big: NO DISC, small: CODE IN THE BOX}
+- text: My take? Start with standard, and only upgrade if the extras really grab you.
+  kind: opinion
+- text: Which edition did you get? Comment below and follow for more.
+  kind: cta
+description: GTA 6 Standard Edition vs Ultimate Edition — US prices, what the Ultimate adds, the upgrade option and the no-disc box.
+tags: [GTA 6, GTA 6 Ultimate Edition, GTA 6 price, GTA 6 editions, GTA VI, Rockstar Games]

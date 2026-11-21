@@ -1,0 +1,33 @@
+id: 2026-11-21-gta6-numbers-list
+status: ready
+created: '2026-11-21'
+author: claude
+format: list
+title: Four GTA 6 Numbers That Sound Fake but Aren't
+hook_text: GTA 6 NUMBERS THAT SOUND FAKE
+theme: neon_night
+lines:
+- text: Four GTA 6 numbers that sound made up. They're not.
+  kind: hook
+- text: Number one. Take-Two says it sold 32.5 million units before it even released.
+  kind: claim
+  facts: [gta6_prerelease_units]
+  card: {type: stat, big: 32.5M, small: SOLD BEFORE RELEASE · PER TAKE-TWO}
+- text: Number two. Rockstar says Leonida has more than 170 animal species.
+  kind: claim
+  facts: [gta6_wildlife_count]
+  card: {type: stat, big: 170+, small: ANIMAL SPECIES · PER ROCKSTAR}
+- text: Number three. The game has its own album, with 34 original tracks, made with Atlantic Records.
+  kind: claim
+  facts: [gta6_the_album]
+  card: {type: stat, big: '34', small: ORIGINAL TRACKS}
+- text: Number four. It launched with a 99 on Metacritic. That ties the highest score the site has ever given.
+  kind: claim
+  facts: [gta6_metacritic_99]
+  card: {type: stat, big: '99', small: METASCORE AT LAUNCH}
+- text: Honestly, any one of these would be a headline on its own. GTA 6 just stacks them.
+  kind: opinion
+- text: Which number surprised you most? Tell me below and follow for more GTA 6.
+  kind: cta
+description: Four real, sourced GTA 6 numbers — pre-release sales, wildlife, the album and the Metascore.
+tags: [GTA 6, GTA 6 facts, GTA 6 sales, GTA 6 Metacritic, GTA 6 album, GTA VI, Rockstar Games]
