@@ -2,16 +2,16 @@
  "generated": "2026-11-22",
  "published_videos": 10,
  "enough_data": true,
- "channel_median_views_per_day": 9.0,
+ "channel_median_views_per_day": 9.5,
  "top_videos": [
   {
    "id": "2026-11-19-gta-timeline",
    "title": "The Whole GTA Story in Under a Minute",
-   "views": 1095,
+   "views": 1096,
    "likes": 11,
    "comments": 1,
-   "views_per_day": 438.0,
-   "engagement": 0.011,
+   "views_per_day": 438.4,
+   "engagement": 0.0109,
    "format": "timeline",
    "theme": "swamp_glow",
    "length": "medium (35-45 s)",
@@ -42,11 +42,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 109,
+   "views": 124,
    "likes": 1,
    "comments": 0,
-   "views_per_day": 109.0,
-   "engagement": 0.0092,
+   "views_per_day": 124.0,
+   "engagement": 0.0081,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -90,22 +90,6 @@
  ],
  "weakest_videos": [
   {
-   "id": "2026-11-19-gta6-pc-wait",
-   "title": "Why GTA 6 Isn't on PC (Yet)",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "views_per_day": 0.0,
-   "engagement": 0.0,
-   "format": "explainer",
-   "theme": "neon_night",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "release"
-   ]
-  },
-  {
    "id": "2026-11-20-gta6-quick-answers",
    "title": "GTA 6: Your Biggest Questions, Answered Fast",
    "views": 0,
@@ -137,6 +121,22 @@
     "sales",
     "trailers"
    ]
+  },
+  {
+   "id": "2026-11-19-gta6-pc-wait",
+   "title": "Why GTA 6 Isn't on PC (Yet)",
+   "views": 1,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 1.0,
+   "engagement": 0.0,
+   "format": "explainer",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "release"
+   ]
   }
  ],
  "topics": [
@@ -144,42 +144,42 @@
    "name": "history",
    "videos": 4,
    "median_views_per_day": 191.4,
-   "vs_channel": 21.27,
-   "engagement": 0.0129
+   "vs_channel": 20.15,
+   "engagement": 0.0128
   },
   {
    "name": "release",
    "videos": 4,
-   "median_views_per_day": 157.4,
-   "vs_channel": 17.49,
-   "engagement": 0.0055
+   "median_views_per_day": 157.9,
+   "vs_channel": 16.62,
+   "engagement": 0.0054
   },
   {
    "name": "characters",
    "videos": 3,
-   "median_views_per_day": 109.0,
-   "vs_channel": 12.11,
-   "engagement": 0.0092
+   "median_views_per_day": 124.0,
+   "vs_channel": 13.05,
+   "engagement": 0.0081
   },
   {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 68.0,
-   "vs_channel": 7.56,
-   "engagement": 0.011
+   "vs_channel": 7.16,
+   "engagement": 0.0109
   },
   {
    "name": "trailers",
    "videos": 2,
    "median_views_per_day": 34.0,
-   "vs_channel": 3.78,
+   "vs_channel": 3.58,
    "engagement": 0.0073
   },
   {
    "name": "sales",
    "videos": 2,
    "median_views_per_day": 0.5,
-   "vs_channel": 0.06,
+   "vs_channel": 0.05,
    "engagement": 0.0
   }
  ],
@@ -187,22 +187,22 @@
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 63.0,
-   "vs_channel": 7.0,
-   "engagement": 0.0046
+   "median_views_per_day": 70.5,
+   "vs_channel": 7.42,
+   "engagement": 0.004
   },
   {
    "name": "list",
    "videos": 2,
    "median_views_per_day": 34.0,
-   "vs_channel": 3.78,
+   "vs_channel": 3.58,
    "engagement": 0.0073
   },
   {
    "name": "news",
    "videos": 3,
-   "median_views_per_day": 1.0,
-   "vs_channel": 0.11,
+   "median_views_per_day": 2.0,
+   "vs_channel": 0.21,
    "engagement": 0.0
   }
  ],
@@ -210,29 +210,29 @@
   {
    "name": "swamp_glow",
    "videos": 2,
-   "median_views_per_day": 219.0,
-   "vs_channel": 24.33,
-   "engagement": 0.0055
+   "median_views_per_day": 219.2,
+   "vs_channel": 23.07,
+   "engagement": 0.0054
   },
   {
    "name": "sunset_drive",
    "videos": 2,
    "median_views_per_day": 157.9,
-   "vs_channel": 17.54,
+   "vs_channel": 16.62,
    "engagement": 0.0115
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
    "median_views_per_day": 17.0,
-   "vs_channel": 1.89,
+   "vs_channel": 1.79,
    "engagement": 0.0
   },
   {
    "name": "neon_night",
    "videos": 2,
-   "median_views_per_day": 0.5,
-   "vs_channel": 0.06,
+   "median_views_per_day": 1.5,
+   "vs_channel": 0.16,
    "engagement": 0.0
   }
  ],
@@ -241,14 +241,14 @@
    "name": "medium (35-45 s)",
    "videos": 7,
    "median_views_per_day": 17.0,
-   "vs_channel": 1.89,
+   "vs_channel": 1.79,
    "engagement": 0.0
   },
   {
    "name": "short (<35 s)",
    "videos": 3,
-   "median_views_per_day": 1.0,
-   "vs_channel": 0.11,
+   "median_views_per_day": 2.0,
+   "vs_channel": 0.21,
    "engagement": 0.0
   }
  ],
