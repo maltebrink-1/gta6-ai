@@ -1,8 +1,8 @@
 {
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "published_videos": 10,
  "enough_data": true,
- "channel_median_views_per_day": 13.5,
+ "channel_median_views_per_day": 9.0,
  "top_videos": [
   {
    "id": "2026-11-19-gta-timeline",
@@ -10,7 +10,7 @@
    "views": 1100,
    "likes": 11,
    "comments": 1,
-   "views_per_day": 440.0,
+   "views_per_day": 314.3,
    "engagement": 0.0109,
    "format": "timeline",
    "theme": "swamp_glow",
@@ -27,7 +27,7 @@
    "views": 790,
    "likes": 16,
    "comments": 2,
-   "views_per_day": 316.0,
+   "views_per_day": 225.7,
    "engagement": 0.0228,
    "format": "news",
    "theme": "sunset_drive",
@@ -45,7 +45,7 @@
    "views": 188,
    "likes": 5,
    "comments": 0,
-   "views_per_day": 188.0,
+   "views_per_day": 125.3,
    "engagement": 0.0266,
    "format": "spotlight",
    "theme": "ocean_breeze",
@@ -61,7 +61,7 @@
    "views": 112,
    "likes": 1,
    "comments": 0,
-   "views_per_day": 112.0,
+   "views_per_day": 74.7,
    "engagement": 0.0089,
    "format": "list",
    "theme": "wanted_level",
@@ -78,7 +78,7 @@
    "views": 24,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 24.0,
+   "views_per_day": 16.0,
    "engagement": 0.0,
    "format": "spotlight",
    "theme": "ocean_breeze",
@@ -128,7 +128,7 @@
    "views": 1,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 1.0,
+   "views_per_day": 0.7,
    "engagement": 0.0,
    "format": "news",
    "theme": "sunset_drive",
@@ -142,42 +142,42 @@
   {
    "name": "history",
    "videos": 4,
-   "median_views_per_day": 214.0,
-   "vs_channel": 15.85,
+   "median_views_per_day": 150.2,
+   "vs_channel": 16.69,
    "engagement": 0.0099
   },
   {
    "name": "characters",
    "videos": 3,
-   "median_views_per_day": 188.0,
-   "vs_channel": 13.93,
+   "median_views_per_day": 125.3,
+   "vs_channel": 13.92,
    "engagement": 0.0228
   },
   {
    "name": "release",
    "videos": 4,
-   "median_views_per_day": 159.5,
-   "vs_channel": 11.81,
+   "median_views_per_day": 113.8,
+   "vs_channel": 12.65,
    "engagement": 0.0054
   },
   {
    "name": "reviews",
    "videos": 5,
-   "median_views_per_day": 112.0,
+   "median_views_per_day": 74.7,
    "vs_channel": 8.3,
    "engagement": 0.0089
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 56.0,
+   "median_views_per_day": 37.4,
    "vs_channel": 4.15,
    "engagement": 0.0044
   },
   {
    "name": "sales",
    "videos": 2,
-   "median_views_per_day": 0.5,
+   "median_views_per_day": 0.3,
    "vs_channel": 0.04,
    "engagement": 0.0
   }
@@ -186,22 +186,22 @@
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 106.0,
+   "median_views_per_day": 70.7,
    "vs_channel": 7.85,
    "engagement": 0.0133
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 56.0,
+   "median_views_per_day": 37.4,
    "vs_channel": 4.15,
    "engagement": 0.0044
   },
   {
    "name": "news",
    "videos": 3,
-   "median_views_per_day": 2.0,
-   "vs_channel": 0.15,
+   "median_views_per_day": 1.3,
+   "vs_channel": 0.14,
    "engagement": 0.0
   }
  ],
@@ -209,29 +209,29 @@
   {
    "name": "swamp_glow",
    "videos": 2,
-   "median_views_per_day": 220.0,
-   "vs_channel": 16.3,
+   "median_views_per_day": 157.2,
+   "vs_channel": 17.46,
    "engagement": 0.0054
   },
   {
    "name": "sunset_drive",
    "videos": 2,
-   "median_views_per_day": 158.5,
-   "vs_channel": 11.74,
+   "median_views_per_day": 113.2,
+   "vs_channel": 12.58,
    "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 24.0,
+   "median_views_per_day": 16.0,
    "vs_channel": 1.78,
    "engagement": 0.0
   },
   {
    "name": "neon_night",
    "videos": 2,
-   "median_views_per_day": 2.5,
-   "vs_channel": 0.19,
+   "median_views_per_day": 1.6,
+   "vs_channel": 0.18,
    "engagement": 0.0
   }
  ],
@@ -239,15 +239,15 @@
   {
    "name": "medium (35-45 s)",
    "videos": 7,
-   "median_views_per_day": 24.0,
+   "median_views_per_day": 16.0,
    "vs_channel": 1.78,
    "engagement": 0.0
   },
   {
    "name": "short (<35 s)",
    "videos": 3,
-   "median_views_per_day": 2.0,
-   "vs_channel": 0.15,
+   "median_views_per_day": 1.3,
+   "vs_channel": 0.14,
    "engagement": 0.0
   }
  ],
