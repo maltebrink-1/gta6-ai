@@ -16,6 +16,9 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
+MAX_ATTEMPTS = 2   # a video that fails QA is re-made once, then dropped
+
+
 class Registry:
     def __init__(self, path: Path):
         self.path = path
@@ -51,6 +54,7 @@ class Registry:
             "engine": result.engine,
             "voice": result.voice,
             "render_seconds": round(result.seconds_taken, 1),
+            "attempts": int(rec.get("attempts", 1 if rec.get("rendered_at") else 0)) + 1,
             "qa": {
                 "passed": qa.passed,
                 "failures": [f"{c.name}: {c.detail}" for c in qa.failures],

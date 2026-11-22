@@ -70,7 +70,10 @@ def normalize(src: Path, out: Path, target: float = -14.0, tp: float = -1.5) -> 
     m = measure_loudness(src, target, tp)
     af = (f"loudnorm=I={target}:TP={tp}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
           f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:"
-          "linear=true:print_format=summary,aresample=48000")
+          "linear=true:print_format=summary,"
+          # Safety net: loudnorm can still let short spikes through (and AAC encoding adds
+          # overshoot), so a 4x-oversampled limiter keeps true peaks well under -1 dBTP.
+          "aresample=192000,alimiter=limit=0.6:attack=1:release=60:level=false,aresample=48000")
     run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-af", af, "-ar", "48000", "-ac", "2", str(out)])
     return m
 

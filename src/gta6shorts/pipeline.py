@@ -13,7 +13,7 @@ from .gate import publish_blockers
 from .llm import available_backends
 from .metadata import tiktok_caption
 from .qa import run_qa
-from .registry import Registry
+from .registry import MAX_ATTEMPTS, Registry
 from .render import render_script
 from .research import latest_leads
 from .review import GitHub, issue_body, load_meta, video_id_from_issue
@@ -54,6 +54,13 @@ class ProduceSummary:
         return "\n".join(out)
 
 
+def retry_allowed(rec: dict | None) -> bool:
+    """True for a video that failed QA and hasn't used up its attempts."""
+    if not rec or rec.get("status") != "qa_failed":
+        return False
+    return int(rec.get("attempts", 1)) < MAX_ATTEMPTS
+
+
 def produce(cfg, *, count: int, today: date, engine_name: str | None = None, only: list[str] | None = None,
             open_reviews: bool = True, allow_write: bool = True, strict_facts: bool = True, record: bool = True,
             log=print) -> ProduceSummary:
@@ -71,7 +78,12 @@ def produce(cfg, *, count: int, today: date, engine_name: str | None = None, onl
         queue = [by_id[i] for i in only if i in by_id]
         summary.skipped += [f"{i}: no such script" for i in only if i not in by_id]
     else:
-        queue = [s for s in scripts if s.status == "ready" and s.id not in reg.videos]
+        # A video that failed QA gets one more try (e.g. after a render fix), on top of the day's count.
+        retries = [s for s in scripts if retry_allowed(reg.videos.get(s.id))]
+        for s in retries:
+            say(f"retry {s.id}: failed QA last time ({'; '.join(reg.videos[s.id]['qa'].get('failures', []))[:120]})")
+        count += len(retries)
+        queue = retries + [s for s in scripts if s.status == "ready" and s.id not in reg.videos]
 
     valid: list[Script] = []
     for s in queue:

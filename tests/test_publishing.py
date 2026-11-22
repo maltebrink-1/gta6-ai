@@ -309,3 +309,16 @@ def test_release_spacing(cfg, tmp_path):
     assert release_time(cfg, reg, now) == "2026-11-22T12:59:00Z"        # chains after scheduled ones
     later = datetime(2026, 11, 23, 9, 0, tzinfo=timezone.utc)
     assert release_time(cfg, reg, later) is None                        # gap long passed → now
+
+
+def test_failed_video_retried_once_and_explained():
+    from gta6shorts.analytics import why_not_posted
+    from gta6shorts.pipeline import retry_allowed
+
+    failed = {"status": "qa_failed", "qa": {"failures": ["true peak: 2.3 dBTP (max -1.0)"]}}
+    assert retry_allowed(failed)                                    # old records: 1 attempt so far
+    assert "too loud" in why_not_posted(failed) and "re-made" in why_not_posted(failed)
+    twice = {**failed, "attempts": 2}
+    assert not retry_allowed(twice) and "dropped" in why_not_posted(twice)
+    assert not retry_allowed({"status": "awaiting_review"})
+    assert why_not_posted({"platforms": {"youtube": {"id": "x"}}}) is None

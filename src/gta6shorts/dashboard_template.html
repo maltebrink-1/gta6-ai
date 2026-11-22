@@ -101,6 +101,7 @@ details summary { cursor: pointer; font-weight: 600; }
 footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
 .empty { color: var(--muted); padding: 16px 0; text-align: center; }
 .md h3 { font-size: 16px; margin: 14px 0 6px; } .md h4 { font-size: 14px; margin: 12px 0 4px; } .md ul { margin: 4px 0; padding-left: 20px; } .md p { margin: 6px 0; }
+.why { padding: 8px 0; border-bottom: 1px solid var(--border); } .why:last-child { border-bottom: 0; } .why p { margin: 4px 0 0; }
 </style>
 </head>
 <body>
@@ -181,6 +182,11 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
       <summary>Latest weekly report</summary>
       <div id="report-weekly" class="md"></div>
     </details>
+  </section>
+
+  <section class="card" id="notposted-card" hidden>
+    <h2>Not posted — and why</h2>
+    <div id="notposted"></div>
   </section>
 
   <section class="card">
@@ -537,8 +543,17 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
 
     table($("recent"), ["Video", "Status", "Length", "QA", "Review"], DATA.videos.slice(0, 12).map(function (v) {
       var link = v.review_issue && DATA.repo ? el("a", { href: "https://github.com/" + DATA.repo + "/issues/" + v.review_issue, target: "_blank", rel: "noopener" }, "#" + v.review_issue) : (v.review_issue ? "#" + v.review_issue : "—");
-      return [v.title, statusLabel(v.status), v.duration ? Math.round(v.duration) + " s" : "—", v.qa_passed ? "✓ passed" : "✕ failed", link];
+      return [v.title, statusLabel(v.status), v.duration ? Math.round(v.duration) + " s" : "—", v.qa_passed ? "✓ passed" : "✕ failed (see above)", link];
     }), [false, false, true, false, false]);
+
+    var np = DATA.videos.filter(function (v) { return v.why_not_posted; });
+    $("notposted-card").hidden = !np.length; $("notposted").textContent = "";
+    np.forEach(function (v) {
+      var item = el("div", { "class": "why" });
+      item.appendChild(el("strong", null, v.title));
+      item.appendChild(el("p", { "class": "muted" }, v.why_not_posted));
+      $("notposted").appendChild(item);
+    });
 
     renderLearn();
     table($("daily"), ["Date", "YouTube views", "TikTok views", "Likes", "Comments", "Subs", "Followers", "Created", "Published"],

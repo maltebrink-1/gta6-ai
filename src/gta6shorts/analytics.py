@@ -83,6 +83,44 @@ GAIN_KEYS = {"yt_views": "yt_views_gained", "tt_views": "tt_views_gained", "like
              "comments": "comments_gained", "yt_subs": "subs_gained", "tt_followers": "followers_gained"}
 
 
+PLAIN_REASONS = {
+    "true peak": "The sound was too loud in places (it could crackle on phones).",
+    "loudness": "The overall volume was too quiet or too loud.",
+    "duration": "The video was too short or too long for a Short.",
+    "no black frames": "Part of the picture was black.",
+    "no dead air": "There was a long silence.",
+    "hook starts immediately": "The voice didn't start right away (weak hook).",
+    "captions cover every word": "Some words were missing from the subtitles.",
+    "caption timing": "The subtitles were out of sync.",
+    "fact check": "A fact couldn't be confirmed as up to date, so it wasn't safe to post.",
+    "resolution": "The picture size was wrong.",
+    "video codec": "The video file format was wrong.",
+    "audio": "The audio format was wrong.",
+    "file": "The video file was missing.",
+}
+
+
+def why_not_posted(v: dict) -> str | None:
+    """A plain-English reason a video isn't (yet) on YouTube, or None if it's fine."""
+    from .registry import MAX_ATTEMPTS
+
+    yt = (v.get("platforms") or {}).get("youtube") or {}
+    if yt.get("id"):
+        return None
+    if v.get("status") == "qa_failed":
+        names = [f.split(":", 1)[0] for f in (v.get("qa") or {}).get("failures", [])]
+        reasons = [PLAIN_REASONS.get(n, n) for n in names] or ["It failed an automatic quality check."]
+        attempts = int(v.get("attempts", 1))
+        nxt = (" It will be re-made automatically at the next 11:00 run." if attempts < MAX_ATTEMPTS
+               else f" It was tried {attempts} times, so it has been dropped.")
+        return " ".join(reasons) + nxt
+    if (v.get("review") or {}).get("decision") == "rejected":
+        return "You rejected it."
+    if yt.get("last_error"):
+        return "The YouTube upload failed: " + str(yt["last_error"])[:200] + " It will be retried at the next publish run."
+    return None
+
+
 def build_metrics(cfg, reg: Registry, snapshots: list[dict], today: date, demo: bool = False) -> dict:
     rendered_per_day: dict[str, int] = {}
     published_per_day: dict[str, int] = {}
@@ -128,6 +166,7 @@ def build_metrics(cfg, reg: Registry, snapshots: list[dict], today: date, demo: 
             "status": v.get("status"), "duration": v.get("duration"), "qa_passed": (v.get("qa") or {}).get("passed"),
             "author": v.get("author"), "youtube_url": yt.get("url"), "tiktok": bool((v.get("platforms") or {}).get("tiktok")),
             "review_issue": (v.get("review") or {}).get("issue"),
+            "why_not_posted": why_not_posted(v),
             "views": views, "likes": likes, "comments": comments,
             "engagement": round((likes + comments) / views, 4) if views else 0.0,
         })
