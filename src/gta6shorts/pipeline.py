@@ -150,12 +150,12 @@ def produce(cfg, *, count: int, today: date, engine_name: str | None = None, onl
             entry.update(duration=result.duration, engine=result.engine, qa_passed=qa.passed,
                          failures=[f"{c.name}: {c.detail}" for c in qa.failures])
             say(qa.summary().splitlines()[0])
-            if gh and qa.passed:
+            if gh:                         # failed videos are stored too, so you can watch what went wrong
                 release = gh.ensure_release(cfg.get("review.release_tag", "review-queue"))
                 video_url = gh.upload_asset(release, result.video, f"{s.id}.mp4", "video/mp4")
                 sheet_url = gh.upload_asset(release, result.out_dir / "contact_sheet.jpg", f"{s.id}-sheet.jpg", "image/jpeg")
                 number = None
-                if issues:
+                if issues and qa.passed:
                     body = issue_body(rec, s, meta, qa, video_url, sheet_url, bool(cfg.get("publishing.enabled")))
                     number = gh.create_issue(f"🎬 Review: {s.title}", body, ["review"])
                     entry["issue"] = number

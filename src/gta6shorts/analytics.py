@@ -167,6 +167,13 @@ def build_metrics(cfg, reg: Registry, snapshots: list[dict], today: date, demo: 
             "author": v.get("author"), "youtube_url": yt.get("url"), "tiktok": bool((v.get("platforms") or {}).get("tiktok")),
             "review_issue": (v.get("review") or {}).get("issue"),
             "why_not_posted": why_not_posted(v),
+            "video_url": (v.get("review") or {}).get("video_url"),
+            "sheet_url": (v.get("review") or {}).get("sheet_url"),
+            "qa_failures": (v.get("qa") or {}).get("failures", []),
+            "qa_warnings": (v.get("qa") or {}).get("warnings", []),
+            "attempts": v.get("attempts", 1 if v.get("rendered_at") else 0),
+            "scheduled_for": ((v.get("platforms") or {}).get("youtube") or {}).get("scheduled_for"),
+            "theme": v.get("theme"), "format": v.get("format"),
             "views": views, "likes": likes, "comments": comments,
             "engagement": round((likes + comments) / views, 4) if views else 0.0,
         })

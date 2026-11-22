@@ -102,6 +102,13 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
 .empty { color: var(--muted); padding: 16px 0; text-align: center; }
 .md h3 { font-size: 16px; margin: 14px 0 6px; } .md h4 { font-size: 14px; margin: 12px 0 4px; } .md ul { margin: 4px 0; padding-left: 20px; } .md p { margin: 6px 0; }
 .why { padding: 8px 0; border-bottom: 1px solid var(--border); } .why:last-child { border-bottom: 0; } .why p { margin: 4px 0 0; }
+.vlink { background: none; border: 0; padding: 0; font: inherit; color: var(--s1); text-align: left; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.vdialog { border: 1px solid var(--border); border-radius: 16px; background: var(--surface); color: var(--ink); width: min(520px, calc(100vw - 24px)); max-height: calc(100vh - 32px); padding: 16px; }
+.vdialog::backdrop { background: rgba(0,0,0,.55); }
+.vdialog h2 { margin: 0 32px 4px 0; font-size: 18px; } .vdialog h3 { margin: 16px 0 4px; font-size: 15px; }
+.vdialog .close { position: absolute; top: 10px; right: 10px; border: 0; background: var(--wash); color: var(--ink); border-radius: 999px; width: 32px; height: 32px; cursor: pointer; }
+.vdialog ul { margin: 4px 0; padding-left: 18px; } .vdialog a { color: var(--s1); }
+.player { display: block; width: 100%; max-height: 60vh; aspect-ratio: 9 / 16; background: #000; border-radius: 12px; margin: 10px 0 4px; object-fit: contain; }
 </style>
 </head>
 <body>
@@ -183,6 +190,11 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
       <div id="report-weekly" class="md"></div>
     </details>
   </section>
+
+  <dialog id="vdialog" class="vdialog">
+    <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+    <div id="vbody"></div>
+  </dialog>
 
   <section class="card" id="notposted-card" hidden>
     <h2>Not posted — and why</h2>
@@ -386,6 +398,43 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
     host.appendChild(tb);
   }
 
+  function openVideo(v) {
+    var d = $("vdialog"), body = $("vbody");
+    body.textContent = "";
+    body.appendChild(el("h2", null, v.title));
+    body.appendChild(el("p", { "class": "muted" }, [statusLabel(v.status).textContent, v.duration ? Math.round(v.duration) + " s" : null,
+      v.format, v.rendered_at ? "made " + String(v.rendered_at).slice(0, 16).replace("T", " ") + " UTC" : null,
+      v.attempts > 1 ? "attempt " + v.attempts : null].filter(Boolean).join(" · ")));
+    if (v.video_url) {
+      var vid = el("video", { controls: "", playsinline: "", preload: "metadata", src: v.video_url, "class": "player" });
+      if (v.sheet_url) vid.setAttribute("poster", v.sheet_url);
+      body.appendChild(vid);
+      var dl = el("a", { href: v.video_url, target: "_blank", rel: "noopener" }, "Open the video file");
+      body.appendChild(el("p")).appendChild(dl);
+    } else if (v.youtube_url) {
+      body.appendChild(el("p", { "class": "muted" }, "Watch it on YouTube (link below)."));
+    } else {
+      body.appendChild(el("p", { "class": "muted" }, "This video's file wasn't kept, so it can't be played here."));
+    }
+    if (v.youtube_url) {
+      var p = el("p"); p.appendChild(el("a", { href: v.youtube_url, target: "_blank", rel: "noopener" }, "Open on YouTube ↗"));
+      if (v.scheduled_for) p.appendChild(document.createTextNode(" — goes public " + new Date(v.scheduled_for).toLocaleString()));
+      body.appendChild(p);
+    }
+    body.appendChild(el("h3", null, v.why_not_posted ? "What went wrong" : "Quality checks"));
+    if (v.why_not_posted) body.appendChild(el("p", null, v.why_not_posted));
+    else if (v.qa_passed) body.appendChild(el("p", null, "✓ Passed all automatic checks (sound, picture, subtitles, length, facts)."));
+    if (v.qa_failures && v.qa_failures.length) {
+      body.appendChild(el("p", { "class": "muted" }, "Technical details:"));
+      var ul = el("ul"); v.qa_failures.forEach(function (f) { ul.appendChild(el("li", null, "✕ " + f)); }); body.appendChild(ul);
+    }
+    if (v.qa_warnings && v.qa_warnings.length) {
+      var uw = el("ul"); v.qa_warnings.forEach(function (f) { uw.appendChild(el("li", null, "⚠ " + f)); }); body.appendChild(uw);
+    }
+    if (v.views) body.appendChild(el("p", null, compact(v.views) + " views · " + compact(v.likes) + " likes · " + compact(v.comments) + " comments"));
+    if (d.showModal) d.showModal(); else d.setAttribute("open", "");
+  }
+
   function statusLabel(status) {
     var map = {
       published: ["✔ Published", "--good-text"], awaiting_review: ["● Awaiting review", "--ink-2"],
@@ -541,16 +590,19 @@ footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
     });
     uh.appendChild(el("p", { "class": "muted" }, "GitHub Actions: " + (u.actions || "—")));
 
-    table($("recent"), ["Video", "Status", "Length", "QA", "Review"], DATA.videos.slice(0, 12).map(function (v) {
-      var link = v.review_issue && DATA.repo ? el("a", { href: "https://github.com/" + DATA.repo + "/issues/" + v.review_issue, target: "_blank", rel: "noopener" }, "#" + v.review_issue) : (v.review_issue ? "#" + v.review_issue : "—");
-      return [v.title, statusLabel(v.status), v.duration ? Math.round(v.duration) + " s" : "—", v.qa_passed ? "✓ passed" : "✕ failed (see above)", link];
-    }), [false, false, true, false, false]);
+    table($("recent"), ["Video", "Status", "Length", "Checks"], DATA.videos.slice(0, 20).map(function (v) {
+      var b = el("button", { "class": "vlink", type: "button" }, v.title);
+      b.addEventListener("click", function () { openVideo(v); });
+      return [b, statusLabel(v.status), v.duration ? Math.round(v.duration) + " s" : "—", v.qa_passed ? "✓ passed" : "✕ failed"];
+    }), [false, false, true, false]);
 
     var np = DATA.videos.filter(function (v) { return v.why_not_posted; });
     $("notposted-card").hidden = !np.length; $("notposted").textContent = "";
     np.forEach(function (v) {
       var item = el("div", { "class": "why" });
-      item.appendChild(el("strong", null, v.title));
+      var t = el("button", { "class": "vlink", type: "button" }, v.title);
+      t.addEventListener("click", function () { openVideo(v); });
+      item.appendChild(t);
       item.appendChild(el("p", { "class": "muted" }, v.why_not_posted));
       $("notposted").appendChild(item);
     });
