@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "collected_at": "2026-11-22T19:50:02+00:00",
+ "collected_at": "2026-11-22T20:44:54+00:00",
  "youtube": {
   "channel": {
    "channel_id": "UCKf_gkOScg8FoRrlj98Q6KA",
@@ -11,7 +11,7 @@
   },
   "videos": {
    "7y7ZfacJH0E": {
-    "views": 1096,
+    "views": 1100,
     "likes": 11,
     "comments": 1,
     "title": "The Whole GTA Story in Under a Minute"
@@ -35,8 +35,8 @@
     "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers"
    },
    "RP-saXs4tGg": {
-    "views": 124,
-    "likes": 1,
+    "views": 142,
+    "likes": 3,
     "comments": 0,
     "title": "Meet Lucia & Jason: GTA 6's Criminal Duo"
    },
@@ -71,7 +71,16 @@
     "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild"
    }
   },
-  "daily": []
+  "daily": [
+   {
+    "day": "2026-11-20",
+    "views": 1877,
+    "likes": 27,
+    "comments": 3,
+    "subscribersGained": 4,
+    "subscribersLost": 0
+   }
+  ]
  },
  "tiktok": null,
  "errors": []

@@ -7,10 +7,10 @@
   {
    "id": "2026-11-19-gta-timeline",
    "title": "The Whole GTA Story in Under a Minute",
-   "views": 1096,
+   "views": 1100,
    "likes": 11,
    "comments": 1,
-   "views_per_day": 438.4,
+   "views_per_day": 440.0,
    "engagement": 0.0109,
    "format": "timeline",
    "theme": "swamp_glow",
@@ -42,11 +42,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 124,
-   "likes": 1,
+   "views": 142,
+   "likes": 3,
    "comments": 0,
-   "views_per_day": 124.0,
-   "engagement": 0.0081,
+   "views_per_day": 142.0,
+   "engagement": 0.0211,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -157,9 +157,9 @@
   {
    "name": "characters",
    "videos": 3,
-   "median_views_per_day": 124.0,
-   "vs_channel": 13.05,
-   "engagement": 0.0081
+   "median_views_per_day": 142.0,
+   "vs_channel": 14.95,
+   "engagement": 0.0211
   },
   {
    "name": "reviews",
@@ -187,9 +187,9 @@
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 70.5,
-   "vs_channel": 7.42,
-   "engagement": 0.004
+   "median_views_per_day": 79.5,
+   "vs_channel": 8.37,
+   "engagement": 0.0106
   },
   {
    "name": "list",
@@ -210,8 +210,8 @@
   {
    "name": "swamp_glow",
    "videos": 2,
-   "median_views_per_day": 219.2,
-   "vs_channel": 23.07,
+   "median_views_per_day": 220.0,
+   "vs_channel": 23.16,
    "engagement": 0.0054
   },
   {
