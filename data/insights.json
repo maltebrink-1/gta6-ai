@@ -1,8 +1,8 @@
 {
  "generated": "2026-11-22",
- "published_videos": 8,
+ "published_videos": 10,
  "enough_data": true,
- "channel_median_views_per_day": 0.0,
+ "channel_median_views_per_day": 9.0,
  "top_videos": [
   {
    "id": "2026-11-19-gta-timeline",
@@ -42,11 +42,11 @@
   {
    "id": "2026-11-19-gta6-trailer-records",
    "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
-   "views": 1,
-   "likes": 0,
+   "views": 68,
+   "likes": 1,
    "comments": 0,
-   "views_per_day": 1.0,
-   "engagement": 0.0,
+   "views_per_day": 68.0,
+   "engagement": 0.0147,
    "format": "list",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -59,11 +59,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 0,
-   "likes": 0,
+   "views": 68,
+   "likes": 2,
    "comments": 0,
-   "views_per_day": 0.0,
-   "engagement": 0.0,
+   "views_per_day": 68.0,
+   "engagement": 0.0294,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -75,10 +75,10 @@
   {
    "id": "2026-11-20-gta6-critic-verdict",
    "title": "What Critics Actually Said About GTA 6",
-   "views": 0,
+   "views": 17,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 0.0,
+   "views_per_day": 17.0,
    "engagement": 0.0,
    "format": "spotlight",
    "theme": "ocean_breeze",
@@ -90,129 +90,167 @@
  ],
  "weakest_videos": [
   {
-   "id": "2026-11-19-meet-lucia-and-jason",
-   "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
+   "id": "2026-11-19-gta6-pc-wait",
+   "title": "Why GTA 6 Isn't on PC (Yet)",
    "views": 0,
    "likes": 0,
    "comments": 0,
    "views_per_day": 0.0,
    "engagement": 0.0,
-   "format": "spotlight",
+   "format": "explainer",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "release"
+   ]
+  },
+  {
+   "id": "2026-11-20-gta6-quick-answers",
+   "title": "GTA 6: Your Biggest Questions, Answered Fast",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "qna",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
    "topics": [
     "characters",
-    "world"
+    "release"
    ]
   },
   {
-   "id": "2026-11-20-gta6-critic-verdict",
-   "title": "What Critics Actually Said About GTA 6",
+   "id": "2026-11-20-gta6-records-so-far",
+   "title": "The Records GTA 6 Has Already Claimed",
    "views": 0,
    "likes": 0,
    "comments": 0,
    "views_per_day": 0.0,
    "engagement": 0.0,
-   "format": "spotlight",
-   "theme": "ocean_breeze",
+   "format": "list",
+   "theme": "swamp_glow",
    "length": "medium (35-45 s)",
    "topics": [
-    "reviews"
-   ]
-  },
-  {
-   "id": "2026-11-20-gta6-day-one-billions",
-   "title": "GTA 6 Made $3.79 Billion on Day One, Says Take-Two",
-   "views": 0,
-   "likes": 0,
-   "comments": 0,
-   "views_per_day": 0.0,
-   "engagement": 0.0,
-   "format": "news",
-   "theme": "sunset_drive",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "sales"
+    "reviews",
+    "sales",
+    "trailers"
    ]
   }
  ],
  "topics": [
   {
    "name": "history",
-   "videos": 3,
-   "median_views_per_day": 314.8,
-   "vs_channel": null,
-   "engagement": 0.011
+   "videos": 4,
+   "median_views_per_day": 191.4,
+   "vs_channel": 21.27,
+   "engagement": 0.0129
   },
   {
    "name": "release",
-   "videos": 3,
-   "median_views_per_day": 314.8,
-   "vs_channel": null,
-   "engagement": 0.011
+   "videos": 4,
+   "median_views_per_day": 157.4,
+   "vs_channel": 17.49,
+   "engagement": 0.0055
   },
   {
    "name": "reviews",
-   "videos": 4,
-   "median_views_per_day": 157.9,
-   "vs_channel": null,
-   "engagement": 0.0055
+   "videos": 5,
+   "median_views_per_day": 68.0,
+   "vs_channel": 7.56,
+   "engagement": 0.011
   },
   {
    "name": "characters",
    "videos": 3,
-   "median_views_per_day": 0.0,
-   "vs_channel": null,
+   "median_views_per_day": 68.0,
+   "vs_channel": 7.56,
+   "engagement": 0.0229
+  },
+  {
+   "name": "trailers",
+   "videos": 2,
+   "median_views_per_day": 34.0,
+   "vs_channel": 3.78,
+   "engagement": 0.0073
+  },
+  {
+   "name": "sales",
+   "videos": 2,
+   "median_views_per_day": 0.5,
+   "vs_channel": 0.06,
    "engagement": 0.0
   }
  ],
  "formats": [
   {
-   "name": "news",
-   "videos": 3,
-   "median_views_per_day": 0.0,
-   "vs_channel": null,
-   "engagement": 0.0
-  },
-  {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 0.0,
-   "vs_channel": null,
+   "median_views_per_day": 42.5,
+   "vs_channel": 4.72,
+   "engagement": 0.0147
+  },
+  {
+   "name": "list",
+   "videos": 2,
+   "median_views_per_day": 34.0,
+   "vs_channel": 3.78,
+   "engagement": 0.0073
+  },
+  {
+   "name": "news",
+   "videos": 3,
+   "median_views_per_day": 1.0,
+   "vs_channel": 0.11,
    "engagement": 0.0
   }
  ],
  "themes": [
   {
+   "name": "swamp_glow",
+   "videos": 2,
+   "median_views_per_day": 219.0,
+   "vs_channel": 24.33,
+   "engagement": 0.0055
+  },
+  {
    "name": "sunset_drive",
    "videos": 2,
-   "median_views_per_day": 157.4,
-   "vs_channel": null,
+   "median_views_per_day": 157.9,
+   "vs_channel": 17.54,
    "engagement": 0.0115
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 0.0,
-   "vs_channel": null,
+   "median_views_per_day": 17.0,
+   "vs_channel": 1.89,
+   "engagement": 0.0
+  },
+  {
+   "name": "neon_night",
+   "videos": 2,
+   "median_views_per_day": 0.5,
+   "vs_channel": 0.06,
    "engagement": 0.0
   }
  ],
  "lengths": [
   {
    "name": "medium (35-45 s)",
-   "videos": 5,
-   "median_views_per_day": 1.0,
-   "vs_channel": null,
+   "videos": 7,
+   "median_views_per_day": 17.0,
+   "vs_channel": 1.89,
    "engagement": 0.0
   },
   {
    "name": "short (<35 s)",
    "videos": 3,
-   "median_views_per_day": 0.0,
-   "vs_channel": null,
+   "median_views_per_day": 1.0,
+   "vs_channel": 0.11,
    "engagement": 0.0
   }
  ],
- "advice": "Lean into topics history, release and formats news, spotlight for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics history, release and formats spotlight, list for 3 of 4 scripts; use the 4th for something new."
 }
