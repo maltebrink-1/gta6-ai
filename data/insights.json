@@ -40,6 +40,22 @@
    ]
   },
   {
+   "id": "2026-11-19-meet-lucia-and-jason",
+   "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
+   "views": 109,
+   "likes": 1,
+   "comments": 0,
+   "views_per_day": 109.0,
+   "engagement": 0.0092,
+   "format": "spotlight",
+   "theme": "ocean_breeze",
+   "length": "short (<35 s)",
+   "topics": [
+    "characters",
+    "world"
+   ]
+  },
+  {
    "id": "2026-11-19-gta6-trailer-records",
    "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
    "views": 68,
@@ -54,22 +70,6 @@
     "history",
     "reviews",
     "trailers"
-   ]
-  },
-  {
-   "id": "2026-11-19-meet-lucia-and-jason",
-   "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 68,
-   "likes": 2,
-   "comments": 0,
-   "views_per_day": 68.0,
-   "engagement": 0.0294,
-   "format": "spotlight",
-   "theme": "ocean_breeze",
-   "length": "short (<35 s)",
-   "topics": [
-    "characters",
-    "world"
    ]
   },
   {
@@ -155,18 +155,18 @@
    "engagement": 0.0055
   },
   {
+   "name": "characters",
+   "videos": 3,
+   "median_views_per_day": 109.0,
+   "vs_channel": 12.11,
+   "engagement": 0.0092
+  },
+  {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 68.0,
    "vs_channel": 7.56,
    "engagement": 0.011
-  },
-  {
-   "name": "characters",
-   "videos": 3,
-   "median_views_per_day": 68.0,
-   "vs_channel": 7.56,
-   "engagement": 0.0229
   },
   {
    "name": "trailers",
@@ -187,9 +187,9 @@
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 42.5,
-   "vs_channel": 4.72,
-   "engagement": 0.0147
+   "median_views_per_day": 63.0,
+   "vs_channel": 7.0,
+   "engagement": 0.0046
   },
   {
    "name": "list",
