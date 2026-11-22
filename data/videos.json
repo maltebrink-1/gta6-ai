@@ -222,6 +222,135 @@
       "theme": "ocean_breeze",
       "title": "What Critics Actually Said About GTA 6",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-day-one-billions": {
+      "author": "claude",
+      "created_at": "2026-11-22T10:47:33+00:00",
+      "duration": 38.47,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_day_one_sales",
+        "gta6_prerelease_units"
+      ],
+      "format": "news",
+      "id": "2026-11-20-gta6-day-one-billions",
+      "platforms": {},
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 139.6,
+      "rendered_at": "2026-11-22T10:47:33+00:00",
+      "review": {
+        "decision": null,
+        "issue": 6,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-day-one-billions-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-day-one-billions.mp4"
+      },
+      "script": "content/scripts/2026-11-20-gta6-day-one-billions.yaml",
+      "status": "awaiting_review",
+      "theme": "sunset_drive",
+      "title": "GTA 6 Made $3.79 Billion on Day One, Says Take-Two",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-quick-answers": {
+      "author": "claude",
+      "created_at": "2026-11-22T10:49:29+00:00",
+      "duration": 31.31,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_midnight_unlock",
+        "gta6_platforms",
+        "gta6_no_pc_date",
+        "gta6_price_standard",
+        "gta6_protagonists"
+      ],
+      "format": "qna",
+      "id": "2026-11-20-gta6-quick-answers",
+      "platforms": {},
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 109.5,
+      "rendered_at": "2026-11-22T10:49:29+00:00",
+      "review": {
+        "decision": null,
+        "issue": 7,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-quick-answers-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-quick-answers.mp4"
+      },
+      "script": "content/scripts/2026-11-20-gta6-quick-answers.yaml",
+      "status": "awaiting_review",
+      "theme": "ocean_breeze",
+      "title": "GTA 6: Your Biggest Questions, Answered Fast",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-records-so-far": {
+      "author": "claude",
+      "created_at": "2026-11-22T10:52:05+00:00",
+      "duration": 41.19,
+      "engine": "kokoro",
+      "fact_ids": [
+        "trailer1_record",
+        "trailer2_views",
+        "gta6_metacritic_99",
+        "gta6_day_one_sales"
+      ],
+      "format": "list",
+      "id": "2026-11-20-gta6-records-so-far",
+      "platforms": {},
+      "qa": {
+        "failures": [
+          "true peak: 2.3 dBTP (max -1.0)"
+        ],
+        "passed": false,
+        "warnings": []
+      },
+      "render_seconds": 148.4,
+      "rendered_at": "2026-11-22T10:52:05+00:00",
+      "review": {
+        "decision": null
+      },
+      "script": "content/scripts/2026-11-20-gta6-records-so-far.yaml",
+      "status": "qa_failed",
+      "theme": "swamp_glow",
+      "title": "The Records GTA 6 Has Already Claimed",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-soundtrack": {
+      "author": "claude",
+      "created_at": "2026-11-22T10:53:48+00:00",
+      "duration": 34.87,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_the_album",
+        "gta6_album_artists",
+        "gta6_justice_score"
+      ],
+      "format": "news",
+      "id": "2026-11-20-gta6-soundtrack",
+      "platforms": {},
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 99.9,
+      "rendered_at": "2026-11-22T10:53:48+00:00",
+      "review": {
+        "decision": null,
+        "issue": 8,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-soundtrack-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-soundtrack.mp4"
+      },
+      "script": "content/scripts/2026-11-20-gta6-soundtrack.yaml",
+      "status": "awaiting_review",
+      "theme": "neon_night",
+      "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
