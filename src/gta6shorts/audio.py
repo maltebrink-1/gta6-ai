@@ -78,44 +78,53 @@ def normalize(src: Path, out: Path, target: float = -14.0, tp: float = -1.5) -> 
     return m
 
 
-def true_peak(path: Path) -> float | None:
-    """True peak (dBTP) of a file's audio, measured the same way as the QA check."""
+def loudness_and_peak(path: Path) -> tuple[float | None, float | None]:
+    """(integrated loudness LUFS, true peak dBTP) of a file's audio, measured like the QA check."""
     proc = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(path), "-vn", "-af", "ebur128=peak=true",
                            "-f", "null", "-"], capture_output=True, text=True)
     summary = proc.stderr[proc.stderr.rfind("Summary:"):]
-    m = re.search(r"Peak:\s+(-?[\d.]+|-inf) dBFS", summary)
-    if not m:
-        return None
-    return float("-inf") if m.group(1) == "-inf" else float(m.group(1))
+    i = re.search(r"I:\s+(-?[\d.]+|-inf) LUFS", summary)
+    p = re.search(r"Peak:\s+(-?[\d.]+|-inf) dBFS", summary)
+    val = lambda m: None if not m else (float("-inf") if m.group(1) == "-inf" else float(m.group(1)))  # noqa: E731
+    return val(i), val(p)
+
+
+def true_peak(path: Path) -> float | None:
+    return loudness_and_peak(path)[1]
 
 
 def tame_encoded_peaks(video: Path, audio: Path, duration: float, target: float = -1.5,
-                       limit_db: float = -4.4, rounds: int = 3, log=print) -> float | None:
-    """Make sure the *encoded* video's true peak is under `target` dBTP.
+                       loudness: float = -14.0, rounds: int = 4, log=print) -> float | None:
+    """Make sure the *encoded* video's true peak is under `target` dBTP at the right loudness.
 
-    The AAC encoder can overshoot the limited WAV by several dB (more on newer FFmpeg),
-    so we measure the finished file and, if needed, re-encode only the audio with a
-    stronger peak limiter. Loudness barely changes because only short peaks are touched.
+    The AAC encoder can overshoot the WAV by several dB (more on newer FFmpeg), so we
+    measure the finished file and, if needed, re-encode only the audio: a peak limiter
+    set below the measured overshoot, with make-up gain so the loudness stays on target.
     """
-    tp = true_peak(video)
     level = true_peak(audio)            # peak going INTO the encoder
     if level is None:
-        level = limit_db
+        return true_peak(video)
+    gain = 0.0
+    loud, tp = loudness_and_peak(video)
     for _ in range(rounds):
-        if tp is None or tp <= target:
+        loud_ok = loud is None or abs(loud - loudness) <= 0.7
+        if tp is None or (tp <= target and loud_ok):
             return tp
-        overshoot = max(tp - level, 0.0)   # what the encoder added on top
-        limit_db = target - overshoot - 0.3
-        level = limit_db
-        lin = max(10 ** (limit_db / 20), 0.0625)
-        log(f"audio peak {tp:.1f} dBTP after encoding → re-limiting at {limit_db:.1f} dB")
+        overshoot = max(tp - level, 0.0)    # what the encoder added on top of the limited audio
+        if tp > target:
+            level = target - overshoot - 0.3
+        if loud is not None:
+            gain += loudness - loud         # bring the loudness back after limiting
+        lin = max(10 ** (level / 20), 0.0625)
+        log(f"audio after encoding: {loud} LUFS, {tp:.1f} dBTP → gain {gain:+.1f} dB, limit {level:.1f} dB")
         tmp = video.with_name("video.peakfix.mp4")
         run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(audio), "-map", "0:v", "-map", "1:a",
-             "-c:v", "copy", "-af", f"lowpass=f=16000,aresample=192000,alimiter=limit={lin:.4f}:attack=1:release=60:"
-             "level=false,aresample=48000", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+             "-c:v", "copy", "-af", f"volume={gain:.2f}dB,lowpass=f=16000,aresample=192000,"
+             f"alimiter=limit={lin:.4f}:attack=1:release=60:level=false,aresample=48000",
+             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
              "-t", f"{duration:.3f}", "-movflags", "+faststart", str(tmp)])
         tmp.replace(video)
-        tp = true_peak(video)
+        loud, tp = loudness_and_peak(video)
     return tp
 
 

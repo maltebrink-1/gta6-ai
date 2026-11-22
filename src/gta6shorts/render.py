@@ -238,7 +238,8 @@ def render_script(
         raise RenderError(f"final render failed:\n{proc.stderr[-2500:]}")
     video = out / "video.mp4"
     tame_encoded_peaks(video, work / "final_audio.wav", duration,
-                       target=float(cfg.get("quality.true_peak_max", -1.0)) - 0.5, log=log)
+                       target=float(cfg.get("quality.true_peak_max", -1.0)) - 0.5,
+                       loudness=float(cfg.get("quality.loudness_target", -14.0)), log=log)
 
     # 6. extras ------------------------------------------------------------
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "1.0", "-i", "video.mp4", "-frames:v", "1",
