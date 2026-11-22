@@ -338,7 +338,7 @@
       "voice": "af_bella:0.7+af_heart:0.3"
     },
     "2026-11-20-gta6-records-so-far": {
-      "attempts": 1,
+      "attempts": 2,
       "author": "claude",
       "created_at": "2026-11-22T10:52:05+00:00",
       "duration": 41.19,
@@ -351,21 +351,30 @@
       ],
       "format": "list",
       "id": "2026-11-20-gta6-records-so-far",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "l3wr-7bSkgg",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:39:21+00:00",
+          "scheduled_for": "2026-11-22T19:41:04Z",
+          "url": "https://youtube.com/shorts/l3wr-7bSkgg"
+        }
+      },
       "qa": {
-        "failures": [
-          "loudness: -15.9 LUFS (target -14.0±1.5)"
-        ],
-        "passed": false,
+        "failures": [],
+        "passed": true,
         "warnings": []
       },
-      "render_seconds": 114.1,
-      "rendered_at": "2026-11-22T16:35:06+00:00",
+      "render_seconds": 127.8,
+      "rendered_at": "2026-11-22T16:39:15+00:00",
       "review": {
-        "decision": null
+        "decision": null,
+        "issue": null,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-records-so-far-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-records-so-far.mp4"
       },
       "script": "content/scripts/2026-11-20-gta6-records-so-far.yaml",
-      "status": "qa_failed",
+      "status": "published",
       "theme": "swamp_glow",
       "title": "The Records GTA 6 Has Already Claimed",
       "voice": "af_bella:0.7+af_heart:0.3"
