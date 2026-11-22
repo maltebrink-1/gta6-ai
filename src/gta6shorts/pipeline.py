@@ -166,29 +166,33 @@ def _facts_ok(cfg, record: dict, today: date) -> bool:
     return not errors(check_with_config(script, load_factbase(cfg), cfg, today=today, strict_freshness=True))
 
 
-def release_time(cfg, index: int, now=None):
-    """When the index-th YouTube video of the day should go public (UTC ISO), or None for 'now'.
+def release_time(cfg, reg: Registry, now=None):
+    """When the next YouTube video should go public (UTC ISO), or None for "right now".
 
-    Slots come from publishing.youtube.slots (Danish time, e.g. 13:00, 13:10, 17:00, 17:10);
-    extra videos follow the last slot at 10-minute steps. A slot that is (almost) past
-    means "publish immediately".
+    Videos are spaced publishing.youtube.spacing_minutes apart (default 30): the next one
+    goes public that many minutes after the latest YouTube release (done or scheduled),
+    or immediately if that moment is (almost) here already.
     """
     from datetime import datetime, timedelta, timezone
-    from zoneinfo import ZoneInfo
 
-    slots = cfg.get("publishing.youtube.slots") or []
-    if not slots:
-        return None
-    tz = ZoneInfo(cfg.get("analytics.timezone", "Europe/Copenhagen"))
+    gap = timedelta(minutes=int(cfg.get("publishing.youtube.spacing_minutes", 30)))
     now = now or datetime.now(timezone.utc)
-    local_now = now.astimezone(tz)
-    h, m = (int(x) for x in str(slots[min(index, len(slots) - 1)]).split(":"))
-    when = local_now.replace(hour=h, minute=m, second=0, microsecond=0)
-    if index >= len(slots):
-        when += timedelta(minutes=10 * (index - len(slots) + 1))
-    if when <= local_now + timedelta(minutes=5):
+    last = None
+    for v in reg.videos.values():
+        p = (v.get("platforms") or {}).get("youtube") or {}
+        if not p.get("id"):
+            continue
+        stamp = p.get("scheduled_for") or p.get("published_at")
+        try:
+            t = datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+        last = t if last is None or t > last else last
+    if last is None or last + gap <= now + timedelta(minutes=5):
         return None
-    return when.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return (last + gap).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def publish_one(cfg, reg: Registry, vid: str, platform: str, today: date, gh: GitHub | None, log=print) -> tuple[bool, str]:
@@ -217,7 +221,7 @@ def publish_one(cfg, reg: Registry, vid: str, platform: str, today: date, gh: Gi
 
             yt = YouTubeClient(env("YT_CLIENT_ID"), env("YT_CLIENT_SECRET"), env("YT_REFRESH_TOKEN"))
             privacy_setting = cfg.get("publishing.youtube.privacy", "private")
-            publish_at = (release_time(cfg, reg.published_on(today.isoformat(), "youtube"))
+            publish_at = (release_time(cfg, reg)
                           if privacy_setting == "public" else None)
             body = YouTubeClient.build_body(
                 meta.get("title", script.title), meta.get("description", script.description), script.tags,

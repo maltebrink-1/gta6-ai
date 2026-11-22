@@ -1,5 +1,6 @@
 # Daily content run: news leads → fact re-check → scripts → videos → QA → review issues.
-# It NEVER publishes. Scheduled runs only happen once you set the repository
+# Finished, QA-passed videos are posted to YouTube right away (30 min apart)
+# when publishing.mode is auto. Scheduled runs only happen once you set the repository
 # variable AUTOMATION_ENABLED=true (Settings → Secrets and variables → Actions → Variables).
 name: Produce videos
 
@@ -55,6 +56,12 @@ jobs:
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       LLM_MODEL: ${{ secrets.LLM_MODEL }}
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
@@ -69,6 +76,9 @@ jobs:
           flags=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.open_reviews }}" = "false" ]; then flags="--no-review"; fi
           python -m gta6shorts produce --count "${{ inputs.count || '4' }}" $flags
+      - name: Post finished videos (auto mode, 30 min apart)
+        continue-on-error: true
+        run: python -m gta6shorts publish-pending
       - name: Save results (registry, new scripts, research) to the repository
         if: always()
         run: |

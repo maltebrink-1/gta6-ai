@@ -102,14 +102,13 @@ review:
 
 publishing:
   enabled: true                  # MASTER SWITCH — switched on 2026-11-20 at the owner's request
-  mode: review                   # review = needs the "approved" label on its issue | auto (Stage 4)
-  daily_time: "13:00"            # approved videos are uploaded by the daily publish run (Danish time)
+  mode: auto                     # auto = post every QA-passed video as soon as it is made (owner's choice, 2026-11-22) | review
   publish_on_approval: false     # true = upload the moment you add "approved" instead of waiting
-  max_per_day: 4
+  max_per_day: 12               # safety cap per day
   youtube:
     enabled: true
     privacy: public              # private | unlisted | public
-    slots: ["13:00", "13:10", "17:00", "17:10"]   # when each day's videos go public (Danish time)
+    spacing_minutes: 30          # each video goes public 30 min after the previous one
     category_id: "20"            # Gaming
     contains_synthetic_media: true   # honest AI disclosure (AI narration)
     made_for_kids: false

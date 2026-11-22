@@ -106,6 +106,7 @@ def test_gate_allows_fully_approved_video(cfg, secrets):
 ])
 def test_gate_blockers(cfg, secrets, patch, expected):
     enable(cfg)
+    cfg.data["publishing"]["mode"] = "review"
     rec = {**GOOD_RECORD, **patch}
     reasons = publish_blockers(rec, "youtube", cfg, published_today=0, facts_ok=True)
     assert any(expected in r for r in reasons), reasons
@@ -292,17 +293,19 @@ def test_review_queue_upload_and_issue(tmp_path):
     assert all(c[2]["headers"]["Authorization"] == "Bearer TOKEN" for c in session.calls if "headers" in c[2])
 
 
-def test_release_slots(cfg):
+def test_release_spacing(cfg, tmp_path):
     from datetime import datetime, timezone
 
     from gta6shorts.pipeline import release_time
+    from gta6shorts.registry import Registry
 
-    cfg.data["publishing"]["youtube"]["slots"] = ["13:00", "13:10", "17:00", "17:10"]
-    now = datetime(2026, 11, 21, 12, 2, tzinfo=timezone.utc)          # 13:02 in Copenhagen (UTC+1)
-    assert release_time(cfg, 0, now) is None                           # 13:00 already past → publish now
-    assert release_time(cfg, 1, now) == "2026-11-21T12:10:00Z"         # 13:10 Copenhagen
-    assert release_time(cfg, 2, now) == "2026-11-21T16:00:00Z"         # 17:00 Copenhagen
-    assert release_time(cfg, 3, now) == "2026-11-21T16:10:00Z"
-    assert release_time(cfg, 4, now) == "2026-11-21T16:20:00Z"         # extra videos: +10 min each
-    summer = datetime(2027, 6, 1, 11, 2, tzinfo=timezone.utc)           # 13:02 CEST (UTC+2)
-    assert release_time(cfg, 2, summer) == "2027-06-01T15:00:00Z"
+    reg = Registry(tmp_path / "videos.json")
+    now = datetime(2026, 11, 22, 12, 0, tzinfo=timezone.utc)
+    assert release_time(cfg, reg, now) is None                          # nothing released yet → now
+    reg.videos["a"] = {"platforms": {"youtube": {"id": "x", "published_at": "2026-11-22T11:59:00+00:00"}}}
+    assert release_time(cfg, reg, now) == "2026-11-22T12:29:00Z"        # 30 min after the last one
+    reg.videos["b"] = {"platforms": {"youtube": {"id": "y", "published_at": "2026-11-22T12:00:00+00:00",
+                                                  "scheduled_for": "2026-11-22T12:29:00Z"}}}
+    assert release_time(cfg, reg, now) == "2026-11-22T12:59:00Z"        # chains after scheduled ones
+    later = datetime(2026, 11, 23, 9, 0, tzinfo=timezone.utc)
+    assert release_time(cfg, reg, later) is None                        # gap long passed → now
