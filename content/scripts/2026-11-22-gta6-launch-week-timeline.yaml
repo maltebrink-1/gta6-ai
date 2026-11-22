@@ -1,0 +1,35 @@
+id: 2026-11-22-gta6-launch-week-timeline
+status: ready
+created: '2026-11-22'
+author: claude
+format: timeline
+title: GTA 6's Wildest Few Weeks, Date by Date
+hook_text: NOV 17 → DEC 11
+theme: swamp_glow
+lines:
+- text: GTA 6's launch window is stacked. Here it is, date by date.
+  kind: hook
+- text: November 17th. The Game Awards announced its nominees, and GTA 6 got eight, the most of any game.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: date, big: NOV 17, small: EIGHT NOMINATIONS}
+- text: November 19th. GTA 6 launched, holding a 99 on Metacritic.
+  kind: claim
+  facts: [gta6_release_date, gta6_metacritic_99]
+  card: {type: date, big: NOV 19, small: LAUNCH DAY}
+- text: The very next day, Take-Two said it hit $3.79 billion in retail sales on day one.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: stat, big: $3.79B, small: DAY ONE · PER TAKE-TWO}
+- text: December 10th. The Game Awards reveal their winners live.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: date, big: DEC 10, small: THE GAME AWARDS}
+- text: And December 11th, Rockstar says the original score by Justice drops, with 30 tracks.
+  kind: claim
+  facts: [gta6_justice_score]
+  card: {type: date, big: DEC 11, small: JUSTICE SCORE}
+- text: Which date are you most hyped for? Tell me below and follow for more GTA 6.
+  kind: cta
+description: Nominations, launch, record sales, The Game Awards and the Justice score — GTA 6's launch window in order, fact-checked.
+tags: [GTA 6, GTA 6 timeline, The Game Awards 2026, GTA 6 sales, GTA 6 Metacritic, Justice, GTA VI]

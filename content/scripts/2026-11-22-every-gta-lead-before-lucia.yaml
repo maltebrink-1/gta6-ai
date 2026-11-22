@@ -1,0 +1,39 @@
+id: 2026-11-22-every-gta-lead-before-lucia
+status: ready
+created: '2026-11-22'
+author: claude
+format: list
+title: Every GTA Lead Before Lucia and Jason
+hook_text: BEFORE LUCIA & JASON
+theme: swamp_glow
+lines:
+- text: Before Lucia and Jason, these were the faces of GTA.
+  kind: hook
+  facts: [gta6_protagonists]
+- text: Number one, Claude, the silent lead of GTA 3 in 2001.
+  kind: claim
+  facts: [gta_past_protagonists]
+  card: {type: date, big: '2001', small: CLAUDE · GTA 3}
+- text: Number two, Tommy Vercetti, who ran Vice City in 2002.
+  kind: claim
+  facts: [gta_past_protagonists]
+  card: {type: date, big: '2002', small: TOMMY · VICE CITY}
+- text: Number three, Carl Johnson, better known as CJ, in San Andreas in 2004.
+  kind: claim
+  facts: [gta_past_protagonists]
+  card: {type: date, big: '2004', small: CJ · SAN ANDREAS}
+- text: Number four, Niko Bellic, in GTA 4 in 2008.
+  kind: claim
+  facts: [gta_past_protagonists]
+  card: {type: date, big: '2008', small: NIKO · GTA 4}
+- text: And number five wasn't one person. GTA 5 gave us Michael, Franklin and Trevor in 2013.
+  kind: claim
+  facts: [gta_past_protagonists]
+  card: {type: text, big: MICHAEL · FRANKLIN · TREVOR, small: GTA 5 · 2013}
+- text: Now GTA 6 hands the wheel to two leads, Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+- text: Who's the best GTA lead of all time? Fight it out in the comments and follow for more.
+  kind: cta
+description: From Claude in GTA 3 to Lucia and Jason in GTA 6 — every mainline 3D-era GTA protagonist, in order.
+tags: [GTA 6, GTA protagonists, Lucia and Jason, Tommy Vercetti, CJ, Niko Bellic, GTA history]

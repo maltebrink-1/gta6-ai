@@ -1,0 +1,37 @@
+id: 2026-11-22-gta6-game-awards-explained
+status: ready
+created: '2026-11-22'
+author: claude
+format: explainer
+title: GTA 6 Leads The Game Awards. Here's What It's Up For
+hook_text: GTA 6 VS THE GAME AWARDS
+theme: sunset_drive
+lines:
+- text: GTA 6 just walked into awards season as the game to beat.
+  kind: hook
+  facts: [gta6_game_awards_2026]
+- text: It picked up eight nominations at The Game Awards, more than any other game this year.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: stat, big: EIGHT, small: NOMINATIONS · MOST OF ANY GAME}
+- text: That includes Game of the Year, Best Narrative and Best Art Direction.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+- text: Its music is in the running too, with a nod for Best Score and Music.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+- text: And Manni L. Perez is up for Best Performance.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: text, big: MANNI L. PEREZ, small: BEST PERFORMANCE NOMINEE}
+- text: The nominees came out on November 17th, two days before the game even launched on the 19th.
+  kind: claim
+  facts: [gta6_game_awards_2026, gta6_release_date]
+- text: Winners are revealed on December 10th.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: date, big: DEC 10, small: WINNERS REVEALED}
+- text: How many does it win? Drop your guess in the comments and follow for the results.
+  kind: cta
+description: GTA 6 earned eight nominations at The Game Awards 2026, the most of any game. Here's what it's nominated for and when winners are revealed.
+tags: [GTA 6, The Game Awards 2026, GTA 6 GOTY, Game of the Year, GTA VI, Rockstar Games, TGA 2026]

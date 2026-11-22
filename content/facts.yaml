@@ -598,3 +598,62 @@ facts:
         publisher: Gfinity Esports
       - url: https://www.dexerto.com/gta/birdwatchers-are-buying-gta-6-just-to-look-at-birds-3428480/
         publisher: Dexerto
+
+  # ── Series protagonists & awards (added 2026-11-22) ────────────────────────
+  - id: gta_past_protagonists
+    claim: "Before GTA VI, the mainline 3D-era GTA games were led by Claude in GTA III (2001), Tommy Vercetti in Vice City (2002), Carl 'CJ' Johnson in San Andreas (2004), Niko Bellic in GTA IV (2008), and Michael, Franklin and Trevor in GTA V (2013)."
+    say:
+      - "Claude in GTA 3, Tommy Vercetti in Vice City, CJ in San Andreas, Niko Bellic in GTA 4, and Michael, Franklin and Trevor in GTA 5."
+    status: confirmed
+    category: history
+    as_of: 2026-11-22
+    recheck_days: 365
+    sources:
+      - url: https://gamespot.com/articles/gta-protagonists/1100-6486211/
+        publisher: GameSpot
+      - url: https://dotesports.com/gta/news/all-grand-theft-auto-games-in-release-order
+        publisher: Dot Esports
+      - url: https://Www.Giantbomb.com/grand-theft-auto/62-6/
+        publisher: Giant Bomb
+      - url: https://www.redbull.com/ca-en/every-gta-protagonist-ranked
+        publisher: Red Bull Gaming
+
+  - id: lucia_first_female_lead
+    claim: "Lucia Caminos is widely reported as the first female protagonist of a mainline GTA since the series went 3D with GTA III; the original 1997 Grand Theft Auto let players choose from several selectable characters, including women."
+    say:
+      - "Lucia is the first female lead in a mainline GTA since the series went 3D."
+      - "The original 1997 game did let you pick women from its character list."
+    status: confirmed
+    category: characters
+    as_of: 2026-11-22
+    recheck_days: 365
+    sources:
+      - url: https://pcgamer.com/with-grand-theft-auto-6s-lucia-being-the-series-first-proper-leading-lady-im-hoping-she-doesnt-become-another-caricature-or-stereotype
+        publisher: PC Gamer
+      - url: https://kotaku.com/gta-6-first-woman-female-playable-protagonists-gta2-1849338804
+        publisher: Kotaku
+      - url: https://www.levelup.com/en/news/gta-6-lucia-is-not-the-first-female-protagonist-in-the-franchise/
+        publisher: LevelUp
+      - url: https://sportskeeda.com/esports/is-lucia-gta-s-first-female-protagonist-the-history-female-characters-franchise-explored
+        publisher: Sportskeeda
+
+  - id: gta6_game_awards_2026
+    claim: "GTA VI received eight nominations at The Game Awards 2026, the most of any game, including Game of the Year, Best Narrative, Best Art Direction, Best Score and Music, and Best Performance for Manni L. Perez. Nominees were announced on November 17, 2026, and winners will be revealed at the live show on December 10, 2026."
+    say:
+      - "GTA 6 got eight nominations at The Game Awards, more than any other game."
+      - "Winners are revealed on December 10th."
+    status: confirmed
+    category: awards
+    as_of: 2026-11-22
+    recheck_days: 18         # winners announced 2026-12-10 — update after the show
+    sources:
+      - url: https://www.videogameschronicle.com/news/the-game-awards-2026-nominations/
+        publisher: Video Games Chronicle
+      - url: https://www.shacknews.com/article/151383/gta-6-the-game-awards-2026-nominations
+        publisher: Shacknews
+      - url: https://www.trueachievements.com/news/gta-6-leads-the-game-awards-2026-with-eight-nominations
+        publisher: TrueAchievements
+      - url: https://www.billboard.com/music/awards/2026-game-awards-nominations-list-grand-theft-auto-vi-1236384541/
+        publisher: Billboard
+      - url: https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced
+        publisher: Gematsu

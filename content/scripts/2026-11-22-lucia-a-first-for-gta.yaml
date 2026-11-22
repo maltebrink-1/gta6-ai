@@ -1,0 +1,32 @@
+id: 2026-11-22-lucia-a-first-for-gta
+status: ready
+created: '2026-11-22'
+author: claude
+format: spotlight
+title: Why Lucia Is a First for GTA
+hook_text: GTA'S FIRST LEADING LADY?
+theme: sunset_drive
+lines:
+- text: Lucia isn't the first woman you can play in GTA. Here's the twist.
+  kind: hook
+  facts: [lucia_first_female_lead]
+- text: The original 1997 Grand Theft Auto let you pick from several characters, and some of them were women.
+  kind: claim
+  facts: [lucia_first_female_lead]
+  card: {type: date, big: '1997', small: THE ORIGINAL GTA}
+- text: But since the series went 3D with GTA 3, every lead was a man, from Claude to Niko to Michael, Franklin and Trevor.
+  kind: claim
+  facts: [gta_past_protagonists, lucia_first_female_lead]
+- text: Lucia Caminos changes that. She's the first female lead in a mainline GTA since the jump to 3D.
+  kind: claim
+  facts: [lucia_first_female_lead, gta6_protagonists]
+  card: {type: text, big: LUCIA CAMINOS, small: GTA 6 CO-LEAD}
+- text: Rockstar says her dad taught her to fight, and defending her family landed her in the Leonida Penitentiary.
+  kind: claim
+  facts: [lucia_backstory]
+- text: Honestly, a lead with a real backstory beats a pick from a menu any day.
+  kind: opinion
+- text: Is Lucia your main? Tell me in the comments and follow for more GTA 6.
+  kind: cta
+description: Lucia Caminos is GTA's first female lead since the series went 3D — but not the first woman you could play. Here's the history.
+tags: [GTA 6, GTA 6 Lucia, Lucia Caminos, GTA history, female protagonist, GTA VI, Rockstar Games]
