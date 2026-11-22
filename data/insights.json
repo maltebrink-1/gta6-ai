@@ -24,11 +24,11 @@
   {
    "id": "2026-11-19-gta6-launch-day",
    "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
-   "views": 787,
+   "views": 788,
    "likes": 16,
    "comments": 2,
-   "views_per_day": 314.8,
-   "engagement": 0.0229,
+   "views_per_day": 315.2,
+   "engagement": 0.0228,
    "format": "news",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -42,11 +42,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 142,
+   "views": 152,
    "likes": 3,
    "comments": 0,
-   "views_per_day": 142.0,
-   "engagement": 0.0211,
+   "views_per_day": 152.0,
+   "engagement": 0.0197,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -58,11 +58,11 @@
   {
    "id": "2026-11-19-gta6-trailer-records",
    "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
-   "views": 68,
-   "likes": 1,
+   "views": 119,
+   "likes": 2,
    "comments": 0,
-   "views_per_day": 68.0,
-   "engagement": 0.0147,
+   "views_per_day": 119.0,
+   "engagement": 0.0168,
    "format": "list",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -89,6 +89,22 @@
   }
  ],
  "weakest_videos": [
+  {
+   "id": "2026-11-19-gta6-pc-wait",
+   "title": "Why GTA 6 Isn't on PC (Yet)",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "explainer",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "release"
+   ]
+  },
   {
    "id": "2026-11-20-gta6-quick-answers",
    "title": "GTA 6: Your Biggest Questions, Answered Fast",
@@ -121,59 +137,43 @@
     "sales",
     "trailers"
    ]
-  },
-  {
-   "id": "2026-11-19-gta6-pc-wait",
-   "title": "Why GTA 6 Isn't on PC (Yet)",
-   "views": 1,
-   "likes": 0,
-   "comments": 0,
-   "views_per_day": 1.0,
-   "engagement": 0.0,
-   "format": "explainer",
-   "theme": "neon_night",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "release"
-   ]
   }
  ],
  "topics": [
   {
    "name": "history",
    "videos": 4,
-   "median_views_per_day": 191.4,
-   "vs_channel": 20.15,
-   "engagement": 0.0128
+   "median_views_per_day": 217.1,
+   "vs_channel": 22.85,
+   "engagement": 0.0138
   },
   {
    "name": "release",
    "videos": 4,
-   "median_views_per_day": 157.9,
-   "vs_channel": 16.62,
+   "median_views_per_day": 157.6,
+   "vs_channel": 16.59,
    "engagement": 0.0054
   },
   {
    "name": "characters",
    "videos": 3,
-   "median_views_per_day": 142.0,
-   "vs_channel": 14.95,
-   "engagement": 0.0211
+   "median_views_per_day": 152.0,
+   "vs_channel": 16.0,
+   "engagement": 0.0197
   },
   {
    "name": "reviews",
    "videos": 5,
-   "median_views_per_day": 68.0,
-   "vs_channel": 7.16,
+   "median_views_per_day": 119.0,
+   "vs_channel": 12.53,
    "engagement": 0.0109
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 34.0,
-   "vs_channel": 3.58,
-   "engagement": 0.0073
+   "median_views_per_day": 59.5,
+   "vs_channel": 6.26,
+   "engagement": 0.0084
   },
   {
    "name": "sales",
@@ -187,16 +187,16 @@
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 79.5,
-   "vs_channel": 8.37,
-   "engagement": 0.0106
+   "median_views_per_day": 84.5,
+   "vs_channel": 8.89,
+   "engagement": 0.0098
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 34.0,
-   "vs_channel": 3.58,
-   "engagement": 0.0073
+   "median_views_per_day": 59.5,
+   "vs_channel": 6.26,
+   "engagement": 0.0084
   },
   {
    "name": "news",
@@ -217,9 +217,9 @@
   {
    "name": "sunset_drive",
    "videos": 2,
-   "median_views_per_day": 157.9,
-   "vs_channel": 16.62,
-   "engagement": 0.0115
+   "median_views_per_day": 158.1,
+   "vs_channel": 16.64,
+   "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
@@ -231,8 +231,8 @@
   {
    "name": "neon_night",
    "videos": 2,
-   "median_views_per_day": 1.5,
-   "vs_channel": 0.16,
+   "median_views_per_day": 1.0,
+   "vs_channel": 0.11,
    "engagement": 0.0
   }
  ],
