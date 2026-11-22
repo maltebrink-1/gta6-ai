@@ -92,10 +92,10 @@
       "voice": "af_bella:0.7+af_heart:0.3"
     },
     "2026-11-19-gta6-pc-wait": {
-      "attempts": 1,
+      "attempts": 2,
       "author": "claude",
       "created_at": "2026-11-21T10:48:59+00:00",
-      "duration": 39.15,
+      "duration": 39.18,
       "engine": "kokoro",
       "fact_ids": [
         "gta6_platforms",
@@ -105,21 +105,30 @@
       ],
       "format": "explainer",
       "id": "2026-11-19-gta6-pc-wait",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "ADif7IgTml0",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:35:10+00:00",
+          "scheduled_for": "2026-11-22T19:11:04Z",
+          "url": "https://youtube.com/shorts/ADif7IgTml0"
+        }
+      },
       "qa": {
-        "failures": [
-          "file: video file was not stored — re-make"
-        ],
-        "passed": false,
+        "failures": [],
+        "passed": true,
         "warnings": []
       },
-      "render_seconds": 115.0,
-      "rendered_at": "2026-11-22T16:22:14+00:00",
+      "render_seconds": 89.7,
+      "rendered_at": "2026-11-22T16:33:07+00:00",
       "review": {
-        "decision": null
+        "decision": null,
+        "issue": null,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-pc-wait-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-pc-wait.mp4"
       },
       "script": "content/scripts/2026-11-19-gta6-pc-wait.yaml",
-      "status": "qa_failed",
+      "status": "published",
       "theme": "neon_night",
       "title": "Why GTA 6 Isn't on PC (Yet)",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -329,7 +338,7 @@
       "voice": "af_bella:0.7+af_heart:0.3"
     },
     "2026-11-20-gta6-records-so-far": {
-      "attempts": 1,
+      "attempts": 2,
       "author": "claude",
       "created_at": "2026-11-22T10:52:05+00:00",
       "duration": 41.19,
@@ -345,13 +354,13 @@
       "platforms": {},
       "qa": {
         "failures": [
-          "true peak: 2.2 dBTP (max -1.0)"
+          "loudness: -15.9 LUFS (target -14.0±1.5)"
         ],
         "passed": false,
         "warnings": []
       },
-      "render_seconds": 147.2,
-      "rendered_at": "2026-11-22T16:24:45+00:00",
+      "render_seconds": 114.1,
+      "rendered_at": "2026-11-22T16:35:06+00:00",
       "review": {
         "decision": null
       },
