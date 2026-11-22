@@ -136,7 +136,14 @@
       ],
       "format": "list",
       "id": "2026-11-19-gta6-trailer-records",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "tNFJIMz0F8Q",
+          "privacy": "public",
+          "published_at": "2026-11-22T16:11:04+00:00",
+          "url": "https://youtube.com/shorts/tNFJIMz0F8Q"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -151,7 +158,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-gta6-trailer-records.mp4"
       },
       "script": "content/scripts/2026-11-19-gta6-trailer-records.yaml",
-      "status": "awaiting_review",
+      "status": "published",
       "theme": "wanted_level",
       "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -170,7 +177,15 @@
       ],
       "format": "spotlight",
       "id": "2026-11-19-meet-lucia-and-jason",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "RP-saXs4tGg",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:11:06+00:00",
+          "scheduled_for": "2026-11-22T16:41:04Z",
+          "url": "https://youtube.com/shorts/RP-saXs4tGg"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -185,7 +200,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-19-meet-lucia-and-jason.mp4"
       },
       "script": "content/scripts/2026-11-19-meet-lucia-and-jason.yaml",
-      "status": "awaiting_review",
+      "status": "published",
       "theme": "ocean_breeze",
       "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -203,7 +218,15 @@
       ],
       "format": "spotlight",
       "id": "2026-11-20-gta6-critic-verdict",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "sicpjIxMM5I",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:11:09+00:00",
+          "scheduled_for": "2026-11-22T17:11:04Z",
+          "url": "https://youtube.com/shorts/sicpjIxMM5I"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -218,7 +241,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-critic-verdict.mp4"
       },
       "script": "content/scripts/2026-11-20-gta6-critic-verdict.yaml",
-      "status": "awaiting_review",
+      "status": "published",
       "theme": "ocean_breeze",
       "title": "What Critics Actually Said About GTA 6",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -234,7 +257,15 @@
       ],
       "format": "news",
       "id": "2026-11-20-gta6-day-one-billions",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "JcTN60sIuGY",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:11:11+00:00",
+          "scheduled_for": "2026-11-22T17:41:04Z",
+          "url": "https://youtube.com/shorts/JcTN60sIuGY"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -249,7 +280,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-day-one-billions.mp4"
       },
       "script": "content/scripts/2026-11-20-gta6-day-one-billions.yaml",
-      "status": "awaiting_review",
+      "status": "published",
       "theme": "sunset_drive",
       "title": "GTA 6 Made $3.79 Billion on Day One, Says Take-Two",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -268,7 +299,15 @@
       ],
       "format": "qna",
       "id": "2026-11-20-gta6-quick-answers",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "2D5PtiDSwdg",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:11:13+00:00",
+          "scheduled_for": "2026-11-22T18:11:04Z",
+          "url": "https://youtube.com/shorts/2D5PtiDSwdg"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -283,7 +322,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-quick-answers.mp4"
       },
       "script": "content/scripts/2026-11-20-gta6-quick-answers.yaml",
-      "status": "awaiting_review",
+      "status": "published",
       "theme": "ocean_breeze",
       "title": "GTA 6: Your Biggest Questions, Answered Fast",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -332,7 +371,15 @@
       ],
       "format": "news",
       "id": "2026-11-20-gta6-soundtrack",
-      "platforms": {},
+      "platforms": {
+        "youtube": {
+          "id": "jkMhs6b-TPs",
+          "privacy": "scheduled",
+          "published_at": "2026-11-22T16:11:15+00:00",
+          "scheduled_for": "2026-11-22T18:41:04Z",
+          "url": "https://youtube.com/shorts/jkMhs6b-TPs"
+        }
+      },
       "qa": {
         "failures": [],
         "passed": true,
@@ -347,7 +394,7 @@
         "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-soundtrack.mp4"
       },
       "script": "content/scripts/2026-11-20-gta6-soundtrack.yaml",
-      "status": "awaiting_review",
+      "status": "published",
       "theme": "neon_night",
       "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
       "voice": "af_bella:0.7+af_heart:0.3"
