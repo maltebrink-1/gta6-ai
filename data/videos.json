@@ -92,7 +92,7 @@
       "voice": "af_bella:0.7+af_heart:0.3"
     },
     "2026-11-19-gta6-pc-wait": {
-      "attempts": 2,
+      "attempts": 1,
       "author": "claude",
       "created_at": "2026-11-21T10:48:59+00:00",
       "duration": 39.15,
@@ -107,8 +107,10 @@
       "id": "2026-11-19-gta6-pc-wait",
       "platforms": {},
       "qa": {
-        "failures": [],
-        "passed": true,
+        "failures": [
+          "file: video file was not stored — re-make"
+        ],
+        "passed": false,
         "warnings": []
       },
       "render_seconds": 115.0,
@@ -117,7 +119,7 @@
         "decision": null
       },
       "script": "content/scripts/2026-11-19-gta6-pc-wait.yaml",
-      "status": "awaiting_review",
+      "status": "qa_failed",
       "theme": "neon_night",
       "title": "Why GTA 6 Isn't on PC (Yet)",
       "voice": "af_bella:0.7+af_heart:0.3"
@@ -327,7 +329,7 @@
       "voice": "af_bella:0.7+af_heart:0.3"
     },
     "2026-11-20-gta6-records-so-far": {
-      "attempts": 2,
+      "attempts": 1,
       "author": "claude",
       "created_at": "2026-11-22T10:52:05+00:00",
       "duration": 41.19,

@@ -128,9 +128,11 @@ def produce(cfg, *, count: int, today: date, engine_name: str | None = None, onl
 
     gh = None
     repo, token = env("GITHUB_REPOSITORY"), env("GITHUB_TOKEN")
-    if open_reviews and cfg.get("review.github_issues", True) and repo and token:
+    issues = open_reviews and cfg.get("review.github_issues", True)
+    if record and repo and token:          # the video file is always stored so a later run can post it
         gh = GitHub(token, repo)
-        gh.ensure_labels()
+        if issues:
+            gh.ensure_labels()
 
     for s in valid[:count]:
         entry = {"id": s.id, "title": s.title}
@@ -152,10 +154,12 @@ def produce(cfg, *, count: int, today: date, engine_name: str | None = None, onl
                 release = gh.ensure_release(cfg.get("review.release_tag", "review-queue"))
                 video_url = gh.upload_asset(release, result.video, f"{s.id}.mp4", "video/mp4")
                 sheet_url = gh.upload_asset(release, result.out_dir / "contact_sheet.jpg", f"{s.id}-sheet.jpg", "image/jpeg")
-                body = issue_body(rec, s, meta, qa, video_url, sheet_url, bool(cfg.get("publishing.enabled")))
-                number = gh.create_issue(f"🎬 Review: {s.title}", body, ["review"])
+                number = None
+                if issues:
+                    body = issue_body(rec, s, meta, qa, video_url, sheet_url, bool(cfg.get("publishing.enabled")))
+                    number = gh.create_issue(f"🎬 Review: {s.title}", body, ["review"])
+                    entry["issue"] = number
                 reg.set_review(s.id, issue=number, video_url=video_url, sheet_url=sheet_url)
-                entry["issue"] = number
         except Exception as exc:  # noqa: BLE001 - one broken video must not stop the others
             entry.update(qa_passed=False, failures=[f"render error: {exc}"[:300]])
             say(f"ERROR {s.id}: {exc}")

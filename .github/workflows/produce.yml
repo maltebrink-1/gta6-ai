@@ -77,6 +77,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.open_reviews }}" = "false" ]; then flags="--no-review"; fi
           python -m gta6shorts produce --count "${{ inputs.count || '4' }}" $flags
       - name: Post finished videos (auto mode, 30 min apart)
+        if: always()               # one failed video must not stop the good ones being posted
         continue-on-error: true
         run: python -m gta6shorts publish-pending
       - name: Save results (registry, new scripts, research) to the repository

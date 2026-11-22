@@ -78,6 +78,47 @@ def normalize(src: Path, out: Path, target: float = -14.0, tp: float = -1.5) -> 
     return m
 
 
+def true_peak(path: Path) -> float | None:
+    """True peak (dBTP) of a file's audio, measured the same way as the QA check."""
+    proc = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(path), "-vn", "-af", "ebur128=peak=true",
+                           "-f", "null", "-"], capture_output=True, text=True)
+    summary = proc.stderr[proc.stderr.rfind("Summary:"):]
+    m = re.search(r"Peak:\s+(-?[\d.]+|-inf) dBFS", summary)
+    if not m:
+        return None
+    return float("-inf") if m.group(1) == "-inf" else float(m.group(1))
+
+
+def tame_encoded_peaks(video: Path, audio: Path, duration: float, target: float = -1.5,
+                       limit_db: float = -4.4, rounds: int = 3, log=print) -> float | None:
+    """Make sure the *encoded* video's true peak is under `target` dBTP.
+
+    The AAC encoder can overshoot the limited WAV by several dB (more on newer FFmpeg),
+    so we measure the finished file and, if needed, re-encode only the audio with a
+    stronger peak limiter. Loudness barely changes because only short peaks are touched.
+    """
+    tp = true_peak(video)
+    level = true_peak(audio)            # peak going INTO the encoder
+    if level is None:
+        level = limit_db
+    for _ in range(rounds):
+        if tp is None or tp <= target:
+            return tp
+        overshoot = max(tp - level, 0.0)   # what the encoder added on top
+        limit_db = target - overshoot - 0.3
+        level = limit_db
+        lin = max(10 ** (limit_db / 20), 0.0625)
+        log(f"audio peak {tp:.1f} dBTP after encoding → re-limiting at {limit_db:.1f} dB")
+        tmp = video.with_name("video.peakfix.mp4")
+        run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(audio), "-map", "0:v", "-map", "1:a",
+             "-c:v", "copy", "-af", f"lowpass=f=16000,aresample=192000,alimiter=limit={lin:.4f}:attack=1:release=60:"
+             "level=false,aresample=48000", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+             "-t", f"{duration:.3f}", "-movflags", "+faststart", str(tmp)])
+        tmp.replace(video)
+        tp = true_peak(video)
+    return tp
+
+
 def trim_library_track(src: Path, out: Path, duration: float) -> Path:
     """Loop/trim a licensed library track to the video length with a fade-out."""
     d = f"{duration:.3f}"

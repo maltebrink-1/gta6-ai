@@ -16,7 +16,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
-from .audio import mix, normalize, trim_library_track
+from .audio import mix, normalize, tame_encoded_peaks, trim_library_track
 from .captions import build_ass, build_srt
 from .facts import FactBase
 from .metadata import tiktok_caption, youtube_description
@@ -237,6 +237,8 @@ def render_script(
     if proc.returncode != 0:
         raise RenderError(f"final render failed:\n{proc.stderr[-2500:]}")
     video = out / "video.mp4"
+    tame_encoded_peaks(video, work / "final_audio.wav", duration,
+                       target=float(cfg.get("quality.true_peak_max", -1.0)) - 0.5, log=log)
 
     # 6. extras ------------------------------------------------------------
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "1.0", "-i", "video.mp4", "-frames:v", "1",
