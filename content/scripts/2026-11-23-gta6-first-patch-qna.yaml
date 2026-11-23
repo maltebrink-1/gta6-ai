@@ -1,0 +1,35 @@
+id: 2026-11-23-gta6-first-patch-qna
+status: ready
+created: '2026-11-23'
+author: claude
+format: qna
+title: "GTA 6's First Patch Is Here: What Does It Fix?"
+hook_text: GTA 6'S FIRST PATCH
+theme: sunset_drive
+lines:
+- text: GTA 6 just got its first patch. Here's what it actually fixes.
+  kind: hook
+  facts: [gta6_first_patch]
+- text: When did it land? It started rolling out on November 23rd, on PS5 and Xbox Series X and S.
+  kind: claim
+  facts: [gta6_first_patch]
+  card: {type: stat, big: 01.002.002, small: FIRST POST-LAUNCH UPDATE}
+- text: Is the weather fixed? Rockstar's patch notes list a fix for weather that stopped changing for long periods.
+  kind: claim
+  facts: [gta6_first_patch]
+- text: What about saving? The notes also fix autosave not working correctly.
+  kind: claim
+  facts: [gta6_first_patch]
+- text: Stuck with the cops forever? There's a fix for players being unable to lose their Wanted Level.
+  kind: claim
+  facts: [gta6_first_patch]
+  card: {type: text, big: WANTED LEVEL, small: FIXED IN THE PATCH}
+- text: Anything else? Fixes for several crash issues, plus phone calls that failed to trigger.
+  kind: claim
+  facts: [gta6_first_patch]
+- text: Quick fixes like these are a good sign for the months ahead.
+  kind: opinion
+- text: Did the patch fix your game? Tell me below and follow for more GTA 6 updates.
+  kind: cta
+description: GTA 6's first post-launch update, 01.002.002, is rolling out on PS5 and Xbox Series X|S. Here's what Rockstar's patch notes say it fixes.
+tags: [GTA 6, GTA 6 update, GTA 6 patch notes, GTA 6 patch, PS5, Xbox Series X, GTA VI]

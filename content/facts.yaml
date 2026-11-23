@@ -425,11 +425,15 @@ facts:
     status: reported
     attribution: Sensor Tower
     category: sales
-    as_of: 2026-11-20
-    recheck_days: 3          # outside estimate; Take-Two published official figures on 2026-11-20 (gta6_day_one_sales)
+    as_of: 2026-11-23        # re-verified 2026-11-23: outlets report Sensor Tower's ~24.6M copies / $2.36B launch-day estimate
+    recheck_days: 30         # fixed launch-day estimate; Take-Two's official figures are in gta6_day_one_sales
     sources:
       - url: https://www.notebookcheck.net/GTA-6-passes-2-36-billion-in-estimated-launch-day-sales.1455216.0.html
         publisher: Notebookcheck
+      - url: https://www.tweaktown.com/news/114795/gta-6-day-one-sales-estimates-break-24-5-million-with-dollars2-36-billion-earned/index.html
+        publisher: TweakTown
+      - url: https://maketecheasier.com/gta-6-first-day-sales-estimate/
+        publisher: Make Tech Easier
       - url: https://finance.yahoo.com/markets/stocks/articles/gta-6-just-sold-estimated-150701356.html
         publisher: Yahoo Finance
 
@@ -437,8 +441,8 @@ facts:
     claim: "Before November 20, 2026, Take-Two had not released official GTA VI launch sales figures; the earlier launch-day numbers were outside estimates. (Superseded: Take-Two published official figures on November 20, 2026 — see gta6_day_one_sales.)"
     status: confirmed
     category: sales
-    as_of: 2026-11-20
-    recheck_days: 3
+    as_of: 2026-11-23        # re-verified 2026-11-23; historical statement, superseded by gta6_day_one_sales
+    recheck_days: 365
     sources:
       - url: https://finance.yahoo.com/markets/stocks/articles/gta-6-just-sold-estimated-150701356.html
         publisher: Yahoo Finance
@@ -447,6 +451,10 @@ facts:
       - url: https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm
         publisher: Take-Two Interactive (Form 8-K press release, Nov 20, 2026)
         official: true
+      - url: https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record
+        publisher: FOX 5 New York (launch-day report noting no official figures yet)
+      - url: https://www.trendingtopics.eu/gta-6-day-one-sales-3-79-billion/
+        publisher: Trending Topics (reporting Take-Two's later figure)
 
   - id: gta6_day_one_sales
     claim: "Take-Two says Grand Theft Auto VI reached an estimated $3.79 billion in worldwide day-one retail sales, counting sales through the end of November 19, 2026, and calls it the biggest entertainment launch in history. This is retail sales, not Take-Two's own revenue."
@@ -657,3 +665,26 @@ facts:
         publisher: Billboard
       - url: https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced
         publisher: Gematsu
+
+  # ── Updates (added 2026-11-23) ─────────────────────────────────────────────
+  - id: gta6_first_patch
+    claim: "Rockstar's first post-launch GTA VI update, version 01.002.002, began rolling out on PS5 and Xbox Series X|S on November 23, 2026. Its patch notes list fixes for several crash issues, weather that stopped changing for long periods, autosave not working correctly, phone calls that failed to trigger, and players being unable to lose their Wanted Level."
+    say:
+      - "GTA 6's first patch, update 01.002.002, started rolling out on November 23rd."
+      - "Rockstar's patch notes list fixes for crashes, stuck weather, autosave, phone calls and an unshakeable Wanted Level."
+    status: confirmed
+    category: updates
+    as_of: 2026-11-23
+    recheck_days: 14
+    sources:
+      - url: https://www.vice.com/en/article/gta-6-update-01-002-002-patch-notes/
+        publisher: VICE
+      - url: https://www.thesixthaxis.com/2026/11/23/here-are-the-patch-notes-for-gta-6-update-01-002-002/
+        publisher: TheSixthAxis
+        date: 2026-11-23
+      - url: https://gamerant.com/new-gta-6-update-patch-notes-november-23-2026/
+        publisher: Game Rant
+      - url: https://www.gtabase.com/gta-6/articles/gta-6-update-01-002-002-patch-notes
+        publisher: GTABase
+      - url: https://www.pushsquare.com/news/2026/11/first-gta-6-ps5-patch-live-now-get-all-the-details-here
+        publisher: Push Square

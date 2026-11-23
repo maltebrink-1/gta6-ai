@@ -1,0 +1,36 @@
+id: 2026-11-23-gta6-vs-gta4-review-crown
+status: ready
+created: '2026-11-23'
+author: claude
+format: versus
+title: "GTA 6 vs GTA 4: Who Wears Rockstar's Review Crown?"
+hook_text: GTA 6 VS GTA 4
+theme: wanted_level
+lines:
+- text: GTA 4 was Rockstar's best-reviewed game. Then GTA 6 arrived.
+  kind: hook
+  facts: [gta6_beats_gta4]
+- text: In one corner, GTA 4 from 2008, starring Niko Bellic, with a 98 on Metacritic.
+  kind: claim
+  facts: [gta_past_protagonists, gta6_beats_gta4]
+  card: {type: stat, big: '98', small: GTA 4 · METACRITIC}
+- text: In the other corner, GTA 6, which launched with a 99 Metascore.
+  kind: claim
+  facts: [gta6_metacritic_99]
+  card: {type: stat, big: '99', small: GTA 6 · METACRITIC}
+- text: That one point makes GTA 6 Rockstar's highest-rated game ever on Metacritic, and it ties the highest score the site has ever given.
+  kind: claim
+  facts: [gta6_beats_gta4, gta6_metacritic_99]
+- text: According to OpenCritic, it also launched with a 99 average, and 100% of critics recommend it.
+  kind: claim
+  facts: [gta6_opencritic_99]
+  card: {type: stat, big: 100%, small: RECOMMEND · PER OPENCRITIC}
+- text: It's not flawless though. Some reviewers flagged clunky controls and occasional performance problems.
+  kind: claim
+  facts: [gta6_review_criticism]
+- text: Still, dethroning the game that gave us Niko is a seriously big deal.
+  kind: opinion
+- text: Team GTA 4 or team GTA 6? Vote in the comments and follow for more.
+  kind: cta
+description: GTA 4's 98 versus GTA 6's 99 — how GTA 6 became Rockstar's highest-rated game on Metacritic, plus what critics didn't like.
+tags: [GTA 6, GTA 4, GTA 6 reviews, Metacritic, OpenCritic, Niko Bellic, Rockstar Games, GTA VI]

@@ -1,0 +1,37 @@
+id: 2026-11-23-gta6-trailer-1-vs-trailer-2
+status: ready
+created: '2026-11-23'
+author: claude
+format: versus
+title: "GTA 6's First Trailer vs Trailer 2: Which Hit Harder?"
+hook_text: TRAILER ONE VS TWO
+theme: wanted_level
+lines:
+- text: GTA 6's two trailers both made history. Which one hit harder?
+  kind: hook
+  facts: [trailer1_record]
+- text: The first trailer dropped back in December 2023.
+  kind: claim
+  facts: [trailer1_record]
+  card: {type: date, big: DEC 2023, small: TRAILER ONE}
+- text: It pulled over 90 million YouTube views in 24 hours, a Guinness World Record for the most-viewed video game reveal.
+  kind: claim
+  facts: [trailer1_record]
+  card: {type: stat, big: 90M+, small: YOUTUBE · FIRST 24 HOURS}
+- text: Then Rockstar's second trailer landed on May 6th, 2025.
+  kind: claim
+  facts: [trailer2_views]
+  card: {type: date, big: MAY 2025, small: TRAILER TWO}
+- text: Rockstar says it reached around 475 million views across all platforms in its first 24 hours.
+  kind: claim
+  facts: [trailer2_views]
+  card: {type: stat, big: ~475M, small: ALL PLATFORMS · PER ROCKSTAR}
+- text: But it's not a perfect match-up. The first record counts YouTube only, while Rockstar's number for the second covers every platform.
+  kind: claim
+  facts: [trailer1_record, trailer2_views]
+- text: Either way, these two trailers set the hype bar ridiculously high.
+  kind: opinion
+- text: Which trailer did you rewatch more? Comment below and follow for more GTA 6.
+  kind: cta
+description: GTA 6's first trailer set a Guinness record on YouTube; Rockstar says the second hit about 475 million views across platforms. Here's how they compare — and why it isn't apples to apples.
+tags: [GTA 6, GTA 6 trailer, GTA 6 trailer 2, Guinness World Records, Rockstar Games, GTA VI, gaming records]

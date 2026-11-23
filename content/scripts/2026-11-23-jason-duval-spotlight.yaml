@@ -1,0 +1,35 @@
+id: 2026-11-23-jason-duval-spotlight
+status: ready
+created: '2026-11-23'
+author: claude
+format: spotlight
+title: "Jason Duval: GTA 6's Other Lead, Explained"
+hook_text: WHO IS JASON?
+theme: swamp_glow
+lines:
+- text: Everyone's talking about Lucia. So let's talk about Jason.
+  kind: hook
+  facts: [gta6_protagonists]
+- text: Jason Duval is one of GTA 6's two playable leads, right alongside Lucia Caminos.
+  kind: claim
+  facts: [gta6_protagonists]
+  card: {type: text, big: JASON DUVAL, small: GTA 6 CO-LEAD}
+- text: Rockstar describes him as an Army veteran who ended up working for drug runners in the Keys.
+  kind: claim
+  facts: [jason_backstory]
+  card: {type: text, big: ARMY VETERAN, small: PER ROCKSTAR'S BIO}
+- text: His turf is Leonida, home to Vice City, basically Rockstar's Florida.
+  kind: claim
+  facts: [gta6_setting, leonida_is_florida]
+- text: He joins a long line of GTA leading men, from Tommy Vercetti to CJ, Niko and Trevor.
+  kind: claim
+  facts: [gta_past_protagonists]
+- text: The twist? Jason doesn't carry the story alone. He shares it with Lucia.
+  kind: claim
+  facts: [gta6_protagonists]
+- text: A veteran gone off the rails? Perfect GTA setup.
+  kind: opinion
+- text: Jason or Lucia, who are you playing first? Tell me below and follow for more GTA 6.
+  kind: cta
+description: A quick spotlight on Jason Duval, GTA 6's co-lead — his Rockstar bio, where he lives, and how he fits the series' history of leads.
+tags: [GTA 6, Jason Duval, GTA 6 Jason, GTA 6 characters, Leonida, GTA VI, Rockstar Games]
