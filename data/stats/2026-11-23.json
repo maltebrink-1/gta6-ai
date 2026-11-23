@@ -1,13 +1,13 @@
 {
  "date": "2026-11-23",
- "collected_at": "2026-11-23T09:24:46+00:00",
+ "collected_at": "2026-11-23T13:17:49+00:00",
  "youtube": {
   "channel": {
    "channel_id": "UCKf_gkOScg8FoRrlj98Q6KA",
    "title": "MAL games ",
-   "subscribers": 5,
+   "subscribers": 6,
    "views": 1890,
-   "videos": 10
+   "videos": 12
   },
   "videos": {
    "7y7ZfacJH0E": {
@@ -29,19 +29,19 @@
     "title": "Why GTA 6 Isn't on PC (Yet)"
    },
    "tNFJIMz0F8Q": {
-    "views": 153,
-    "likes": 2,
+    "views": 160,
+    "likes": 3,
     "comments": 0,
     "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers"
    },
    "RP-saXs4tGg": {
-    "views": 280,
-    "likes": 6,
-    "comments": 0,
+    "views": 365,
+    "likes": 12,
+    "comments": 1,
     "title": "Meet Lucia & Jason: GTA 6's Criminal Duo"
    },
    "sicpjIxMM5I": {
-    "views": 29,
+    "views": 31,
     "likes": 0,
     "comments": 0,
     "title": "What Critics Actually Said About GTA 6"
@@ -59,7 +59,7 @@
     "title": "GTA 6: Your Biggest Questions, Answered Fast"
    },
    "l3wr-7bSkgg": {
-    "views": 1,
+    "views": 2,
     "likes": 0,
     "comments": 0,
     "title": "The Records GTA 6 Has Already Claimed"
@@ -69,6 +69,18 @@
     "likes": 0,
     "comments": 0,
     "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild"
+   },
+   "oOulsUUatls": {
+    "views": 220,
+    "likes": 4,
+    "comments": 0,
+    "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side"
+   },
+   "HVEHMzbhCMw": {
+    "views": 180,
+    "likes": 4,
+    "comments": 0,
+    "title": "GTA 6 vs GTA 5: The Launch Day Numbers"
    }
   },
   "daily": [
