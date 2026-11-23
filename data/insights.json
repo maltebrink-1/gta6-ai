@@ -2,8 +2,24 @@
  "generated": "2026-11-23",
  "published_videos": 12,
  "enough_data": true,
- "channel_median_views_per_day": 63.7,
+ "channel_median_views_per_day": 82.3,
  "top_videos": [
+  {
+   "id": "2026-11-19-meet-lucia-and-jason",
+   "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
+   "views": 487,
+   "likes": 20,
+   "comments": 3,
+   "views_per_day": 324.7,
+   "engagement": 0.0472,
+   "format": "spotlight",
+   "theme": "ocean_breeze",
+   "length": "short (<35 s)",
+   "topics": [
+    "characters",
+    "world"
+   ]
+  },
   {
    "id": "2026-11-19-gta-timeline",
    "title": "The Whole GTA Story in Under a Minute",
@@ -22,19 +38,35 @@
    ]
   },
   {
-   "id": "2026-11-19-meet-lucia-and-jason",
-   "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 365,
-   "likes": 12,
-   "comments": 1,
-   "views_per_day": 243.3,
-   "engagement": 0.0356,
-   "format": "spotlight",
-   "theme": "ocean_breeze",
-   "length": "short (<35 s)",
+   "id": "2026-11-20-gta6-vs-gta5-day-one-money",
+   "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
+   "views": 289,
+   "likes": 7,
+   "comments": 0,
+   "views_per_day": 289.0,
+   "engagement": 0.0242,
+   "format": "versus",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
    "topics": [
-    "characters",
-    "world"
+    "history",
+    "sales"
+   ]
+  },
+  {
+   "id": "2026-11-20-gta6-vs-gta5-launch",
+   "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
+   "views": 275,
+   "likes": 9,
+   "comments": 0,
+   "views_per_day": 275.0,
+   "engagement": 0.0327,
+   "format": "versus",
+   "theme": "wanted_level",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "sales"
    ]
   },
   {
@@ -53,38 +85,6 @@
     "history",
     "release",
     "reviews"
-   ]
-  },
-  {
-   "id": "2026-11-20-gta6-vs-gta5-day-one-money",
-   "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
-   "views": 220,
-   "likes": 4,
-   "comments": 0,
-   "views_per_day": 220.0,
-   "engagement": 0.0182,
-   "format": "versus",
-   "theme": "neon_night",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "sales"
-   ]
-  },
-  {
-   "id": "2026-11-20-gta6-vs-gta5-launch",
-   "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 180,
-   "likes": 4,
-   "comments": 0,
-   "views_per_day": 180.0,
-   "engagement": 0.0222,
-   "format": "versus",
-   "theme": "wanted_level",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "sales"
    ]
   }
  ],
@@ -140,112 +140,112 @@
  ],
  "topics": [
   {
+   "name": "history",
+   "videos": 6,
+   "median_views_per_day": 250.3,
+   "vs_channel": 3.04,
+   "engagement": 0.0229
+  },
+  {
    "name": "characters",
    "videos": 3,
    "median_views_per_day": 225.7,
-   "vs_channel": 3.54,
+   "vs_channel": 2.74,
    "engagement": 0.0228
-  },
-  {
-   "name": "history",
-   "videos": 6,
-   "median_views_per_day": 200.0,
-   "vs_channel": 3.14,
-   "engagement": 0.0185
-  },
-  {
-   "name": "release",
-   "videos": 4,
-   "median_views_per_day": 114.2,
-   "vs_channel": 1.79,
-   "engagement": 0.0054
   },
   {
    "name": "reviews",
    "videos": 5,
-   "median_views_per_day": 106.7,
-   "vs_channel": 1.68,
+   "median_views_per_day": 144.7,
+   "vs_channel": 1.76,
    "engagement": 0.0109
   },
   {
    "name": "sales",
    "videos": 4,
-   "median_views_per_day": 90.7,
-   "vs_channel": 1.42,
-   "engagement": 0.0091
+   "median_views_per_day": 138.2,
+   "vs_channel": 1.68,
+   "engagement": 0.0121
+  },
+  {
+   "name": "release",
+   "videos": 4,
+   "median_views_per_day": 114.2,
+   "vs_channel": 1.39,
+   "engagement": 0.0054
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 54.0,
-   "vs_channel": 0.85,
-   "engagement": 0.0094
+   "median_views_per_day": 73.0,
+   "vs_channel": 0.89,
+   "engagement": 0.0115
   }
  ],
  "formats": [
   {
    "name": "versus",
    "videos": 2,
-   "median_views_per_day": 200.0,
-   "vs_channel": 3.14,
-   "engagement": 0.0202
+   "median_views_per_day": 282.0,
+   "vs_channel": 3.42,
+   "engagement": 0.0284
   },
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 132.0,
-   "vs_channel": 2.07,
-   "engagement": 0.0178
+   "median_views_per_day": 172.3,
+   "vs_channel": 2.09,
+   "engagement": 0.0236
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 54.0,
-   "vs_channel": 0.85,
-   "engagement": 0.0094
+   "median_views_per_day": 73.0,
+   "vs_channel": 0.89,
+   "engagement": 0.0115
   },
   {
    "name": "news",
    "videos": 3,
    "median_views_per_day": 2.7,
-   "vs_channel": 0.04,
+   "vs_channel": 0.03,
    "engagement": 0.0
   }
  ],
  "themes": [
   {
+   "name": "wanted_level",
+   "videos": 2,
+   "median_views_per_day": 209.8,
+   "vs_channel": 2.55,
+   "engagement": 0.0278
+  },
+  {
    "name": "swamp_glow",
    "videos": 2,
    "median_views_per_day": 158.0,
-   "vs_channel": 2.48,
+   "vs_channel": 1.92,
    "engagement": 0.0054
-  },
-  {
-   "name": "wanted_level",
-   "videos": 2,
-   "median_views_per_day": 143.3,
-   "vs_channel": 2.25,
-   "engagement": 0.0205
   },
   {
    "name": "sunset_drive",
    "videos": 2,
    "median_views_per_day": 113.2,
-   "vs_channel": 1.78,
+   "vs_channel": 1.37,
    "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 20.7,
-   "vs_channel": 0.32,
+   "median_views_per_day": 20.0,
+   "vs_channel": 0.24,
    "engagement": 0.0
   },
   {
    "name": "neon_night",
    "videos": 3,
    "median_views_per_day": 2.7,
-   "vs_channel": 0.04,
+   "vs_channel": 0.03,
    "engagement": 0.0
   }
  ],
@@ -253,17 +253,17 @@
   {
    "name": "medium (35-45 s)",
    "videos": 9,
-   "median_views_per_day": 106.7,
-   "vs_channel": 1.68,
+   "median_views_per_day": 144.7,
+   "vs_channel": 1.76,
    "engagement": 0.0109
   },
   {
    "name": "short (<35 s)",
    "videos": 3,
    "median_views_per_day": 2.7,
-   "vs_channel": 0.04,
+   "vs_channel": 0.03,
    "engagement": 0.0
   }
  ],
- "advice": "Lean into topics characters, history and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics history, characters and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
 }
