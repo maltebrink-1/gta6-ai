@@ -2,16 +2,16 @@
  "generated": "2026-11-23",
  "published_videos": 12,
  "enough_data": true,
- "channel_median_views_per_day": 113.3,
+ "channel_median_views_per_day": 124.5,
  "top_videos": [
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 621,
-   "likes": 20,
+   "views": 725,
+   "likes": 25,
    "comments": 3,
-   "views_per_day": 414.0,
-   "engagement": 0.037,
+   "views_per_day": 483.3,
+   "engagement": 0.0386,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -23,13 +23,29 @@
   {
    "id": "2026-11-20-gta6-vs-gta5-launch",
    "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 340,
-   "likes": 12,
+   "views": 439,
+   "likes": 14,
    "comments": 0,
-   "views_per_day": 340.0,
-   "engagement": 0.0353,
+   "views_per_day": 439.0,
+   "engagement": 0.0319,
    "format": "versus",
    "theme": "wanted_level",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "sales"
+   ]
+  },
+  {
+   "id": "2026-11-20-gta6-vs-gta5-day-one-money",
+   "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
+   "views": 376,
+   "likes": 7,
+   "comments": 0,
+   "views_per_day": 376.0,
+   "engagement": 0.0186,
+   "format": "versus",
+   "theme": "neon_night",
    "length": "medium (35-45 s)",
    "topics": [
     "history",
@@ -54,37 +70,20 @@
    ]
   },
   {
-   "id": "2026-11-20-gta6-vs-gta5-day-one-money",
-   "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
-   "views": 304,
-   "likes": 7,
+   "id": "2026-11-19-gta6-trailer-records",
+   "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
+   "views": 360,
+   "likes": 8,
    "comments": 0,
-   "views_per_day": 304.0,
-   "engagement": 0.023,
-   "format": "versus",
-   "theme": "neon_night",
+   "views_per_day": 240.0,
+   "engagement": 0.0222,
+   "format": "list",
+   "theme": "wanted_level",
    "length": "medium (35-45 s)",
    "topics": [
     "history",
-    "sales"
-   ]
-  },
-  {
-   "id": "2026-11-19-gta6-launch-day",
-   "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
-   "views": 790,
-   "likes": 16,
-   "comments": 2,
-   "views_per_day": 225.7,
-   "engagement": 0.0228,
-   "format": "news",
-   "theme": "sunset_drive",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "characters",
-    "history",
-    "release",
-    "reviews"
+    "reviews",
+    "trailers"
    ]
   }
  ],
@@ -142,67 +141,67 @@
   {
    "name": "history",
    "videos": 6,
-   "median_views_per_day": 264.9,
-   "vs_channel": 2.34,
-   "engagement": 0.0229
-  },
-  {
-   "name": "characters",
-   "videos": 3,
-   "median_views_per_day": 225.7,
-   "vs_channel": 1.99,
-   "engagement": 0.0228
+   "median_views_per_day": 277.1,
+   "vs_channel": 2.23,
+   "engagement": 0.0204
   },
   {
    "name": "reviews",
    "videos": 5,
-   "median_views_per_day": 202.7,
-   "vs_channel": 1.79,
+   "median_views_per_day": 225.1,
+   "vs_channel": 1.81,
    "engagement": 0.0109
+  },
+  {
+   "name": "characters",
+   "videos": 3,
+   "median_views_per_day": 225.1,
+   "vs_channel": 1.81,
+   "engagement": 0.0228
   },
   {
    "name": "sales",
    "videos": 4,
-   "median_views_per_day": 152.7,
-   "vs_channel": 1.35,
-   "engagement": 0.0115
-  },
-  {
-   "name": "release",
-   "videos": 4,
-   "median_views_per_day": 114.2,
-   "vs_channel": 1.01,
-   "engagement": 0.0054
+   "median_views_per_day": 188.7,
+   "vs_channel": 1.51,
+   "engagement": 0.0093
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 102.0,
-   "vs_channel": 0.9,
-   "engagement": 0.0132
+   "median_views_per_day": 120.7,
+   "vs_channel": 0.97,
+   "engagement": 0.0111
+  },
+  {
+   "name": "release",
+   "videos": 4,
+   "median_views_per_day": 113.9,
+   "vs_channel": 0.91,
+   "engagement": 0.0054
   }
  ],
  "formats": [
   {
    "name": "versus",
    "videos": 2,
-   "median_views_per_day": 322.0,
-   "vs_channel": 2.84,
-   "engagement": 0.0291
+   "median_views_per_day": 407.5,
+   "vs_channel": 3.27,
+   "engagement": 0.0252
   },
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 219.0,
-   "vs_channel": 1.93,
-   "engagement": 0.0185
+   "median_views_per_day": 253.7,
+   "vs_channel": 2.04,
+   "engagement": 0.0193
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 102.0,
-   "vs_channel": 0.9,
-   "engagement": 0.0132
+   "median_views_per_day": 120.7,
+   "vs_channel": 0.97,
+   "engagement": 0.0111
   },
   {
    "name": "news",
@@ -216,29 +215,29 @@
   {
    "name": "wanted_level",
    "videos": 2,
-   "median_views_per_day": 271.4,
-   "vs_channel": 2.39,
-   "engagement": 0.0308
+   "median_views_per_day": 339.5,
+   "vs_channel": 2.73,
+   "engagement": 0.027
   },
   {
    "name": "swamp_glow",
    "videos": 2,
    "median_views_per_day": 157.8,
-   "vs_channel": 1.39,
+   "vs_channel": 1.27,
    "engagement": 0.0054
   },
   {
    "name": "sunset_drive",
    "videos": 2,
-   "median_views_per_day": 113.2,
-   "vs_channel": 1.0,
+   "median_views_per_day": 112.9,
+   "vs_channel": 0.91,
    "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
    "median_views_per_day": 24.0,
-   "vs_channel": 0.21,
+   "vs_channel": 0.19,
    "engagement": 0.0
   },
   {
@@ -253,8 +252,8 @@
   {
    "name": "medium (35-45 s)",
    "videos": 9,
-   "median_views_per_day": 202.7,
-   "vs_channel": 1.79,
+   "median_views_per_day": 225.1,
+   "vs_channel": 1.81,
    "engagement": 0.0109
   },
   {
@@ -265,5 +264,5 @@
    "engagement": 0.0
   }
  ],
- "advice": "Lean into topics history, characters and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics history, reviews and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
 }
