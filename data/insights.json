@@ -2,7 +2,7 @@
  "generated": "2026-11-23",
  "published_videos": 10,
  "enough_data": true,
- "channel_median_views_per_day": 10.3,
+ "channel_median_views_per_day": 11.0,
  "top_videos": [
   {
    "id": "2026-11-19-gta-timeline",
@@ -42,11 +42,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 233,
+   "views": 247,
    "likes": 5,
    "comments": 0,
-   "views_per_day": 155.3,
-   "engagement": 0.0215,
+   "views_per_day": 164.7,
+   "engagement": 0.0202,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -58,11 +58,11 @@
   {
    "id": "2026-11-19-gta6-trailer-records",
    "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
-   "views": 147,
+   "views": 153,
    "likes": 2,
    "comments": 0,
-   "views_per_day": 98.0,
-   "engagement": 0.0136,
+   "views_per_day": 102.0,
+   "engagement": 0.0131,
    "format": "list",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -75,10 +75,10 @@
   {
    "id": "2026-11-20-gta6-critic-verdict",
    "title": "What Critics Actually Said About GTA 6",
-   "views": 27,
+   "views": 29,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 18.0,
+   "views_per_day": 19.3,
    "engagement": 0.0,
    "format": "spotlight",
    "theme": "ocean_breeze",
@@ -140,45 +140,45 @@
  ],
  "topics": [
   {
-   "name": "history",
-   "videos": 4,
-   "median_views_per_day": 161.8,
-   "vs_channel": 15.64,
-   "engagement": 0.0123
-  },
-  {
    "name": "characters",
    "videos": 3,
-   "median_views_per_day": 155.3,
-   "vs_channel": 15.0,
-   "engagement": 0.0215
+   "median_views_per_day": 164.7,
+   "vs_channel": 14.97,
+   "engagement": 0.0202
+  },
+  {
+   "name": "history",
+   "videos": 4,
+   "median_views_per_day": 163.8,
+   "vs_channel": 14.9,
+   "engagement": 0.012
   },
   {
    "name": "release",
    "videos": 4,
-   "median_views_per_day": 113.8,
-   "vs_channel": 11.0,
+   "median_views_per_day": 114.2,
+   "vs_channel": 10.38,
    "engagement": 0.0054
   },
   {
    "name": "reviews",
    "videos": 5,
-   "median_views_per_day": 98.0,
-   "vs_channel": 9.47,
+   "median_views_per_day": 102.0,
+   "vs_channel": 9.27,
    "engagement": 0.0109
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 49.4,
-   "vs_channel": 4.77,
-   "engagement": 0.0068
+   "median_views_per_day": 51.4,
+   "vs_channel": 4.67,
+   "engagement": 0.0066
   },
   {
    "name": "sales",
    "videos": 2,
    "median_views_per_day": 0.7,
-   "vs_channel": 0.07,
+   "vs_channel": 0.06,
    "engagement": 0.0
   }
  ],
@@ -186,22 +186,22 @@
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 86.7,
-   "vs_channel": 8.37,
-   "engagement": 0.0107
+   "median_views_per_day": 92.0,
+   "vs_channel": 8.36,
+   "engagement": 0.0101
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 49.4,
-   "vs_channel": 4.77,
-   "engagement": 0.0068
+   "median_views_per_day": 51.4,
+   "vs_channel": 4.67,
+   "engagement": 0.0066
   },
   {
    "name": "news",
    "videos": 3,
    "median_views_per_day": 2.7,
-   "vs_channel": 0.26,
+   "vs_channel": 0.25,
    "engagement": 0.0
   }
  ],
@@ -210,28 +210,28 @@
    "name": "swamp_glow",
    "videos": 2,
    "median_views_per_day": 157.7,
-   "vs_channel": 15.23,
+   "vs_channel": 14.33,
    "engagement": 0.0054
   },
   {
    "name": "sunset_drive",
    "videos": 2,
    "median_views_per_day": 113.2,
-   "vs_channel": 10.94,
+   "vs_channel": 10.29,
    "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 18.0,
-   "vs_channel": 1.74,
+   "median_views_per_day": 19.3,
+   "vs_channel": 1.75,
    "engagement": 0.0
   },
   {
    "name": "neon_night",
    "videos": 2,
-   "median_views_per_day": 2.4,
-   "vs_channel": 0.23,
+   "median_views_per_day": 2.7,
+   "vs_channel": 0.25,
    "engagement": 0.0
   }
  ],
@@ -239,17 +239,17 @@
   {
    "name": "medium (35-45 s)",
    "videos": 7,
-   "median_views_per_day": 18.0,
-   "vs_channel": 1.74,
+   "median_views_per_day": 19.3,
+   "vs_channel": 1.75,
    "engagement": 0.0
   },
   {
    "name": "short (<35 s)",
    "videos": 3,
    "median_views_per_day": 2.7,
-   "vs_channel": 0.26,
+   "vs_channel": 0.25,
    "engagement": 0.0
   }
  ],
- "advice": "Lean into topics history, characters and formats spotlight, list for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics characters, history and formats spotlight, list for 3 of 4 scripts; use the 4th for something new."
 }
