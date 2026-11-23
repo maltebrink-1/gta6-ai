@@ -418,6 +418,163 @@
       "theme": "neon_night",
       "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-vs-gta5-day-one-money": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-23T11:07:39+00:00",
+      "duration": 44.82,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta5_24h_record",
+        "gta6_day_one_sales",
+        "gta6_prerelease_units"
+      ],
+      "format": "versus",
+      "id": "2026-11-20-gta6-vs-gta5-day-one-money",
+      "platforms": {
+        "youtube": {
+          "id": "oOulsUUatls",
+          "privacy": "public",
+          "published_at": "2026-11-23T11:13:42+00:00",
+          "url": "https://youtube.com/shorts/oOulsUUatls"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 135.9,
+      "rendered_at": "2026-11-23T11:07:39+00:00",
+      "review": {
+        "decision": null,
+        "issue": 9,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-vs-gta5-day-one-money-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-vs-gta5-day-one-money.mp4"
+      },
+      "script": "content/scripts/2026-11-20-gta6-vs-gta5-day-one-money.yaml",
+      "status": "published",
+      "theme": "neon_night",
+      "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-gta6-vs-gta5-launch": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-23T11:09:36+00:00",
+      "duration": 37.3,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta5_24h_record",
+        "gta6_launch_sales_estimate",
+        "gta6_no_official_sales"
+      ],
+      "format": "versus",
+      "id": "2026-11-20-gta6-vs-gta5-launch",
+      "platforms": {
+        "youtube": {
+          "id": "HVEHMzbhCMw",
+          "privacy": "scheduled",
+          "published_at": "2026-11-23T11:13:44+00:00",
+          "scheduled_for": "2026-11-23T11:43:42Z",
+          "url": "https://youtube.com/shorts/HVEHMzbhCMw"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 111.0,
+      "rendered_at": "2026-11-23T11:09:36+00:00",
+      "review": {
+        "decision": null,
+        "issue": 10,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-vs-gta5-launch-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-gta6-vs-gta5-launch.mp4"
+      },
+      "script": "content/scripts/2026-11-20-gta6-vs-gta5-launch.yaml",
+      "status": "published",
+      "theme": "wanted_level",
+      "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-20-vice-city-returns": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-23T11:11:49+00:00",
+      "duration": 33.78,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_setting",
+        "leonida_is_florida",
+        "vice_city_2002",
+        "gta6_protagonists"
+      ],
+      "format": "explainer",
+      "id": "2026-11-20-vice-city-returns",
+      "platforms": {
+        "youtube": {
+          "last_error": "upload init failed (HTTP 400): {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n "
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 126.5,
+      "rendered_at": "2026-11-23T11:11:49+00:00",
+      "review": {
+        "decision": null,
+        "issue": 11,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-vice-city-returns-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-20-vice-city-returns.mp4"
+      },
+      "script": "content/scripts/2026-11-20-vice-city-returns.yaml",
+      "status": "publish_failed",
+      "theme": "swamp_glow",
+      "title": "Vice City Is Back: Where GTA 6 Actually Takes Place",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-21-gta6-numbers-list": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-23T11:13:37+00:00",
+      "duration": 33.67,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_prerelease_units",
+        "gta6_wildlife_count",
+        "gta6_the_album",
+        "gta6_metacritic_99"
+      ],
+      "format": "list",
+      "id": "2026-11-21-gta6-numbers-list",
+      "platforms": {
+        "youtube": {
+          "last_error": "upload init failed (HTTP 400): {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n "
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 102.2,
+      "rendered_at": "2026-11-23T11:13:37+00:00",
+      "review": {
+        "decision": null,
+        "issue": 12,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-numbers-list-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-numbers-list.mp4"
+      },
+      "script": "content/scripts/2026-11-21-gta6-numbers-list.yaml",
+      "status": "publish_failed",
+      "theme": "neon_night",
+      "title": "Four GTA 6 Numbers That Sound Fake but Aren't",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
