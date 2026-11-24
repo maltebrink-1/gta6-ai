@@ -37,6 +37,22 @@
    ]
   },
   {
+   "id": "2026-11-22-every-gta-lead-before-lucia",
+   "title": "Every GTA Lead Before Lucia and Jason",
+   "views": 531,
+   "likes": 14,
+   "comments": 2,
+   "views_per_day": 531.0,
+   "engagement": 0.0301,
+   "format": "list",
+   "theme": "swamp_glow",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "characters",
+    "history"
+   ]
+  },
+  {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
    "views": 1124,
@@ -50,22 +66,6 @@
    "topics": [
     "characters",
     "world"
-   ]
-  },
-  {
-   "id": "2026-11-22-every-gta-lead-before-lucia",
-   "title": "Every GTA Lead Before Lucia and Jason",
-   "views": 398,
-   "likes": 10,
-   "comments": 1,
-   "views_per_day": 398.0,
-   "engagement": 0.0276,
-   "format": "list",
-   "theme": "swamp_glow",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "characters",
-    "history"
    ]
   },
   {
@@ -136,21 +136,21 @@
   {
    "name": "world",
    "videos": 2,
-   "median_views_per_day": 358.8,
-   "vs_channel": 1.56,
-   "engagement": 0.0278
+   "median_views_per_day": 401.3,
+   "vs_channel": 1.75,
+   "engagement": 0.0256
   },
   {
    "name": "characters",
    "videos": 4,
-   "median_views_per_day": 286.6,
-   "vs_channel": 1.25,
+   "median_views_per_day": 312.6,
+   "vs_channel": 1.36,
    "engagement": 0.0243
   },
   {
    "name": "history",
    "videos": 8,
-   "median_views_per_day": 246.9,
+   "median_views_per_day": 247.9,
    "vs_channel": 1.08,
    "engagement": 0.0202
   },
@@ -159,7 +159,7 @@
    "videos": 3,
    "median_views_per_day": 214.0,
    "vs_channel": 0.93,
-   "engagement": 0.0161
+   "engagement": 0.0159
   },
   {
    "name": "sales",
@@ -171,16 +171,16 @@
   {
    "name": "release",
    "videos": 6,
-   "median_views_per_day": 194.7,
+   "median_views_per_day": 194.8,
    "vs_channel": 0.85,
    "engagement": 0.008
   },
   {
    "name": "reviews",
    "videos": 5,
-   "median_views_per_day": 175.3,
-   "vs_channel": 0.76,
-   "engagement": 0.0161
+   "median_views_per_day": 175.6,
+   "vs_channel": 0.77,
+   "engagement": 0.0159
   }
  ],
  "formats": [
@@ -194,16 +194,16 @@
   {
    "name": "spotlight",
    "videos": 3,
-   "median_views_per_day": 268.0,
-   "vs_channel": 1.17,
-   "engagement": 0.0258
+   "median_views_per_day": 353.0,
+   "vs_channel": 1.54,
+   "engagement": 0.0255
   },
   {
    "name": "list",
    "videos": 3,
-   "median_views_per_day": 249.2,
-   "vs_channel": 1.09,
-   "engagement": 0.0276
+   "median_views_per_day": 251.2,
+   "vs_channel": 1.1,
+   "engagement": 0.0301
   },
   {
    "name": "timeline",
@@ -226,20 +226,20 @@
    "videos": 3,
    "median_views_per_day": 384.0,
    "vs_channel": 1.67,
-   "engagement": 0.0161
+   "engagement": 0.0159
   },
   {
    "name": "swamp_glow",
    "videos": 4,
-   "median_views_per_day": 256.4,
-   "vs_channel": 1.12,
-   "engagement": 0.0287
+   "median_views_per_day": 298.9,
+   "vs_channel": 1.3,
+   "engagement": 0.0278
   },
   {
    "name": "sunset_drive",
    "videos": 3,
-   "median_views_per_day": 175.3,
-   "vs_channel": 0.76,
+   "median_views_per_day": 175.6,
+   "vs_channel": 0.77,
    "engagement": 0.0047
   },
   {
