@@ -575,6 +575,171 @@
       "theme": "neon_night",
       "title": "Four GTA 6 Numbers That Sound Fake but Aren't",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-21-gta6-road-to-launch": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-24T10:57:28+00:00",
+      "duration": 40.88,
+      "engine": "kokoro",
+      "fact_ids": [
+        "trailer1_record",
+        "gta6_delays",
+        "trailer2_views",
+        "gta6_release_date",
+        "gta6_day_one_sales"
+      ],
+      "format": "timeline",
+      "id": "2026-11-21-gta6-road-to-launch",
+      "platforms": {
+        "youtube": {
+          "id": "xOJ1asZPOKI",
+          "privacy": "public",
+          "published_at": "2026-11-24T11:02:27+00:00",
+          "url": "https://youtube.com/shorts/xOJ1asZPOKI"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 110.2,
+      "rendered_at": "2026-11-24T10:57:28+00:00",
+      "review": {
+        "decision": null,
+        "issue": 13,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-road-to-launch-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-road-to-launch.mp4"
+      },
+      "script": "content/scripts/2026-11-21-gta6-road-to-launch.yaml",
+      "status": "published",
+      "theme": "sunset_drive",
+      "title": "GTA 6: From First Trailer to Record Launch",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-21-gta6-standard-vs-ultimate": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-24T10:58:50+00:00",
+      "duration": 34.88,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_price_standard",
+        "gta6_ultimate_edition",
+        "gta6_physical_no_disc"
+      ],
+      "format": "versus",
+      "id": "2026-11-21-gta6-standard-vs-ultimate",
+      "platforms": {
+        "youtube": {
+          "id": "29k_6lpvsDY",
+          "privacy": "scheduled",
+          "published_at": "2026-11-24T11:02:30+00:00",
+          "scheduled_for": "2026-11-24T11:32:27Z",
+          "url": "https://youtube.com/shorts/29k_6lpvsDY"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 75.0,
+      "rendered_at": "2026-11-24T10:58:50+00:00",
+      "review": {
+        "decision": null,
+        "issue": 14,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-standard-vs-ultimate-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-standard-vs-ultimate.mp4"
+      },
+      "script": "content/scripts/2026-11-21-gta6-standard-vs-ultimate.yaml",
+      "status": "published",
+      "theme": "wanted_level",
+      "title": "GTA 6 Standard vs Ultimate: What You Actually Get",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-21-gta6-wildlife": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-24T11:00:36+00:00",
+      "duration": 37.41,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_setting",
+        "leonida_is_florida",
+        "gta6_wildlife_count",
+        "gta6_bird_logbook"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-21-gta6-wildlife",
+      "platforms": {
+        "youtube": {
+          "id": "JjWVFG4AEwU",
+          "privacy": "scheduled",
+          "published_at": "2026-11-24T11:02:34+00:00",
+          "scheduled_for": "2026-11-24T12:02:27Z",
+          "url": "https://youtube.com/shorts/JjWVFG4AEwU"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 99.9,
+      "rendered_at": "2026-11-24T11:00:36+00:00",
+      "review": {
+        "decision": null,
+        "issue": 15,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-wildlife-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-21-gta6-wildlife.mp4"
+      },
+      "script": "content/scripts/2026-11-21-gta6-wildlife.yaml",
+      "status": "published",
+      "theme": "swamp_glow",
+      "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-22-every-gta-lead-before-lucia": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-24T11:02:21+00:00",
+      "duration": 36.99,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_protagonists",
+        "gta_past_protagonists"
+      ],
+      "format": "list",
+      "id": "2026-11-22-every-gta-lead-before-lucia",
+      "platforms": {
+        "youtube": {
+          "id": "vxUNYMpUaOM",
+          "privacy": "scheduled",
+          "published_at": "2026-11-24T11:02:36+00:00",
+          "scheduled_for": "2026-11-24T12:32:27Z",
+          "url": "https://youtube.com/shorts/vxUNYMpUaOM"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 97.4,
+      "rendered_at": "2026-11-24T11:02:21+00:00",
+      "review": {
+        "decision": null,
+        "issue": 16,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-every-gta-lead-before-lucia-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-every-gta-lead-before-lucia.mp4"
+      },
+      "script": "content/scripts/2026-11-22-every-gta-lead-before-lucia.yaml",
+      "status": "published",
+      "theme": "swamp_glow",
+      "title": "Every GTA Lead Before Lucia and Jason",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
