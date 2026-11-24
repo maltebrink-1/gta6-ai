@@ -2,16 +2,32 @@
  "generated": "2026-11-24",
  "published_videos": 12,
  "enough_data": true,
- "channel_median_views_per_day": 99.0,
+ "channel_median_views_per_day": 101.8,
  "top_videos": [
+  {
+   "id": "2026-11-20-gta6-vs-gta5-day-one-money",
+   "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
+   "views": 763,
+   "likes": 16,
+   "comments": 0,
+   "views_per_day": 508.7,
+   "engagement": 0.021,
+   "format": "versus",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "sales"
+   ]
+  },
   {
    "id": "2026-11-20-gta6-vs-gta5-launch",
    "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 680,
-   "likes": 20,
+   "views": 726,
+   "likes": 23,
    "comments": 0,
-   "views_per_day": 453.3,
-   "engagement": 0.0294,
+   "views_per_day": 484.0,
+   "engagement": 0.0317,
    "format": "versus",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -23,33 +39,17 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 1061,
-   "likes": 25,
+   "views": 1069,
+   "likes": 26,
    "comments": 3,
-   "views_per_day": 424.4,
-   "engagement": 0.0264,
+   "views_per_day": 427.6,
+   "engagement": 0.0271,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
    "topics": [
     "characters",
     "world"
-   ]
-  },
-  {
-   "id": "2026-11-20-gta6-vs-gta5-day-one-money",
-   "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
-   "views": 502,
-   "likes": 18,
-   "comments": 0,
-   "views_per_day": 334.7,
-   "engagement": 0.0359,
-   "format": "versus",
-   "theme": "neon_night",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "sales"
    ]
   },
   {
@@ -72,11 +72,11 @@
   {
    "id": "2026-11-19-gta6-trailer-records",
    "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
-   "views": 546,
+   "views": 568,
    "likes": 10,
    "comments": 0,
-   "views_per_day": 218.4,
-   "engagement": 0.0183,
+   "views_per_day": 227.2,
+   "engagement": 0.0176,
    "format": "list",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -91,10 +91,10 @@
   {
    "id": "2026-11-20-gta6-day-one-billions",
    "title": "GTA 6 Made $3.79 Billion on Day One, Says Take-Two",
-   "views": 0,
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 0.0,
+   "views_per_day": 0.4,
    "engagement": 0.0,
    "format": "news",
    "theme": "sunset_drive",
@@ -106,10 +106,10 @@
   {
    "id": "2026-11-20-gta6-quick-answers",
    "title": "GTA 6: Your Biggest Questions, Answered Fast",
-   "views": 0,
+   "views": 3,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 0.0,
+   "views_per_day": 1.2,
    "engagement": 0.0,
    "format": "qna",
    "theme": "ocean_breeze",
@@ -122,10 +122,10 @@
   {
    "id": "2026-11-20-gta6-records-so-far",
    "title": "The Records GTA 6 Has Already Claimed",
-   "views": 2,
+   "views": 3,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 0.8,
+   "views_per_day": 1.2,
    "engagement": 0.0,
    "format": "list",
    "theme": "swamp_glow",
@@ -139,45 +139,45 @@
  ],
  "topics": [
   {
+   "name": "sales",
+   "videos": 4,
+   "median_views_per_day": 242.6,
+   "vs_channel": 2.38,
+   "engagement": 0.0105
+  },
+  {
    "name": "history",
    "videos": 6,
-   "median_views_per_day": 231.4,
-   "vs_channel": 2.34,
-   "engagement": 0.0205
+   "median_views_per_day": 235.8,
+   "vs_channel": 2.32,
+   "engagement": 0.0193
   },
   {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 175.1,
-   "vs_channel": 1.77,
-   "engagement": 0.0109
+   "vs_channel": 1.72,
+   "engagement": 0.0141
   },
   {
    "name": "characters",
    "videos": 3,
    "median_views_per_day": 175.1,
-   "vs_channel": 1.77,
+   "vs_channel": 1.72,
    "engagement": 0.0228
-  },
-  {
-   "name": "sales",
-   "videos": 4,
-   "median_views_per_day": 167.8,
-   "vs_channel": 1.7,
-   "engagement": 0.0147
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 109.6,
-   "vs_channel": 1.11,
-   "engagement": 0.0092
+   "median_views_per_day": 114.2,
+   "vs_channel": 1.12,
+   "engagement": 0.0088
   },
   {
    "name": "release",
    "videos": 4,
    "median_views_per_day": 88.3,
-   "vs_channel": 0.89,
+   "vs_channel": 0.87,
    "engagement": 0.0054
   }
  ],
@@ -185,23 +185,23 @@
   {
    "name": "versus",
    "videos": 2,
-   "median_views_per_day": 394.0,
-   "vs_channel": 3.98,
-   "engagement": 0.0326
+   "median_views_per_day": 496.4,
+   "vs_channel": 4.88,
+   "engagement": 0.0263
   },
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 223.6,
-   "vs_channel": 2.26,
-   "engagement": 0.0132
+   "median_views_per_day": 228.0,
+   "vs_channel": 2.24,
+   "engagement": 0.0206
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 109.6,
-   "vs_channel": 1.11,
-   "engagement": 0.0092
+   "median_views_per_day": 114.2,
+   "vs_channel": 1.12,
+   "engagement": 0.0088
   },
   {
    "name": "news",
@@ -215,30 +215,30 @@
   {
    "name": "wanted_level",
    "videos": 2,
-   "median_views_per_day": 335.9,
-   "vs_channel": 3.39,
-   "engagement": 0.0238
+   "median_views_per_day": 355.6,
+   "vs_channel": 3.49,
+   "engagement": 0.0246
   },
   {
    "name": "swamp_glow",
    "videos": 2,
-   "median_views_per_day": 122.6,
-   "vs_channel": 1.24,
+   "median_views_per_day": 122.8,
+   "vs_channel": 1.21,
    "engagement": 0.0054
   },
   {
    "name": "sunset_drive",
    "videos": 2,
-   "median_views_per_day": 87.5,
-   "vs_channel": 0.88,
+   "median_views_per_day": 87.8,
+   "vs_channel": 0.86,
    "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 22.8,
-   "vs_channel": 0.23,
-   "engagement": 0.0
+   "median_views_per_day": 28.4,
+   "vs_channel": 0.28,
+   "engagement": 0.0141
   },
   {
    "name": "neon_night",
@@ -253,8 +253,8 @@
    "name": "medium (35-45 s)",
    "videos": 9,
    "median_views_per_day": 175.1,
-   "vs_channel": 1.77,
-   "engagement": 0.0109
+   "vs_channel": 1.72,
+   "engagement": 0.0141
   },
   {
    "name": "short (<35 s)",
@@ -264,5 +264,5 @@
    "engagement": 0.0
   }
  ],
- "advice": "Lean into topics history, reviews and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics sales, history and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
 }
