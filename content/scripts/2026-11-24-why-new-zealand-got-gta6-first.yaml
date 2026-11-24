@@ -1,0 +1,36 @@
+id: 2026-11-24-why-new-zealand-got-gta6-first
+status: ready
+created: '2026-11-24'
+author: claude
+format: explainer
+title: "Why New Zealand Got GTA 6 Before Everyone Else"
+hook_text: WHY NEW ZEALAND?
+theme: sunset_drive
+lines:
+- text: GTA 6 came out on one date, but Rockstar staggered the time.
+  kind: hook
+  facts: [gta6_release_date, gta6_midnight_unlock]
+- text: The date was November 19th, 2026, on PS5 and Xbox Series X and S.
+  kind: claim
+  facts: [gta6_release_date, gta6_platforms]
+  card: {type: date, big: NOV 19, small: '2026'}
+- text: But Rockstar's support page says the game unlocked at midnight local time in each region.
+  kind: claim
+  facts: [gta6_midnight_unlock]
+  card: {type: text, big: MIDNIGHT, small: LOCAL TIME · PER ROCKSTAR}
+- text: Under Rockstar's rule, there was no single global launch moment. It rolled around the planet, one time zone at a time.
+  kind: claim
+  facts: [gta6_midnight_unlock]
+- text: Midnight hits New Zealand first, so that's where the GTA 6 rollout started.
+  kind: claim
+  facts: [gta6_new_zealand_first]
+  card: {type: text, big: NEW ZEALAND, small: FIRST IN LINE}
+- text: Players in the US got access many hours later.
+  kind: claim
+  facts: [gta6_new_zealand_first]
+- text: Being in America and waiting that long? Pain.
+  kind: opinion
+- text: What time did you start playing? Tell me below and follow for more GTA 6.
+  kind: cta
+description: GTA 6 unlocked at midnight local time, so the launch rolled around the world time zone by time zone — starting in New Zealand.
+tags: [GTA 6, GTA 6 launch, GTA 6 release time, New Zealand, GTA 6 midnight, GTA VI, Rockstar Games]

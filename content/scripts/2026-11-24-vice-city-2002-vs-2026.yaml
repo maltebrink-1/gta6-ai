@@ -1,0 +1,36 @@
+id: 2026-11-24-vice-city-2002-vs-2026
+status: ready
+created: '2026-11-24'
+author: claude
+format: versus
+title: "Vice City Then vs Now: GTA's Most Iconic City, Compared"
+hook_text: VICE CITY THEN VS NOW
+theme: wanted_level
+lines:
+- text: Same city, totally different game. Vice City, then versus now.
+  kind: hook
+  facts: [vice_city_2002, gta6_setting]
+- text: Then. Vice City first showed up in GTA Vice City back in 2002, a game set in the 1980s.
+  kind: claim
+  facts: [vice_city_2002]
+  card: {type: date, big: '2002', small: GTA VICE CITY}
+- text: Your guy back then was one man, Tommy Vercetti.
+  kind: claim
+  facts: [gta_past_protagonists]
+- text: Now. In GTA 6, Vice City sits inside Leonida, a whole fictional state, basically Rockstar's Florida.
+  kind: claim
+  facts: [gta6_setting, leonida_is_florida]
+  card: {type: text, big: LEONIDA, small: HOME OF VICE CITY}
+- text: And instead of one lead, you get two, Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+- text: Even the wildlife leveled up. Rockstar says Leonida has more than 170 animal species.
+  kind: claim
+  facts: [gta6_wildlife_count]
+  card: {type: stat, big: 170+, small: ANIMAL SPECIES · PER ROCKSTAR}
+- text: Neon nostalgia versus a living state? I'm taking the new one.
+  kind: opinion
+- text: Old Vice City or new? Tell me below and follow for more GTA 6.
+  kind: cta
+description: GTA Vice City (2002) versus GTA 6's Vice City — one lead and the 1980s, versus two leads and the whole state of Leonida.
+tags: [GTA 6, Vice City, GTA Vice City, Leonida, Tommy Vercetti, GTA 6 map, GTA VI, Rockstar Games]

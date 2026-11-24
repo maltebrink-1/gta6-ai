@@ -96,13 +96,17 @@ facts:
     status: reported
     attribution: Rockstar
     category: release
-    as_of: 2026-11-19
-    recheck_days: 5
+    as_of: 2026-11-24       # re-verified 2026-11-24; launch has passed, so this is now a historical fact
+    recheck_days: 60
     sources:
       - url: https://allthings.how/gta-6-release-date/
         publisher: AllThings.How (quoting Rockstar Support)
       - url: https://www.g2a.com/news/gta-6-news/what-time-does-gta-6-release/
         publisher: G2A News
+      - url: https://www.technobezz.com/gta-6-release-time
+        publisher: Technobezz
+      - url: https://www.player.one/gta-6-digital-launch-set-midnight-worldwide-fans-already-plan-new-zealand-location-hack-164071
+        publisher: Player.One
 
   - id: gta6_delays
     claim: "GTA VI was first aimed at 2025, then delayed twice: to May 26, 2026, and then to November 19, 2026."
@@ -688,3 +692,64 @@ facts:
         publisher: GTABase
       - url: https://www.pushsquare.com/news/2026/11/first-gta-6-ps5-patch-live-now-get-all-the-details-here
         publisher: Push Square
+
+  # ── PlayStation launch data & rollout (added 2026-11-24) ───────────────────
+  - id: gta6_ps5_players
+    claim: "Sony says more than 39 million unique players played GTA VI on PlayStation 5 from November 19 to 22, 2026, logging 683 million hours, and calls it the biggest launch in PlayStation history. These are players on PS5 only, not copies sold."
+    say:
+      - "Sony says more than 39 million people played GTA 6 on PS5 in its first four days."
+      - "Sony says those players logged 683 million hours."
+    status: confirmed
+    attribution: Sony
+    category: records
+    as_of: 2026-11-24
+    recheck_days: 90
+    sources:
+      - url: https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/
+        publisher: PlayStation Blog (Sony, Nov 23, 2026)
+        date: 2026-11-23
+      - url: https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009
+        publisher: Kotaku
+      - url: https://www.engadget.com/2326351/grand-theft-auto-6-is-the-biggest-playstation-launch-of-all-time/
+        publisher: Engadget
+      - url: https://www.player.one/gta-6-breaks-playstation-launch-record-over-39m-ps5-players-log-683m-hours-70-new-ps5s-run-it-164608
+        publisher: Player.One
+      - url: https://thisweekinvideogames.com/news/grand-theft-auto-vi-the-biggest-launch-in-playstation-history-over-39-million-players/
+        publisher: This Week in Video Games
+
+  - id: gta6_ps5_concurrency_hardware
+    claim: "Sony says GTA VI set the record for the highest number of concurrent players of any game on PlayStation (no exact peak was given), drove the most newly connected PS5 consoles on a single day since the console's launch outside year-end holidays, and was the first game played on 70% of new PS5 consoles."
+    say:
+      - "Sony says it set PlayStation's all-time record for players online at the same time."
+      - "Sony says 70% of brand-new PS5s played GTA 6 first."
+    status: confirmed
+    attribution: Sony
+    category: records
+    as_of: 2026-11-24
+    recheck_days: 90
+    sources:
+      - url: https://blog.playstation.com/2026/11/23/thank-you-for-making-grand-theft-auto-vi-the-biggest-launch-in-playstation-history/
+        publisher: PlayStation Blog (Sony, Nov 23, 2026)
+        date: 2026-11-23
+      - url: https://www.player.one/gta-6-breaks-playstation-launch-record-over-39m-ps5-players-log-683m-hours-70-new-ps5s-run-it-164608
+        publisher: Player.One
+      - url: https://seekingalpha.com/news/4676076-grand-theft-auto-6-is-the-biggest-launch-in-playstation-history
+        publisher: Seeking Alpha
+      - url: https://gamedev.net/news/7306-gta-6-was-the-biggest-launch-in-playstation-history-with-the-highest-number-of/
+        publisher: GameDev.net
+
+  - id: gta6_new_zealand_first
+    claim: "Because GTA VI unlocked at midnight local time, the digital rollout began in New Zealand, where midnight on November 19 arrived first, and players in the US got access many hours later."
+    say:
+      - "Midnight hits New Zealand first, so that's where the GTA 6 rollout started."
+    status: confirmed
+    category: release
+    as_of: 2026-11-24
+    recheck_days: 365
+    sources:
+      - url: https://godisageek.com/2026/09/gta-6-release-times-by-region/
+        publisher: GodisaGeek
+      - url: https://northeasttimes.com/2026/09/10/gta-6-players-in-the-us-will-wait-up-to-18-hours-after-new-zealand-gets-access/
+        publisher: Northeast Times
+      - url: https://www.player.one/gta-6-digital-launch-set-midnight-worldwide-fans-already-plan-new-zealand-location-hack-164071
+        publisher: Player.One

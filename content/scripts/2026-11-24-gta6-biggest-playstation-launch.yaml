@@ -1,0 +1,36 @@
+id: 2026-11-24-gta6-biggest-playstation-launch
+status: ready
+created: '2026-11-24'
+author: claude
+format: spotlight
+title: "GTA 6 Just Became PlayStation's Biggest Launch Ever"
+hook_text: 39 MILLION PLAYERS
+theme: wanted_level
+lines:
+- text: 39 million PS5 players in four days, says Sony.
+  kind: hook
+  facts: [gta6_ps5_players]
+- text: That's from Sony's own data, covering November 19th to the 22nd, and Sony calls it the biggest launch in PlayStation history.
+  kind: claim
+  facts: [gta6_ps5_players]
+  card: {type: stat, big: 39M+, small: PS5 PLAYERS · PER SONY}
+- text: Sony says those players logged 683 million hours. Not minutes. Hours.
+  kind: claim
+  facts: [gta6_ps5_players]
+  card: {type: stat, big: 683M, small: HOURS PLAYED · PER SONY}
+- text: Sony also says it set PlayStation's all-time record for players online at the same time.
+  kind: claim
+  facts: [gta6_ps5_concurrency_hardware]
+- text: And Sony says 70% of brand-new PS5s played GTA 6 first.
+  kind: claim
+  facts: [gta6_ps5_concurrency_hardware]
+  card: {type: stat, big: 70%, small: NEW PS5S · FIRST GAME}
+- text: One catch. Sony is counting players on PS5, not copies sold, and Xbox isn't counted at all.
+  kind: claim
+  facts: [gta6_ps5_players]
+- text: Honestly, I'm one of those hours. A lot of them.
+  kind: opinion
+- text: How many hours have you put in? Drop it below and follow for more GTA 6.
+  kind: cta
+description: Sony says GTA 6 is the biggest launch in PlayStation history — 39 million+ PS5 players and 683 million hours in its first four days, plus a concurrent-player record.
+tags: [GTA 6, GTA 6 PS5, PlayStation, GTA 6 record, GTA 6 players, Sony, GTA VI, Rockstar Games]

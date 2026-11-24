@@ -1,0 +1,33 @@
+id: 2026-11-24-lucia-vs-jason
+status: ready
+created: '2026-11-24'
+author: claude
+format: versus
+title: "Lucia vs Jason: Whose Backstory Hits Harder?"
+hook_text: LUCIA VS JASON
+theme: swamp_glow
+lines:
+- text: Two leads, one game. Whose story is darker?
+  kind: hook
+  facts: [gta6_protagonists]
+- text: GTA 6 gives you two playable protagonists, Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+  card: {type: versus, big: LUCIA VS JASON, small: GTA 6'S TWO LEADS}
+- text: In one corner, Lucia. Rockstar says her dad taught her to fight, and defending her family landed her in the Leonida Penitentiary.
+  kind: claim
+  facts: [lucia_backstory]
+  card: {type: text, big: LUCIA CAMINOS, small: FIGHTER · EX-INMATE}
+- text: In the other corner, Jason. Rockstar describes him as an Army veteran who ended up working for drug runners in the Keys.
+  kind: claim
+  facts: [jason_backstory]
+  card: {type: text, big: JASON DUVAL, small: ARMY VETERAN}
+- text: And Lucia makes a little history, as the first female lead in a mainline GTA since the series went 3D.
+  kind: claim
+  facts: [lucia_first_female_lead]
+- text: My pick? Lucia. Prison to Vice City is a hell of an arc.
+  kind: opinion
+- text: Team Lucia or team Jason? Vote below and follow for more GTA 6.
+  kind: cta
+description: Lucia Caminos versus Jason Duval — GTA 6's two leads, compared through their official Rockstar backstories.
+tags: [GTA 6, Lucia, Jason, GTA 6 Lucia, GTA 6 Jason, GTA 6 characters, GTA VI, Rockstar Games]
