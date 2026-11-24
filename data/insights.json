@@ -23,11 +23,11 @@
   {
    "id": "2026-11-20-gta6-vs-gta5-launch",
    "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 910,
+   "views": 911,
    "likes": 26,
    "comments": 0,
-   "views_per_day": 606.7,
-   "engagement": 0.0286,
+   "views_per_day": 607.3,
+   "engagement": 0.0285,
    "format": "versus",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -39,11 +39,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 1121,
+   "views": 1124,
    "likes": 26,
    "comments": 3,
-   "views_per_day": 448.4,
-   "engagement": 0.0259,
+   "views_per_day": 449.6,
+   "engagement": 0.0258,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -53,34 +53,34 @@
    ]
   },
   {
-   "id": "2026-11-21-gta6-standard-vs-ultimate",
-   "title": "GTA 6 Standard vs Ultimate: What You Actually Get",
-   "views": 339,
-   "likes": 2,
-   "comments": 0,
-   "views_per_day": 339.0,
-   "engagement": 0.0059,
-   "format": "versus",
-   "theme": "wanted_level",
-   "length": "short (<35 s)",
-   "topics": [
-    "release"
-   ]
-  },
-  {
    "id": "2026-11-22-every-gta-lead-before-lucia",
    "title": "Every GTA Lead Before Lucia and Jason",
-   "views": 298,
-   "likes": 8,
+   "views": 398,
+   "likes": 10,
    "comments": 1,
-   "views_per_day": 298.0,
-   "engagement": 0.0302,
+   "views_per_day": 398.0,
+   "engagement": 0.0276,
    "format": "list",
    "theme": "swamp_glow",
    "length": "medium (35-45 s)",
    "topics": [
     "characters",
     "history"
+   ]
+  },
+  {
+   "id": "2026-11-21-gta6-standard-vs-ultimate",
+   "title": "GTA 6 Standard vs Ultimate: What You Actually Get",
+   "views": 384,
+   "likes": 2,
+   "comments": 0,
+   "views_per_day": 384.0,
+   "engagement": 0.0052,
+   "format": "versus",
+   "theme": "wanted_level",
+   "length": "short (<35 s)",
+   "topics": [
+    "release"
    ]
   }
  ],
@@ -136,9 +136,16 @@
   {
    "name": "world",
    "videos": 2,
-   "median_views_per_day": 358.2,
+   "median_views_per_day": 358.8,
    "vs_channel": 1.56,
-   "engagement": 0.0279
+   "engagement": 0.0278
+  },
+  {
+   "name": "characters",
+   "videos": 4,
+   "median_views_per_day": 286.6,
+   "vs_channel": 1.25,
+   "engagement": 0.0243
   },
   {
    "name": "history",
@@ -146,13 +153,6 @@
    "median_views_per_day": 246.9,
    "vs_channel": 1.08,
    "engagement": 0.0202
-  },
-  {
-   "name": "characters",
-   "videos": 4,
-   "median_views_per_day": 236.7,
-   "vs_channel": 1.03,
-   "engagement": 0.0244
   },
   {
    "name": "trailers",
@@ -173,7 +173,7 @@
    "videos": 6,
    "median_views_per_day": 194.7,
    "vs_channel": 0.85,
-   "engagement": 0.0084
+   "engagement": 0.008
   },
   {
    "name": "reviews",
@@ -187,7 +187,7 @@
   {
    "name": "versus",
    "videos": 3,
-   "median_views_per_day": 606.7,
+   "median_views_per_day": 607.3,
    "vs_channel": 2.65,
    "engagement": 0.0175
   },
@@ -196,14 +196,14 @@
    "videos": 3,
    "median_views_per_day": 268.0,
    "vs_channel": 1.17,
-   "engagement": 0.0259
+   "engagement": 0.0258
   },
   {
    "name": "list",
    "videos": 3,
    "median_views_per_day": 249.2,
    "vs_channel": 1.09,
-   "engagement": 0.0302
+   "engagement": 0.0276
   },
   {
    "name": "timeline",
@@ -224,8 +224,8 @@
   {
    "name": "wanted_level",
    "videos": 3,
-   "median_views_per_day": 339.0,
-   "vs_channel": 1.48,
+   "median_views_per_day": 384.0,
+   "vs_channel": 1.67,
    "engagement": 0.0161
   },
   {
@@ -233,7 +233,7 @@
    "videos": 4,
    "median_views_per_day": 256.4,
    "vs_channel": 1.12,
-   "engagement": 0.0301
+   "engagement": 0.0287
   },
   {
    "name": "sunset_drive",
@@ -268,10 +268,10 @@
   {
    "name": "short (<35 s)",
    "videos": 4,
-   "median_views_per_day": 176.5,
-   "vs_channel": 0.77,
-   "engagement": 0.0159
+   "median_views_per_day": 199.0,
+   "vs_channel": 0.87,
+   "engagement": 0.0155
   }
  ],
- "advice": "Lean into topics world, history and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics world, characters and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
 }
