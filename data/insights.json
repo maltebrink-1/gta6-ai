@@ -2,7 +2,7 @@
  "generated": "2026-11-24",
  "published_videos": 16,
  "enough_data": true,
- "channel_median_views_per_day": 111.5,
+ "channel_median_views_per_day": 161.5,
  "top_videos": [
   {
    "id": "2026-11-20-gta6-vs-gta5-day-one-money",
@@ -39,11 +39,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 1113,
+   "views": 1123,
    "likes": 26,
    "comments": 3,
-   "views_per_day": 445.2,
-   "engagement": 0.0261,
+   "views_per_day": 449.2,
+   "engagement": 0.0258,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -53,12 +53,27 @@
    ]
   },
   {
+   "id": "2026-11-21-gta6-standard-vs-ultimate",
+   "title": "GTA 6 Standard vs Ultimate: What You Actually Get",
+   "views": 249,
+   "likes": 2,
+   "comments": 0,
+   "views_per_day": 249.0,
+   "engagement": 0.008,
+   "format": "versus",
+   "theme": "wanted_level",
+   "length": "short (<35 s)",
+   "topics": [
+    "release"
+   ]
+  },
+  {
    "id": "2026-11-19-gta-timeline",
    "title": "The Whole GTA Story in Under a Minute",
-   "views": 1100,
+   "views": 1101,
    "likes": 11,
    "comments": 1,
-   "views_per_day": 244.4,
+   "views_per_day": 244.7,
    "engagement": 0.0109,
    "format": "timeline",
    "theme": "swamp_glow",
@@ -67,23 +82,6 @@
     "history",
     "release",
     "reviews"
-   ]
-  },
-  {
-   "id": "2026-11-19-gta6-trailer-records",
-   "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
-   "views": 606,
-   "likes": 10,
-   "comments": 0,
-   "views_per_day": 242.4,
-   "engagement": 0.0165,
-   "format": "list",
-   "theme": "wanted_level",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "reviews",
-    "trailers"
    ]
   }
  ],
@@ -104,29 +102,27 @@
    ]
   },
   {
-   "id": "2026-11-20-gta6-records-so-far",
-   "title": "The Records GTA 6 Has Already Claimed",
-   "views": 3,
+   "id": "2026-11-20-gta6-soundtrack",
+   "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
+   "views": 9,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 1.2,
+   "views_per_day": 3.6,
    "engagement": 0.0,
-   "format": "list",
-   "theme": "swamp_glow",
-   "length": "medium (35-45 s)",
+   "format": "news",
+   "theme": "neon_night",
+   "length": "short (<35 s)",
    "topics": [
-    "reviews",
-    "sales",
-    "trailers"
+    "music"
    ]
   },
   {
    "id": "2026-11-20-gta6-quick-answers",
    "title": "GTA 6: Your Biggest Questions, Answered Fast",
-   "views": 4,
+   "views": 10,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 1.6,
+   "views_per_day": 4.0,
    "engagement": 0.0,
    "format": "qna",
    "theme": "ocean_breeze",
@@ -141,51 +137,51 @@
   {
    "name": "world",
    "videos": 2,
-   "median_views_per_day": 259.1,
-   "vs_channel": 2.32,
-   "engagement": 0.0336
+   "median_views_per_day": 302.6,
+   "vs_channel": 1.87,
+   "engagement": 0.0289
   },
   {
    "name": "history",
    "videos": 8,
    "median_views_per_day": 208.9,
-   "vs_channel": 1.87,
+   "vs_channel": 1.29,
    "engagement": 0.0202
   },
   {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 175.3,
-   "vs_channel": 1.57,
-   "engagement": 0.0122
+   "vs_channel": 1.09,
+   "engagement": 0.0165
   },
   {
    "name": "release",
    "videos": 6,
-   "median_views_per_day": 162.7,
-   "vs_channel": 1.46,
-   "engagement": 0.0129
+   "median_views_per_day": 171.2,
+   "vs_channel": 1.06,
+   "engagement": 0.0095
   },
   {
    "name": "trailers",
    "videos": 3,
-   "median_views_per_day": 150.0,
-   "vs_channel": 1.35,
-   "engagement": 0.0
+   "median_views_per_day": 167.0,
+   "vs_channel": 1.03,
+   "engagement": 0.0165
   },
   {
    "name": "sales",
    "videos": 5,
-   "median_views_per_day": 150.0,
-   "vs_channel": 1.35,
-   "engagement": 0.0
+   "median_views_per_day": 167.0,
+   "vs_channel": 1.03,
+   "engagement": 0.0175
   },
   {
    "name": "characters",
    "videos": 4,
-   "median_views_per_day": 103.7,
+   "median_views_per_day": 149.7,
    "vs_channel": 0.93,
-   "engagement": 0.0244
+   "engagement": 0.0243
   }
  ],
  "formats": [
@@ -193,35 +189,35 @@
    "name": "versus",
    "videos": 3,
    "median_views_per_day": 608.0,
-   "vs_channel": 5.45,
+   "vs_channel": 3.76,
    "engagement": 0.0175
   },
   {
    "name": "timeline",
    "videos": 2,
-   "median_views_per_day": 197.2,
-   "vs_channel": 1.77,
+   "median_views_per_day": 205.8,
+   "vs_channel": 1.27,
    "engagement": 0.0054
   },
   {
    "name": "spotlight",
    "videos": 3,
-   "median_views_per_day": 73.0,
-   "vs_channel": 0.65,
-   "engagement": 0.0261
+   "median_views_per_day": 156.0,
+   "vs_channel": 0.97,
+   "engagement": 0.0258
   },
   {
    "name": "list",
    "videos": 3,
-   "median_views_per_day": 32.0,
-   "vs_channel": 0.29,
-   "engagement": 0.0165
+   "median_views_per_day": 124.0,
+   "vs_channel": 0.77,
+   "engagement": 0.0312
   },
   {
    "name": "news",
    "videos": 3,
-   "median_views_per_day": 1.6,
-   "vs_channel": 0.01,
+   "median_views_per_day": 3.6,
+   "vs_channel": 0.02,
    "engagement": 0.0
   }
  ],
@@ -229,36 +225,36 @@
   {
    "name": "wanted_level",
    "videos": 3,
-   "median_views_per_day": 242.4,
-   "vs_channel": 2.17,
+   "median_views_per_day": 249.0,
+   "vs_channel": 1.54,
    "engagement": 0.0165
   },
   {
    "name": "sunset_drive",
    "videos": 3,
-   "median_views_per_day": 150.0,
-   "vs_channel": 1.35,
+   "median_views_per_day": 167.0,
+   "vs_channel": 1.03,
    "engagement": 0.0
   },
   {
    "name": "swamp_glow",
    "videos": 4,
-   "median_views_per_day": 52.5,
-   "vs_channel": 0.47,
-   "engagement": 0.021
+   "median_views_per_day": 140.0,
+   "vs_channel": 0.87,
+   "engagement": 0.0316
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
    "median_views_per_day": 32.8,
-   "vs_channel": 0.29,
+   "vs_channel": 0.2,
    "engagement": 0.0122
   },
   {
    "name": "neon_night",
    "videos": 3,
    "median_views_per_day": 8.0,
-   "vs_channel": 0.07,
+   "vs_channel": 0.05,
    "engagement": 0.0175
   }
  ],
@@ -266,16 +262,16 @@
   {
    "name": "medium (35-45 s)",
    "videos": 12,
-   "median_views_per_day": 111.5,
+   "median_views_per_day": 161.5,
    "vs_channel": 1.0,
-   "engagement": 0.017
+   "engagement": 0.0202
   },
   {
    "name": "short (<35 s)",
    "videos": 4,
-   "median_views_per_day": 100.8,
-   "vs_channel": 0.9,
-   "engagement": 0.0075
+   "median_views_per_day": 126.5,
+   "vs_channel": 0.78,
+   "engagement": 0.004
   }
  ],
  "advice": "Lean into topics world, history and formats versus, timeline for 3 of 4 scripts; use the 4th for something new."
