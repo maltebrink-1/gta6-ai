@@ -2,16 +2,16 @@
  "generated": "2026-11-24",
  "published_videos": 12,
  "enough_data": true,
- "channel_median_views_per_day": 102.5,
+ "channel_median_views_per_day": 103.1,
  "top_videos": [
   {
    "id": "2026-11-20-gta6-vs-gta5-launch",
    "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 907,
+   "views": 908,
    "likes": 26,
    "comments": 0,
-   "views_per_day": 604.7,
-   "engagement": 0.0287,
+   "views_per_day": 605.3,
+   "engagement": 0.0286,
    "format": "versus",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -23,11 +23,11 @@
   {
    "id": "2026-11-20-gta6-vs-gta5-day-one-money",
    "title": "GTA 5 vs GTA 6: Day-One Money, Side by Side",
-   "views": 875,
+   "views": 878,
    "likes": 16,
    "comments": 0,
-   "views_per_day": 583.3,
-   "engagement": 0.0183,
+   "views_per_day": 585.3,
+   "engagement": 0.0182,
    "format": "versus",
    "theme": "neon_night",
    "length": "medium (35-45 s)",
@@ -39,11 +39,11 @@
   {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 1082,
-   "likes": 26,
+   "views": 1088,
+   "likes": 27,
    "comments": 3,
-   "views_per_day": 432.8,
-   "engagement": 0.0268,
+   "views_per_day": 435.2,
+   "engagement": 0.0276,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -72,11 +72,11 @@
   {
    "id": "2026-11-19-gta6-trailer-records",
    "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
-   "views": 581,
-   "likes": 10,
+   "views": 591,
+   "likes": 11,
    "comments": 0,
-   "views_per_day": 232.4,
-   "engagement": 0.0172,
+   "views_per_day": 236.4,
+   "engagement": 0.0186,
    "format": "list",
    "theme": "wanted_level",
    "length": "medium (35-45 s)",
@@ -141,37 +141,37 @@
   {
    "name": "sales",
    "videos": 4,
-   "median_views_per_day": 292.2,
+   "median_views_per_day": 293.2,
    "vs_channel": 2.85,
-   "engagement": 0.0092
+   "engagement": 0.0091
   },
   {
    "name": "history",
    "videos": 6,
-   "median_views_per_day": 238.4,
+   "median_views_per_day": 240.4,
    "vs_channel": 2.33,
-   "engagement": 0.0178
+   "engagement": 0.0184
   },
   {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 175.3,
-   "vs_channel": 1.71,
-   "engagement": 0.0135
+   "vs_channel": 1.7,
+   "engagement": 0.013
   },
   {
    "name": "characters",
    "videos": 3,
    "median_views_per_day": 175.3,
-   "vs_channel": 1.71,
+   "vs_channel": 1.7,
    "engagement": 0.0228
   },
   {
    "name": "trailers",
    "videos": 2,
-   "median_views_per_day": 116.8,
-   "vs_channel": 1.14,
-   "engagement": 0.0086
+   "median_views_per_day": 118.8,
+   "vs_channel": 1.15,
+   "engagement": 0.0093
   },
   {
    "name": "release",
@@ -185,23 +185,23 @@
   {
    "name": "versus",
    "videos": 2,
-   "median_views_per_day": 594.0,
-   "vs_channel": 5.8,
-   "engagement": 0.0235
+   "median_views_per_day": 595.3,
+   "vs_channel": 5.78,
+   "engagement": 0.0234
   },
   {
    "name": "spotlight",
    "videos": 2,
-   "median_views_per_day": 231.2,
+   "median_views_per_day": 233.0,
    "vs_channel": 2.26,
-   "engagement": 0.0202
+   "engagement": 0.0203
   },
   {
    "name": "list",
    "videos": 2,
-   "median_views_per_day": 116.8,
-   "vs_channel": 1.14,
-   "engagement": 0.0086
+   "median_views_per_day": 118.8,
+   "vs_channel": 1.15,
+   "engagement": 0.0093
   },
   {
    "name": "news",
@@ -215,30 +215,30 @@
   {
    "name": "wanted_level",
    "videos": 2,
-   "median_views_per_day": 418.6,
-   "vs_channel": 4.09,
-   "engagement": 0.0229
+   "median_views_per_day": 420.8,
+   "vs_channel": 4.08,
+   "engagement": 0.0236
   },
   {
    "name": "swamp_glow",
    "videos": 2,
    "median_views_per_day": 122.8,
-   "vs_channel": 1.2,
+   "vs_channel": 1.19,
    "engagement": 0.0054
   },
   {
    "name": "sunset_drive",
    "videos": 2,
    "median_views_per_day": 87.9,
-   "vs_channel": 0.86,
+   "vs_channel": 0.85,
    "engagement": 0.0114
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 29.6,
-   "vs_channel": 0.29,
-   "engagement": 0.0135
+   "median_views_per_day": 30.8,
+   "vs_channel": 0.3,
+   "engagement": 0.013
   },
   {
    "name": "neon_night",
@@ -253,8 +253,8 @@
    "name": "medium (35-45 s)",
    "videos": 9,
    "median_views_per_day": 175.3,
-   "vs_channel": 1.71,
-   "engagement": 0.0135
+   "vs_channel": 1.7,
+   "engagement": 0.013
   },
   {
    "name": "short (<35 s)",
