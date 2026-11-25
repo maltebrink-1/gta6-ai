@@ -2,15 +2,15 @@
  "generated": "2026-11-25",
  "published_videos": 16,
  "enough_data": true,
- "channel_median_views_per_day": 184.8,
+ "channel_median_views_per_day": 190.1,
  "top_videos": [
   {
    "id": "2026-11-22-every-gta-lead-before-lucia",
    "title": "Every GTA Lead Before Lucia and Jason",
-   "views": 1017,
+   "views": 1021,
    "likes": 19,
    "comments": 2,
-   "views_per_day": 678.0,
+   "views_per_day": 680.7,
    "engagement": 0.0206,
    "format": "list",
    "theme": "swamp_glow",
@@ -23,11 +23,11 @@
   {
    "id": "2026-11-21-gta6-wildlife",
    "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
-   "views": 795,
-   "likes": 14,
+   "views": 846,
+   "likes": 17,
    "comments": 0,
-   "views_per_day": 530.0,
-   "engagement": 0.0176,
+   "views_per_day": 564.0,
+   "engagement": 0.0201,
    "format": "spotlight",
    "theme": "swamp_glow",
    "length": "medium (35-45 s)",
@@ -135,50 +135,50 @@
   {
    "name": "world",
    "videos": 2,
-   "median_views_per_day": 426.1,
-   "vs_channel": 2.31,
-   "engagement": 0.0217
+   "median_views_per_day": 443.3,
+   "vs_channel": 2.33,
+   "engagement": 0.0229
   },
   {
    "name": "characters",
    "videos": 4,
-   "median_views_per_day": 232.9,
-   "vs_channel": 1.26,
+   "median_views_per_day": 233.1,
+   "vs_channel": 1.23,
    "engagement": 0.0217
-  },
-  {
-   "name": "history",
-   "videos": 8,
-   "median_views_per_day": 195.1,
-   "vs_channel": 1.06,
-   "engagement": 0.0191
   },
   {
    "name": "sales",
    "videos": 5,
-   "median_views_per_day": 190.0,
-   "vs_channel": 1.03,
+   "median_views_per_day": 201.3,
+   "vs_channel": 1.06,
    "engagement": 0.0175
+  },
+  {
+   "name": "history",
+   "videos": 8,
+   "median_views_per_day": 200.8,
+   "vs_channel": 1.06,
+   "engagement": 0.0191
   },
   {
    "name": "trailers",
    "videos": 3,
-   "median_views_per_day": 179.7,
-   "vs_channel": 0.97,
+   "median_views_per_day": 180.0,
+   "vs_channel": 0.95,
    "engagement": 0.0159
   },
   {
    "name": "release",
    "videos": 6,
-   "median_views_per_day": 166.8,
+   "median_views_per_day": 171.9,
    "vs_channel": 0.9,
-   "engagement": 0.0089
+   "engagement": 0.0088
   },
   {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 143.6,
-   "vs_channel": 0.78,
+   "vs_channel": 0.76,
    "engagement": 0.0159
   }
  ],
@@ -187,28 +187,28 @@
    "name": "versus",
    "videos": 3,
    "median_views_per_day": 365.6,
-   "vs_channel": 1.98,
+   "vs_channel": 1.92,
    "engagement": 0.0175
   },
   {
    "name": "spotlight",
    "videos": 3,
-   "median_views_per_day": 322.3,
-   "vs_channel": 1.74,
-   "engagement": 0.0176
+   "median_views_per_day": 322.6,
+   "vs_channel": 1.7,
+   "engagement": 0.0201
   },
   {
    "name": "timeline",
    "videos": 2,
-   "median_views_per_day": 195.1,
+   "median_views_per_day": 200.8,
    "vs_channel": 1.06,
-   "engagement": 0.0089
+   "engagement": 0.0088
   },
   {
    "name": "list",
    "videos": 3,
-   "median_views_per_day": 179.7,
-   "vs_channel": 0.97,
+   "median_views_per_day": 180.0,
+   "vs_channel": 0.95,
    "engagement": 0.0206
   },
   {
@@ -223,36 +223,36 @@
   {
    "name": "swamp_glow",
    "videos": 4,
-   "median_views_per_day": 365.1,
-   "vs_channel": 1.98,
-   "engagement": 0.0191
+   "median_views_per_day": 382.1,
+   "vs_channel": 2.01,
+   "engagement": 0.0204
   },
   {
    "name": "wanted_level",
    "videos": 3,
    "median_views_per_day": 328.0,
-   "vs_channel": 1.77,
+   "vs_channel": 1.73,
    "engagement": 0.0159
   },
   {
    "name": "sunset_drive",
    "videos": 3,
    "median_views_per_day": 143.6,
-   "vs_channel": 0.78,
-   "engagement": 0.007
+   "vs_channel": 0.76,
+   "engagement": 0.0066
   },
   {
    "name": "neon_night",
    "videos": 3,
    "median_views_per_day": 23.7,
-   "vs_channel": 0.13,
+   "vs_channel": 0.12,
    "engagement": 0.0227
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
    "median_views_per_day": 23.7,
-   "vs_channel": 0.13,
+   "vs_channel": 0.12,
    "engagement": 0.012
   }
  ],
@@ -260,15 +260,15 @@
   {
    "name": "medium (35-45 s)",
    "videos": 12,
-   "median_views_per_day": 184.8,
+   "median_views_per_day": 190.1,
    "vs_channel": 1.0,
-   "engagement": 0.0176
+   "engagement": 0.0188
   },
   {
    "name": "short (<35 s)",
    "videos": 4,
-   "median_views_per_day": 167.5,
-   "vs_channel": 0.91,
+   "median_views_per_day": 167.6,
+   "vs_channel": 0.88,
    "engagement": 0.0134
   }
  ],
