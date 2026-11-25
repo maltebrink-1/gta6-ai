@@ -2,7 +2,7 @@
  "generated": "2026-11-25",
  "published_videos": 16,
  "enough_data": true,
- "channel_median_views_per_day": 166.7,
+ "channel_median_views_per_day": 174.5,
  "top_videos": [
   {
    "id": "2026-11-22-every-gta-lead-before-lucia",
@@ -18,6 +18,37 @@
    "topics": [
     "characters",
     "history"
+   ]
+  },
+  {
+   "id": "2026-11-21-gta6-wildlife",
+   "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
+   "views": 604,
+   "likes": 11,
+   "comments": 0,
+   "views_per_day": 402.7,
+   "engagement": 0.0182,
+   "format": "spotlight",
+   "theme": "swamp_glow",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "world"
+   ]
+  },
+  {
+   "id": "2026-11-20-gta6-vs-gta5-launch",
+   "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
+   "views": 915,
+   "likes": 26,
+   "comments": 0,
+   "views_per_day": 366.0,
+   "engagement": 0.0284,
+   "format": "versus",
+   "theme": "wanted_level",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "sales"
    ]
   },
   {
@@ -37,44 +68,13 @@
    ]
   },
   {
-   "id": "2026-11-20-gta6-vs-gta5-launch",
-   "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 914,
-   "likes": 26,
-   "comments": 0,
-   "views_per_day": 365.6,
-   "engagement": 0.0284,
-   "format": "versus",
-   "theme": "wanted_level",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "history",
-    "sales"
-   ]
-  },
-  {
-   "id": "2026-11-21-gta6-wildlife",
-   "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
-   "views": 526,
-   "likes": 10,
-   "comments": 0,
-   "views_per_day": 350.7,
-   "engagement": 0.019,
-   "format": "spotlight",
-   "theme": "swamp_glow",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "world"
-   ]
-  },
-  {
    "id": "2026-11-19-meet-lucia-and-jason",
    "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
-   "views": 1125,
+   "views": 1127,
    "likes": 26,
    "comments": 3,
-   "views_per_day": 321.4,
-   "engagement": 0.0258,
+   "views_per_day": 322.0,
+   "engagement": 0.0257,
    "format": "spotlight",
    "theme": "ocean_breeze",
    "length": "short (<35 s)",
@@ -119,11 +119,11 @@
   {
    "id": "2026-11-20-gta6-soundtrack",
    "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
-   "views": 43,
+   "views": 44,
    "likes": 1,
    "comments": 0,
-   "views_per_day": 12.3,
-   "engagement": 0.0233,
+   "views_per_day": 12.6,
+   "engagement": 0.0227,
    "format": "news",
    "theme": "neon_night",
    "length": "short (<35 s)",
@@ -136,50 +136,50 @@
   {
    "name": "world",
    "videos": 2,
-   "median_views_per_day": 336.0,
-   "vs_channel": 2.02,
-   "engagement": 0.0224
+   "median_views_per_day": 362.4,
+   "vs_channel": 2.08,
+   "engagement": 0.022
   },
   {
    "name": "characters",
    "videos": 4,
-   "median_views_per_day": 232.5,
-   "vs_channel": 1.39,
+   "median_views_per_day": 232.8,
+   "vs_channel": 1.33,
    "engagement": 0.0218
   },
   {
    "name": "history",
    "videos": 8,
-   "median_views_per_day": 189.8,
-   "vs_channel": 1.14,
+   "median_views_per_day": 189.9,
+   "vs_channel": 1.09,
    "engagement": 0.0192
   },
   {
    "name": "trailers",
    "videos": 3,
-   "median_views_per_day": 154.0,
-   "vs_channel": 0.92,
+   "median_views_per_day": 169.3,
+   "vs_channel": 0.97,
    "engagement": 0.0159
   },
   {
    "name": "sales",
    "videos": 5,
-   "median_views_per_day": 154.0,
-   "vs_channel": 0.92,
+   "median_views_per_day": 169.3,
+   "vs_channel": 0.97,
    "engagement": 0.0175
   },
   {
    "name": "release",
    "videos": 6,
-   "median_views_per_day": 148.8,
-   "vs_channel": 0.89,
-   "engagement": 0.0098
+   "median_views_per_day": 156.4,
+   "vs_channel": 0.9,
+   "engagement": 0.0094
   },
   {
    "name": "reviews",
    "videos": 5,
    "median_views_per_day": 143.6,
-   "vs_channel": 0.86,
+   "vs_channel": 0.82,
    "engagement": 0.0159
   }
  ],
@@ -188,66 +188,66 @@
    "name": "versus",
    "videos": 3,
    "median_views_per_day": 365.6,
-   "vs_channel": 2.19,
+   "vs_channel": 2.1,
    "engagement": 0.0175
   },
   {
    "name": "spotlight",
    "videos": 3,
-   "median_views_per_day": 321.4,
-   "vs_channel": 1.93,
-   "engagement": 0.019
-  },
-  {
-   "name": "list",
-   "videos": 3,
-   "median_views_per_day": 179.4,
-   "vs_channel": 1.08,
-   "engagement": 0.0208
+   "median_views_per_day": 322.0,
+   "vs_channel": 1.85,
+   "engagement": 0.0182
   },
   {
    "name": "timeline",
    "videos": 2,
-   "median_views_per_day": 177.1,
+   "median_views_per_day": 184.8,
    "vs_channel": 1.06,
-   "engagement": 0.0098
+   "engagement": 0.0094
+  },
+  {
+   "name": "list",
+   "videos": 3,
+   "median_views_per_day": 179.7,
+   "vs_channel": 1.03,
+   "engagement": 0.0208
   },
   {
    "name": "news",
    "videos": 3,
-   "median_views_per_day": 12.3,
+   "median_views_per_day": 12.6,
    "vs_channel": 0.07,
-   "engagement": 0.0228
+   "engagement": 0.0227
   }
  ],
  "themes": [
   {
    "name": "wanted_level",
    "videos": 3,
-   "median_views_per_day": 290.7,
-   "vs_channel": 1.74,
+   "median_views_per_day": 312.7,
+   "vs_channel": 1.79,
    "engagement": 0.0159
   },
   {
    "name": "swamp_glow",
    "videos": 4,
-   "median_views_per_day": 275.4,
-   "vs_channel": 1.65,
-   "engagement": 0.0199
+   "median_views_per_day": 301.4,
+   "vs_channel": 1.73,
+   "engagement": 0.0195
   },
   {
    "name": "sunset_drive",
    "videos": 3,
    "median_views_per_day": 143.6,
-   "vs_channel": 0.86,
-   "engagement": 0.0087
+   "vs_channel": 0.82,
+   "engagement": 0.0079
   },
   {
    "name": "neon_night",
    "videos": 3,
    "median_views_per_day": 23.7,
    "vs_channel": 0.14,
-   "engagement": 0.0233
+   "engagement": 0.0227
   },
   {
    "name": "ocean_breeze",
@@ -261,16 +261,16 @@
   {
    "name": "medium (35-45 s)",
    "videos": 12,
-   "median_views_per_day": 166.7,
+   "median_views_per_day": 174.5,
    "vs_channel": 1.0,
-   "engagement": 0.0183
+   "engagement": 0.0179
   },
   {
    "name": "short (<35 s)",
    "videos": 4,
-   "median_views_per_day": 151.5,
-   "vs_channel": 0.91,
-   "engagement": 0.014
+   "median_views_per_day": 162.7,
+   "vs_channel": 0.93,
+   "engagement": 0.0135
   }
  ],
  "advice": "Lean into topics world, characters and formats versus, spotlight for 3 of 4 scripts; use the 4th for something new."
