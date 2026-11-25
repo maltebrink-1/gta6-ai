@@ -21,6 +21,22 @@
    ]
   },
   {
+   "id": "2026-11-22-lucia-a-first-for-gta",
+   "title": "Why Lucia Is a First for GTA",
+   "views": 631,
+   "likes": 19,
+   "comments": 0,
+   "views_per_day": 631.0,
+   "engagement": 0.0301,
+   "format": "spotlight",
+   "theme": "sunset_drive",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "characters",
+    "history"
+   ]
+  },
+  {
    "id": "2026-11-21-gta6-wildlife",
    "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
    "views": 932,
@@ -33,22 +49,6 @@
    "length": "medium (35-45 s)",
    "topics": [
     "world"
-   ]
-  },
-  {
-   "id": "2026-11-22-lucia-a-first-for-gta",
-   "title": "Why Lucia Is a First for GTA",
-   "views": 612,
-   "likes": 18,
-   "comments": 0,
-   "views_per_day": 612.0,
-   "engagement": 0.0294,
-   "format": "spotlight",
-   "theme": "sunset_drive",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "characters",
-    "history"
    ]
   },
   {
@@ -155,6 +155,13 @@
    "engagement": 0.0204
   },
   {
+   "name": "sales",
+   "videos": 6,
+   "median_views_per_day": 183.7,
+   "vs_channel": 0.97,
+   "engagement": 0.0233
+  },
+  {
    "name": "trailers",
    "videos": 3,
    "median_views_per_day": 180.0,
@@ -162,47 +169,40 @@
    "engagement": 0.0175
   },
   {
-   "name": "sales",
-   "videos": 6,
-   "median_views_per_day": 169.7,
-   "vs_channel": 0.89,
-   "engagement": 0.0226
-  },
-  {
    "name": "release",
    "videos": 8,
-   "median_views_per_day": 145.3,
-   "vs_channel": 0.76,
+   "median_views_per_day": 149.8,
+   "vs_channel": 0.79,
    "engagement": 0.0112
   },
   {
    "name": "awards",
    "videos": 2,
-   "median_views_per_day": 127.5,
-   "vs_channel": 0.67,
-   "engagement": 0.0139
+   "median_views_per_day": 146.0,
+   "vs_channel": 0.77,
+   "engagement": 0.0179
   },
   {
    "name": "reviews",
    "videos": 6,
-   "median_views_per_day": 125.8,
-   "vs_channel": 0.66,
+   "median_views_per_day": 139.8,
+   "vs_channel": 0.74,
    "engagement": 0.0202
   },
   {
    "name": "music",
    "videos": 2,
-   "median_views_per_day": 60.5,
-   "vs_channel": 0.32,
-   "engagement": 0.025
+   "median_views_per_day": 74.5,
+   "vs_channel": 0.39,
+   "engagement": 0.0258
   }
  ],
  "formats": [
   {
    "name": "spotlight",
    "videos": 4,
-   "median_views_per_day": 467.6,
-   "vs_channel": 2.46,
+   "median_views_per_day": 472.2,
+   "vs_channel": 2.48,
    "engagement": 0.0229
   },
   {
@@ -220,6 +220,13 @@
    "engagement": 0.0115
   },
   {
+   "name": "qna",
+   "videos": 2,
+   "median_views_per_day": 181.9,
+   "vs_channel": 0.96,
+   "engagement": 0.0083
+  },
+  {
    "name": "list",
    "videos": 3,
    "median_views_per_day": 180.0,
@@ -227,18 +234,11 @@
    "engagement": 0.0204
   },
   {
-   "name": "qna",
-   "videos": 2,
-   "median_views_per_day": 120.0,
-   "vs_channel": 0.63,
-   "engagement": 0.0084
-  },
-  {
    "name": "explainer",
    "videos": 2,
-   "median_views_per_day": 85.3,
-   "vs_channel": 0.45,
-   "engagement": 0.0181
+   "median_views_per_day": 89.8,
+   "vs_channel": 0.47,
+   "engagement": 0.0213
   },
   {
    "name": "news",
@@ -266,9 +266,9 @@
   {
    "name": "sunset_drive",
    "videos": 6,
-   "median_views_per_day": 189.2,
-   "vs_channel": 1.0,
-   "engagement": 0.0142
+   "median_views_per_day": 193.7,
+   "vs_channel": 1.02,
+   "engagement": 0.014
   },
   {
    "name": "neon_night",
@@ -296,9 +296,9 @@
   {
    "name": "short (<35 s)",
    "videos": 6,
-   "median_views_per_day": 127.5,
-   "vs_channel": 0.67,
-   "engagement": 0.0129
+   "median_views_per_day": 146.0,
+   "vs_channel": 0.77,
+   "engagement": 0.0143
   }
  ],
  "advice": "Lean into topics world, characters and formats spotlight, versus for 3 of 4 scripts; use the 4th for something new."
