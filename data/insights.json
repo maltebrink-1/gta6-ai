@@ -2,15 +2,15 @@
  "generated": "2026-11-25",
  "published_videos": 20,
  "enough_data": true,
- "channel_median_views_per_day": 188.0,
+ "channel_median_views_per_day": 190.1,
  "top_videos": [
   {
    "id": "2026-11-22-every-gta-lead-before-lucia",
    "title": "Every GTA Lead Before Lucia and Jason",
-   "views": 1028,
+   "views": 1029,
    "likes": 19,
    "comments": 2,
-   "views_per_day": 685.3,
+   "views_per_day": 686.0,
    "engagement": 0.0204,
    "format": "list",
    "theme": "swamp_glow",
@@ -38,11 +38,11 @@
   {
    "id": "2026-11-22-lucia-a-first-for-gta",
    "title": "Why Lucia Is a First for GTA",
-   "views": 502,
-   "likes": 14,
+   "views": 612,
+   "likes": 18,
    "comments": 0,
-   "views_per_day": 502.0,
-   "engagement": 0.0279,
+   "views_per_day": 612.0,
+   "engagement": 0.0294,
    "format": "spotlight",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -54,10 +54,10 @@
   {
    "id": "2026-11-20-gta6-vs-gta5-launch",
    "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 958,
+   "views": 959,
    "likes": 28,
    "comments": 0,
-   "views_per_day": 383.2,
+   "views_per_day": 383.6,
    "engagement": 0.0292,
    "format": "versus",
    "theme": "wanted_level",
@@ -119,11 +119,11 @@
   {
    "id": "2026-11-20-gta6-soundtrack",
    "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
-   "views": 44,
+   "views": 45,
    "likes": 1,
    "comments": 0,
-   "views_per_day": 12.6,
-   "engagement": 0.0227,
+   "views_per_day": 12.9,
+   "engagement": 0.0222,
    "format": "news",
    "theme": "neon_night",
    "length": "short (<35 s)",
@@ -137,101 +137,101 @@
    "name": "world",
    "videos": 2,
    "median_views_per_day": 472.2,
-   "vs_channel": 2.51,
+   "vs_channel": 2.48,
    "engagement": 0.0229
   },
   {
    "name": "characters",
    "videos": 5,
    "median_views_per_day": 323.1,
-   "vs_channel": 1.72,
+   "vs_channel": 1.7,
    "engagement": 0.0228
   },
   {
    "name": "history",
    "videos": 9,
-   "median_views_per_day": 228.0,
-   "vs_channel": 1.21,
+   "median_views_per_day": 231.3,
+   "vs_channel": 1.22,
    "engagement": 0.0204
   },
   {
    "name": "trailers",
    "videos": 3,
    "median_views_per_day": 180.0,
-   "vs_channel": 0.96,
+   "vs_channel": 0.95,
    "engagement": 0.0175
   },
   {
    "name": "sales",
    "videos": 6,
-   "median_views_per_day": 161.5,
-   "vs_channel": 0.86,
-   "engagement": 0.0192
+   "median_views_per_day": 169.7,
+   "vs_channel": 0.89,
+   "engagement": 0.0226
   },
   {
    "name": "release",
    "videos": 8,
    "median_views_per_day": 145.3,
-   "vs_channel": 0.77,
-   "engagement": 0.0113
+   "vs_channel": 0.76,
+   "engagement": 0.0112
   },
   {
    "name": "awards",
    "videos": 2,
-   "median_views_per_day": 121.0,
-   "vs_channel": 0.64,
-   "engagement": 0.0106
+   "median_views_per_day": 127.5,
+   "vs_channel": 0.67,
+   "engagement": 0.0139
   },
   {
    "name": "reviews",
    "videos": 6,
-   "median_views_per_day": 119.3,
-   "vs_channel": 0.63,
-   "engagement": 0.0193
+   "median_views_per_day": 125.8,
+   "vs_channel": 0.66,
+   "engagement": 0.0202
   },
   {
    "name": "music",
    "videos": 2,
-   "median_views_per_day": 53.8,
-   "vs_channel": 0.29,
-   "engagement": 0.0219
+   "median_views_per_day": 60.5,
+   "vs_channel": 0.32,
+   "engagement": 0.025
   }
  ],
  "formats": [
   {
    "name": "spotlight",
    "videos": 4,
-   "median_views_per_day": 412.6,
-   "vs_channel": 2.19,
+   "median_views_per_day": 467.6,
+   "vs_channel": 2.46,
    "engagement": 0.0229
   },
   {
    "name": "versus",
    "videos": 3,
    "median_views_per_day": 368.0,
-   "vs_channel": 1.96,
+   "vs_channel": 1.94,
    "engagement": 0.0174
   },
   {
    "name": "timeline",
    "videos": 3,
    "median_views_per_day": 200.2,
-   "vs_channel": 1.06,
-   "engagement": 0.0117
+   "vs_channel": 1.05,
+   "engagement": 0.0115
   },
   {
    "name": "list",
    "videos": 3,
    "median_views_per_day": 180.0,
-   "vs_channel": 0.96,
+   "vs_channel": 0.95,
    "engagement": 0.0204
   },
   {
    "name": "qna",
    "videos": 2,
-   "median_views_per_day": 99.5,
-   "vs_channel": 0.53,
-   "engagement": 0.0102
+   "median_views_per_day": 120.0,
+   "vs_channel": 0.63,
+   "engagement": 0.0084
   },
   {
    "name": "explainer",
@@ -243,45 +243,45 @@
   {
    "name": "news",
    "videos": 3,
-   "median_views_per_day": 12.6,
+   "median_views_per_day": 12.9,
    "vs_channel": 0.07,
-   "engagement": 0.0227
+   "engagement": 0.0222
   }
  ],
  "themes": [
   {
    "name": "wanted_level",
    "videos": 3,
-   "median_views_per_day": 355.3,
-   "vs_channel": 1.89,
+   "median_views_per_day": 361.3,
+   "vs_channel": 1.9,
    "engagement": 0.0175
   },
   {
    "name": "swamp_glow",
    "videos": 5,
    "median_views_per_day": 200.2,
-   "vs_channel": 1.06,
+   "vs_channel": 1.05,
    "engagement": 0.0204
   },
   {
    "name": "sunset_drive",
    "videos": 6,
-   "median_views_per_day": 171.5,
-   "vs_channel": 0.91,
-   "engagement": 0.0161
+   "median_views_per_day": 189.2,
+   "vs_channel": 1.0,
+   "engagement": 0.0142
   },
   {
    "name": "neon_night",
    "videos": 3,
    "median_views_per_day": 23.7,
-   "vs_channel": 0.13,
-   "engagement": 0.0227
+   "vs_channel": 0.12,
+   "engagement": 0.0222
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
    "median_views_per_day": 23.7,
-   "vs_channel": 0.13,
+   "vs_channel": 0.12,
    "engagement": 0.012
   }
  ],
@@ -289,16 +289,16 @@
   {
    "name": "medium (35-45 s)",
    "videos": 14,
-   "median_views_per_day": 198.1,
-   "vs_channel": 1.05,
-   "engagement": 0.0198
+   "median_views_per_day": 215.8,
+   "vs_channel": 1.13,
+   "engagement": 0.0184
   },
   {
    "name": "short (<35 s)",
    "videos": 6,
-   "median_views_per_day": 121.0,
-   "vs_channel": 0.64,
-   "engagement": 0.0125
+   "median_views_per_day": 127.5,
+   "vs_channel": 0.67,
+   "engagement": 0.0129
   }
  ],
  "advice": "Lean into topics world, characters and formats spotlight, versus for 3 of 4 scripts; use the 4th for something new."
