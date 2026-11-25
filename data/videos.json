@@ -740,6 +740,169 @@
       "theme": "swamp_glow",
       "title": "Every GTA Lead Before Lucia and Jason",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-22-gta6-game-awards-explained": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-25T10:59:55+00:00",
+      "duration": 29.26,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_game_awards_2026",
+        "gta6_release_date"
+      ],
+      "format": "explainer",
+      "id": "2026-11-22-gta6-game-awards-explained",
+      "platforms": {
+        "youtube": {
+          "id": "ny5p8Aqh59s",
+          "privacy": "public",
+          "published_at": "2026-11-25T11:06:54+00:00",
+          "url": "https://youtube.com/shorts/ny5p8Aqh59s"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 113.4,
+      "rendered_at": "2026-11-25T10:59:55+00:00",
+      "review": {
+        "decision": null,
+        "issue": 17,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-gta6-game-awards-explained-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-gta6-game-awards-explained.mp4"
+      },
+      "script": "content/scripts/2026-11-22-gta6-game-awards-explained.yaml",
+      "status": "published",
+      "theme": "sunset_drive",
+      "title": "GTA 6 Leads The Game Awards. Here's What It's Up For",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-22-gta6-launch-week-timeline": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-25T11:02:00+00:00",
+      "duration": 33.11,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_game_awards_2026",
+        "gta6_release_date",
+        "gta6_metacritic_99",
+        "gta6_day_one_sales",
+        "gta6_justice_score"
+      ],
+      "format": "timeline",
+      "id": "2026-11-22-gta6-launch-week-timeline",
+      "platforms": {
+        "youtube": {
+          "id": "9jNGXHu3kiA",
+          "privacy": "scheduled",
+          "published_at": "2026-11-25T11:06:56+00:00",
+          "scheduled_for": "2026-11-25T11:36:54Z",
+          "url": "https://youtube.com/shorts/9jNGXHu3kiA"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 118.5,
+      "rendered_at": "2026-11-25T11:02:00+00:00",
+      "review": {
+        "decision": null,
+        "issue": 18,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-gta6-launch-week-timeline-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-gta6-launch-week-timeline.mp4"
+      },
+      "script": "content/scripts/2026-11-22-gta6-launch-week-timeline.yaml",
+      "status": "published",
+      "theme": "swamp_glow",
+      "title": "GTA 6's Wildest Few Weeks, Date by Date",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-22-lucia-a-first-for-gta": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-25T11:04:25+00:00",
+      "duration": 38.36,
+      "engine": "kokoro",
+      "fact_ids": [
+        "lucia_first_female_lead",
+        "gta_past_protagonists",
+        "gta6_protagonists",
+        "lucia_backstory"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-22-lucia-a-first-for-gta",
+      "platforms": {
+        "youtube": {
+          "id": "3UBE4iEDqzo",
+          "privacy": "scheduled",
+          "published_at": "2026-11-25T11:06:58+00:00",
+          "scheduled_for": "2026-11-25T12:06:54Z",
+          "url": "https://youtube.com/shorts/3UBE4iEDqzo"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 137.8,
+      "rendered_at": "2026-11-25T11:04:25+00:00",
+      "review": {
+        "decision": null,
+        "issue": 19,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-lucia-a-first-for-gta-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-22-lucia-a-first-for-gta.mp4"
+      },
+      "script": "content/scripts/2026-11-22-lucia-a-first-for-gta.yaml",
+      "status": "published",
+      "theme": "sunset_drive",
+      "title": "Why Lucia Is a First for GTA",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-23-gta6-first-patch-qna": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-25T11:06:48+00:00",
+      "duration": 36.74,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_first_patch"
+      ],
+      "format": "qna",
+      "id": "2026-11-23-gta6-first-patch-qna",
+      "platforms": {
+        "youtube": {
+          "id": "5ly2ZPZ-WuM",
+          "privacy": "scheduled",
+          "published_at": "2026-11-25T11:07:00+00:00",
+          "scheduled_for": "2026-11-25T12:36:54Z",
+          "url": "https://youtube.com/shorts/5ly2ZPZ-WuM"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 136.8,
+      "rendered_at": "2026-11-25T11:06:48+00:00",
+      "review": {
+        "decision": null,
+        "issue": 20,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-gta6-first-patch-qna-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-gta6-first-patch-qna.mp4"
+      },
+      "script": "content/scripts/2026-11-23-gta6-first-patch-qna.yaml",
+      "status": "published",
+      "theme": "sunset_drive",
+      "title": "GTA 6's First Patch Is Here: What Does It Fix?",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
