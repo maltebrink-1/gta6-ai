@@ -1,0 +1,33 @@
+id: 2026-11-25-gta6-awards-season-timeline
+status: ready
+created: '2026-11-25'
+author: claude
+format: timeline
+title: "GTA 6's Awards Season, Date by Date"
+hook_text: GTA 6 AWARDS SEASON
+theme: ocean_breeze
+lines:
+- text: GTA 6's biggest night might still be ahead of it.
+  kind: hook
+- text: November 17th. The Game Awards nominees drop, and GTA 6 gets eight nominations, the most of any game.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: stat, big: EIGHT, small: GAME AWARDS NOMINATIONS}
+- text: That includes Game of the Year, Best Narrative, and Best Performance for Manni L. Perez.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+- text: November 19th. GTA 6 launches, and the credits list Perez as Lucia.
+  kind: claim
+  facts: [gta6_release_date, gta6_lead_actors]
+  card: {type: text, big: NOV 19, small: LAUNCH DAY}
+- text: December 10th. The winners are revealed live.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: text, big: DEC 10, small: WINNERS REVEALED}
+- text: My bet? Keep your eye on Best Performance, because Lucia carries this story.
+  kind: opinion
+- text: How many of the eight will it win? Drop your guess and follow for more GTA 6.
+  kind: cta
+  facts: [gta6_game_awards_2026]
+description: From eight Game Awards nominations to launch day to the December 10 show, here's GTA 6's awards season so far.
+tags: [GTA 6, The Game Awards, GTA 6 Game of the Year, Manni L. Perez, GTA 6 awards, GTA VI, Rockstar Games]

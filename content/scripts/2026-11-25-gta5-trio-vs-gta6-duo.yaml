@@ -1,0 +1,32 @@
+id: 2026-11-25-gta5-trio-vs-gta6-duo
+status: ready
+created: '2026-11-25'
+author: claude
+format: versus
+title: "GTA 5's Trio vs GTA 6's Duo: Which Lineup Wins?"
+hook_text: TRIO VS DUO
+theme: sunset_drive
+lines:
+- text: Michael, Franklin and Trevor, meet your replacements.
+  kind: hook
+  facts: [gta_past_protagonists]
+- text: GTA 5 split its story between Michael, Franklin and Trevor.
+  kind: claim
+  facts: [gta_past_protagonists]
+  card: {type: text, big: GTA 5, small: MICHAEL · FRANKLIN · TREVOR}
+- text: GTA 6 goes with a duo instead, Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+  card: {type: versus, big: TRIO VS DUO, small: GTA 5 VS GTA 6}
+- text: Rockstar says Lucia's dad taught her to fight, and Rockstar describes Jason as an Army veteran working for drug runners in the Keys.
+  kind: claim
+  facts: [lucia_backstory, jason_backstory]
+- text: And Lucia is the first female lead in a mainline GTA since the series went 3D.
+  kind: claim
+  facts: [lucia_first_female_lead]
+- text: The trio had chaos. The duo has chemistry, and that might hit harder.
+  kind: opinion
+- text: Trio or duo, which lineup wins? Pick a side below and follow for more GTA 6.
+  kind: cta
+description: GTA 5 had Michael, Franklin and Trevor. GTA 6 has Lucia and Jason. Here's how the two lineups compare.
+tags: [GTA 6, GTA 5, Lucia, Jason, Michael Franklin Trevor, GTA 6 vs GTA 5, GTA characters, GTA VI, Rockstar Games]

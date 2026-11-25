@@ -1,0 +1,33 @@
+id: 2026-11-25-gta6-car-theft-old-vs-new
+status: ready
+created: '2026-11-25'
+author: claude
+format: versus
+title: "Old GTA vs GTA 6: Stealing a Car Just Got Harder"
+hook_text: NO MORE EASY HOTWIRE
+theme: swamp_glow
+lines:
+- text: Grand theft auto just got a lot less automatic.
+  kind: hook
+- text: In GTA 6, you're stealing cars across Leonida, Rockstar's take on Florida.
+  kind: claim
+  facts: [gta6_setting, leonida_is_florida]
+- text: But Rockstar's Rob Nelson told IGN the old one-button hotwire is gone.
+  kind: claim
+  facts: [gta6_car_theft]
+  card: {type: versus, big: OLD VS NEW, small: ONE BUTTON VS THE RIGHT TOOL}
+- text: Launch guides say cars with alarms need a Slim Jim, and keyless cars need a Key Cloner just to start.
+  kind: claim
+  facts: [gta6_car_theft]
+  card: {type: text, big: SLIM JIM · KEY CLONER, small: NEW CAR THEFT TOOLS}
+- text: And some stolen cars even carry trackers, so the getaway isn't over when you drive off.
+  kind: claim
+  facts: [gta6_car_theft]
+- text: Old GTA was grab and go. GTA 6 wants you to plan the heist, even for a sports car.
+  kind: opinion
+- text: Honestly? I like it. Every steal feels like a mini mission now.
+  kind: opinion
+- text: Upgrade or downgrade? Vote in the comments and follow for more GTA 6.
+  kind: cta
+description: GTA 6 drops the classic one-button hotwire. Here's how stealing cars works now, with Slim Jims, Key Cloners and trackers.
+tags: [GTA 6, GTA 6 car theft, GTA 6 key cloner, GTA 6 slim jim, GTA 6 cars, Leonida, GTA VI, Rockstar Games]

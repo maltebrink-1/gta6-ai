@@ -1,0 +1,35 @@
+id: 2026-11-25-the-actors-behind-lucia-and-jason
+status: ready
+created: '2026-11-25'
+author: claude
+format: spotlight
+title: "Meet the Real Actors Behind Lucia and Jason"
+hook_text: WHO PLAYS LUCIA?
+theme: wanted_level
+lines:
+- text: You've met Lucia and Jason. Now meet the people playing them.
+  kind: hook
+  facts: [gta6_protagonists]
+- text: GTA 6's two playable leads are Lucia Caminos and Jason Duval.
+  kind: claim
+  facts: [gta6_protagonists]
+- text: The launch-day credits list Manni L. Perez as Lucia and Dylan Rourke as Jason.
+  kind: claim
+  facts: [gta6_lead_actors]
+  card: {type: versus, big: PEREZ & ROURKE, small: LUCIA · JASON}
+- text: And on November 19th, launch day, the two actors confirmed their roles in a joint statement.
+  kind: claim
+  facts: [gta6_lead_actors]
+- text: Perez is already in the awards conversation, with a Best Performance nomination at The Game Awards.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+  card: {type: text, big: BEST PERFORMANCE, small: NOMINEE · MANNI L. PEREZ}
+- text: Winners are revealed on December 10th.
+  kind: claim
+  facts: [gta6_game_awards_2026]
+- text: After years of guessing, it's nice to finally put real names to these two.
+  kind: opinion
+- text: Which performance hooked you more, Lucia or Jason? Comment below and follow for more GTA 6.
+  kind: cta
+description: GTA 6's credits name Manni L. Perez as Lucia Caminos and Dylan Rourke as Jason Duval, and both actors confirmed their roles on launch day.
+tags: [GTA 6, Lucia, Jason, Manni L. Perez, Dylan Rourke, GTA 6 cast, GTA 6 actors, GTA VI, Rockstar Games]

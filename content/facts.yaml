@@ -753,3 +753,49 @@ facts:
         publisher: Northeast Times
       - url: https://www.player.one/gta-6-digital-launch-set-midnight-worldwide-fans-already-plan-new-zealand-location-hack-164071
         publisher: Player.One
+
+  # ── Cast & gameplay systems (added 2026-11-25) ─────────────────────────────
+  - id: gta6_lead_actors
+    claim: "GTA VI's launch-day credits list Manni L. Perez as Lucia Caminos and Dylan Rourke as Jason Duval, and the two actors publicly confirmed their roles in a joint statement on launch day, November 19, 2026."
+    say:
+      - "The credits list Manni L. Perez as Lucia and Dylan Rourke as Jason."
+      - "On launch day, the two actors confirmed their roles in a joint statement."
+    status: confirmed
+    category: characters
+    as_of: 2026-11-25
+    recheck_days: 365
+    sources:
+      - url: https://www.notebookcheck.net/GTA-6-credits-confirm-Dylan-Rourke-as-Jason-Duval-as-both-leads-go-public-on-launch-day.1454738.0.html
+        publisher: Notebookcheck
+      - url: https://www.complex.com/pop-culture/a/tracewilliamcowen/grand-theft-auto-vi-jason-lucia-actors
+        publisher: Complex
+      - url: https://www.wfla.com/news/sarasota-county/2-grand-theft-auto-vi-voice-actors-revealed-including-sarasota-native-who-are-they/amp/
+        publisher: WFLA
+      - url: https://www.gtaboom.com/the-gta-6-actors-behind-jason-and-lucia-just-revealed-themselves-5020
+        publisher: GTA BOOM
+      - url: https://www.keengamer.com/articles/news/rockstar-reveals-grand-theft-auto-vis-full-cast-with-dylan-rourke-as-jason/
+        publisher: KeenGamer
+
+  - id: gta6_car_theft
+    claim: "Rockstar North co-studio head Rob Nelson told IGN that GTA VI drops the classic one-button hotwire, and some cars need specific tools: launch guides report that a Slim Jim opens cars with alarms, keyless cars need a Key Cloner to start, and some stolen cars carry trackers."
+    say:
+      - "Rockstar's Rob Nelson told IGN the old one-button hotwire is gone."
+      - "Cars with alarms need a Slim Jim, and keyless cars need a Key Cloner to start."
+      - "Some stolen cars even carry trackers."
+    status: confirmed
+    category: world
+    as_of: 2026-11-25
+    recheck_days: 90
+    sources:
+      - url: https://www.gamesradar.com/games/grand-theft-auto/rockstar-says-gta-6-wont-let-you-magically-hotwire-every-car-you-acquire-certain-tools-to-get-into-them/
+        publisher: GamesRadar+
+      - url: https://kotaku.com/for-the-first-time-in-25-years-gta-6-will-make-stealing-cars-hard-2000729419
+        publisher: Kotaku
+      - url: https://www.pcgamer.com/games/grand-theft-auto/gta-6-clone-keys/
+        publisher: PC Gamer
+      - url: https://www.pcgamer.com/games/grand-theft-auto/gta-6-slim-jim/
+        publisher: PC Gamer
+      - url: https://www.shacknews.com/article/151427/disable-vehicle-trackers-gta6
+        publisher: Shacknews
+      - url: https://www.destructoid.com/how-to-get-the-key-cloner-and-steal-any-car-in-gta-6/
+        publisher: Destructoid
