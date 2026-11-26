@@ -23,11 +23,11 @@
   {
    "id": "2026-11-23-gta6-first-patch-qna",
    "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 772,
+   "views": 844,
    "likes": 11,
    "comments": 0,
-   "views_per_day": 514.7,
-   "engagement": 0.0142,
+   "views_per_day": 562.7,
+   "engagement": 0.013,
    "format": "qna",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -205,18 +205,18 @@
    "engagement": 0.019
   },
   {
+   "name": "qna",
+   "videos": 2,
+   "median_views_per_day": 282.5,
+   "vs_channel": 1.95,
+   "engagement": 0.0065
+  },
+  {
    "name": "versus",
    "videos": 3,
    "median_views_per_day": 262.9,
    "vs_channel": 1.82,
    "engagement": 0.0174
-  },
-  {
-   "name": "qna",
-   "videos": 2,
-   "median_views_per_day": 258.5,
-   "vs_channel": 1.78,
-   "engagement": 0.0071
   },
   {
    "name": "timeline",
@@ -251,8 +251,8 @@
   {
    "name": "wanted_level",
    "videos": 3,
-   "median_views_per_day": 221.2,
-   "vs_channel": 1.53,
+   "median_views_per_day": 226.4,
+   "vs_channel": 1.56,
    "engagement": 0.0175
   },
   {
@@ -267,7 +267,7 @@
    "videos": 6,
    "median_views_per_day": 135.6,
    "vs_channel": 0.94,
-   "engagement": 0.0124
+   "engagement": 0.0118
   },
   {
    "name": "neon_night",
@@ -297,8 +297,8 @@
    "videos": 6,
    "median_views_per_day": 126.7,
    "vs_channel": 0.87,
-   "engagement": 0.0116
+   "engagement": 0.0115
   }
  ],
- "advice": "Lean into topics world, characters and formats spotlight, versus for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics world, characters and formats spotlight, qna for 3 of 4 scripts; use the 4th for something new."
 }
