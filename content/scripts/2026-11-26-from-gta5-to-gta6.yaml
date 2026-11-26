@@ -1,0 +1,36 @@
+id: 2026-11-26-from-gta5-to-gta6
+status: ready
+created: '2026-11-26'
+author: claude
+format: timeline
+title: "From GTA 5 to GTA 6: The Long Wait, Date by Date"
+hook_text: THE LONGEST WAIT
+theme: wanted_level
+lines:
+- text: The wait between GTA 5 and GTA 6 felt endless. Here's why.
+  kind: hook
+- text: September 2013. GTA 5 sells 11.21 million copies in 24 hours, a Guinness World Record.
+  kind: claim
+  facts: [gta5_24h_record]
+  card: {type: stat, big: 11.21M, small: GTA 5 · FIRST 24 HOURS}
+- text: April 2015. GTA 5 finally comes to PC.
+  kind: claim
+  facts: [gta5_pc_gap]
+- text: December 2023. GTA 6's first trailer gets over 90 million YouTube views in 24 hours.
+  kind: claim
+  facts: [trailer1_record]
+- text: It was aimed at 2025, then delayed to May 26th, 2026, then again to November 19th.
+  kind: claim
+  facts: [gta6_delays]
+  card: {type: text, big: DELAYED TWICE, small: 2025 → MAY 2026 → NOV 2026}
+- text: Meanwhile, Take-Two says GTA 5 kept selling, past 230 million units.
+  kind: claim
+  facts: [gta5_sales]
+- text: November 19th, 2026. GTA 6 is finally out.
+  kind: claim
+  facts: [gta6_release_date]
+  card: {type: text, big: NOV 19 2026, small: THE WAIT IS OVER}
+- text: Was the wait worth it? Vote below and follow for more GTA 6.
+  kind: cta
+description: From GTA 5's record 2013 launch to two GTA 6 delays and the November 19, 2026 release, here's the long wait, date by date.
+tags: [GTA 6, GTA 5, GTA 6 delay, GTA history, GTA 6 release date, GTA VI, Rockstar Games]

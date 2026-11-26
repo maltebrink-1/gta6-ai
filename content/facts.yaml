@@ -67,9 +67,13 @@ facts:
       - "And no, Rockstar still hasn't announced a PC release date."
     status: confirmed
     category: release
-    as_of: 2026-11-19
+    as_of: 2026-11-26        # re-verified 2026-11-26: still no PC date; Take-Two says PC news will come from Rockstar
     recheck_days: 7          # changes fast — must be re-verified weekly
     sources:
+      - url: https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html
+        publisher: TweakTown
+      - url: https://www.pcgamer.com/games/grand-theft-auto/gta-6-pc-release-date/
+        publisher: PC Gamer
       - url: https://allthings.how/gta-6-release-date/
         publisher: AllThings.How
       - url: https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html
@@ -132,9 +136,14 @@ facts:
       - "It launched with a 99 on Metacritic. That ties the highest score the site has ever given."
     status: confirmed
     category: reviews
-    as_of: 2026-11-19
+    as_of: 2026-11-26        # re-verified 2026-11-26: still 99, tied with Ocarina of Time, one week after launch
     recheck_days: 7          # scores can move as more reviews arrive
     sources:
+      - url: https://rollingout.com/2026/11/26/gta-6-one-week-later-rockstar/
+        publisher: Rolling Out
+        date: 2026-11-26
+      - url: https://www.covers.com/entertainment/gta-6-metacritic-score
+        publisher: Covers.com
       - url: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html
         publisher: Notebookcheck
       - url: https://thenextweb.com/news/gta-vi-metacritic-99-reviews-30fps-launch
@@ -148,20 +157,28 @@ facts:
       - "That even beats GTA 4's 98, so it's now Rockstar's highest-rated game ever on Metacritic."
     status: confirmed
     category: reviews
-    as_of: 2026-11-19
+    as_of: 2026-11-26        # re-verified 2026-11-26: GTA VI still at 99; GTA IV's 98 unchanged
     recheck_days: 7
     sources:
       - url: https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html
         publisher: Notebookcheck
+      - url: https://www.dexerto.com/gta/gta-6-is-the-joint-best-reviewed-game-of-the-all-time-3429300/
+        publisher: Dexerto
+      - url: https://www.covers.com/entertainment/gta-6-metacritic-score
+        publisher: Covers.com
 
   - id: gta6_opencritic_99
     claim: "On OpenCritic, GTA VI launched with a 99 Top Critic Average and 100% of critics recommending it."
     status: reported
     attribution: OpenCritic
     category: reviews
-    as_of: 2026-11-19
+    as_of: 2026-11-26        # re-verified 2026-11-26 as a launch-day snapshot; some outlets later list 98 / 99% recommend, so keep it attributed and say "launched with"
     recheck_days: 7
     sources:
+      - url: https://dotesports.com/gta/news/gta-6-review-roundup
+        publisher: Dot Esports
+      - url: https://digitaltrends.com/gaming/gta-6-opens-to-roaring-critical-acclaim-matching-zeldas-historic-score
+        publisher: Digital Trends
       - url: https://thetechhacker.com/news/gta-6-review-scores-metacritic-opencritic/
         publisher: The Tech Hacker
       - url: https://endgametools.com/en/gta-6/news/gta-6-reviews
@@ -799,3 +816,30 @@ facts:
         publisher: Shacknews
       - url: https://www.destructoid.com/how-to-get-the-key-cloner-and-steal-any-car-in-gta-6/
         publisher: Destructoid
+
+  # ── Pop culture (added 2026-11-26) ─────────────────────────────────────────
+  - id: gta6_south_park
+    claim: "GTA VI was a running joke through South Park season 29. The episode 'Guinea Pig on a Stick' aired a short clip of real GTA VI gameplay supplied by Rockstar, showing Jason hitting a character with a bag of dog poop in Vice City, and the season finale on November 25, 2026 sent a zombie Kenny into the boys' game of Grand Theft Auto VI."
+    say:
+      - "South Park aired real GTA 6 gameplay supplied by Rockstar, and it's Jason hitting someone with a bag of dog poop."
+      - "In the season finale, a zombie Kenny ends up inside the boys' game of GTA 6."
+    status: confirmed
+    category: culture
+    as_of: 2026-11-26
+    recheck_days: 365
+    sources:
+      - url: https://gamesradar.com/games/grand-theft-auto/south-park-breaks-the-news-that-gta-6-lets-you-throw-dog-poop-even-gets-a-grand-theft-auto-icon-to-announce-it
+        publisher: GamesRadar+
+      - url: https://www.tweaktown.com/news/114374/gta-6-gameplay-airs-on-south-park-showing-jason-hitting-an-npc-with-a-bag-of-dog-poop/index.html
+        publisher: TweakTown
+      - url: https://dotesports.com/gta/news/gta-6-south-park-gameplay
+        publisher: Dot Esports
+      - url: https://www.ibtimes.co.uk/gta-6-south-park-dog-faeces-weapon-footage-1828863
+        publisher: IBTimes UK
+      - url: https://www.yahoo.com/entertainment/tv/articles/south-park-season-finale-drops-051537905.html
+        publisher: The Hollywood Reporter (via Yahoo)
+        date: 2026-11-26
+      - url: https://www.comingsoon.net/tv/news/2231485-south-park-gta-6-the-ring-kenny-zombie-finale
+        publisher: ComingSoon.net
+      - url: https://vgtimes.com/movies-and-tv-series/175855-kenny-enters-gta-6-in-the-south-park-season-29-finale.html
+        publisher: VGTimes

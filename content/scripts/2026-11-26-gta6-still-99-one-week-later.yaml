@@ -1,0 +1,35 @@
+id: 2026-11-26-gta6-still-99-one-week-later
+status: ready
+created: '2026-11-26'
+author: claude
+format: news
+title: "One Week Later, GTA 6 Still Has a 99"
+hook_text: STILL A 99
+theme: sunset_drive
+lines:
+- text: One week after launch, GTA 6's review score hasn't budged.
+  kind: hook
+- text: It launched with a 99 on Metacritic, and a week later, it's still there.
+  kind: claim
+  facts: [gta6_metacritic_99]
+  card: {type: stat, big: '99', small: METACRITIC · ONE WEEK IN}
+- text: That ties the highest score the site has ever given, level with Zelda Ocarina of Time.
+  kind: claim
+  facts: [gta6_metacritic_99]
+- text: It also beats GTA 4's 98, so it's now Rockstar's highest-rated game ever on Metacritic.
+  kind: claim
+  facts: [gta6_beats_gta4]
+  card: {type: versus, big: 99 VS 98, small: GTA 6 VS GTA 4}
+- text: It's not perfect though. Some reviewers called out clunky controls and occasional performance problems.
+  kind: claim
+  facts: [gta6_review_criticism]
+- text: Rockstar's first patch, rolling out since November 23rd, lists fixes for crashes, stuck weather and autosave.
+  kind: claim
+  facts: [gta6_first_patch]
+- text: Scores this high usually slip as reviews pile in. This one held.
+  kind: opinion
+- text: Does it deserve the 99? Tell me below and follow for more GTA 6.
+  kind: cta
+  facts: [gta6_metacritic_99]
+description: GTA 6 is still sitting on a 99 Metascore a week after launch, tied with Ocarina of Time and ahead of GTA 4's 98.
+tags: [GTA 6, GTA 6 Metacritic, GTA 6 reviews, GTA 6 99, Ocarina of Time, GTA 4, GTA VI, Rockstar Games]

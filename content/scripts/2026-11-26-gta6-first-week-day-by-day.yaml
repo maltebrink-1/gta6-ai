@@ -1,0 +1,35 @@
+id: 2026-11-26-gta6-first-week-day-by-day
+status: ready
+created: '2026-11-26'
+author: claude
+format: timeline
+title: "GTA 6's First Week, Day by Day"
+hook_text: GTA 6 WEEK ONE
+theme: swamp_glow
+lines:
+- text: GTA 6 is one week old. Here's how that week went.
+  kind: hook
+- text: November 19th. Midnight hits New Zealand first, so that's where the GTA 6 rollout started.
+  kind: claim
+  facts: [gta6_release_date, gta6_new_zealand_first]
+  card: {type: text, big: NOV 19, small: LAUNCH DAY}
+- text: The next day, Take-Two said GTA 6 hit $3.79 billion in retail sales on day one.
+  kind: claim
+  facts: [gta6_day_one_sales]
+  card: {type: stat, big: $3.79B, small: DAY-ONE RETAIL SALES · PER TAKE-TWO}
+- text: Then Sony said more than 39 million people played it on PS5 in its first four days, a PlayStation record for players online at once.
+  kind: claim
+  facts: [gta6_ps5_players, gta6_ps5_concurrency_hardware]
+  card: {type: stat, big: 39M+, small: PS5 PLAYERS · PER SONY}
+- text: November 23rd. GTA 6's first patch, update 01.002.002, started rolling out.
+  kind: claim
+  facts: [gta6_first_patch]
+- text: And November 25th, South Park's season finale sent a zombie Kenny into the boys' game of GTA 6.
+  kind: claim
+  facts: [gta6_south_park]
+- text: Seven days, and it's already everywhere. That's a launch.
+  kind: opinion
+- text: What was your week-one highlight? Comment below and follow for more GTA 6.
+  kind: cta
+description: From the New Zealand midnight rollout to Take-Two's $3.79 billion and Sony's PS5 record, here's GTA 6's first week, date by date.
+tags: [GTA 6, GTA 6 first week, GTA 6 sales, GTA 6 PS5, GTA 6 patch, South Park GTA 6, GTA VI, Rockstar Games]

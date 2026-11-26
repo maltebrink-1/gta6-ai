@@ -1,0 +1,31 @@
+id: 2026-11-26-gta6-south-park-qna
+status: ready
+created: '2026-11-26'
+author: claude
+format: qna
+title: "Why Is GTA 6 All Over South Park?"
+hook_text: GTA 6 × SOUTH PARK
+theme: neon_night
+lines:
+- text: South Park just turned GTA 6 into its whole season. Let's break it down.
+  kind: hook
+- text: Wait, was that real GTA 6 footage? Yes. South Park aired real gameplay supplied by Rockstar.
+  kind: claim
+  facts: [gta6_south_park]
+  card: {type: text, big: REAL GAMEPLAY, small: SUPPLIED BY ROCKSTAR}
+- text: What did it show? Jason in Vice City, hitting someone with a bag of dog poop.
+  kind: claim
+  facts: [gta6_south_park, gta6_protagonists]
+- text: Was that a one-off? Nope. GTA 6 was a running joke through the whole season.
+  kind: claim
+  facts: [gta6_south_park]
+- text: And the finale? It sent a zombie Kenny into the boys' game of GTA 6.
+  kind: claim
+  facts: [gta6_south_park]
+  card: {type: text, big: ZOMBIE KENNY, small: SEASON FINALE}
+- text: Honestly, when South Park builds a season around your game, you've made it.
+  kind: opinion
+- text: Funniest GTA 6 moment so far? Drop it below and follow for more GTA 6.
+  kind: cta
+description: Real Rockstar gameplay, a dog-poop weapon and a zombie Kenny. Here's how GTA 6 took over South Park's latest season.
+tags: [GTA 6, South Park, South Park GTA 6, GTA 6 gameplay, Kenny, Jason Duval, GTA VI, Rockstar Games]
