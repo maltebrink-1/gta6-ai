@@ -2,91 +2,28 @@
  "generated": "2026-11-26",
  "published_videos": 24,
  "enough_data": true,
- "channel_median_views_per_day": 138.7,
+ "channel_median_views_per_day": 0.0,
  "top_videos": [
   {
-   "id": "2026-11-22-lucia-a-first-for-gta",
-   "title": "Why Lucia Is a First for GTA",
-   "views": 1041,
-   "likes": 19,
+   "id": "2026-11-19-gta-timeline",
+   "title": "The Whole GTA Story in Under a Minute",
+   "views": 0,
+   "likes": 0,
    "comments": 0,
-   "views_per_day": 694.0,
-   "engagement": 0.0183,
-   "format": "spotlight",
-   "theme": "sunset_drive",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "characters",
-    "history"
-   ]
-  },
-  {
-   "id": "2026-11-23-gta6-first-patch-qna",
-   "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 926,
-   "likes": 12,
-   "comments": 0,
-   "views_per_day": 617.3,
-   "engagement": 0.013,
-   "format": "qna",
-   "theme": "sunset_drive",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "updates"
-   ]
-  },
-  {
-   "id": "2026-11-22-every-gta-lead-before-lucia",
-   "title": "Every GTA Lead Before Lucia and Jason",
-   "views": 1033,
-   "likes": 19,
-   "comments": 2,
-   "views_per_day": 413.2,
-   "engagement": 0.0203,
-   "format": "list",
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "timeline",
    "theme": "swamp_glow",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "characters",
-    "history"
-   ]
-  },
-  {
-   "id": "2026-11-21-gta6-wildlife",
-   "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
-   "views": 1029,
-   "likes": 19,
-   "comments": 0,
-   "views_per_day": 411.6,
-   "engagement": 0.0185,
-   "format": "spotlight",
-   "theme": "swamp_glow",
-   "length": "medium (35-45 s)",
-   "topics": [
-    "world"
-   ]
-  },
-  {
-   "id": "2026-11-20-gta6-vs-gta5-launch",
-   "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 961,
-   "likes": 28,
-   "comments": 0,
-   "views_per_day": 274.6,
-   "engagement": 0.0291,
-   "format": "versus",
-   "theme": "wanted_level",
    "length": "medium (35-45 s)",
    "topics": [
     "history",
-    "sales"
+    "release",
+    "reviews"
    ]
-  }
- ],
- "weakest_videos": [
+  },
   {
-   "id": "2026-11-20-gta6-day-one-billions",
-   "title": "GTA 6 Made $3.79 Billion on Day One, Says Take-Two",
+   "id": "2026-11-19-gta6-launch-day",
+   "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
    "views": 0,
    "likes": 0,
    "comments": 0,
@@ -96,209 +33,283 @@
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
    "topics": [
-    "sales"
+    "characters",
+    "history",
+    "release",
+    "reviews"
    ]
   },
   {
-   "id": "2026-11-20-gta6-quick-answers",
-   "title": "GTA 6: Your Biggest Questions, Answered Fast",
-   "views": 10,
+   "id": "2026-11-19-gta6-pc-wait",
+   "title": "Why GTA 6 Isn't on PC (Yet)",
+   "views": 0,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 2.2,
+   "views_per_day": 0.0,
    "engagement": 0.0,
-   "format": "qna",
-   "theme": "ocean_breeze",
-   "length": "short (<35 s)",
+   "format": "explainer",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
    "topics": [
-    "characters",
+    "history",
     "release"
    ]
   },
   {
-   "id": "2026-11-20-gta6-soundtrack",
-   "title": "GTA 6 Has Its Own Album, and the Lineup Is Wild",
-   "views": 46,
-   "likes": 1,
+   "id": "2026-11-19-gta6-trailer-records",
+   "title": "GTA 6's Trailers Broke the Internet. Here Are the Numbers",
+   "views": 0,
+   "likes": 0,
    "comments": 0,
-   "views_per_day": 10.2,
-   "engagement": 0.0217,
-   "format": "news",
-   "theme": "neon_night",
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "list",
+   "theme": "wanted_level",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "reviews",
+    "trailers"
+   ]
+  },
+  {
+   "id": "2026-11-19-meet-lucia-and-jason",
+   "title": "Meet Lucia & Jason: GTA 6's Criminal Duo",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "spotlight",
+   "theme": "ocean_breeze",
    "length": "short (<35 s)",
    "topics": [
-    "music"
+    "characters",
+    "world"
+   ]
+  }
+ ],
+ "weakest_videos": [
+  {
+   "id": "2026-11-19-gta-timeline",
+   "title": "The Whole GTA Story in Under a Minute",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "timeline",
+   "theme": "swamp_glow",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "release",
+    "reviews"
+   ]
+  },
+  {
+   "id": "2026-11-19-gta6-launch-day",
+   "title": "GTA 6 Is Finally Out, and It Just Tied an All-Time Record",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "news",
+   "theme": "sunset_drive",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "characters",
+    "history",
+    "release",
+    "reviews"
+   ]
+  },
+  {
+   "id": "2026-11-19-gta6-pc-wait",
+   "title": "Why GTA 6 Isn't on PC (Yet)",
+   "views": 0,
+   "likes": 0,
+   "comments": 0,
+   "views_per_day": 0.0,
+   "engagement": 0.0,
+   "format": "explainer",
+   "theme": "neon_night",
+   "length": "medium (35-45 s)",
+   "topics": [
+    "history",
+    "release"
    ]
   }
  ],
  "topics": [
   {
-   "name": "world",
-   "videos": 3,
-   "median_views_per_day": 251.3,
-   "vs_channel": 1.81,
-   "engagement": 0.0233
-  },
-  {
-   "name": "characters",
-   "videos": 6,
-   "median_views_per_day": 186.4,
-   "vs_channel": 1.34,
-   "engagement": 0.0215
-  },
-  {
-   "name": "sales",
-   "videos": 6,
-   "median_views_per_day": 162.2,
-   "vs_channel": 1.17,
-   "engagement": 0.0188
-  },
-  {
    "name": "history",
    "videos": 11,
-   "median_views_per_day": 159.2,
-   "vs_channel": 1.15,
-   "engagement": 0.0192
-  },
-  {
-   "name": "awards",
-   "videos": 2,
-   "median_views_per_day": 151.3,
-   "vs_channel": 1.09,
-   "engagement": 0.0101
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "release",
    "videos": 8,
-   "median_views_per_day": 148.2,
-   "vs_channel": 1.07,
-   "engagement": 0.0105
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "reviews",
    "videos": 7,
-   "median_views_per_day": 121.5,
-   "vs_channel": 0.88,
-   "engagement": 0.0192
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
-   "name": "music",
-   "videos": 2,
-   "median_views_per_day": 87.8,
-   "vs_channel": 0.63,
-   "engagement": 0.0209
+   "name": "characters",
+   "videos": 6,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 83.0,
-   "vs_channel": 0.6,
-   "engagement": 0.0138
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "world",
+   "videos": 3,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "sales",
+   "videos": 6,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "music",
+   "videos": 2,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "awards",
+   "videos": 2,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   }
  ],
  "formats": [
   {
-   "name": "qna",
-   "videos": 2,
-   "median_views_per_day": 309.8,
-   "vs_channel": 2.23,
-   "engagement": 0.0065
-  },
-  {
-   "name": "versus",
-   "videos": 5,
-   "median_views_per_day": 231.6,
-   "vs_channel": 1.67,
-   "engagement": 0.0174
-  },
-  {
    "name": "timeline",
    "videos": 3,
-   "median_views_per_day": 165.3,
-   "vs_channel": 1.19,
-   "engagement": 0.0109
-  },
-  {
-   "name": "spotlight",
-   "videos": 6,
-   "median_views_per_day": 160.7,
-   "vs_channel": 1.16,
-   "engagement": 0.0184
-  },
-  {
-   "name": "list",
-   "videos": 3,
-   "median_views_per_day": 140.0,
-   "vs_channel": 1.01,
-   "engagement": 0.0203
-  },
-  {
-   "name": "explainer",
-   "videos": 2,
-   "median_views_per_day": 77.9,
-   "vs_channel": 0.56,
-   "engagement": 0.0181
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "news",
    "videos": 3,
-   "median_views_per_day": 10.2,
-   "vs_channel": 0.07,
-   "engagement": 0.0217
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "explainer",
+   "videos": 2,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "list",
+   "videos": 3,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "spotlight",
+   "videos": 6,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "qna",
+   "videos": 2,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "versus",
+   "videos": 5,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   }
  ],
  "themes": [
   {
    "name": "swamp_glow",
    "videos": 6,
-   "median_views_per_day": 167.4,
-   "vs_channel": 1.21,
-   "engagement": 0.0202
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "sunset_drive",
    "videos": 6,
-   "median_views_per_day": 148.2,
-   "vs_channel": 1.07,
-   "engagement": 0.0115
-  },
-  {
-   "name": "wanted_level",
-   "videos": 6,
-   "median_views_per_day": 105.0,
-   "vs_channel": 0.76,
-   "engagement": 0.0159
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "neon_night",
    "videos": 3,
-   "median_views_per_day": 18.4,
-   "vs_channel": 0.13,
-   "engagement": 0.0217
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "wanted_level",
+   "videos": 6,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
-   "median_views_per_day": 18.4,
-   "vs_channel": 0.13,
-   "engagement": 0.012
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   }
  ],
  "lengths": [
   {
-   "name": "short (<35 s)",
-   "videos": 6,
-   "median_views_per_day": 151.3,
-   "vs_channel": 1.09,
-   "engagement": 0.0118
-  },
-  {
    "name": "medium (35-45 s)",
    "videos": 18,
-   "median_views_per_day": 130.8,
-   "vs_channel": 0.94,
-   "engagement": 0.0179
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
+  },
+  {
+   "name": "short (<35 s)",
+   "videos": 6,
+   "median_views_per_day": 0.0,
+   "vs_channel": null,
+   "engagement": 0.0
   }
  ],
- "advice": "Lean into topics world, characters and formats qna, versus for 3 of 4 scripts; use the 4th for something new."
+ "advice": "Lean into topics history, release and formats timeline, news for 3 of 4 scripts; use the 4th for something new."
 }
