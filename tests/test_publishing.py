@@ -322,3 +322,26 @@ def test_failed_video_retried_once_and_explained():
     assert not retry_allowed(twice) and "dropped" in why_not_posted(twice)
     assert not retry_allowed({"status": "awaiting_review"})
     assert why_not_posted({"platforms": {"youtube": {"id": "x"}}}) is None
+
+
+def test_failed_stats_day_is_not_counted_twice(tmp_path):
+    from datetime import date
+
+    from gta6shorts.analytics import _totals, build_metrics, save_snapshot
+    from gta6shorts.config import load_config
+    from gta6shorts.registry import Registry
+
+    good = lambda d, views, subs: {"date": d, "youtube": {"channel": {"subscribers": subs},  # noqa: E731
+                                                          "videos": {"a": {"views": views}}}, "tiktok": None}
+    failed = {"date": "2026-11-26", "youtube": None, "tiktok": None, "errors": ["youtube: token expired"]}
+    # a failed hourly run must not wipe the day's good numbers
+    save_snapshot(good("2026-11-26", 1000, 10), tmp_path)
+    save_snapshot(dict(failed), tmp_path)
+    import json
+    assert _totals(json.loads((tmp_path / "2026-11-26.json").read_text()))["yt_views"] == 1000
+    # and a day with no YouTube data counts as "unknown", not zero
+    snaps = [good("2026-11-25", 900, 9), failed, good("2026-11-27", 1200, 12)]
+    m = build_metrics(load_config(), Registry(tmp_path / "v.json"), snaps, date(2026, 11, 27))
+    gained = sum(d["yt_views_gained"] for d in m["days"])
+    subs = sum(d["subs_gained"] for d in m["days"])
+    assert gained == 300 and subs == 3, (gained, subs)

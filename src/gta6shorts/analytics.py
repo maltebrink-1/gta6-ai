@@ -55,6 +55,17 @@ def collect_snapshot(cfg, reg: Registry, today: date, log=print) -> dict:
 def save_snapshot(snap: dict, directory: Path) -> Path:
     directory.mkdir(parents=True, exist_ok=True)
     path = directory / f"{snap['date']}.json"
+    if path.exists():
+        # A failed collection (e.g. an expired login) must not wipe numbers already
+        # collected earlier the same day: keep the last good data for that platform.
+        try:
+            old = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            old = {}
+        for platform in ("youtube", "tiktok"):
+            if not snap.get(platform) and old.get(platform):
+                snap[platform] = old[platform]
+                snap.setdefault("stale", []).append(platform)
     path.write_text(json.dumps(snap, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return path
 
@@ -134,12 +145,23 @@ def build_metrics(cfg, reg: Registry, snapshots: list[dict], today: date, demo: 
                 published_per_day[pd] = published_per_day.get(pd, 0) + 1
 
     dates = sorted({s["date"] for s in snapshots} | set(rendered_per_day) | set(published_per_day))
-    by_date = {s["date"]: _totals(s) for s in snapshots}
+    snap_by_date = {s["date"]: s for s in snapshots}
+    by_date = {d: _totals(s) for d, s in snap_by_date.items()}
     days, prev = [], None
     for d in dates:
         tot = by_date.get(d)
         if tot is None and prev is not None:
             tot = dict(prev)  # no snapshot that day: carry totals forward, zero gains
+        elif tot is not None and prev is not None:
+            snap = snap_by_date[d]
+            # A platform that couldn't be read that day (login expired, API down) is
+            # missing, not zero — otherwise the next day would count everything twice.
+            if not snap.get("youtube"):
+                for k in ("yt_views", "yt_subs", "likes", "comments"):
+                    tot[k] = prev[k]
+            if not snap.get("tiktok"):
+                for k in ("tt_views", "tt_followers"):
+                    tot[k] = prev[k]
         tot = tot or {k: 0 for k in GAIN_KEYS}
         row = {"date": d, **tot}
         for k, g in GAIN_KEYS.items():
@@ -150,8 +172,10 @@ def build_metrics(cfg, reg: Registry, snapshots: list[dict], today: date, demo: 
         prev = tot
 
     latest = snapshots[-1] if snapshots else {}
-    yt_videos = ((latest.get("youtube") or {}).get("videos") or {})
-    tt_videos = ((latest.get("tiktok") or {}).get("videos") or {})
+    last_yt = next((s for s in reversed(snapshots) if s.get("youtube")), {})
+    last_tt = next((s for s in reversed(snapshots) if s.get("tiktok")), {})
+    yt_videos = ((last_yt.get("youtube") or {}).get("videos") or {})
+    tt_videos = ((last_tt.get("tiktok") or {}).get("videos") or {})
     videos = []
     for v in sorted(reg.videos.values(), key=lambda r: r.get("rendered_at", ""), reverse=True):
         yt = (v.get("platforms") or {}).get("youtube", {})
