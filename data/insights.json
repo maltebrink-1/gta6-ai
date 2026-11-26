@@ -137,7 +137,7 @@
    "videos": 3,
    "median_views_per_day": 251.3,
    "vs_channel": 1.81,
-   "engagement": 0.0265
+   "engagement": 0.0233
   },
   {
    "name": "characters",
@@ -191,8 +191,8 @@
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 78.0,
-   "vs_channel": 0.56,
+   "median_views_per_day": 83.0,
+   "vs_channel": 0.6,
    "engagement": 0.0138
   }
  ],
@@ -207,7 +207,7 @@
   {
    "name": "versus",
    "videos": 5,
-   "median_views_per_day": 232.0,
+   "median_views_per_day": 231.6,
    "vs_channel": 1.67,
    "engagement": 0.0174
   },
@@ -219,18 +219,18 @@
    "engagement": 0.0109
   },
   {
+   "name": "spotlight",
+   "videos": 6,
+   "median_views_per_day": 160.7,
+   "vs_channel": 1.16,
+   "engagement": 0.0184
+  },
+  {
    "name": "list",
    "videos": 3,
    "median_views_per_day": 140.0,
    "vs_channel": 1.01,
    "engagement": 0.0203
-  },
-  {
-   "name": "spotlight",
-   "videos": 6,
-   "median_views_per_day": 139.7,
-   "vs_channel": 1.01,
-   "engagement": 0.0225
   },
   {
    "name": "explainer",
@@ -265,9 +265,9 @@
   {
    "name": "wanted_level",
    "videos": 6,
-   "median_views_per_day": 96.0,
-   "vs_channel": 0.69,
-   "engagement": 0.0183
+   "median_views_per_day": 105.0,
+   "vs_channel": 0.76,
+   "engagement": 0.0159
   },
   {
    "name": "neon_night",
@@ -297,7 +297,7 @@
    "videos": 18,
    "median_views_per_day": 130.8,
    "vs_channel": 0.94,
-   "engagement": 0.0184
+   "engagement": 0.0179
   }
  ],
  "advice": "Lean into topics world, characters and formats qna, versus for 3 of 4 scripts; use the 4th for something new."
