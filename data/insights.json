@@ -23,10 +23,10 @@
   {
    "id": "2026-11-23-gta6-first-patch-qna",
    "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 932,
+   "views": 931,
    "likes": 12,
    "comments": 0,
-   "views_per_day": 372.8,
+   "views_per_day": 372.4,
    "engagement": 0.0129,
    "format": "qna",
    "theme": "sunset_drive",
@@ -69,10 +69,10 @@
   {
    "id": "2026-11-20-gta6-vs-gta5-launch",
    "title": "GTA 6 vs GTA 5: The Launch Day Numbers",
-   "views": 965,
+   "views": 964,
    "likes": 28,
    "comments": 0,
-   "views_per_day": 214.4,
+   "views_per_day": 214.2,
    "engagement": 0.029,
    "format": "versus",
    "theme": "wanted_level",
@@ -200,7 +200,7 @@
   {
    "name": "qna",
    "videos": 2,
-   "median_views_per_day": 187.4,
+   "median_views_per_day": 187.2,
    "vs_channel": 1.83,
    "engagement": 0.0065
   },
