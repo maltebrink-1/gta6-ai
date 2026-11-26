@@ -903,6 +903,171 @@
       "theme": "sunset_drive",
       "title": "GTA 6's First Patch Is Here: What Does It Fix?",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-23-gta6-trailer-1-vs-trailer-2": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-26T10:59:54+00:00",
+      "duration": 41.05,
+      "engine": "kokoro",
+      "fact_ids": [
+        "trailer1_record",
+        "trailer2_views"
+      ],
+      "format": "versus",
+      "id": "2026-11-23-gta6-trailer-1-vs-trailer-2",
+      "platforms": {
+        "youtube": {
+          "id": "KRhWviLMaqE",
+          "privacy": "public",
+          "published_at": "2026-11-26T11:06:33+00:00",
+          "url": "https://youtube.com/shorts/KRhWviLMaqE"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 117.1,
+      "rendered_at": "2026-11-26T10:59:54+00:00",
+      "review": {
+        "decision": null,
+        "issue": 21,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-gta6-trailer-1-vs-trailer-2-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-gta6-trailer-1-vs-trailer-2.mp4"
+      },
+      "script": "content/scripts/2026-11-23-gta6-trailer-1-vs-trailer-2.yaml",
+      "status": "published",
+      "theme": "wanted_level",
+      "title": "GTA 6's First Trailer vs Trailer 2: Which Hit Harder?",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-23-gta6-vs-gta4-review-crown": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-26T11:02:07+00:00",
+      "duration": 44.57,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_beats_gta4",
+        "gta_past_protagonists",
+        "gta6_metacritic_99",
+        "gta6_opencritic_99",
+        "gta6_review_criticism"
+      ],
+      "format": "versus",
+      "id": "2026-11-23-gta6-vs-gta4-review-crown",
+      "platforms": {
+        "youtube": {
+          "id": "dA6I19whqSc",
+          "privacy": "scheduled",
+          "published_at": "2026-11-26T11:06:35+00:00",
+          "scheduled_for": "2026-11-26T11:36:33Z",
+          "url": "https://youtube.com/shorts/dA6I19whqSc"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 125.1,
+      "rendered_at": "2026-11-26T11:02:07+00:00",
+      "review": {
+        "decision": null,
+        "issue": 22,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-gta6-vs-gta4-review-crown-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-gta6-vs-gta4-review-crown.mp4"
+      },
+      "script": "content/scripts/2026-11-23-gta6-vs-gta4-review-crown.yaml",
+      "status": "published",
+      "theme": "wanted_level",
+      "title": "GTA 6 vs GTA 4: Who Wears Rockstar's Review Crown?",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-23-jason-duval-spotlight": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-26T11:04:22+00:00",
+      "duration": 36.59,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_protagonists",
+        "jason_backstory",
+        "gta6_setting",
+        "leonida_is_florida",
+        "gta_past_protagonists"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-23-jason-duval-spotlight",
+      "platforms": {
+        "youtube": {
+          "id": "oy46cDJQ9EE",
+          "privacy": "scheduled",
+          "published_at": "2026-11-26T11:06:37+00:00",
+          "scheduled_for": "2026-11-26T12:06:33Z",
+          "url": "https://youtube.com/shorts/oy46cDJQ9EE"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 127.4,
+      "rendered_at": "2026-11-26T11:04:22+00:00",
+      "review": {
+        "decision": null,
+        "issue": 23,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-jason-duval-spotlight-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-23-jason-duval-spotlight.mp4"
+      },
+      "script": "content/scripts/2026-11-23-jason-duval-spotlight.yaml",
+      "status": "published",
+      "theme": "swamp_glow",
+      "title": "Jason Duval: GTA 6's Other Lead, Explained",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-24-gta6-biggest-playstation-launch": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-26T11:06:26+00:00",
+      "duration": 39.91,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_ps5_players",
+        "gta6_ps5_concurrency_hardware"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-24-gta6-biggest-playstation-launch",
+      "platforms": {
+        "youtube": {
+          "id": "0ZF-zgXxtVU",
+          "privacy": "scheduled",
+          "published_at": "2026-11-26T11:06:39+00:00",
+          "scheduled_for": "2026-11-26T12:36:33Z",
+          "url": "https://youtube.com/shorts/0ZF-zgXxtVU"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 117.3,
+      "rendered_at": "2026-11-26T11:06:26+00:00",
+      "review": {
+        "decision": null,
+        "issue": 24,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-24-gta6-biggest-playstation-launch-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-24-gta6-biggest-playstation-launch.mp4"
+      },
+      "script": "content/scripts/2026-11-24-gta6-biggest-playstation-launch.yaml",
+      "status": "published",
+      "theme": "wanted_level",
+      "title": "GTA 6 Just Became PlayStation's Biggest Launch Ever",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
