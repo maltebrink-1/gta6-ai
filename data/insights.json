@@ -2,7 +2,7 @@
  "generated": "2026-11-27",
  "published_videos": 28,
  "enough_data": true,
- "channel_median_views_per_day": 91.3,
+ "channel_median_views_per_day": 93.3,
  "top_videos": [
   {
    "id": "2026-11-22-lucia-a-first-for-gta",
@@ -100,33 +100,36 @@
    ]
   },
   {
-   "id": "2026-11-24-why-new-zealand-got-gta6-first",
-   "title": "Why New Zealand Got GTA 6 Before Everyone Else",
-   "views": 0,
-   "likes": 1,
+   "id": "2026-11-20-gta6-quick-answers",
+   "title": "GTA 6: Your Biggest Questions, Answered Fast",
+   "views": 11,
+   "likes": 0,
    "comments": 0,
-   "views_per_day": 0.0,
+   "views_per_day": 2.0,
    "engagement": 0.0,
-   "format": "explainer",
-   "theme": "sunset_drive",
-   "length": "medium (35-45 s)",
+   "format": "qna",
+   "theme": "ocean_breeze",
+   "length": "short (<35 s)",
    "topics": [
+    "characters",
     "release"
    ]
   },
   {
-   "id": "2026-11-24-lucia-vs-jason",
-   "title": "Lucia vs Jason: Whose Backstory Hits Harder?",
-   "views": 1,
+   "id": "2026-11-24-vice-city-2002-vs-2026",
+   "title": "Vice City Then vs Now: GTA's Most Iconic City, Compared",
+   "views": 2,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 1.0,
+   "views_per_day": 2.0,
    "engagement": 0.0,
    "format": "versus",
-   "theme": "swamp_glow",
+   "theme": "wanted_level",
    "length": "medium (35-45 s)",
    "topics": [
-    "characters"
+    "characters",
+    "history",
+    "world"
    ]
   }
  ],
@@ -134,64 +137,64 @@
   {
    "name": "world",
    "videos": 4,
-   "median_views_per_day": 130.8,
-   "vs_channel": 1.43,
+   "median_views_per_day": 132.2,
+   "vs_channel": 1.42,
    "engagement": 0.0092
   },
   {
    "name": "history",
    "videos": 13,
    "median_views_per_day": 114.0,
-   "vs_channel": 1.25,
+   "vs_channel": 1.22,
    "engagement": 0.0182
   },
   {
    "name": "sales",
    "videos": 6,
    "median_views_per_day": 106.8,
-   "vs_channel": 1.17,
+   "vs_channel": 1.14,
    "engagement": 0.0187
   },
   {
    "name": "release",
    "videos": 9,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.09,
-   "engagement": 0.01
+   "vs_channel": 1.07,
+   "engagement": 0.0109
   },
   {
    "name": "reviews",
    "videos": 7,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.09,
+   "vs_channel": 1.07,
    "engagement": 0.0201
   },
   {
    "name": "awards",
    "videos": 2,
    "median_views_per_day": 90.6,
-   "vs_channel": 0.99,
+   "vs_channel": 0.97,
    "engagement": 0.01
   },
   {
    "name": "trailers",
    "videos": 4,
    "median_views_per_day": 88.7,
-   "vs_channel": 0.97,
+   "vs_channel": 0.95,
    "engagement": 0.0137
   },
   {
    "name": "characters",
    "videos": 9,
-   "median_views_per_day": 56.0,
-   "vs_channel": 0.61,
+   "median_views_per_day": 58.7,
+   "vs_channel": 0.63,
    "engagement": 0.0182
   },
   {
    "name": "music",
    "videos": 2,
    "median_views_per_day": 54.0,
-   "vs_channel": 0.59,
+   "vs_channel": 0.58,
    "engagement": 0.0209
   }
  ],
@@ -200,34 +203,34 @@
    "name": "qna",
    "videos": 2,
    "median_views_per_day": 202.6,
-   "vs_channel": 2.22,
+   "vs_channel": 2.17,
    "engagement": 0.0069
   },
   {
    "name": "spotlight",
    "videos": 6,
    "median_views_per_day": 151.8,
-   "vs_channel": 1.66,
+   "vs_channel": 1.63,
    "engagement": 0.0151
   },
   {
    "name": "list",
    "videos": 3,
    "median_views_per_day": 114.9,
-   "vs_channel": 1.26,
+   "vs_channel": 1.23,
    "engagement": 0.0203
   },
   {
    "name": "timeline",
    "videos": 3,
    "median_views_per_day": 114.0,
-   "vs_channel": 1.25,
+   "vs_channel": 1.22,
    "engagement": 0.0109
   },
   {
    "name": "versus",
    "videos": 8,
-   "median_views_per_day": 74.0,
+   "median_views_per_day": 76.0,
    "vs_channel": 0.81,
    "engagement": 0.0104
   },
@@ -235,8 +238,8 @@
    "name": "explainer",
    "videos": 3,
    "median_views_per_day": 15.1,
-   "vs_channel": 0.17,
-   "engagement": 0.0
+   "vs_channel": 0.16,
+   "engagement": 0.0361
   },
   {
    "name": "news",
@@ -251,35 +254,35 @@
    "name": "swamp_glow",
    "videos": 7,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.09,
+   "vs_channel": 1.07,
    "engagement": 0.0184
   },
   {
    "name": "wanted_level",
    "videos": 7,
    "median_views_per_day": 98.0,
-   "vs_channel": 1.07,
+   "vs_channel": 1.05,
    "engagement": 0.0068
   },
   {
    "name": "sunset_drive",
    "videos": 8,
    "median_views_per_day": 93.4,
-   "vs_channel": 1.02,
-   "engagement": 0.0119
+   "vs_channel": 1.0,
+   "engagement": 0.0161
   },
   {
    "name": "neon_night",
    "videos": 3,
    "median_views_per_day": 15.1,
-   "vs_channel": 0.17,
+   "vs_channel": 0.16,
    "engagement": 0.0217
   },
   {
    "name": "ocean_breeze",
    "videos": 3,
    "median_views_per_day": 15.1,
-   "vs_channel": 0.17,
+   "vs_channel": 0.16,
    "engagement": 0.012
   }
  ],
@@ -288,14 +291,14 @@
    "name": "medium (35-45 s)",
    "videos": 21,
    "median_views_per_day": 98.0,
-   "vs_channel": 1.07,
-   "engagement": 0.0139
+   "vs_channel": 1.05,
+   "engagement": 0.0174
   },
   {
    "name": "short (<35 s)",
    "videos": 7,
    "median_views_per_day": 81.6,
-   "vs_channel": 0.89,
+   "vs_channel": 0.87,
    "engagement": 0.0201
   }
  ],
