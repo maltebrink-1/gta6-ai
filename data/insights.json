@@ -7,10 +7,10 @@
   {
    "id": "2026-11-22-lucia-a-first-for-gta",
    "title": "Why Lucia Is a First for GTA",
-   "views": 1043,
+   "views": 1042,
    "likes": 19,
    "comments": 0,
-   "views_per_day": 417.2,
+   "views_per_day": 416.8,
    "engagement": 0.0182,
    "format": "spotlight",
    "theme": "sunset_drive",
@@ -23,10 +23,10 @@
   {
    "id": "2026-11-23-gta6-first-patch-qna",
    "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 932,
+   "views": 935,
    "likes": 13,
    "comments": 0,
-   "views_per_day": 372.8,
+   "views_per_day": 374.0,
    "engagement": 0.0139,
    "format": "qna",
    "theme": "sunset_drive",
@@ -184,8 +184,8 @@
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 81.7,
-   "vs_channel": 0.8,
+   "median_views_per_day": 84.0,
+   "vs_channel": 0.82,
    "engagement": 0.0137
   },
   {
@@ -200,8 +200,8 @@
   {
    "name": "qna",
    "videos": 2,
-   "median_views_per_day": 187.4,
-   "vs_channel": 1.83,
+   "median_views_per_day": 188.0,
+   "vs_channel": 1.84,
    "engagement": 0.0069
   },
   {
