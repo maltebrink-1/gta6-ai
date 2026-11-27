@@ -103,7 +103,7 @@
    "id": "2026-11-24-why-new-zealand-got-gta6-first",
    "title": "Why New Zealand Got GTA 6 Before Everyone Else",
    "views": 0,
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
    "views_per_day": 0.0,
    "engagement": 0.0,
@@ -115,19 +115,18 @@
    ]
   },
   {
-   "id": "2026-11-25-gta5-trio-vs-gta6-duo",
-   "title": "GTA 5's Trio vs GTA 6's Duo: Which Lineup Wins?",
-   "views": 0,
+   "id": "2026-11-24-lucia-vs-jason",
+   "title": "Lucia vs Jason: Whose Backstory Hits Harder?",
+   "views": 1,
    "likes": 0,
    "comments": 0,
-   "views_per_day": 0.0,
+   "views_per_day": 1.0,
    "engagement": 0.0,
    "format": "versus",
-   "theme": "sunset_drive",
-   "length": "short (<35 s)",
+   "theme": "swamp_glow",
+   "length": "medium (35-45 s)",
    "topics": [
-    "characters",
-    "history"
+    "characters"
    ]
   }
  ],
@@ -144,7 +143,7 @@
    "videos": 13,
    "median_views_per_day": 114.0,
    "vs_channel": 1.25,
-   "engagement": 0.0174
+   "engagement": 0.0182
   },
   {
    "name": "sales",
@@ -177,7 +176,7 @@
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 88.3,
+   "median_views_per_day": 88.7,
    "vs_channel": 0.97,
    "engagement": 0.0137
   },
@@ -186,7 +185,7 @@
    "videos": 9,
    "median_views_per_day": 56.0,
    "vs_channel": 0.61,
-   "engagement": 0.0
+   "engagement": 0.0182
   },
   {
    "name": "music",
@@ -228,9 +227,9 @@
   {
    "name": "versus",
    "videos": 8,
-   "median_views_per_day": 73.7,
+   "median_views_per_day": 74.0,
    "vs_channel": 0.81,
-   "engagement": 0.0018
+   "engagement": 0.0104
   },
   {
    "name": "explainer",
@@ -267,7 +266,7 @@
    "videos": 8,
    "median_views_per_day": 93.4,
    "vs_channel": 1.02,
-   "engagement": 0.005
+   "engagement": 0.0119
   },
   {
    "name": "neon_night",
@@ -297,7 +296,7 @@
    "videos": 7,
    "median_views_per_day": 81.6,
    "vs_channel": 0.89,
-   "engagement": 0.0035
+   "engagement": 0.0201
   }
  ],
  "advice": "Lean into topics world, history and formats qna, spotlight for 3 of 4 scripts; use the 4th for something new."
