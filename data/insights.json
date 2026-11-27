@@ -23,10 +23,10 @@
   {
    "id": "2026-11-23-gta6-first-patch-qna",
    "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 1008,
+   "views": 1009,
    "likes": 14,
    "comments": 0,
-   "views_per_day": 403.2,
+   "views_per_day": 403.6,
    "engagement": 0.0139,
    "format": "qna",
    "theme": "sunset_drive",
@@ -135,8 +135,8 @@
   {
    "name": "world",
    "videos": 4,
-   "median_views_per_day": 132.2,
-   "vs_channel": 1.41,
+   "median_views_per_day": 132.8,
+   "vs_channel": 1.42,
    "engagement": 0.0092
   },
   {
@@ -144,7 +144,7 @@
    "videos": 13,
    "median_views_per_day": 114.0,
    "vs_channel": 1.22,
-   "engagement": 0.0182
+   "engagement": 0.0174
   },
   {
    "name": "sales",
@@ -184,9 +184,9 @@
   {
    "name": "characters",
    "videos": 9,
-   "median_views_per_day": 58.7,
-   "vs_channel": 0.63,
-   "engagement": 0.0192
+   "median_views_per_day": 60.0,
+   "vs_channel": 0.64,
+   "engagement": 0.0172
   },
   {
    "name": "music",
@@ -200,8 +200,8 @@
   {
    "name": "qna",
    "videos": 2,
-   "median_views_per_day": 202.6,
-   "vs_channel": 2.16,
+   "median_views_per_day": 202.8,
+   "vs_channel": 2.17,
    "engagement": 0.0069
   },
   {
@@ -230,7 +230,7 @@
    "videos": 8,
    "median_views_per_day": 76.3,
    "vs_channel": 0.81,
-   "engagement": 0.0183
+   "engagement": 0.0103
   },
   {
    "name": "explainer",
@@ -253,7 +253,7 @@
    "videos": 7,
    "median_views_per_day": 99.6,
    "vs_channel": 1.06,
-   "engagement": 0.0192
+   "engagement": 0.0184
   },
   {
    "name": "wanted_level",
@@ -267,7 +267,7 @@
    "videos": 8,
    "median_views_per_day": 93.4,
    "vs_channel": 1.0,
-   "engagement": 0.0161
+   "engagement": 0.0155
   },
   {
    "name": "neon_night",
@@ -297,7 +297,7 @@
    "videos": 7,
    "median_views_per_day": 81.6,
    "vs_channel": 0.87,
-   "engagement": 0.0201
+   "engagement": 0.0172
   }
  ],
  "advice": "Lean into topics world, history and formats qna, spotlight for 3 of 4 scripts; use the 4th for something new."
