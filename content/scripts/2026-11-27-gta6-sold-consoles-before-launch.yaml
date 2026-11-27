@@ -1,0 +1,35 @@
+id: 2026-11-27-gta6-sold-consoles-before-launch
+status: ready
+created: '2026-11-27'
+author: claude
+format: qna
+title: "Was GTA 6 Selling Consoles Before It Even Came Out?"
+hook_text: CONSOLE SALES SURGE
+theme: swamp_glow
+lines:
+- text: GTA 6 was moving consoles before anyone could play it.
+  kind: hook
+- text: Is that real? Circana says US PS5 sales hit more than 2.4 times last year's level in the week before launch.
+  kind: claim
+  facts: [gta6_console_sales_surge]
+  card: {type: stat, big: 2.4X, small: US PS5 SALES VS LAST YEAR}
+- text: What about Xbox? Circana says Xbox Series sales were up more than 2.3 times over the same week.
+  kind: claim
+  facts: [gta6_console_sales_surge]
+  card: {type: stat, big: 2.3X, small: US XBOX SERIES SALES}
+- text: Which week? Circana's numbers cover the week ending November 14th, just before launch on the 19th.
+  kind: claim
+  facts: [gta6_console_sales_surge, gta6_release_date]
+  card: {type: date, big: NOV 14, small: WEEK BEFORE LAUNCH}
+- text: Take-Two says the game itself sold 32.5 million units before release.
+  kind: claim
+  facts: [gta6_prerelease_units]
+- text: And Sony says more than 39 million people played GTA 6 on PS5 in its first four days.
+  kind: claim
+  facts: [gta6_ps5_players]
+- text: Hardware jumping like that right before a launch is hard to ignore.
+  kind: opinion
+- text: Did you buy a console for GTA 6? Tell me below and follow for more.
+  kind: cta
+description: Circana data shows US PS5 and Xbox Series sales more than doubled versus last year in the week before GTA 6 launched.
+tags: [GTA 6, GTA 6 sales, PS5 sales, Xbox Series sales, Circana, GTA 6 launch, GTA VI, Rockstar Games]

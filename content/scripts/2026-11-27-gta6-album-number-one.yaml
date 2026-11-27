@@ -1,0 +1,36 @@
+id: 2026-11-27-gta6-album-number-one
+status: ready
+created: '2026-11-27'
+author: claude
+format: list
+title: "GTA 6's Album Just Went No. 1. Here's What's on It"
+hook_text: A NUMBER ONE ALBUM
+theme: wanted_level
+lines:
+- text: GTA 6's soundtrack is now a number one album.
+  kind: hook
+  facts: [gta6_album_aria_no1]
+- text: One. It just debuted at number one on Australia's ARIA Albums Chart.
+  kind: claim
+  facts: [gta6_album_aria_no1]
+  card: {type: text, big: '#1', small: ARIA ALBUMS CHART}
+- text: Two. It's the first soundtrack to top that chart this year.
+  kind: claim
+  facts: [gta6_album_aria_no1]
+- text: Three. Rockstar made it with Atlantic Records, and it packs 34 original tracks.
+  kind: claim
+  facts: [gta6_the_album]
+  card: {type: stat, big: '34', small: ORIGINAL TRACKS}
+- text: Four. The lineup includes Travis Scott, Morgan Wallen, PinkPantheress and even Keith Richards.
+  kind: claim
+  facts: [gta6_album_artists]
+- text: Five. There's more coming. Rockstar says the original score by the French duo Justice drops December 11th.
+  kind: claim
+  facts: [gta6_justice_score]
+  card: {type: date, big: DEC 11, small: JUSTICE · ORIGINAL SCORE}
+- text: A game soundtrack beating every other album on the chart? That's wild.
+  kind: opinion
+- text: Best track on it so far? Drop it below and follow for more GTA 6.
+  kind: cta
+description: Grand Theft Auto VI The Album debuted at No. 1 on Australia's ARIA Albums Chart, the first soundtrack to top it in 2026.
+tags: [GTA 6, GTA 6 soundtrack, GTA 6 album, ARIA chart, Travis Scott, Justice, GTA VI, Rockstar Games]

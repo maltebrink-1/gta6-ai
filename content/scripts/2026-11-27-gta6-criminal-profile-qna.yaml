@@ -1,0 +1,33 @@
+id: 2026-11-27-gta6-criminal-profile-qna
+status: ready
+created: '2026-11-27'
+author: claude
+format: qna
+title: "GTA 6's Criminal Profile: What Is It Tracking?"
+hook_text: GTA 6 IS JUDGING YOU
+theme: sunset_drive
+lines:
+- text: GTA 6 is quietly keeping score on what kind of criminal you are.
+  kind: hook
+  facts: [gta6_criminal_profile]
+- text: What is it? It's called the Criminal Profile, and it tracks what kind of criminal you play as.
+  kind: claim
+  facts: [gta6_criminal_profile]
+  card: {type: text, big: CRIMINAL PROFILE, small: TRACKS YOUR PLAYSTYLE}
+- text: How far does it go? From professional, all the way toward psycho.
+  kind: claim
+  facts: [gta6_criminal_profile]
+  card: {type: versus, big: PROFESSIONAL VS PSYCHO, small: YOUR CRIMINAL PROFILE}
+- text: Did Rockstar expect pushback? Yes. Rockstar North's Rob Nelson said he knew some players would reject it.
+  kind: claim
+  facts: [gta6_criminal_profile]
+- text: So is the old chaos gone? Nelson says no. You can still do whatever you wanted to do before, but now you have other options.
+  kind: claim
+  facts: [gta6_criminal_profile]
+  card: {type: text, big: OTHER OPTIONS, small: ROB NELSON · ROCKSTAR NORTH}
+- text: Honestly, a GTA that remembers how you play is a bold swing for this series.
+  kind: opinion
+- text: Professional or psycho, which one are you? Tell me below and follow for more GTA 6.
+  kind: cta
+description: GTA 6's Criminal Profile tracks what kind of criminal you play as. Rockstar North's Rob Nelson says you can still play the old way, with more options.
+tags: [GTA 6, GTA 6 criminal profile, GTA 6 morality, Rob Nelson, Rockstar North, GTA 6 gameplay, GTA VI, Rockstar Games]

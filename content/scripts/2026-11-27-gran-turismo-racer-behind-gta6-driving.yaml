@@ -1,0 +1,36 @@
+id: 2026-11-27-gran-turismo-racer-behind-gta6-driving
+status: ready
+created: '2026-11-27'
+author: claude
+format: spotlight
+title: "The Gran Turismo Racer Behind GTA 6's Driving"
+hook_text: A GRAN TURISMO PRO?
+theme: swamp_glow
+lines:
+- text: A real Gran Turismo racer helped shape how GTA 6's cars drive.
+  kind: hook
+  facts: [gta6_gt_physics_dev]
+- text: His name is Lewis Bentley, a former Gran Turismo World Series competitor.
+  kind: claim
+  facts: [gta6_gt_physics_dev]
+  card: {type: text, big: LEWIS BENTLEY, small: GRAN TURISMO WORLD SERIES}
+- text: He made it all the way to the World Final in Monaco back in 2018.
+  kind: claim
+  facts: [gta6_gt_physics_dev]
+  card: {type: date, big: '2018', small: WORLD FINAL · MONACO}
+- text: Bentley says he then spent about three and a half years on Rockstar's physics team, working on how the cars drive.
+  kind: claim
+  facts: [gta6_gt_physics_dev]
+  card: {type: text, big: PHYSICS TEAM, small: ROCKSTAR GAMES}
+- text: And it's not just his word. GTA 6's credits list him as a physics developer.
+  kind: claim
+  facts: [gta6_gt_physics_dev]
+- text: Cars changed in other ways too. Rockstar's Rob Nelson told IGN the old one-button hotwire is gone.
+  kind: claim
+  facts: [gta6_car_theft]
+- text: So if driving around Leonida feels different, now you know who helped.
+  kind: opinion
+- text: Better driving than GTA 5? Tell me below and follow for more GTA 6.
+  kind: cta
+description: Former Gran Turismo World Series finalist Lewis Bentley says he spent about three and a half years on Rockstar's physics team working on GTA 6's cars.
+tags: [GTA 6, GTA 6 driving, GTA 6 car physics, Gran Turismo, Lewis Bentley, GTA 6 cars, GTA VI, Rockstar Games]

@@ -843,3 +843,80 @@ facts:
         publisher: ComingSoon.net
       - url: https://vgtimes.com/movies-and-tv-series/175855-kenny-enters-gta-6-in-the-south-park-season-29-finale.html
         publisher: VGTimes
+
+  # ── Added 2026-11-27 ───────────────────────────────────────────────────────
+  - id: gta6_gt_physics_dev
+    claim: "Lewis Bentley, a former Gran Turismo World Series competitor who reached the 2018 World Final in Monaco, says he spent about three and a half years on Rockstar's physics team working on how GTA VI's cars drive; the game's credits list him as a developer in the physics group."
+    say:
+      - "Lewis Bentley, a former Gran Turismo World Series racer, says he spent about three and a half years on Rockstar's physics team."
+      - "He reached the Gran Turismo World Final in Monaco back in 2018."
+      - "GTA 6's credits list him as a physics developer."
+    status: confirmed
+    category: world
+    as_of: 2026-11-27
+    recheck_days: 180
+    sources:
+      - url: https://www.pushsquare.com/news/2026/11/gta-6s-car-physics-were-tuned-by-a-gran-turismo-pro
+        publisher: Push Square
+        date: 2026-11-26
+      - url: https://www.gtplanet.net/rockstar-hired-a-gran-turismo-world-finalist-to-work-on-gta-6s-car-physics-20261125/
+        publisher: GTPlanet
+        date: 2026-11-25
+      - url: https://vgtimes.com/gaming-news/175907-gran-turismo-world-series-competitor-spent-3.5-years-tuning-gta-6s-car-physics.html
+        publisher: VGTimes
+
+  - id: gta6_criminal_profile
+    claim: "GTA VI has a Criminal Profile system that tracks what kind of criminal you play as, from 'professional' toward 'psycho'. Rockstar North co-studio head Rob Nelson said he knew some players would reject new systems like it, but that 'you can still do whatever you wanted to do before, but now you have other options.'"
+    say:
+      - "GTA 6 tracks what kind of criminal you are, from professional all the way to psycho."
+      - "Rockstar North's Rob Nelson said he knew some players would reject it."
+      - "His words: you can still do whatever you wanted to do before, but now you have other options."
+    status: confirmed
+    category: world
+    as_of: 2026-11-27
+    recheck_days: 180
+    sources:
+      - url: https://x.com/IGN/status/2126307812095520877
+        publisher: IGN on X
+        date: 2026-11-27
+      - url: https://tech.yahoo.com/gaming/articles/rockstar-boss-knew-gta-6-180000358.html
+        publisher: Yahoo Tech
+      - url: https://gamerant.com/gta-6-criminal-profile-rockstar-comments/
+        publisher: Game Rant
+
+  - id: gta6_console_sales_surge
+    claim: "Circana's Mat Piscatella reported that in the US, in the week ending November 14, 2026 (just before GTA VI launched), PS5 unit sales were more than 2.4 times and Xbox Series unit sales more than 2.3 times their level in the same week a year earlier."
+    say:
+      - "Circana says US PS5 sales hit more than 2.4 times last year's level in the week before GTA 6 launched."
+      - "Xbox Series sales were up more than 2.3 times over the same week."
+    status: confirmed
+    attribution: Circana
+    category: sales
+    as_of: 2026-11-27
+    recheck_days: 60
+    sources:
+      - url: https://www.gamespot.com/articles/ps5-and-xbox-series-xs-console-sales-surged-just-before-gta-6-came-out/
+        publisher: GameSpot
+      - url: https://www.tweaktown.com/news/114913/playstation-and-xbox-sales-more-than-double-as-gta-6-gives-consoles-a-much-needed-boost/index.html
+        publisher: TweakTown
+      - url: https://www.vgchartz.com/article/469721/ps5-and-xbox-series-sales-increase-over-23-times-year-on-year-in-the-us-ahead-of-gta-6-launch/
+        publisher: VGChartz
+      - url: https://www.tipranks.com/news/the-fly/ps5-xbox-series-unit-sales-surged-in-u-s-ahead-of-gta-vi-says-circana-thefly-news
+        publisher: The Fly (via TipRanks)
+
+  - id: gta6_album_aria_no1
+    claim: "Grand Theft Auto VI: The Album debuted at No. 1 on Australia's ARIA Albums Chart (published November 27, 2026), becoming the first soundtrack to top that chart in 2026."
+    say:
+      - "GTA 6's soundtrack just debuted at number one on Australia's ARIA Albums Chart."
+      - "It's the first soundtrack to top that chart this year."
+    status: confirmed
+    category: music
+    as_of: 2026-11-27
+    recheck_days: 365
+    sources:
+      - url: https://www.billboard.com/music/chart-beat/grand-theft-auto-vi-soundtrack-no-1-aria-chart-1236390235/
+        publisher: Billboard
+        date: 2026-11-27
+      - url: https://www.musictimes.com/articles/113418/20261127/gta-vi-soundtrack-debuts-no-1-australias-aria-albums-chart.htm
+        publisher: Music Times
+        date: 2026-11-27
