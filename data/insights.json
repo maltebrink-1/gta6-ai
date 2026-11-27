@@ -7,10 +7,10 @@
   {
    "id": "2026-11-22-lucia-a-first-for-gta",
    "title": "Why Lucia Is a First for GTA",
-   "views": 1042,
+   "views": 1043,
    "likes": 19,
    "comments": 0,
-   "views_per_day": 416.8,
+   "views_per_day": 417.2,
    "engagement": 0.0182,
    "format": "spotlight",
    "theme": "sunset_drive",
@@ -54,10 +54,10 @@
   {
    "id": "2026-11-21-gta6-wildlife",
    "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed",
-   "views": 1030,
+   "views": 1031,
    "likes": 19,
    "comments": 0,
-   "views_per_day": 294.3,
+   "views_per_day": 294.6,
    "engagement": 0.0184,
    "format": "spotlight",
    "theme": "swamp_glow",
@@ -177,15 +177,15 @@
   {
    "name": "awards",
    "videos": 2,
-   "median_views_per_day": 90.4,
+   "median_views_per_day": 90.6,
    "vs_channel": 0.88,
    "engagement": 0.01
   },
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 81.3,
-   "vs_channel": 0.79,
+   "median_views_per_day": 81.7,
+   "vs_channel": 0.8,
    "engagement": 0.0137
   },
   {
@@ -235,7 +235,7 @@
   {
    "name": "explainer",
    "videos": 2,
-   "median_views_per_day": 48.1,
+   "median_views_per_day": 48.3,
    "vs_channel": 0.47,
    "engagement": 0.0181
   },
@@ -295,7 +295,7 @@
   {
    "name": "short (<35 s)",
    "videos": 6,
-   "median_views_per_day": 90.4,
+   "median_views_per_day": 90.6,
    "vs_channel": 0.88,
    "engagement": 0.0118
   }
