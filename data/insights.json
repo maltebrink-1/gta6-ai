@@ -177,15 +177,15 @@
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 89.0,
-   "vs_channel": 0.95,
+   "median_views_per_day": 90.0,
+   "vs_channel": 0.96,
    "engagement": 0.0137
   },
   {
    "name": "characters",
    "videos": 9,
-   "median_views_per_day": 68.0,
-   "vs_channel": 0.73,
+   "median_views_per_day": 76.0,
+   "vs_channel": 0.81,
    "engagement": 0.0161
   },
   {
@@ -228,9 +228,9 @@
   {
    "name": "versus",
    "videos": 8,
-   "median_views_per_day": 79.0,
-   "vs_channel": 0.85,
-   "engagement": 0.0154
+   "median_views_per_day": 83.0,
+   "vs_channel": 0.89,
+   "engagement": 0.0146
   },
   {
    "name": "explainer",
@@ -267,7 +267,7 @@
    "videos": 8,
    "median_views_per_day": 93.4,
    "vs_channel": 1.0,
-   "engagement": 0.0143
+   "engagement": 0.0135
   },
   {
    "name": "neon_night",
@@ -297,7 +297,7 @@
    "videos": 7,
    "median_views_per_day": 81.6,
    "vs_channel": 0.87,
-   "engagement": 0.0147
+   "engagement": 0.0132
   }
  ],
  "advice": "Lean into topics world, history and formats qna, spotlight for 3 of 4 scripts; use the 4th for something new."
