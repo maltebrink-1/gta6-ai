@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "collected_at": "2026-11-27T19:59:38+00:00",
+ "collected_at": "2026-11-27T20:57:14+00:00",
  "youtube": {
   "channel": {
    "channel_id": "UCKf_gkOScg8FoRrlj98Q6KA",
@@ -101,7 +101,7 @@
     "title": "GTA 6 Has Over 170 Animal Species, and Birders Noticed"
    },
    "vxUNYMpUaOM": {
-    "views": 1033,
+    "views": 1035,
     "likes": 19,
     "comments": 2,
     "title": "Every GTA Lead Before Lucia and Jason"
@@ -137,13 +137,13 @@
     "title": "GTA 6's First Trailer vs Trailer 2: Which Hit Harder?"
    },
    "dA6I19whqSc": {
-    "views": 135,
+    "views": 137,
     "likes": 3,
     "comments": 0,
     "title": "GTA 6 vs GTA 4: Who Wears Rockstar's Review Crown?"
    },
    "oy46cDJQ9EE": {
-    "views": 88,
+    "views": 89,
     "likes": 0,
     "comments": 0,
     "title": "Jason Duval: GTA 6's Other Lead, Explained"
@@ -155,26 +155,26 @@
     "title": "GTA 6 Just Became PlayStation's Biggest Launch Ever"
    },
    "m_IclBuogwc": {
-    "views": 62,
+    "views": 64,
     "likes": 1,
     "comments": 0,
     "title": "Lucia vs Jason: Whose Backstory Hits Harder?"
    },
    "b74Zxv0RoTc": {
-    "views": 13,
+    "views": 15,
     "likes": 0,
     "comments": 0,
     "title": "Vice City Then vs Now: GTA's Most Iconic City, Compared"
    },
    "jWX2im1ny8c": {
-    "views": 9,
+    "views": 12,
     "likes": 1,
     "comments": 0,
     "title": "Why New Zealand Got GTA 6 Before Everyone Else"
    },
    "mwG9QHj8tQ4": {
-    "views": 76,
-    "likes": 1,
+    "views": 89,
+    "likes": 2,
     "comments": 0,
     "title": "GTA 5's Trio vs GTA 6's Duo: Which Lineup Wins?"
    }
@@ -218,6 +218,14 @@
     "likes": 44,
     "comments": 2,
     "subscribersGained": 0,
+    "subscribersLost": 0
+   },
+   {
+    "day": "2026-11-25",
+    "views": 2755,
+    "likes": 44,
+    "comments": 0,
+    "subscribersGained": 2,
     "subscribersLost": 0
    }
   ]

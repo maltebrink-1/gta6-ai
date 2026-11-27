@@ -2,7 +2,7 @@
  "generated": "2026-11-27",
  "published_videos": 28,
  "enough_data": true,
- "channel_median_views_per_day": 93.3,
+ "channel_median_views_per_day": 94.0,
  "top_videos": [
   {
    "id": "2026-11-22-lucia-a-first-for-gta",
@@ -38,10 +38,10 @@
   {
    "id": "2026-11-22-every-gta-lead-before-lucia",
    "title": "Every GTA Lead Before Lucia and Jason",
-   "views": 1033,
+   "views": 1035,
    "likes": 19,
    "comments": 2,
-   "views_per_day": 295.1,
+   "views_per_day": 295.7,
    "engagement": 0.0203,
    "format": "list",
    "theme": "swamp_glow",
@@ -135,16 +135,16 @@
   {
    "name": "world",
    "videos": 4,
-   "median_views_per_day": 132.2,
-   "vs_channel": 1.42,
+   "median_views_per_day": 132.4,
+   "vs_channel": 1.41,
    "engagement": 0.0092
   },
   {
    "name": "history",
    "videos": 13,
    "median_views_per_day": 114.0,
-   "vs_channel": 1.22,
-   "engagement": 0.0174
+   "vs_channel": 1.21,
+   "engagement": 0.0182
   },
   {
    "name": "sales",
@@ -157,21 +157,21 @@
    "name": "release",
    "videos": 9,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.07,
+   "vs_channel": 1.06,
    "engagement": 0.0109
   },
   {
    "name": "reviews",
    "videos": 7,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.07,
+   "vs_channel": 1.06,
    "engagement": 0.0201
   },
   {
    "name": "awards",
    "videos": 2,
    "median_views_per_day": 90.6,
-   "vs_channel": 0.97,
+   "vs_channel": 0.96,
    "engagement": 0.01
   },
   {
@@ -184,15 +184,15 @@
   {
    "name": "characters",
    "videos": 9,
-   "median_views_per_day": 76.0,
-   "vs_channel": 0.81,
-   "engagement": 0.0161
+   "median_views_per_day": 89.0,
+   "vs_channel": 0.95,
+   "engagement": 0.0182
   },
   {
    "name": "music",
    "videos": 2,
    "median_views_per_day": 54.0,
-   "vs_channel": 0.58,
+   "vs_channel": 0.57,
    "engagement": 0.0209
   }
  ],
@@ -201,36 +201,36 @@
    "name": "qna",
    "videos": 2,
    "median_views_per_day": 202.6,
-   "vs_channel": 2.17,
+   "vs_channel": 2.16,
    "engagement": 0.0069
   },
   {
    "name": "spotlight",
    "videos": 6,
    "median_views_per_day": 151.2,
-   "vs_channel": 1.62,
+   "vs_channel": 1.61,
    "engagement": 0.0151
   },
   {
    "name": "list",
    "videos": 3,
    "median_views_per_day": 114.9,
-   "vs_channel": 1.23,
+   "vs_channel": 1.22,
    "engagement": 0.0203
   },
   {
    "name": "timeline",
    "videos": 3,
    "median_views_per_day": 114.0,
-   "vs_channel": 1.22,
+   "vs_channel": 1.21,
    "engagement": 0.0109
   },
   {
    "name": "versus",
    "videos": 8,
-   "median_views_per_day": 83.0,
-   "vs_channel": 0.89,
-   "engagement": 0.0146
+   "median_views_per_day": 90.2,
+   "vs_channel": 0.96,
+   "engagement": 0.0165
   },
   {
    "name": "explainer",
@@ -252,22 +252,22 @@
    "name": "swamp_glow",
    "videos": 7,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.07,
+   "vs_channel": 1.06,
    "engagement": 0.0184
+  },
+  {
+   "name": "sunset_drive",
+   "videos": 8,
+   "median_views_per_day": 97.2,
+   "vs_channel": 1.03,
+   "engagement": 0.0161
   },
   {
    "name": "wanted_level",
    "videos": 7,
    "median_views_per_day": 96.7,
-   "vs_channel": 1.04,
+   "vs_channel": 1.03,
    "engagement": 0.0069
-  },
-  {
-   "name": "sunset_drive",
-   "videos": 8,
-   "median_views_per_day": 93.4,
-   "vs_channel": 1.0,
-   "engagement": 0.0135
   },
   {
    "name": "neon_night",
@@ -289,15 +289,15 @@
    "name": "medium (35-45 s)",
    "videos": 21,
    "median_views_per_day": 96.7,
-   "vs_channel": 1.04,
+   "vs_channel": 1.03,
    "engagement": 0.0174
   },
   {
    "name": "short (<35 s)",
    "videos": 7,
-   "median_views_per_day": 81.6,
-   "vs_channel": 0.87,
-   "engagement": 0.0132
+   "median_views_per_day": 89.0,
+   "vs_channel": 0.95,
+   "engagement": 0.0201
   }
  ],
  "advice": "Lean into topics world, history and formats qna, spotlight for 3 of 4 scripts; use the 4th for something new."
