@@ -2,7 +2,7 @@
  "generated": "2026-11-27",
  "published_videos": 28,
  "enough_data": true,
- "channel_median_views_per_day": 93.3,
+ "channel_median_views_per_day": 93.7,
  "top_videos": [
   {
    "id": "2026-11-22-lucia-a-first-for-gta",
@@ -116,20 +116,18 @@
    ]
   },
   {
-   "id": "2026-11-24-vice-city-2002-vs-2026",
-   "title": "Vice City Then vs Now: GTA's Most Iconic City, Compared",
-   "views": 2,
-   "likes": 0,
+   "id": "2026-11-24-why-new-zealand-got-gta6-first",
+   "title": "Why New Zealand Got GTA 6 Before Everyone Else",
+   "views": 5,
+   "likes": 1,
    "comments": 0,
-   "views_per_day": 2.0,
-   "engagement": 0.0,
-   "format": "versus",
-   "theme": "wanted_level",
+   "views_per_day": 5.0,
+   "engagement": 0.2,
+   "format": "explainer",
+   "theme": "sunset_drive",
    "length": "medium (35-45 s)",
    "topics": [
-    "characters",
-    "history",
-    "world"
+    "release"
    ]
   }
  ],
@@ -138,7 +136,7 @@
    "name": "world",
    "videos": 4,
    "median_views_per_day": 132.2,
-   "vs_channel": 1.42,
+   "vs_channel": 1.41,
    "engagement": 0.0092
   },
   {
@@ -159,14 +157,14 @@
    "name": "release",
    "videos": 9,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.07,
+   "vs_channel": 1.06,
    "engagement": 0.0109
   },
   {
    "name": "reviews",
    "videos": 7,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.07,
+   "vs_channel": 1.06,
    "engagement": 0.0201
   },
   {
@@ -188,7 +186,7 @@
    "videos": 9,
    "median_views_per_day": 58.7,
    "vs_channel": 0.63,
-   "engagement": 0.0182
+   "engagement": 0.0192
   },
   {
    "name": "music",
@@ -203,14 +201,14 @@
    "name": "qna",
    "videos": 2,
    "median_views_per_day": 202.6,
-   "vs_channel": 2.17,
+   "vs_channel": 2.16,
    "engagement": 0.0069
   },
   {
    "name": "spotlight",
    "videos": 6,
    "median_views_per_day": 151.8,
-   "vs_channel": 1.63,
+   "vs_channel": 1.62,
    "engagement": 0.0151
   },
   {
@@ -230,9 +228,9 @@
   {
    "name": "versus",
    "videos": 8,
-   "median_views_per_day": 76.0,
+   "median_views_per_day": 76.3,
    "vs_channel": 0.81,
-   "engagement": 0.0104
+   "engagement": 0.0183
   },
   {
    "name": "explainer",
@@ -254,8 +252,8 @@
    "name": "swamp_glow",
    "videos": 7,
    "median_views_per_day": 99.6,
-   "vs_channel": 1.07,
-   "engagement": 0.0184
+   "vs_channel": 1.06,
+   "engagement": 0.0192
   },
   {
    "name": "wanted_level",
