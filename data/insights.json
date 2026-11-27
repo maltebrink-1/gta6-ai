@@ -23,11 +23,11 @@
   {
    "id": "2026-11-23-gta6-first-patch-qna",
    "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 958,
+   "views": 1008,
    "likes": 14,
    "comments": 0,
-   "views_per_day": 383.2,
-   "engagement": 0.0146,
+   "views_per_day": 403.2,
+   "engagement": 0.0139,
    "format": "qna",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -184,8 +184,8 @@
   {
    "name": "trailers",
    "videos": 4,
-   "median_views_per_day": 86.3,
-   "vs_channel": 0.84,
+   "median_views_per_day": 87.0,
+   "vs_channel": 0.85,
    "engagement": 0.0137
   },
   {
@@ -200,9 +200,9 @@
   {
    "name": "qna",
    "videos": 2,
-   "median_views_per_day": 192.6,
-   "vs_channel": 1.88,
-   "engagement": 0.0073
+   "median_views_per_day": 202.6,
+   "vs_channel": 1.98,
+   "engagement": 0.0069
   },
   {
    "name": "versus",
@@ -260,7 +260,7 @@
    "videos": 6,
    "median_views_per_day": 109.7,
    "vs_channel": 1.07,
-   "engagement": 0.0123
+   "engagement": 0.0119
   },
   {
    "name": "wanted_level",
