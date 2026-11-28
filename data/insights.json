@@ -23,11 +23,11 @@
   {
    "id": "2026-11-23-gta6-first-patch-qna",
    "title": "GTA 6's First Patch Is Here: What Does It Fix?",
-   "views": 1009,
+   "views": 1011,
    "likes": 14,
    "comments": 0,
-   "views_per_day": 288.3,
-   "engagement": 0.0139,
+   "views_per_day": 288.9,
+   "engagement": 0.0138,
    "format": "qna",
    "theme": "sunset_drive",
    "length": "medium (35-45 s)",
@@ -168,18 +168,18 @@
    "engagement": 0.0201
   },
   {
+   "name": "trailers",
+   "videos": 4,
+   "median_views_per_day": 65.2,
+   "vs_channel": 1.07,
+   "engagement": 0.0137
+  },
+  {
    "name": "awards",
    "videos": 2,
    "median_views_per_day": 64.7,
    "vs_channel": 1.06,
    "engagement": 0.01
-  },
-  {
-   "name": "trailers",
-   "videos": 4,
-   "median_views_per_day": 64.3,
-   "vs_channel": 1.05,
-   "engagement": 0.0137
   },
   {
    "name": "characters",
@@ -200,8 +200,8 @@
   {
    "name": "qna",
    "videos": 2,
-   "median_views_per_day": 145.0,
-   "vs_channel": 2.37,
+   "median_views_per_day": 145.3,
+   "vs_channel": 2.38,
    "engagement": 0.0069
   },
   {
@@ -253,7 +253,7 @@
    "videos": 8,
    "median_views_per_day": 76.3,
    "vs_channel": 1.25,
-   "engagement": 0.0161
+   "engagement": 0.016
   },
   {
    "name": "swamp_glow",
