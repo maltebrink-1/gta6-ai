@@ -1238,6 +1238,166 @@
       "theme": "sunset_drive",
       "title": "GTA 5's Trio vs GTA 6's Duo: Which Lineup Wins?",
       "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-25-gta6-awards-season-timeline": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-28T10:51:32+00:00",
+      "duration": 30.06,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_game_awards_2026",
+        "gta6_release_date",
+        "gta6_lead_actors"
+      ],
+      "format": "timeline",
+      "id": "2026-11-25-gta6-awards-season-timeline",
+      "platforms": {
+        "youtube": {
+          "id": "6IRUiNtX2TU",
+          "privacy": "public",
+          "published_at": "2026-11-28T10:55:25+00:00",
+          "url": "https://youtube.com/shorts/6IRUiNtX2TU"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 62.6,
+      "rendered_at": "2026-11-28T10:51:32+00:00",
+      "review": {
+        "decision": null,
+        "issue": 29,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-25-gta6-awards-season-timeline-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-25-gta6-awards-season-timeline.mp4"
+      },
+      "script": "content/scripts/2026-11-25-gta6-awards-season-timeline.yaml",
+      "status": "published",
+      "theme": "ocean_breeze",
+      "title": "GTA 6's Awards Season, Date by Date",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-25-gta6-car-theft-old-vs-new": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-28T10:52:55+00:00",
+      "duration": 37.4,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_setting",
+        "leonida_is_florida",
+        "gta6_car_theft"
+      ],
+      "format": "versus",
+      "id": "2026-11-25-gta6-car-theft-old-vs-new",
+      "platforms": {
+        "youtube": {
+          "id": "TAIWCMi-XmY",
+          "privacy": "scheduled",
+          "published_at": "2026-11-28T10:55:27+00:00",
+          "scheduled_for": "2026-11-28T11:25:25Z",
+          "url": "https://youtube.com/shorts/TAIWCMi-XmY"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 77.3,
+      "rendered_at": "2026-11-28T10:52:55+00:00",
+      "review": {
+        "decision": null,
+        "issue": 30,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-25-gta6-car-theft-old-vs-new-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-25-gta6-car-theft-old-vs-new.mp4"
+      },
+      "script": "content/scripts/2026-11-25-gta6-car-theft-old-vs-new.yaml",
+      "status": "published",
+      "theme": "swamp_glow",
+      "title": "Old GTA vs GTA 6: Stealing a Car Just Got Harder",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-25-the-actors-behind-lucia-and-jason": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-28T10:54:01+00:00",
+      "duration": 34.61,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta6_protagonists",
+        "gta6_lead_actors",
+        "gta6_game_awards_2026"
+      ],
+      "format": "spotlight",
+      "id": "2026-11-25-the-actors-behind-lucia-and-jason",
+      "platforms": {
+        "youtube": {
+          "id": "K5ct-iMb9TA",
+          "privacy": "scheduled",
+          "published_at": "2026-11-28T10:55:28+00:00",
+          "scheduled_for": "2026-11-28T11:55:25Z",
+          "url": "https://youtube.com/shorts/K5ct-iMb9TA"
+        }
+      },
+      "qa": {
+        "failures": [],
+        "passed": true,
+        "warnings": []
+      },
+      "render_seconds": 60.3,
+      "rendered_at": "2026-11-28T10:54:01+00:00",
+      "review": {
+        "decision": null,
+        "issue": 31,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-25-the-actors-behind-lucia-and-jason-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-25-the-actors-behind-lucia-and-jason.mp4"
+      },
+      "script": "content/scripts/2026-11-25-the-actors-behind-lucia-and-jason.yaml",
+      "status": "published",
+      "theme": "wanted_level",
+      "title": "Meet the Real Actors Behind Lucia and Jason",
+      "voice": "af_bella:0.7+af_heart:0.3"
+    },
+    "2026-11-26-from-gta5-to-gta6": {
+      "attempts": 1,
+      "author": "claude",
+      "created_at": "2026-11-28T10:55:20+00:00",
+      "duration": 44.67,
+      "engine": "kokoro",
+      "fact_ids": [
+        "gta5_24h_record",
+        "gta5_pc_gap",
+        "trailer1_record",
+        "gta6_delays",
+        "gta5_sales",
+        "gta6_release_date"
+      ],
+      "format": "timeline",
+      "id": "2026-11-26-from-gta5-to-gta6",
+      "platforms": {},
+      "qa": {
+        "failures": [
+          "loudness: -16.4 LUFS (target -14.0±1.5)"
+        ],
+        "passed": false,
+        "warnings": []
+      },
+      "render_seconds": 72.4,
+      "rendered_at": "2026-11-28T10:55:20+00:00",
+      "review": {
+        "decision": null,
+        "issue": null,
+        "sheet_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-26-from-gta5-to-gta6-sheet.jpg",
+        "video_url": "https://github.com/maltebrink-1/gta6-ai/releases/download/review-queue/2026-11-26-from-gta5-to-gta6.mp4"
+      },
+      "script": "content/scripts/2026-11-26-from-gta5-to-gta6.yaml",
+      "status": "qa_failed",
+      "theme": "wanted_level",
+      "title": "From GTA 5 to GTA 6: The Long Wait, Date by Date",
+      "voice": "af_bella:0.7+af_heart:0.3"
     }
   }
 }
